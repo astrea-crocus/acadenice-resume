@@ -1,7 +1,36 @@
 /* Color Palettes */
 @layer base {
   :root {
-    /* Zinc - Primary/Secondary */
+    /* AcadéNice - Primary Shades */
+    --ac-teal-50: 170 56% 95%;
+    --ac-teal-100: 170 56% 90%;
+    --ac-teal-200: 170 56% 80%;
+    --ac-teal-300: 170 56% 70%;
+    --ac-teal-400: 170 56% 60%;
+    --ac-teal-500: 170 56% 55%;
+    --ac-teal-600: 170 56% 45%;
+    --ac-teal-700: 170 56% 35%;
+    --ac-teal-800: 170 56% 25%;
+    --ac-teal-900: 170 56% 15%;
+    --ac-teal-950: 170 56% 10%;
+
+    /* AcadéNice - ac-orange Shades */
+    --ac-orange-50: 38 100% 95%;
+    --ac-orange-100: 38 100% 90%;
+    --ac-orange-200: 38 100% 80%;
+    --ac-orange-300: 38 100% 70%;
+    --ac-orange-400: 38 100% 60%;
+    --ac-orange-500: 38 100% 50%;
+    --ac-orange-600: 38 100% 40%;
+    --ac-orange-700: 38 100% 30%;
+    --ac-orange-800: 38 100% 20%;
+    --ac-orange-900: 38 100% 10%;
+    --ac-orange-950: 38 100% 5%;
+
+    --white: 0 0% 100%;
+    --black: 0 0% 0%;
+
+    /* Zinc - Primary/ac-orange */
     --zinc-50: 0 0% 98%;
     --zinc-100: 240 4.8% 95.9%;
     --zinc-200: 240 5.9% 90%;

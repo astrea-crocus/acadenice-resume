@@ -1,5 +1,4 @@
-import { t } from "@lingui/macro";
-import { Book, SignOut } from "@phosphor-icons/react";
+/* eslint-disable lingui/no-unlocalized-strings */
 import { Button } from "@reactive-resume/ui";
 import { Link } from "react-router";
 
@@ -15,12 +14,11 @@ export const HeroCTA = () => {
     return (
       <>
         <Button asChild size="lg">
-          <Link to="/dashboard">{t`Go to Dashboard`}</Link>
+          <Link to="/dashboard">Panneau de contrôle</Link>
         </Button>
 
         <Button size="lg" variant="link" onClick={() => logout()}>
-          <SignOut className="mr-3" />
-          {t`Logout`}
+          Se déconnecter
         </Button>
       </>
     );
@@ -29,14 +27,11 @@ export const HeroCTA = () => {
   return (
     <>
       <Button asChild size="lg">
-        <Link to="/auth/login">{t`Get Started`}</Link>
+        <Link to="/auth/login">Se connecter</Link>
       </Button>
 
-      <Button asChild size="lg" variant="link">
-        <a href="https://docs.rxresu.me" target="_blank" rel="noopener noreferrer nofollow">
-          <Book className="mr-3" />
-          {t`Learn more`}
-        </a>
+      <Button size="lg">
+        <Link to="/auth/register">S'inscrire</Link>
       </Button>
     </>
   );
