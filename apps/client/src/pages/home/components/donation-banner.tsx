@@ -10,7 +10,7 @@ export const DonationBanner = () => (
     whileHover={{ height: 48 }}
     initial={{ opacity: 0, y: -50, height: 32 }}
     animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
-    className="hidden w-screen items-center justify-center gap-x-2 bg-zinc-800 text-xl font-bold leading-relaxed text-zinc-50 lg:flex"
+    className="hidden w-screen items-center justify-center gap-x-2 bg-primary text-xl font-bold leading-relaxed text-primary-foreground lg:flex"
   >
     {/* <HandHeart weight="bold" size={14} className="shrink-0" /> */}
     <span>N'oubliez pas de visiter le site de l'AcadéNice !</span>

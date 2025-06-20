@@ -1,7 +1,7 @@
 /* Color Palettes */
 @layer base {
   :root {
-    /* AcadéNice - Primary Shades */
+    /* AcadéNice - Teal Shades */
     --ac-teal-50: 170 56% 95%;
     --ac-teal-100: 170 56% 90%;
     --ac-teal-200: 170 56% 80%;
@@ -14,7 +14,7 @@
     --ac-teal-900: 170 56% 15%;
     --ac-teal-950: 170 56% 10%;
 
-    /* AcadéNice - ac-orange Shades */
+    /* AcadéNice - Orange Shades */
     --ac-orange-50: 38 100% 95%;
     --ac-orange-100: 38 100% 90%;
     --ac-orange-200: 38 100% 80%;

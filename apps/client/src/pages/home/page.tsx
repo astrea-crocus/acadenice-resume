@@ -1,13 +1,13 @@
 /* eslint-disable lingui/no-unlocalized-strings */
 import { Helmet } from "react-helmet-async";
 
-import { ContributorsSection } from "./sections/contributors";
+// import { ContributorsSection } from "./sections/contributors";
 import { FAQSection } from "./sections/faq";
 // import { FeaturesSection } from "./sections/features";
 import { HeroSection } from "./sections/hero";
 // import { LogoCloudSection } from "./sections/logo-cloud";
 // import { StatisticsSection } from "./sections/statistics";
-import { SupportSection } from "./sections/support";
+// import { SupportSection } from "./sections/support";
 import { TemplatesSection } from "./sections/templates";
 import { TestimonialsSection } from "./sections/testimonials";
 
@@ -29,9 +29,9 @@ export const HomePage = () => {
       {/* <FeaturesSection /> */}
       <TemplatesSection />
       <TestimonialsSection />
-      <SupportSection />
+      {/* <SupportSection /> */}
       <FAQSection />
-      <ContributorsSection />
+      {/* <ContributorsSection /> */}
     </main>
   );
 };

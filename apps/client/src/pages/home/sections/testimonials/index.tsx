@@ -86,7 +86,7 @@ export const TestimonialsSection = () => (
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0, transition: { delay: index * 0.25 } }}
               className={cn(
-                "relative overflow-hidden rounded-lg bg-secondary-accent p-5 text-primary shadow-lg",
+                "relative overflow-hidden rounded-lg bg-primary p-5 text-primary-foreground shadow-lg",
                 index > 0 && "hidden lg:block",
               )}
             >

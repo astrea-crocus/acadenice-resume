@@ -6,14 +6,14 @@
     --border: var(--ac-teal-200);
 
     /* Primary */
-    --primary: var(--ac-teal-900);
-    --primary-accent: var(--ac-teal-800);
+    --primary: var(--ac-teal-500);
+    --primary-accent: var(--ac-teal-700);
     --primary-foreground: var(--ac-teal-50);
 
     /* Secondary */
-    --secondary: var(--ac-orange-200);
-    --secondary-accent: var(--ac-orange-100);
-    --secondary-foreground: var(--ac-orange-950);
+    --secondary: var(--ac-orange-500);
+    --secondary-accent: var(--ac-orange-700);
+    --secondary-foreground: var(--ac-orange-50);
 
     /* Error */
     --error: var(--rose-500);
@@ -42,13 +42,13 @@
     --border: var(--ac-teal-800);
 
     /* Primary */
-    --primary: var(--ac-teal-100);
+    --primary: var(--ac-teal-500);
     --primary-accent: var(--ac-teal-200);
-    --primary-foreground: var(--ac-teal-950);
+    --primary-foreground: var(--ac-teal-50);
 
     /* Secondary */
-    --secondary: var(--ac-orange-800);
-    --secondary-accent: var(--ac-orange-900);
+    --secondary: var(--ac-orange-500);
+    --secondary-accent: var(--ac-orange-200);
     --secondary-foreground: var(--ac-orange-50);
 
     /* Error */

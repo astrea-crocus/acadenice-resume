@@ -13,7 +13,7 @@ export const Header = () => (
   >
     <DonationBanner />
 
-    <div className="bg-gradient-to-b from-background to-transparent py-3">
+    <div className="bg-gradient-to-b from-primary via-primary via-20% to-transparent to-80% py-3">
       <div className="container flex items-center justify-between">
         <Link to="/">
           <Logo size={48} />
