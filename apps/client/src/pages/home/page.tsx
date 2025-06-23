@@ -19,7 +19,7 @@ export const HomePage = () => {
 
         <meta
           name="description"
-          content="A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+          content="Créer votre CV en ligne avec AcadéNice et son génerateur de CV !"
         />
       </Helmet>
 
