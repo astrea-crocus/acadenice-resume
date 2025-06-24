@@ -59,7 +59,7 @@ export class OpenIDStrategy extends PassportStrategy(Strategy, "openid") {
         user = await this.userService.create({
           email,
           picture,
-          locale: "en-US",
+          locale: "fr-FR",
           provider: "openid",
           name: displayName || uniqueId,
           emailVerified: true, // auto-verify emails

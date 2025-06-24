@@ -23,7 +23,7 @@ export const userSchema = z.object({
     .string()
     .email()
     .transform((value) => value.toLowerCase()),
-  locale: z.string().default("en-US"),
+  locale: z.string().default("fr-FR"),
   emailVerified: z.boolean().default(false),
   twoFactorEnabled: z.boolean().default(false),
   provider: z.enum(["email", "github", "google", "openid"]).default("email"),

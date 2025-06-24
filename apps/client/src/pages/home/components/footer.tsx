@@ -14,7 +14,7 @@ export const Footer = () => (
         <img src="/logo/logo.png" alt=" " height={96} className="rounded-sm" />
 
         <a href="https://acadenice.fr/">
-          <h2 className="text-xl font-medium">AcadeNice</h2>
+          <h2 className="text-xl font-medium">AcadéNice</h2>
         </a>
 
         <Copyright className="mt-6" />

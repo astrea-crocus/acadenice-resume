@@ -11,7 +11,7 @@ import { useResumeStore } from "@/client/stores/resume";
 
 import { SectionIcon } from "../shared/section-icon";
 
-const localFonts = ["Arial", "Cambria", "Garamond", "Times New Roman"];
+const localFonts = ["Josefin Sans", "Arial", "Cambria", "Garamond", "Times New Roman"];
 
 const fontSuggestions = [
   ...localFonts,

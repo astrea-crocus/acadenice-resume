@@ -46,7 +46,7 @@ export class GitHubStrategy extends PassportStrategy(Strategy, "github") {
         user = await this.userService.create({
           email,
           picture,
-          locale: "en-US",
+          locale: "fr-FR",
           provider: "github",
           name: displayName || createId(),
           emailVerified: true, // auto-verify emails

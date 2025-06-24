@@ -1,4 +1,6 @@
 export const colors: string[] = [
+  "#4cccb8", // AcadéNice turquoise
+  "#fda100", // AcadéNice orange
   "#475569", // slate-600
   "#57534e", // stone-600
   "#dc2626", // red-600
