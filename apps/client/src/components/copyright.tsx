@@ -1,4 +1,4 @@
-/* eslint-disable lingui/no-unlocalized-strings */
+import { t } from "@lingui/macro";
 import { cn } from "@reactive-resume/utils";
 
 type Props = {
@@ -13,7 +13,7 @@ export const Copyright = ({ className }: Props) => (
     )}
   >
     <span>
-      Sous licence{" "}
+      {t`Sous licence`}{" "}
       <a
         target="_blank"
         rel="noopener noreferrer nofollow"
@@ -23,10 +23,12 @@ export const Copyright = ({ className }: Props) => (
       </a>
     </span>
     <span>
-      Un projet passionné de <a href="https://www.amruthpillai.com/">Amruth Pillai</a>, modifier par
-      nos soins.
+      {t`Un projet passionné de`} <a href="https://www.amruthpillai.com/">{t`Amruth Pillai`}</a>,{" "}
+      {t`modifier par nos soins.`}
     </span>
 
-    <span className="mt-4">Reactive Resume {"v" + appVersion}</span>
+    <span className="mt-4">
+      {t`Reactive Resume`} {"v" + appVersion}
+    </span>
   </div>
 );

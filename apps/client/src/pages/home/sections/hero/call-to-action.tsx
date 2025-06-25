@@ -1,4 +1,4 @@
-/* eslint-disable lingui/no-unlocalized-strings */
+import { t } from "@lingui/macro";
 import { Button } from "@reactive-resume/ui";
 import { Link } from "react-router";
 
@@ -14,11 +14,11 @@ export const HeroCTA = () => {
     return (
       <>
         <Button asChild size="lg">
-          <Link to="/dashboard">Panneau de contrôle</Link>
+          <Link to="/dashboard">{t`Panneau de contrôle`}</Link>
         </Button>
 
         <Button size="lg" variant="link" onClick={() => logout()}>
-          Se déconnecter
+          {t`Se déconnecter`}
         </Button>
       </>
     );
@@ -27,11 +27,11 @@ export const HeroCTA = () => {
   return (
     <>
       <Button asChild size="lg">
-        <Link to="/auth/login">Se connecter</Link>
+        <Link to="/auth/login">{t`Se connecter`}</Link>
       </Button>
 
       <Button size="lg">
-        <Link to="/auth/register">S'inscrire</Link>
+        <Link to="/auth/register">{t`S'inscrire`}</Link>
       </Button>
     </>
   );

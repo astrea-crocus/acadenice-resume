@@ -1,6 +1,5 @@
 /* eslint-disable lingui/text-restrictions */
-/* eslint-disable lingui/no-unlocalized-strings */
-
+import { t } from "@lingui/macro";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
 
@@ -9,55 +8,48 @@ import { useLanguages } from "@/client/services/resume/translation";
 const Question1 = () => (
   <AccordionItem value="1">
     <AccordionTrigger className="text-left leading-relaxed">
-      Comment créer mon CV avec ce site ?
+      {t`Comment créer mon CV avec ce site ?`}
     </AccordionTrigger>
     <AccordionContent className="prose max-w-none dark:prose-invert">
       <p>
-        Une fois connecté(e), vous pouvez cliquer sur le bouton "Créer un nouveau CV" depuis votre
-        tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles,
-        expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout
-        moment.
+        {t`Une fois connecté(e), vous pouvez cliquer sur le bouton "Créer un nouveau CV" depuis votre tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles, expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout moment.`}
       </p>
       <p>
-        Le site sauvegarde automatiquement votre travail. Une fois votre CV prêt, vous pouvez le
-        télécharger en PDF ou le partager via un lien.
+        {t`Le site sauvegarde automatiquement votre travail. Une fois votre CV prêt, vous pouvez le télécharger en PDF ou le partager via un lien.`}
       </p>
     </AccordionContent>
   </AccordionItem>
 );
 
-// Puis-je personnaliser le design de mon CV ?
 const Question2 = () => (
   <AccordionItem value="2">
     <AccordionTrigger className="text-left leading-relaxed">
-      Puis-je personnaliser le design de mon CV ?
+      {t`Puis-je personnaliser le design de mon CV ?`}
     </AccordionTrigger>
     <AccordionContent className="prose max-w-none dark:prose-invert">
       <p>
-        Oui ! Vous pouvez changer les couleurs, la typographie, l’agencement des sections et même le
-        modèle utilisé. Il existe plusieurs modèles que vous pouvez tester à tout moment.
+        {t`Oui ! Vous pouvez changer les couleurs, la typographie, l’agencement des sections et même le modèle utilisé. Il existe plusieurs modèles que vous pouvez tester à tout moment.`}
       </p>
-      <p>Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV.</p>
+      <p>{t`Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV.`}</p>
     </AccordionContent>
   </AccordionItem>
 );
 
-// Puis-je traduire mon CV dans une autre langue ?
 const Question3 = () => {
   const { languages } = useLanguages();
 
   return (
     <AccordionItem value="3">
       <AccordionTrigger className="text-left leading-relaxed">
-        Puis-je traduire mon CV dans une autre langue ?
+        {t`Puis-je traduire mon CV dans une autre langue ?`}
       </AccordionTrigger>
       <AccordionContent className="prose max-w-none dark:prose-invert">
         <p>
-          Oui. Ce site prend en charge plusieurs langues. Vous pouvez créer différentes versions de
-          votre CV dans la langue de votre choix.
+          {t`Oui. Ce site prend en charge plusieurs langues. Vous pouvez créer différentes versions de votre CV dans la langue de votre choix.`}
         </p>
 
-        <p>Langues actuellement disponibles :</p>
+        <p>{t`Langues actuellement disponibles :`}</p>
+
         <div className="flex flex-wrap items-start justify-start gap-x-2 gap-y-4">
           {languages.map((language) => (
             <a
@@ -87,57 +79,49 @@ const Question3 = () => {
         </div>
 
         <p>
-          Si une langue manque ou si vous souhaitez contribuer à une traduction, vous pouvez le
-          faire sur notre espace de traduction.
+          {t`Si une langue manque ou si vous souhaitez contribuer à une traduction, vous pouvez le faire sur notre espace de traduction.`}
         </p>
       </AccordionContent>
     </AccordionItem>
   );
 };
 
-// Est-ce que mes données sont stockées en sécurité ?
 const Question4 = () => (
   <AccordionItem value="4">
     <AccordionTrigger className="text-left leading-relaxed">
-      Est-ce que mes données sont stockées en sécurité ?
+      {t`Est-ce que mes données sont stockées en sécurité ?`}
     </AccordionTrigger>
     <AccordionContent className="prose max-w-none dark:prose-invert">
       <p>
-        Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre
-        consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les
-        paramètres de votre compte.
+        {t`Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte.`}
       </p>
       <p>
-        Aucune publicité ni traçage n’est intégré à l’application. Votre vie privée est respectée.
+        {t`Aucune publicité ni traçage n’est intégré à l’application. Votre vie privée est respectée.`}
       </p>
     </AccordionContent>
   </AccordionItem>
 );
 
-// Qu'est-ce qu'AcadéNice ?
 const Question5 = () => (
   <AccordionItem value="5">
     <AccordionTrigger className="text-left leading-relaxed">
-      Qu'est-ce qu'AcadéNice ?
+      {t`Qu'est-ce qu'AcadéNice ?`}
     </AccordionTrigger>
     <AccordionContent className="prose max-w-none dark:prose-invert">
       <p>
-        AcadéNice est un centre de formation basé à Nice, spécialisé dans les parcours de remise à
-        niveau, de reconversion et de montée en compétences, en particulier dans les domaines du
-        numérique.
+        {t`AcadéNice est un centre de formation basé à Nice, spécialisé dans les parcours de remise à niveau, de reconversion et de montée en compétences, en particulier dans les domaines du numérique.`}
       </p>
       <p>
-        Ce site a été adapté pour accompagner les apprenants d’AcadéNice dans la création d’un CV
-        professionnel, en phase avec les standards actuels du recrutement.
+        {t`Ce site a été adapté pour accompagner les apprenants d’AcadéNice dans la création d’un CV professionnel, en phase avec les standards actuels du recrutement.`}
       </p>
       <p>
-        Pour en savoir plus sur AcadéNice, visitez{" "}
+        {t`Pour en savoir plus sur AcadéNice, visitez`}{" "}
         <a
           href="https://acadenice.fr/a-propos-de-nous-acadenice-centre-de-formation-nice/"
           target="_blank"
           rel="noreferrer"
         >
-          leur site web
+          {t`leur site web`}
         </a>
         .
       </p>
@@ -149,10 +133,9 @@ export const FAQSection = () => (
   <section id="faq" className="container relative py-24 sm:py-32">
     <div className="grid gap-12 lg:grid-cols-3">
       <div className="space-y-6">
-        <h2 className="text-4xl font-bold">Foire aux questions</h2>
-
+        <h2 className="text-4xl font-bold">{t`Foire aux questions`}</h2>
         <p className="text-base leading-loose">
-          Voici les réponses aux questions fréquentes sur l’utilisation de ce site.
+          {t`Voici les réponses aux questions fréquentes sur l’utilisation de ce site.`}
         </p>
       </div>
 

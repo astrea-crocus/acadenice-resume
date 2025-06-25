@@ -60,3 +60,23 @@
 - Ajout des couleurs de l'AcadéNice dans la palette proposée dans le constructeur de CV
 - Ajout de la police `Josefin Sans` dans les polices proposées dans le constructeur de CV
 - Création de `routes-reactive-resume.md` pour garder une vue d'ensemble du projet>
+
+## 25 Juin 2025
+
+- Vérifications des `<title>` de toutes les pages
+  - Changement de ``{t`Reactive Resume`}`` en ``{t`AcadéNice`}``
+  - Compilation de Lingui
+- Vérification des `alt=` des `<img>`
+  - Suppression du contenu des `alt=` inutile pour une meilleur lecture des logiciels pour malvoyants
+- Modification du contenu du mail envoyé pour réinitialiser le mot de passe
+- Modification des textes sur les pages pour qu'ils puissent être traduisable plus tard, puis recompilation avec Lingui
+- Ajout de nouveaux scripts :
+  ```json
+  "scripts": {
+    "lingui:extract": "lingui extract",
+    "lingui:compile": "lingui compile",
+    "lingui:update": "lingui extract && lingui compile"
+  }
+  ```
+- Petite personnalisation de la sidebar du builder de CV
+- Léger ajustement du header pour que le logo ne soit plus au dessus de textes lorsque l'utilisateur scroll sur son pc

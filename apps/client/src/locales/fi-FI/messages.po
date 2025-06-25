@@ -30,11 +30,11 @@ msgstr "Valittavana on {templatesCount} ansioluettelomallipohjaa"
 msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, one {Sarake} other {Sarakkeet}}"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:21
 msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
 msgstr "<0>Rakensin Reaktiivisen ansioluettelon pääasiassa itse vapaa-ajallani, saaden paljon apua muilta upeilta avoimen lähdekoodin avustajilta.</0><1>Jos pidät sovelluksesta ja haluat tukea sen pysymistä ikuisesti ilmaisena, lahjoita mitä voit varaa antaa.</1>"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:52
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Olen varma, että sovellus ei ole täydellinen, mutta haluaisin sen olevan.</0><1>Jos kohtaat ongelmia luodessasi ansioluetteloasi tai sinulla on idea, joka auttaisi sinua ja muita käyttäjiä luomaan ansioluetteloasi helpommin, ilmoita ongelmasta repositoriossa tai lähetä minulle sähköpostia asiasta.</1>"
 
@@ -42,7 +42,7 @@ msgstr "<0>Olen varma, että sovellus ei ole täydellinen, mutta haluaisin sen o
 msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>Huom:</0> Hyödyntämällä OpenAI API:a, tunnustat ja hyväksyt OpenAI:n määrittelemät <1>käyttöehdot</1> ja <2>tietosuojakäytännöt</2>. Huomaa, että Reaktiivinen ansioluettelo ei ota vastuuta palvelun epäasianmukaisesta tai luvattomasta käytöstä aiheutuvista seurauksista tai vastuista, jotka lankeavat yksinomaan käyttäjälle."
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:86
 msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 msgstr "<0>Yhteisö on käyttänyt paljon aikaa kirjoittaakseen dokumentaation Reaktiiviselle ansioluettelolle, ja olen varma, että se auttaa sinua pääsemään alkuun sovelluksessa.</0><1>Siellä on myös paljon esimerkkejä auttamaan sinua pääsemään alkuun, ja ominaisuuksia, joista et ehkä tiedä ja jotka voisivat auttaa sinua rakentamaan täydellisen ansioluettelosi.</1>"
 
@@ -56,13 +56,13 @@ msgstr "<0>Kaksivaiheinen todennus on käytössä.</0> Sinua pyydetään syött�
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
-msgstr "Ilmainen ja avoimen lähdekoodin ansioluettelon rakentaja"
+#~ msgid "A free and open-source resume builder"
+#~ msgstr "Ilmainen ja avoimen lähdekoodin ansioluettelon rakentaja"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
-msgstr "Ilmainen ja avoimen lähdekoodin ansioluettelon rakentaja, joka yksinkertaistaa ansioluettelon luomisen, päivittämisen ja jakamisen prosessia."
+#~ msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+#~ msgstr "Ilmainen ja avoimen lähdekoodin ansioluettelon rakentaja, joka yksinkertaistaa ansioluettelon luomisen, päivittämisen ja jakamisen prosessia."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:59
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
@@ -70,8 +70,8 @@ msgid "A link has been copied to your clipboard."
 msgstr "Linkki on kopioitu leikepöydällesi."
 
 #: apps/client/src/components/copyright.tsx:29
-msgid "A passion project by <0>Amruth Pillai</0>"
-msgstr "Intohermo <0>Amruth Pillai</0>"
+#~ msgid "A passion project by <0>Amruth Pillai</0>"
+#~ msgstr "Intohermo <0>Amruth Pillai</0>"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:57
 msgid "A password reset link should have been sent to your inbox, if an account existed with the email you provided."
@@ -88,6 +88,26 @@ msgstr "Käyttäjä tällä sähköpostiosoitteella ja/tai käyttäjänimellä o
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "A4"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/builder/page.tsx:60
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/page.tsx:20
+#: apps/client/src/pages/public/page.tsx:74
+#: apps/client/src/pages/public/page.tsx:95
+msgid "AcadéNice"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:112
+msgid "AcadéNice est un centre de formation basé à Nice, spécialisé dans les parcours de remise à niveau, de reconversion et de montée en compétences, en particulier dans les domaines du numérique."
+msgstr ""
 
 #. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:270
@@ -128,6 +148,10 @@ msgstr "AI"
 #: apps/client/src/pages/auth/register/page.tsx:71
 msgid "Already have an account?"
 msgstr "Onko sinulla jo tili?"
+
+#: apps/client/src/components/copyright.tsx:26
+msgid "Amruth Pillai"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:144
 msgid "An error occurred while validating the file."
@@ -191,6 +215,18 @@ msgstr "Opintoala"
 msgid "Aspect Ratio"
 msgstr "Kuvasuhde"
 
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
+msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
+#~ msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez &#128521;."
+#~ msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:99
+msgid "Aucune publicité ni traçage n’est intégré à l’application. Votre vie privée est respectée."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:51
 msgid "Available in {languagesCount} languages"
 msgstr "Saatavilla {languagesCount} kielillä"
@@ -230,6 +266,10 @@ msgstr "Perusasiat"
 msgid "Basics"
 msgstr "Perusasiat"
 
+#: apps/client/src/pages/home/sections/templates/index.tsx:13
+msgid "Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:191
 msgid "Border"
 msgstr "Reunus"
@@ -242,7 +282,6 @@ msgstr "Reunussäde"
 msgid "Built with"
 msgstr "Rakennettu"
 
-#: apps/client/src/components/copyright.tsx:27
 #: apps/client/src/pages/home/sections/contributors/index.tsx:20
 msgid "By the community, for the community."
 msgstr "Yhteisön tekemä, yhteisölle."
@@ -258,6 +297,10 @@ msgstr "Peruuta"
 #: apps/client/src/components/ai-actions.tsx:106
 msgid "Casual"
 msgstr "Rentoutunut"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:115
+msgid "Ce site a été adapté pour accompagner les apprenants d’AcadéNice dans la création d’un CV professionnel, en phase avec les standards actuels du recrutement."
+msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:130
 msgid "Center Artboard"
@@ -299,6 +342,10 @@ msgstr "Koodin on oltava tarkalleen 6 numeroa pitkä."
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:136
 msgid "Columns"
 msgstr "Sarakkeet"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:11
+msgid "Comment créer mon CV avec ce site ?"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:39
 msgid "Company"
@@ -354,6 +401,14 @@ msgstr "Luo yksi nyt"
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:259
 msgid "Create Sample Resume"
 msgstr "Luo esimerkki ansioluettelosta"
+
+#: apps/client/src/pages/home/page.tsx:20
+msgid "Créer son CV en ligne"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:26
+msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
 msgid "Current Password"
@@ -443,7 +498,7 @@ msgstr "Poista kaksivaiheinen todennus"
 msgid "Discard"
 msgstr "Hylkää"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:105
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:110
 msgid "Documentation"
 msgstr "Dokumentointi"
 
@@ -451,7 +506,7 @@ msgstr "Dokumentointi"
 msgid "Don't have an account?"
 msgstr "Ei tiliä?"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:83
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:84
 msgid "Don't know where to begin? Hit the docs!"
 msgstr "Älä tiedä mistä aloittaa? Aloita dokumenteista!"
 
@@ -459,7 +514,7 @@ msgstr "Älä tiedä mistä aloittaa? Aloita dokumenteista!"
 msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "Et näe omaa kieltäsi? <0>Auta kääntämään sovellusta.</0>"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:41
 msgid "Donate to Reactive Resume"
 msgstr " Lahjoita reaktiiviselle CV:lle"
 
@@ -515,6 +570,10 @@ msgstr "Sähköposti"
 msgid "Enable 2FA"
 msgstr "Ota käyttöön 2FA"
 
+#: apps/client/src/pages/home/sections/hero/index.tsx:24
+msgid "Enfin,"
+msgstr ""
+
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "Syötä uusi salasana alle ja varmista, että se on turvallinen."
@@ -547,13 +606,17 @@ msgstr ""
 msgid "Errors"
 msgstr "Virheet"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:92
+msgid "Est-ce que mes données sont stockées en sécurité ?"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "Vaikka et pystyisikään antamaan taloudellista panostusta, voit silti tehdä eron antamalla GitHub-varastolle tähti, levittämällä sanaa ystävillesi tai lähettämällä nopean viestin kertoaksesi, miten Reactive Resume on auttanut sinua. Palaute ja tuki ovat aina tervetulleita ja erittäin arvostettuja!"
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Tutustu saatavilla oleviin mallipohjiin Reactive Resumessa ja katsele niiden avulla luotuja ansioluetteloita. Ne voivat toimia myös esimerkkeinä auttaakseen seuraavan ansioluettelosi luomisessa."
+#~ msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+#~ msgstr "Tutustu saatavilla oleviin mallipohjiin Reactive Resumessa ja katsele niiden avulla luotuja ansioluetteloita. Ne voivat toimia myös esimerkkeinä auttaakseen seuraavan ansioluettelosi luomisessa."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:121
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:39
@@ -570,12 +633,16 @@ msgid "Filetype"
 msgstr "Tiedostotyyppi"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:38
-msgid "Finally,"
-msgstr "Lopuksi,"
+#~ msgid "Finally,"
+#~ msgstr "Lopuksi,"
 
 #: apps/client/src/components/ai-actions.tsx:90
 msgid "Fix Spelling & Grammar"
 msgstr "Korjaa oikeinkirjoitus ja kielioppi"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:136
+msgid "Foire aux questions"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
@@ -614,7 +681,7 @@ msgstr "Unohditko salasanasi?"
 msgid "Format"
 msgstr "Muoto"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:49
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:50
 msgid "Found a bug, or have an idea for a new feature?"
 msgstr "Löysitkö virheen tai onko sinulla idea uudesta ominaisuudesta?"
 
@@ -636,8 +703,8 @@ msgid "Generate a random title for your resume"
 msgstr "Luo satunnainen otsikko ansioluettelollesi"
 
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:32
-msgid "Get Started"
-msgstr "Aloita"
+#~ msgid "Get Started"
+#~ msgstr "Aloita"
 
 #: apps/client/src/pages/auth/_components/social-auth.tsx:18
 msgid "GitHub"
@@ -652,7 +719,6 @@ msgid "Give your old resume a new name."
 msgstr "Anna vanhalle ansioluettelollesi uusi nimi."
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:67
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:18
 msgid "Go to Dashboard"
 msgstr "Siirry hallintapaneeliin"
 
@@ -713,8 +779,12 @@ msgid "Host your resume publicly"
 msgstr "Julkaise ansioluettelosi julkisesti"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
-msgstr "Rakastan aina kuulla Reactive Resume -sovelluksen käyttäjiltä palautetta tai tukea. Tässä on joitakin viestejä, jotka olen saanut. Jos sinulla on palautetta, voit vapaasti lähettää minulle sähköpostia osoitteeseen <0>{sähköposti}</0>."
+#~ msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+#~ msgstr "Rakastan aina kuulla Reactive Resume -sovelluksen käyttäjiltä palautetta tai tukea. Tässä on joitakin viestejä, jotka olen saanut. Jos sinulla on palautetta, voit vapaasti lähettää minulle sähköpostia osoitteeseen <0>{sähköposti}</0>."
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:74
+msgid "ici"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:83
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
@@ -732,6 +802,10 @@ msgstr "Jos poistat kaksivaiheisen tunnistautumisen käytöstä, sinun ei enää
 #: apps/client/src/pages/home/sections/support/index.tsx:59
 msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
 msgstr "Jos olet monikielinen, arvostamme apuasi sovelluksen tuomisessa useampiin kieliin ja yhteisöihin. Älä huoli, vaikket näe kieltäsi listalla - kerro minulle GitHubissa, niin huolehdin sen sisällyttämisestä. Valmis aloittamaan? Siirry käännöstyöhön osoitteessa Crowdin klikkaamalla alla olevaa linkkiä."
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:69
+msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:309
 msgid "Import"
@@ -760,8 +834,8 @@ msgid "In this section, you can delete your account and all the data associated 
 msgstr "Tässä osiossa voit poistaa tilisi ja siihen liittyvät tiedot, mutta pidä mielessäsi, että <0> tämä toiminto on peruuttamaton </0>."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:135
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:116
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:117
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:121
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:122
 msgid "Information"
 msgstr "Tiedot"
 
@@ -836,6 +910,10 @@ msgstr "Tunniste"
 msgid "Language"
 msgstr "Kieli"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:51
+msgid "Langues actuellement disponibles :"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
@@ -847,13 +925,25 @@ msgstr "Päivitetty viimeksi {lastUpdated}"
 msgid "Layout"
 msgstr "Asettelu"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:18
+msgid "Le site sauvegarde automatiquement votre travail. Une fois votre CV prêt, vous pouvez le télécharger en PDF ou le partager via un lien."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:38
-msgid "Learn more"
-msgstr "Lue lisää"
+#~ msgid "Learn more"
+#~ msgstr "Lue lisää"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:33
+msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "Kirje"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:124
+msgid "leur site web"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:64
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:77
@@ -861,8 +951,8 @@ msgid "Level"
 msgstr "Taso"
 
 #: apps/client/src/components/copyright.tsx:16
-msgid "Licensed under <0>MIT</0>"
-msgstr "Lisensoitu <0>MIT</0>"
+#~ msgid "Licensed under <0>MIT</0>"
+#~ msgstr "Lisensoitu <0>MIT</0>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
 msgid "Light"
@@ -908,7 +998,6 @@ msgid "Locking a resume will prevent any further changes to it. This is useful w
 msgstr "Ansioluettelon lukitseminen estää siihen tehtävät muutokset. Tämä on hyödyllistä, kun olet jo jakanut ansioluettelosi jonkun kanssa etkä halua tehdä siihen vahingossa muutoksia."
 
 #: apps/client/src/components/user-options.tsx:38
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:23
 msgid "Logout"
 msgstr "Kirjaudu ulos"
 
@@ -953,6 +1042,10 @@ msgstr "MIT-lisenssi"
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
 msgid "Model"
 msgstr "Malli"
+
+#: apps/client/src/components/copyright.tsx:27
+msgid "modifier par nos soins."
+msgstr ""
 
 #: apps/client/src/pages/auth/register/page.tsx:98
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:59
@@ -1051,6 +1144,18 @@ msgstr "tai jatka"
 msgid "Organization"
 msgstr "Organisaatio"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:31
+msgid "Oui ! Vous pouvez changer les couleurs, la typographie, l’agencement des sections et même le modèle utilisé. Il existe plusieurs modèles que vous pouvez tester à tout moment."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:48
+msgid "Oui. Ce site prend en charge plusieurs langues. Vous pouvez créer différentes versions de votre CV dans la langue de votre choix."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:96
+msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
@@ -1060,6 +1165,10 @@ msgstr "Sivu"
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
 msgstr "Sivu {pageNumber}"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:17
+msgid "Panneau de contrôle"
+msgstr ""
 
 #: apps/client/src/pages/auth/login/page.tsx:110
 #: apps/client/src/pages/auth/register/page.tsx:163
@@ -1071,6 +1180,10 @@ msgstr "Salasana"
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:72
 msgid "PDF"
 msgstr "PDF"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:31
+msgid "Pensé pour les étudiants d’AcadéNice, cet outil vous aide à rédiger un CV prêt pour les candidatures, lisible par les recruteurs et les systèmes ATS."
+msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:63
 msgid "Personal notes for each resume"
@@ -1118,6 +1231,14 @@ msgstr "Asema"
 msgid "Position"
 msgstr "Asema"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:118
+msgid "Pour en savoir plus sur AcadéNice, visitez"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:72
+msgid "Pour en savoir plus sur les formations proposées par AcadéNice, c'est"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:96
 msgid "Powered by"
 msgstr "Voimanlähteenä"
@@ -1131,8 +1252,8 @@ msgid "Primary Color"
 msgstr "Primary Color"
 
 #: apps/client/src/pages/home/components/footer.tsx:50
-msgid "Privacy Policy"
-msgstr "Tietosuojakäytäntö"
+#~ msgid "Privacy Policy"
+#~ msgstr "Tietosuojakäytäntö"
 
 #: apps/client/src/components/ai-actions.tsx:109
 #: apps/client/src/components/ai-actions.tsx:112
@@ -1151,25 +1272,23 @@ msgstr "Julkinen"
 msgid "Publisher"
 msgstr "Julkaistut"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:69
+#: apps/client/src/pages/home/sections/faq/index.tsx:27
+msgid "Puis-je personnaliser le design de mon CV ?"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:44
+msgid "Puis-je traduire mon CV dans une autre langue ?"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:108
+msgid "Qu'est-ce qu'AcadéNice ?"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:70
 msgid "Raise an issue"
 msgstr "Luo ongelma"
 
-#: apps/client/src/components/copyright.tsx:35
-#: apps/client/src/pages/auth/backup-otp/page.tsx:52
-#: apps/client/src/pages/auth/forgot-password/page.tsx:49
-#: apps/client/src/pages/auth/login/page.tsx:55
-#: apps/client/src/pages/auth/register/page.tsx:64
-#: apps/client/src/pages/auth/reset-password/page.tsx:60
-#: apps/client/src/pages/auth/verify-email/page.tsx:43
-#: apps/client/src/pages/auth/verify-otp/page.tsx:52
-#: apps/client/src/pages/builder/page.tsx:60
-#: apps/client/src/pages/dashboard/resumes/page.tsx:20
-#: apps/client/src/pages/dashboard/settings/page.tsx:16
-#: apps/client/src/pages/home/components/footer.tsx:18
-#: apps/client/src/pages/home/page.tsx:24
-#: apps/client/src/pages/public/page.tsx:74
-#: apps/client/src/pages/public/page.tsx:95
+#: apps/client/src/components/copyright.tsx:31
 msgid "Reactive Resume"
 msgstr "Reaktiivinen ansioluettelo"
 
@@ -1248,6 +1367,10 @@ msgstr "Monipuolinen ominaisuuksiltaan, ei hinnoiltaan."
 msgid "Rounded"
 msgstr "Pyöristetty"
 
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:34
+msgid "S'inscrire"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
@@ -1279,6 +1402,14 @@ msgstr "Vieritä kohtaan Pan"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:104
 msgid "Scroll to Zoom"
 msgstr "Vieritä zoomaukseen"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:30
+msgid "Se connecter"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:21
+msgid "Se déconnecter"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
@@ -1312,7 +1443,7 @@ msgstr "Itse-isännöidy Dockerilla"
 msgid "Send Email"
 msgstr "Lähetä sähköposti"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:74
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:75
 msgid "Send me a message"
 msgstr "Lähetä minulle viesti"
 
@@ -1348,6 +1479,10 @@ msgstr "Näytä rivinvaihto"
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "Näytä Sivunumerot"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:82
+msgid "Si une langue manque ou si vous souhaitez contribuer à une traduction, vous pouvez le faire sur notre espace de traduction."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:248
 msgid "Sidebar"
@@ -1412,6 +1547,10 @@ msgstr "Jotain meni pieleen tulostettaessa ansioluetteloasi. Yritä myöhemmin u
 msgid "Something went wrong while processing your request. Please try again later or raise an issue on GitHub."
 msgstr "Jotain meni pieleen käsiteltäessä pyyntöäsi. Yritä myöhemmin uudelleen tai tee ongelmatilanne GitHubiin."
 
+#: apps/client/src/components/copyright.tsx:16
+msgid "Sous licence"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:87
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
 msgid "Square"
@@ -1452,7 +1591,7 @@ msgstr "Säilytä varakoodisi turvallisesti"
 msgid "Summary"
 msgstr "Yhteenveto"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:18
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:19
 msgid "Support the app by donating what you can!"
 msgstr "Tue sovellusta lahjoittamalla mitä voit!"
 
@@ -1468,19 +1607,23 @@ msgstr "Tukee A4/Kirje-sivuformaatteja"
 msgid "System"
 msgstr "Järjestelmä"
 
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:67
+msgid "Témoignages"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:65
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
 msgid "Template"
 msgstr "Pohja"
 
-#: apps/client/src/pages/home/sections/templates/index.tsx:9
+#: apps/client/src/pages/home/sections/templates/index.tsx:10
 msgid "Templates"
 msgstr "Mallipohjat"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:68
-msgid "Testimonials"
-msgstr "Asiakaspalautteet"
+#~ msgid "Testimonials"
+#~ msgstr "Asiakaspalautteet"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
@@ -1583,6 +1726,10 @@ msgstr "Opiskelumuoto"
 msgid "Typography"
 msgstr "Typografia"
 
+#: apps/client/src/components/copyright.tsx:26
+msgid "Un projet passionné de"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "Alleviivaa Linkit"
@@ -1590,6 +1737,10 @@ msgstr "Alleviivaa Linkit"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:76
 msgid "Undo"
 msgstr "Kumoa"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:15
+msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouveau CV\" depuis votre tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles, expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout moment."
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
@@ -1671,8 +1822,8 @@ msgid "Verify your email address"
 msgstr "Varmista sähköpostiosoitteesi"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:26
-msgid "Version 4"
-msgstr "Versio 4"
+#~ msgid "Version 4"
+#~ msgstr "Versio 4"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
 msgid "Views"
@@ -1685,6 +1836,10 @@ msgstr "Näkyvä"
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:70
 msgid "Visit <0>Phosphor Icons</0> for a list of available icons"
 msgstr "Luettelo saatavilla olevista kuvakkeista on osoitteessa <0>Phosphor Icons</0>."
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:138
+msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
+msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:61
 msgid "We verify your email address only to ensure that we can send you a password reset link in case you forget your password."
@@ -1705,8 +1860,8 @@ msgid "Website"
 msgstr "Verkkosivusto"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:32
-msgid "What's new in the latest version"
-msgstr "Mitä uutta viimeisimmässä versiossa"
+#~ msgid "What's new in the latest version"
+#~ msgstr "Mitä uutta viimeisimmässä versiossa"
 
 #: apps/client/src/pages/public/error.tsx:26
 msgid "You are not authorized to access this page."
@@ -1779,4 +1934,3 @@ msgstr "Lähennä"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:118
 msgid "Zoom Out"
 msgstr "Loitonna"
-

@@ -1,4 +1,5 @@
-/* eslint-disable lingui/no-unlocalized-strings */
+/* eslint-disable lingui/text-restrictions */
+import { t } from "@lingui/macro";
 import { templatesList } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
 
@@ -6,10 +7,10 @@ export const TemplatesSection = () => (
   <section id="sample-resumes" className="relative py-24 sm:py-32">
     <div className="container flex flex-col gap-12 lg:min-h-[600px] lg:flex-row lg:items-start">
       <div className="space-y-4 lg:mt-16 lg:basis-96">
-        <h2 className="text-4xl font-bold">Templates</h2>
+        <h2 className="text-4xl font-bold">{t`Templates`}</h2>
 
         <p className="leading-relaxed">
-          Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider.
+          {t`Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider.`}
         </p>
       </div>
 

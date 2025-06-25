@@ -1,6 +1,6 @@
-/* eslint-disable lingui/text-restrictions */
 /* eslint-disable lingui/no-unlocalized-strings */
-
+/* eslint-disable lingui/text-restrictions */
+import { t } from "@lingui/macro";
 import { Quotes } from "@phosphor-icons/react";
 import { cn } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
@@ -64,14 +64,14 @@ const testimonials: Testimonial[][] = [
 export const TestimonialsSection = () => (
   <section id="testimonials" className="container relative space-y-12 py-24 sm:py-32">
     <div className="space-y-6 text-center">
-      <h1 className="text-4xl font-bold">Témoignages</h1>
+      <h1 className="text-4xl font-bold">{t`Témoignages`}</h1>
       <h3 className="text-xl">
-        Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent.
+        {t`Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent.`}
       </h3>
       <p className="mx-auto max-w-2xl leading-relaxed">
-        Pour en savoir plus sur les formations proposées par AcadéNice, c'est{" "}
+        {t`Pour en savoir plus sur les formations proposées par AcadéNice, c'est`}{" "}
         <a href={url} className="underline">
-          ici
+          {t`ici`}
         </a>{" "}
         !
       </p>

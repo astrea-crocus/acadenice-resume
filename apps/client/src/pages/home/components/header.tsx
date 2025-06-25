@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router";
 
-import { Logo } from "@/client/components/logo";
-
+import { AnimatedLogo } from "./_animated-logo";
 import { DonationBanner } from "./donation-banner";
 
 export const Header = () => (
@@ -13,12 +11,9 @@ export const Header = () => (
   >
     <DonationBanner />
 
-    <div className="bg-gradient-to-b from-background to-transparent py-3">
-      <div className="container flex items-center justify-between">
-        <Link to="/">
-          <Logo size={48} />
-        </Link>
-
+    <div className="bg-primary py-3 lg:bg-transparent lg:bg-gradient-to-b lg:from-primary lg:to-transparent lg:bg-blend-multiply lg:backdrop-blur-md xl:bg-gradient-to-b xl:from-background xl:to-transparent xl:backdrop-blur-none">
+      <div className="container flex max-w-screen-2xl items-center justify-between">
+        <AnimatedLogo />
         <div />
       </div>
     </div>

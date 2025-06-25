@@ -30,11 +30,11 @@ msgstr "{templatesCount} șabloane de CV din care să alegeți"
 msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, one {Coloana} other {Coloane}}"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:21
 msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
 msgstr "<0>Am construit Reactive Resume în mare parte de unul singur, în timpul meu liber, cu mult ajutor din partea altor mari colaboratori open-source. /0><1>Dacă vă place aplicația și doriți să susțineți să o păstrați gratuit pentru totdeauna, vă rugăm să donați orice vă puteți permite să oferiți.</1>"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:52
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Sunt sigur că aplicația nu este perfectă, dar aș vrea să fie. /0><1>Dacă v-ați confruntat cu probleme în timp ce creați reluarea, sau aveți o idee care v-ar ajuta pe voi și pe alți utilizatori să vă creați mai ușor reluarea, plasează o problemă în depozit sau trimite-mi un e-mail despre ea. /1>"
 
@@ -42,7 +42,7 @@ msgstr "<0>Sunt sigur că aplicația nu este perfectă, dar aș vrea să fie. /0
 msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>Notă: </0>Utilizând API-ul OpenAI, confirmaţi şi acceptaţi termenii de utilizare </1> şi <2>politica de confidenţialitate</2> subliniaţi de OpenAI. Vă rugăm să reţineţi că Resume Reactiv nu are nici o responsabilitate pentru utilizarea incorectă sau neautorizată a serviciului, şi orice repercusiuni sau pasive care decurg exclusiv din acestea sunt suportate de utilizator."
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:86
 msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 msgstr "<0>Comunitatea a petrecut mult timp scriind documentația pentru reactivarea reactivă; și sunt sigur că te va ajuta să începi cu aplicația. /0><1>Există, de asemenea, o mulțime de exemple pentru a vă ajuta să începeți, și caracteristici despre care s-ar putea să nu știți care te-ar putea ajuta să construiești reluarea perfectă. /1>"
 
@@ -56,13 +56,13 @@ msgstr "<0>Autentificarea în doi factori este activată.</0> Vi se va cere să 
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
-msgstr "Un constructor de CV-uri gratuit și open-source"
+#~ msgid "A free and open-source resume builder"
+#~ msgstr "Un constructor de CV-uri gratuit și open-source"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
-msgstr "Un constructor de reluare gratuit și open-source care simplifică procesul de creare, actualizare și partajare reluare."
+#~ msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+#~ msgstr "Un constructor de reluare gratuit și open-source care simplifică procesul de creare, actualizare și partajare reluare."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:59
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
@@ -70,8 +70,8 @@ msgid "A link has been copied to your clipboard."
 msgstr "Un link a fost copiat în clipboard."
 
 #: apps/client/src/components/copyright.tsx:29
-msgid "A passion project by <0>Amruth Pillai</0>"
-msgstr "Un proiect pasional de <0>Amruth Pillai</0>"
+#~ msgid "A passion project by <0>Amruth Pillai</0>"
+#~ msgstr "Un proiect pasional de <0>Amruth Pillai</0>"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:57
 msgid "A password reset link should have been sent to your inbox, if an account existed with the email you provided."
@@ -88,6 +88,26 @@ msgstr "Există deja un utilizator cu această adresă de e-mail şi/sau numele 
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "A4"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/builder/page.tsx:60
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/page.tsx:20
+#: apps/client/src/pages/public/page.tsx:74
+#: apps/client/src/pages/public/page.tsx:95
+msgid "AcadéNice"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:112
+msgid "AcadéNice est un centre de formation basé à Nice, spécialisé dans les parcours de remise à niveau, de reconversion et de montée en compétences, en particulier dans les domaines du numérique."
+msgstr ""
 
 #. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:270
@@ -128,6 +148,10 @@ msgstr "AI"
 #: apps/client/src/pages/auth/register/page.tsx:71
 msgid "Already have an account?"
 msgstr "Aveți deja un cont?"
+
+#: apps/client/src/components/copyright.tsx:26
+msgid "Amruth Pillai"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:144
 msgid "An error occurred while validating the file."
@@ -191,6 +215,18 @@ msgstr "Domeniul de studiu"
 msgid "Aspect Ratio"
 msgstr "Raport aspect"
 
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
+msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
+#~ msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez &#128521;."
+#~ msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:99
+msgid "Aucune publicité ni traçage n’est intégré à l’application. Votre vie privée est respectée."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:51
 msgid "Available in {languagesCount} languages"
 msgstr "Disponibil în {languagesCount} limbi"
@@ -230,6 +266,10 @@ msgstr "Bazele"
 msgid "Basics"
 msgstr "Bazele"
 
+#: apps/client/src/pages/home/sections/templates/index.tsx:13
+msgid "Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:191
 msgid "Border"
 msgstr "Border"
@@ -242,7 +282,6 @@ msgstr "Raza frontierei"
 msgid "Built with"
 msgstr "Construit cu"
 
-#: apps/client/src/components/copyright.tsx:27
 #: apps/client/src/pages/home/sections/contributors/index.tsx:20
 msgid "By the community, for the community."
 msgstr "Construit de comunitate, pentru comunitate."
@@ -258,6 +297,10 @@ msgstr "Anulează"
 #: apps/client/src/components/ai-actions.tsx:106
 msgid "Casual"
 msgstr "Cazual"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:115
+msgid "Ce site a été adapté pour accompagner les apprenants d’AcadéNice dans la création d’un CV professionnel, en phase avec les standards actuels du recrutement."
+msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:130
 msgid "Center Artboard"
@@ -299,6 +342,10 @@ msgstr "Codul trebuie să fie format din exact 6 cifre."
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:136
 msgid "Columns"
 msgstr "Coloane"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:11
+msgid "Comment créer mon CV avec ce site ?"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:39
 msgid "Company"
@@ -354,6 +401,14 @@ msgstr "Creați unul acum"
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:259
 msgid "Create Sample Resume"
 msgstr "Creați un exemplu de CV"
+
+#: apps/client/src/pages/home/page.tsx:20
+msgid "Créer son CV en ligne"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:26
+msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
 msgid "Current Password"
@@ -443,7 +498,7 @@ msgstr "Dezactivează 2FA"
 msgid "Discard"
 msgstr "Renunțați"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:105
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:110
 msgid "Documentation"
 msgstr "Documentație"
 
@@ -451,7 +506,7 @@ msgstr "Documentație"
 msgid "Don't have an account?"
 msgstr "Nu ai un cont?"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:83
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:84
 msgid "Don't know where to begin? Hit the docs!"
 msgstr "Nu știi de unde să începi? Atacă documentele!"
 
@@ -459,7 +514,7 @@ msgstr "Nu știi de unde să începi? Atacă documentele!"
 msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "Nu vezi limba ta? <0>Ajută-ne să traducem aplicația.</0>"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:41
 msgid "Donate to Reactive Resume"
 msgstr "Donează pentru Reactivare Reluare"
 
@@ -515,6 +570,10 @@ msgstr "E-mail"
 msgid "Enable 2FA"
 msgstr "Activează 2FA"
 
+#: apps/client/src/pages/home/sections/hero/index.tsx:24
+msgid "Enfin,"
+msgstr ""
+
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "Introdu o nouă parolă mai jos și asigură-te că este sigură."
@@ -547,13 +606,17 @@ msgstr ""
 msgid "Errors"
 msgstr "Erori"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:92
+msgid "Est-ce que mes données sont stockées en sécurité ?"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "Chiar dacă nu sunteți în măsură să contribuiți financiar, puteți totuși să faceți o diferență dând o stea depozitului GitHub; distribuirea cuvântului prietenilor tăi sau adăugarea unui mesaj rapid pentru a mă anunța cum te ajută Resume Reactiv. Feedback-ul și suportul dvs. sunt întotdeauna binevenite și foarte apreciate!"
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Explorați șabloanele disponibile în CV-ul reactiv și vizualizați CV-urile create cu acestea. Ele ar putea servi, de asemenea, ca exemple pentru a ghida crearea următorului dvs. CV."
+#~ msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+#~ msgstr "Explorați șabloanele disponibile în CV-ul reactiv și vizualizați CV-urile create cu acestea. Ele ar putea servi, de asemenea, ca exemple pentru a ghida crearea următorului dvs. CV."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:121
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:39
@@ -570,12 +633,16 @@ msgid "Filetype"
 msgstr "Tipul fișierului"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:38
-msgid "Finally,"
-msgstr "În Sfârșit"
+#~ msgid "Finally,"
+#~ msgstr "În Sfârșit"
 
 #: apps/client/src/components/ai-actions.tsx:90
 msgid "Fix Spelling & Grammar"
 msgstr "Remediați ortografie și gramatică"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:136
+msgid "Foire aux questions"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
@@ -614,7 +681,7 @@ msgstr "V-ați uitat parola?"
 msgid "Format"
 msgstr "Format"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:49
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:50
 msgid "Found a bug, or have an idea for a new feature?"
 msgstr "Ați găsit o eroare sau aveți o idee pentru o funcție nouă?"
 
@@ -636,8 +703,8 @@ msgid "Generate a random title for your resume"
 msgstr "Generați un titlu aleatoriu pentru CV-ul dvs"
 
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:32
-msgid "Get Started"
-msgstr "Începeți"
+#~ msgid "Get Started"
+#~ msgstr "Începeți"
 
 #: apps/client/src/pages/auth/_components/social-auth.tsx:18
 msgid "GitHub"
@@ -652,7 +719,6 @@ msgid "Give your old resume a new name."
 msgstr "Dă un nume reluat vechi."
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:67
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:18
 msgid "Go to Dashboard"
 msgstr "Du-te la tabloul de bord"
 
@@ -713,8 +779,12 @@ msgid "Host your resume publicly"
 msgstr "Găzduiește-ți CV-ul în mod public"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
-msgstr "Mereu îmi place să aud de la utilizatorii Reactive Resume cu feedback sau suport. Iată câteva dintre mesajele pe care le-am primit. Dacă aveți feedback, nu ezitați să îmi trimiteți un e-mail la <0>{email}</0>."
+#~ msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+#~ msgstr "Mereu îmi place să aud de la utilizatorii Reactive Resume cu feedback sau suport. Iată câteva dintre mesajele pe care le-am primit. Dacă aveți feedback, nu ezitați să îmi trimiteți un e-mail la <0>{email}</0>."
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:74
+msgid "ici"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:83
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
@@ -732,6 +802,10 @@ msgstr "Dacă dezactivați autentificarea cu doi factori, nu vi se va mai cere s
 #: apps/client/src/pages/home/sections/support/index.tsx:59
 msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
 msgstr "Dacă ești multilingv, ne-ar plăcea ajutorul tău să aducem aplicația în mai multe limbi și comunități. Nu-ți face griji dacă nu îți vezi limba în listă - dă-mi un strigăt pe GitHub, şi mă voi asigura că îl voi include. Gata de a incepe? Sari la traducerea de la Crowdin facand clic pe link-ul de mai jos."
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:69
+msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:309
 msgid "Import"
@@ -760,8 +834,8 @@ msgid "In this section, you can delete your account and all the data associated 
 msgstr "În această secțiune, vă puteți șterge contul si toate datele asociate utilizatorului dumneavoastră, dar aveți în vedere că <0>această acțiune este ireversibilă</0>."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:135
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:116
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:117
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:121
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:122
 msgid "Information"
 msgstr "Informație"
 
@@ -804,7 +878,9 @@ msgstr "Se pare că adresa dumneavoastră de e-mail a fost deja verificată."
 #: apps/client/src/pages/auth/register/page.tsx:101
 msgctxt "Localized version of a placeholder name. For example, Max Mustermann in German or Jan Kowalski in Polish."
 msgid "John Doe"
-msgstr "John Doe\n"
+msgstr ""
+"John Doe\n"
+""
 
 #: apps/client/src/pages/auth/register/page.tsx:123
 msgctxt "Localized version of a placeholder username. For example, max.mustermann in German or jan.kowalski in Polish."
@@ -836,6 +912,10 @@ msgstr "Etichetă"
 msgid "Language"
 msgstr "Limbă"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:51
+msgid "Langues actuellement disponibles :"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
@@ -847,13 +927,25 @@ msgstr "Ultima actualizare {lastUpdated}"
 msgid "Layout"
 msgstr "Aspect"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:18
+msgid "Le site sauvegarde automatiquement votre travail. Une fois votre CV prêt, vous pouvez le télécharger en PDF ou le partager via un lien."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:38
-msgid "Learn more"
-msgstr "Aflați mai multe"
+#~ msgid "Learn more"
+#~ msgstr "Aflați mai multe"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:33
+msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "Scrisoare"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:124
+msgid "leur site web"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:64
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:77
@@ -861,8 +953,8 @@ msgid "Level"
 msgstr "Nivel"
 
 #: apps/client/src/components/copyright.tsx:16
-msgid "Licensed under <0>MIT</0>"
-msgstr "Licențiat sub <0>MIT</0>"
+#~ msgid "Licensed under <0>MIT</0>"
+#~ msgstr "Licențiat sub <0>MIT</0>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
 msgid "Light"
@@ -908,7 +1000,6 @@ msgid "Locking a resume will prevent any further changes to it. This is useful w
 msgstr "Blocarea unui CV va preveni orice modificări suplimentare ale acestuia. Acest lucru este util atunci când ați partajat deja CV-ul cu cineva și nu doriți să faceți din greșeală nicio modificare."
 
 #: apps/client/src/components/user-options.tsx:38
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:23
 msgid "Logout"
 msgstr "Deconectare"
 
@@ -953,6 +1044,10 @@ msgstr "Licență MIT"
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
 msgid "Model"
 msgstr "Model"
+
+#: apps/client/src/components/copyright.tsx:27
+msgid "modifier par nos soins."
+msgstr ""
 
 #: apps/client/src/pages/auth/register/page.tsx:98
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:59
@@ -1051,6 +1146,18 @@ msgstr "sau continuați cu"
 msgid "Organization"
 msgstr "Organizație"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:31
+msgid "Oui ! Vous pouvez changer les couleurs, la typographie, l’agencement des sections et même le modèle utilisé. Il existe plusieurs modèles que vous pouvez tester à tout moment."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:48
+msgid "Oui. Ce site prend en charge plusieurs langues. Vous pouvez créer différentes versions de votre CV dans la langue de votre choix."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:96
+msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
@@ -1060,6 +1167,10 @@ msgstr "Pagină"
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
 msgstr "Pagina {pageNumber}"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:17
+msgid "Panneau de contrôle"
+msgstr ""
 
 #: apps/client/src/pages/auth/login/page.tsx:110
 #: apps/client/src/pages/auth/register/page.tsx:163
@@ -1071,6 +1182,10 @@ msgstr "Parolă"
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:72
 msgid "PDF"
 msgstr "PDF"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:31
+msgid "Pensé pour les étudiants d’AcadéNice, cet outil vous aide à rédiger un CV prêt pour les candidatures, lisible par les recruteurs et les systèmes ATS."
+msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:63
 msgid "Personal notes for each resume"
@@ -1118,6 +1233,14 @@ msgstr "Poziție"
 msgid "Position"
 msgstr "Poziție"
 
+#: apps/client/src/pages/home/sections/faq/index.tsx:118
+msgid "Pour en savoir plus sur AcadéNice, visitez"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:72
+msgid "Pour en savoir plus sur les formations proposées par AcadéNice, c'est"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:96
 msgid "Powered by"
 msgstr "Oferit de"
@@ -1131,8 +1254,8 @@ msgid "Primary Color"
 msgstr "Culoare primară"
 
 #: apps/client/src/pages/home/components/footer.tsx:50
-msgid "Privacy Policy"
-msgstr "Politica de confidenţialitate"
+#~ msgid "Privacy Policy"
+#~ msgstr "Politica de confidenţialitate"
 
 #: apps/client/src/components/ai-actions.tsx:109
 #: apps/client/src/components/ai-actions.tsx:112
@@ -1151,25 +1274,23 @@ msgstr "Public"
 msgid "Publisher"
 msgstr "Editor"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:69
+#: apps/client/src/pages/home/sections/faq/index.tsx:27
+msgid "Puis-je personnaliser le design de mon CV ?"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:44
+msgid "Puis-je traduire mon CV dans une autre langue ?"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:108
+msgid "Qu'est-ce qu'AcadéNice ?"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:70
 msgid "Raise an issue"
 msgstr "Ridicați o problemă"
 
-#: apps/client/src/components/copyright.tsx:35
-#: apps/client/src/pages/auth/backup-otp/page.tsx:52
-#: apps/client/src/pages/auth/forgot-password/page.tsx:49
-#: apps/client/src/pages/auth/login/page.tsx:55
-#: apps/client/src/pages/auth/register/page.tsx:64
-#: apps/client/src/pages/auth/reset-password/page.tsx:60
-#: apps/client/src/pages/auth/verify-email/page.tsx:43
-#: apps/client/src/pages/auth/verify-otp/page.tsx:52
-#: apps/client/src/pages/builder/page.tsx:60
-#: apps/client/src/pages/dashboard/resumes/page.tsx:20
-#: apps/client/src/pages/dashboard/settings/page.tsx:16
-#: apps/client/src/pages/home/components/footer.tsx:18
-#: apps/client/src/pages/home/page.tsx:24
-#: apps/client/src/pages/public/page.tsx:74
-#: apps/client/src/pages/public/page.tsx:95
+#: apps/client/src/components/copyright.tsx:31
 msgid "Reactive Resume"
 msgstr "Reluare reactivă"
 
@@ -1248,6 +1369,10 @@ msgstr "Bogat în caracteristici, nu în prețuri."
 msgid "Rounded"
 msgstr "Rotunjit"
 
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:34
+msgid "S'inscrire"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
@@ -1279,6 +1404,14 @@ msgstr "Derulați la Pan"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:104
 msgid "Scroll to Zoom"
 msgstr "Derulați pentru a mări"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:30
+msgid "Se connecter"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:21
+msgid "Se déconnecter"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
@@ -1312,7 +1445,7 @@ msgstr "Self-host cu Docker"
 msgid "Send Email"
 msgstr "Trimite email"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:74
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:75
 msgid "Send me a message"
 msgstr "Trimite-mi un mesaj"
 
@@ -1348,6 +1481,10 @@ msgstr "Arată linia de întrerupere"
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "Arată numerele de pagină"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:82
+msgid "Si une langue manque ou si vous souhaitez contribuer à une traduction, vous pouvez le faire sur notre espace de traduction."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:248
 msgid "Sidebar"
@@ -1412,6 +1549,10 @@ msgstr "Ceva nu a funcționat în timpul imprimării reluării dvs. Vă rugăm s
 msgid "Something went wrong while processing your request. Please try again later or raise an issue on GitHub."
 msgstr "Ceva nu a mers bine în timpul procesării solicitării dumneavoastră. Vă rugăm să încercați din nou mai târziu sau să ridicați o problemă pe GitHub."
 
+#: apps/client/src/components/copyright.tsx:16
+msgid "Sous licence"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:87
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
 msgid "Square"
@@ -1452,7 +1593,7 @@ msgstr "Stocați codurile de rezervă în siguranță"
 msgid "Summary"
 msgstr "Sumar"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:18
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:19
 msgid "Support the app by donating what you can!"
 msgstr "Sprijină aplicația donând cât poți!"
 
@@ -1468,19 +1609,23 @@ msgstr "Suportă formatele paginii A4/Scrisoarea"
 msgid "System"
 msgstr "Sistem"
 
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:67
+msgid "Témoignages"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:65
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
 msgid "Template"
 msgstr "Șablon"
 
-#: apps/client/src/pages/home/sections/templates/index.tsx:9
+#: apps/client/src/pages/home/sections/templates/index.tsx:10
 msgid "Templates"
 msgstr "Şabloane"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:68
-msgid "Testimonials"
-msgstr "Mărturii"
+#~ msgid "Testimonials"
+#~ msgstr "Mărturii"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
@@ -1583,6 +1728,10 @@ msgstr "Tipul studiului"
 msgid "Typography"
 msgstr "Tipografie"
 
+#: apps/client/src/components/copyright.tsx:26
+msgid "Un projet passionné de"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "Subliniază link-urile"
@@ -1590,6 +1739,10 @@ msgstr "Subliniază link-urile"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:76
 msgid "Undo"
 msgstr "Anulează"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:15
+msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouveau CV\" depuis votre tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles, expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout moment."
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
@@ -1671,8 +1824,8 @@ msgid "Verify your email address"
 msgstr "Verificați-vă adresa de e-mail"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:26
-msgid "Version 4"
-msgstr "Versiunea 4"
+#~ msgid "Version 4"
+#~ msgstr "Versiunea 4"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
 msgid "Views"
@@ -1685,6 +1838,10 @@ msgstr "Vizibil"
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:70
 msgid "Visit <0>Phosphor Icons</0> for a list of available icons"
 msgstr "Vizitați <0>Phosphor Icons</0> pentru o listă a pictogramelor disponibile"
+
+#: apps/client/src/pages/home/sections/faq/index.tsx:138
+msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
+msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:61
 msgid "We verify your email address only to ensure that we can send you a password reset link in case you forget your password."
@@ -1705,8 +1862,8 @@ msgid "Website"
 msgstr "Website"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:32
-msgid "What's new in the latest version"
-msgstr "Ce este nou în cea mai recentă versiune"
+#~ msgid "What's new in the latest version"
+#~ msgstr "Ce este nou în cea mai recentă versiune"
 
 #: apps/client/src/pages/public/error.tsx:26
 msgid "You are not authorized to access this page."
@@ -1779,4 +1936,3 @@ msgstr "Mărire în"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:118
 msgid "Zoom Out"
 msgstr "Micșorare"
-

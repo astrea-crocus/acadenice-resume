@@ -62,7 +62,7 @@ export const AuthLayout = () => {
         <img
           width={1920}
           height={1080}
-          alt="Open books on a table"
+          alt=" "
           className="h-screen w-full object-cover object-center"
           src="/backgrounds/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
         />

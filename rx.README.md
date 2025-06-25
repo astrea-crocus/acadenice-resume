@@ -81,7 +81,7 @@ Start creating your standout resume with Reactive Resume today!
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date&theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
+    <img alt=" " src="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
   </picture>
 </a>
 

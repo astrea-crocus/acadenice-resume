@@ -1,4 +1,5 @@
-/* eslint-disable lingui/no-unlocalized-strings */
+/* eslint-disable lingui/text-restrictions */
+import { t } from "@lingui/macro";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
@@ -20,15 +21,14 @@ export const HeroSection = () => (
         whileInView={{ opacity: 1, x: 0 }}
       >
         <div className="mt-10 space-y-2">
-          <h6 className="text-base font-bold tracking-wide">Enfin,</h6>
+          <h6 className="text-base font-bold tracking-wide">{t`Enfin,`}</h6>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Créez un CV qui passe les filtres et attire les recruteurs !
+            {t`Créez un CV qui passe les filtres et attire les recruteurs !`}
           </h1>
         </div>
 
         <p className="prose prose-base prose-zinc mt-6 text-lg leading-8 dark:prose-invert">
-          Pensé pour les étudiants d’AcadéNice, cet outil vous aide à rédiger un CV prêt pour les
-          candidatures, lisible par les recruteurs et les systèmes ATS.
+          {t`Pensé pour les étudiants d’AcadéNice, cet outil vous aide à rédiger un CV prêt pour les candidatures, lisible par les recruteurs et les systèmes ATS.`}
         </p>
 
         <div className="mt-10 flex items-center gap-x-8">
@@ -48,7 +48,7 @@ export const HeroSection = () => (
                 width={3600}
                 height={2078}
                 src="/screenshots/builder.jpg"
-                alt="Reactive Resume - Screenshot - Builder Screen"
+                alt=" "
                 className="w-[76rem] rounded-lg bg-background/5 shadow-2xl ring-1 ring-foreground/10"
               />
             </Tilt>

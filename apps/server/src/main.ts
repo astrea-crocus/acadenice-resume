@@ -53,10 +53,8 @@ async function bootstrap() {
   // Swagger (OpenAPI Docs)
   // This can be accessed by visiting {SERVER_URL}/api/docs
   const config = new DocumentBuilder()
-    .setTitle("Reactive Resume")
-    .setDescription(
-      "Reactive Resume is a free and open source resume builder that's built to make the mundane tasks of creating, updating and sharing your resume as easy as 1, 2, 3.",
-    )
+    .setTitle("AcadéNice - Créer son CV en ligne")
+    .setDescription("Créer votre CV en ligne avec AcadéNice et son génerateur de CV !")
     .addCookieAuth("Authentication", { type: "http", in: "cookie", scheme: "Bearer" })
     .setVersion("4.0.0")
     .build();

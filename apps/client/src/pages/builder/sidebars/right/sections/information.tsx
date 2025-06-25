@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import { t, Trans } from "@lingui/macro";
 import { Book, EnvelopeSimpleOpen, GithubLogo, HandHeart } from "@phosphor-icons/react";
 import {
@@ -92,6 +93,10 @@ const DocumentationCard = () => (
             not know about which could help you build your perfect resume.
           </p>
         </Trans>
+        <p>
+          {t`Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez`}{" "}
+          😉.
+        </p>
       </CardDescription>
     </CardContent>
     <CardFooter className="space-x-4">
@@ -119,9 +124,9 @@ export const InformationSection = () => {
       </header>
 
       <main className="grid gap-y-4">
-        <DonateCard />
+        {/* <DonateCard /> */}
         <DocumentationCard />
-        <IssuesCard />
+        {/* <IssuesCard /> */}
       </main>
     </section>
   );

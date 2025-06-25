@@ -1,4 +1,5 @@
 /* eslint-disable lingui/no-unlocalized-strings */
+import { t } from "@lingui/macro";
 import { Helmet } from "react-helmet-async";
 
 // import { ContributorsSection } from "./sections/contributors";
@@ -15,7 +16,9 @@ export const HomePage = () => {
   return (
     <main className="relative isolate bg-background">
       <Helmet prioritizeSeoTags>
-        <title>AcadéNice - Créer son CV en ligne</title>
+        <title>
+          {t`AcadéNice`} - {t`Créer son CV en ligne`}
+        </title>
 
         <meta
           name="description"

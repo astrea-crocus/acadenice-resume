@@ -153,8 +153,9 @@ export class AuthService {
 
     const baseUrl = this.configService.get("PUBLIC_URL");
     const url = `${baseUrl}/auth/reset-password?token=${token}`;
-    const subject = "Reset your Reactive Resume password";
-    const text = `Please click on the link below to reset your password:\n\n${url}`;
+    const subject = "Réinitialisation de mot de passe.";
+    const text = `Merci de cliquer sur le lien ci dessus pour réinitialiser votre mot de passe :
+    \n\n ${url}`;
 
     await this.mailService.sendEmail({ to: email, subject, text });
   }
