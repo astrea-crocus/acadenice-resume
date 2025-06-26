@@ -1,6 +1,6 @@
-/* eslint-disable lingui/no-unlocalized-strings */
-import { Link } from "react-router";
+import { t } from "@lingui/macro";
 
+// import { Link } from "react-router";
 import { Copyright } from "@/client/components/copyright";
 import { LocaleSwitch } from "@/client/components/locale-switch";
 // import { Logo } from "@/client/components/logo";
@@ -14,18 +14,18 @@ export const Footer = () => (
         <img src="/logo/logo.png" alt=" " height={96} className="rounded-sm" />
 
         <a href="https://acadenice.fr/">
-          <h2 className="text-xl font-medium">AcadéNice</h2>
+          <h2 className="text-xl font-medium">{t`AcadéNice`}</h2>
         </a>
 
         <Copyright className="mt-6" />
       </div>
 
       <div className="relative col-start-4 flex flex-col items-end justify-end">
-        <div className="mb-14 space-y-6 text-right">
+        {/* <div className="mb-14 space-y-6 text-right">
           <Link to="/meta/privacy-policy" className="block text-sm font-medium">
             Politique de confidentialité
           </Link>
-        </div>
+        </div> */}
 
         <div className="absolute bottom-0 right-0 lg:space-x-2">
           <LocaleSwitch />

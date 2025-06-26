@@ -43,8 +43,8 @@ msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the 
 msgstr "<0>Remarque :</0> En utilisant l'API OpenAI, vous reconnaissez et acceptez les <1>conditions d'utilisation</1> et <2>politique de confidentialité</2> décrit par OpenAI. Veuillez noter que Reactive Resume n'assume aucune responsabilité pour toute utilisation inappropriée ou non autorisée du service, et toutes les répercussions ou responsabilités qui en résultent incombent uniquement à l'utilisateur."
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:86
-msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
-msgstr "<0>La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, et je suis sûr qu'elle vous aidera à démarrer avec l'application.</0><1>Il y a aussi beaucoup d'exemples pour vous aider à démarrer, et des fonctionnalités que vous ne connaissez peut-être pas et qui pourraient vous aider à construire votre CV parfait.</1>"
+#~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+#~ msgstr "<0>La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, et je suis sûr qu'elle vous aidera à démarrer avec l'application.</0><1>Il y a aussi beaucoup d'exemples pour vous aider à démarrer, et des fonctionnalités que vous ne connaissez peut-être pas et qui pourraient vous aider à construire votre CV parfait.</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:140
 msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
@@ -99,6 +99,7 @@ msgstr "A4"
 #: apps/client/src/pages/builder/page.tsx:60
 #: apps/client/src/pages/dashboard/resumes/page.tsx:20
 #: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/components/footer.tsx:17
 #: apps/client/src/pages/home/page.tsx:20
 #: apps/client/src/pages/public/page.tsx:74
 #: apps/client/src/pages/public/page.tsx:95
@@ -216,8 +217,8 @@ msgid "Aspect Ratio"
 msgstr "Ratio d'aspect"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
-msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
-msgstr "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+#~ msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+#~ msgstr "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:97
 #~ msgid "Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez &#128521;."
@@ -402,6 +403,10 @@ msgstr "Créez-en un maintenant"
 msgid "Create Sample Resume"
 msgstr "Créer un exemple de CV"
 
+#: apps/client/src/components/copyright.tsx:26
+msgid "Créer par"
+msgstr "Créer par"
+
 #: apps/client/src/pages/home/page.tsx:20
 msgid "Créer son CV en ligne"
 msgstr "Créer son CV en ligne"
@@ -498,7 +503,7 @@ msgstr "Désactiver la 2FA"
 msgid "Discard"
 msgstr "Abandonner"
 
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:110
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:101
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -803,6 +808,10 @@ msgstr "Si vous désactivez l'authentification à deux facteurs, il ne vous sera
 msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
 msgstr "Si vous êtes multilingue, nous aimerions avoir votre aide pour proposer l'application à davantage de langues et de communautés. Ne vous inquiétez pas si vous ne voyez pas votre langue dans la liste – faites-moi simplement signe sur GitHub et je veillerai à l'inclure. Prêt à commencer? Lancez-vous dans la traduction sur Crowdin en cliquant sur le lien ci-dessous."
 
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:90
+msgid "Il y a aussi beaucoup d'exemples pour vous aider à démarrer, et des fonctionnalités que vous ne connaissez peut-être pas et qui pourraient vous aider à construire votre CV parfait."
+msgstr "Il y a aussi beaucoup d'exemples pour vous aider à démarrer, et des fonctionnalités que vous ne connaissez peut-être pas et qui pourraient vous aider à construire votre CV parfait."
+
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:69
 msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
 msgstr "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
@@ -834,8 +843,8 @@ msgid "In this section, you can delete your account and all the data associated 
 msgstr "Dans cette section, vous pouvez supprimer votre compte et toutes les données associées à votre utilisateur, mais gardez à l'esprit que <0>cette action est irréversible</0>."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:135
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:121
-#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:122
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:112
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:113
 msgid "Information"
 msgstr "Information"
 
@@ -900,6 +909,10 @@ msgstr "JSON"
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:109
 msgid "Keywords"
 msgstr "Mots-clés"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:87
+msgid "La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+msgstr "La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:42
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:52
@@ -1035,6 +1048,14 @@ msgstr "Marge"
 msgid "Max Tokens"
 msgstr "Token maximum"
 
+#: apps/client/src/components/copyright.tsx:27
+#~ msgid "mis à disposition pour vous."
+#~ msgstr "mis à disposition pour vous."
+
+#: apps/client/src/components/copyright.tsx:27
+msgid "mis à votre disposition par nous."
+msgstr "mis à votre disposition par nous."
+
 #: apps/client/src/pages/home/sections/features/index.tsx:48
 msgid "MIT License"
 msgstr "Licence MIT"
@@ -1044,8 +1065,8 @@ msgid "Model"
 msgstr "Modèle"
 
 #: apps/client/src/components/copyright.tsx:27
-msgid "modifier par nos soins."
-msgstr "modifier par nos soins."
+#~ msgid "modifier par nos soins."
+#~ msgstr "modifier par nos soins."
 
 #: apps/client/src/pages/auth/register/page.tsx:98
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:59
@@ -1727,8 +1748,8 @@ msgid "Typography"
 msgstr "Typographie"
 
 #: apps/client/src/components/copyright.tsx:26
-msgid "Un projet passionné de"
-msgstr "Un projet passionné de"
+#~ msgid "Un projet passionné de"
+#~ msgstr "Un projet passionné de"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"

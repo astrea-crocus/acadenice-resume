@@ -1,4 +1,5 @@
 export const templatesList = [
+  "acadenice",
   "azurill",
   "bronzor",
   "chikorita",

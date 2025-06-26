@@ -1,5 +1,6 @@
 import type { Template } from "@reactive-resume/utils";
 
+import { AcadeNice } from "./acadenice";
 import { Azurill } from "./azurill";
 import { Bronzor } from "./bronzor";
 import { Chikorita } from "./chikorita";
@@ -15,6 +16,9 @@ import { Rhyhorn } from "./rhyhorn";
 
 export const getTemplate = (template: Template) => {
   switch (template) {
+    case "acadenice": {
+      return AcadeNice;
+    }
     case "azurill": {
       return Azurill;
     }
@@ -52,7 +56,7 @@ export const getTemplate = (template: Template) => {
       return Rhyhorn;
     }
     default: {
-      return Onyx;
+      return AcadeNice;
     }
   }
 };

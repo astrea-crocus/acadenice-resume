@@ -80,3 +80,11 @@
   ```
 - Petite personnalisation de la sidebar du builder de CV
 - Léger ajustement du header pour que le logo ne soit plus au dessus de textes lorsque l'utilisateur scroll sur son pc
+
+## 26 Juin 2025
+- Ajustement de certains textes
+- Modifications blocs de la sidebar de droite
+  - Retrait du bloc "Statistique"
+  - Modificatiom du bloc "Info"
+- Template CV AcadéNice
+  - Ajout d'un nouveau template

@@ -83,20 +83,11 @@ const DocumentationCard = () => (
     <CardContent className="space-y-2">
       <CardTitle>{t`Don't know where to begin? Hit the docs!`}</CardTitle>
       <CardDescription className="space-y-2">
-        <Trans>
-          <p>
-            The community has spent a lot of time writing the documentation for Reactive Resume, and
-            I'm sure it will help you get started with the app.
-          </p>
-          <p>
-            There are also a lot of examples to help you get started, and features that you might
-            not know about which could help you build your perfect resume.
-          </p>
-        </Trans>
         <p>
-          {t`Attention, la documentation de Reactive Resume est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez`}{" "}
+          {t`La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez`}{" "}
           😉.
         </p>
+        <p>{t`Il y a aussi beaucoup d'exemples pour vous aider à démarrer, et des fonctionnalités que vous ne connaissez peut-être pas et qui pourraient vous aider à construire votre CV parfait.`}</p>
       </CardDescription>
     </CardContent>
     <CardFooter className="space-x-4">

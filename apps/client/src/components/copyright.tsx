@@ -23,8 +23,8 @@ export const Copyright = ({ className }: Props) => (
       </a>
     </span>
     <span>
-      {t`Un projet passionné de`} <a href="https://www.amruthpillai.com/">{t`Amruth Pillai`}</a>,{" "}
-      {t`modifier par nos soins.`}
+      {t`Créer par`} <a href="https://www.amruthpillai.com/">{t`Amruth Pillai`}</a>,{" "}
+      {t`mis à votre disposition par nous.`}
     </span>
 
     <span className="mt-4">
