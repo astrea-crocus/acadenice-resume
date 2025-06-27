@@ -9,7 +9,7 @@ export const defaultLayout = [
 
 // Schema
 export const metadataSchema = z.object({
-  template: z.string().default("rhyhorn"),
+  template: z.string().default("amaranth"),
   layout: z.array(z.array(z.array(z.string()))).default(defaultLayout), // pages -> columns -> sections
   css: z.object({
     value: z.string().default("* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}"),
@@ -47,7 +47,7 @@ export type Metadata = z.infer<typeof metadataSchema>;
 
 // Defaults
 export const defaultMetadata: Metadata = {
-  template: "rhyhorn",
+  template: "amaranth",
   layout: defaultLayout,
   css: {
     value: "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
@@ -64,16 +64,16 @@ export const defaultMetadata: Metadata = {
   theme: {
     background: "#ffffff",
     text: "#000000",
-    primary: "#dc2626",
+    primary: "#4cccb8",
   },
   typography: {
     font: {
-      family: "IBM Plex Serif",
+      family: "Josefin Sans",
       subset: "latin",
-      variants: ["regular", "italic", "600"],
-      size: 14,
+      variants: ["regular"],
+      size: 13,
     },
-    lineHeight: 1.5,
+    lineHeight: 1.75,
     hideIcons: false,
     underlineLinks: true,
   },

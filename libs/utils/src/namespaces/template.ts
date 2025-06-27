@@ -1,5 +1,9 @@
 export const templatesList = [
-  "acadenice",
+  "amaranth",
+  "euphorbia",
+  "hellebore",
+  "ladyfern",
+  "zinnia",
   "azurill",
   "bronzor",
   "chikorita",

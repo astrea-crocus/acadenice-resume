@@ -28,12 +28,21 @@ type Props = {
   resume: ResumeDto;
 };
 
+const normalizeTemplateName = (name: string) => {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036F]/g, "");
+};
+
 export const ResumeCard = ({ resume }: Props) => {
   const navigate = useNavigate();
   const { open } = useDialog<ResumeDto>("resume");
   const { open: lockOpen } = useDialog<ResumeDto>("lock");
 
+  //template
   const template = resume.data.metadata.template;
+  const normalized = normalizeTemplateName(template);
   const lastUpdated = dayjs().to(resume.updatedAt);
 
   const onOpen = () => {
@@ -83,11 +92,7 @@ export const ResumeCard = ({ resume }: Props) => {
             <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
           </div>
 
-          <img
-            src={`/templates/jpg/${template}.jpg`}
-            alt={template}
-            className="rounded-sm opacity-80"
-          />
+          <img src={`/templates/jpg/${normalized}.jpg`} alt=" " className="rounded-sm opacity-80" />
         </BaseCard>
       </DropdownMenuTrigger>
 

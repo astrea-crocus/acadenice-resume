@@ -87,4 +87,10 @@
   - Retrait du bloc "Statistique"
   - Modificatiom du bloc "Info"
 - Template CV AcadéNice
-  - Ajout d'un nouveau template
+  - Ajout d'un nouveau template AcadéNice
+  - Le template AcadéNice est le template par défaut
+  - Ajout du logo et d'informations de contact pour la référante d'entreprise
+
+## 27 Juin 2025
+- Fin personnalisation du premier template
+- Ajout de 4 autres templates

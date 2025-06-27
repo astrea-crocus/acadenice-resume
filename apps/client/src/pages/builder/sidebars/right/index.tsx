@@ -45,7 +45,7 @@ export const RightSidebar = () => {
           <SharingSection />
           <Separator />
           {/* <StatisticsSection /> */}
-          <Separator />
+          {/* <Separator /> */}
           <ExportSection />
           <Separator />
           <NotesSection />
