@@ -99,8 +99,8 @@ export const Sidebar = ({ setOpen }: SidebarProps) => {
     <div className="flex h-full flex-col gap-y-4">
       <div className="ml-12 flex justify-center lg:ml-0">
         <Button asChild size="icon" variant="ghost" className="size-10 p-0">
-          <Link to="/">
-            <Icon size={24} className="mx-auto hidden lg:block" />
+          <Link to="/" aria-label={t`Retour à l'accueil`} title={t`Retour à l'accueil`}>
+            <Icon size={24} className="mx-auto hidden lg:block" aria-hidden="true" />
           </Link>
         </Button>
       </div>

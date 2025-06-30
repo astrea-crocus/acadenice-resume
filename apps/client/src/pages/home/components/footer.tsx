@@ -11,7 +11,7 @@ export const Footer = () => (
     <div className="container grid py-12 sm:grid-cols-3 lg:grid-cols-4">
       <div className="flex flex-col gap-y-2">
         {/* <Logo size={96} className="-ml-2" /> */}
-        <img src="/logo/logo.png" alt=" " height={96} className="rounded-sm" />
+        <img src="/logo/logo.png" alt="" height={96} className="rounded-sm" />
 
         <a href="https://acadenice.fr/">
           <h2 className="text-xl font-medium">{t`AcadéNice`}</h2>

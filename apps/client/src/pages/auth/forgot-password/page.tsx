@@ -79,10 +79,17 @@ export const ForgotPasswordPage = () => {
               control={form.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{t`Email`}</FormLabel>
+                  <FormLabel htmlFor="email-input">{t`Email`}</FormLabel>
                   <FormControl>
-                    <Input placeholder="john.doe@example.com" autoComplete="email" {...field} />
+                    <Input
+                      id="email-input"
+                      placeholder="john.doe@example.com"
+                      autoComplete="email"
+                      aria-describedby="email-input-description"
+                      {...field}
+                    />
                   </FormControl>
+                  <p id="email-input-description"> </p>
                   <FormMessage />
                 </FormItem>
               )}

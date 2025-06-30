@@ -98,3 +98,4 @@
 ## 28 Juin 2025
 - Ajustement du template Euphorbia
 - Ajustement de la couleur du texte du bloc de remarque sur OpenAI
+- Amélioration de l'accéssibilité du site

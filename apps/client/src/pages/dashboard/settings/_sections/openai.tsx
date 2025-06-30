@@ -19,11 +19,8 @@ import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL } from "@/client/constants/llm";
 import { useOpenAiStore } from "@/client/stores/openai";
 
 const formSchema = z.object({
-  apiKey: z
-    .string()
-    // eslint-disable-next-line lingui/no-unlocalized-strings
-    .min(1, "API key cannot be empty.")
-    .default(""),
+  // eslint-disable-next-line lingui/no-unlocalized-strings
+  apiKey: z.string().min(1, "API key cannot be empty.").default(""),
   baseURL: z
     .string()
     // eslint-disable-next-line lingui/no-unlocalized-strings
@@ -54,15 +51,9 @@ export const OpenAISettings = () => {
 
   const onSubmit = ({ apiKey, baseURL, model, maxTokens }: FormValues) => {
     setApiKey(apiKey);
-    if (baseURL) {
-      setBaseURL(baseURL);
-    }
-    if (model) {
-      setModel(model);
-    }
-    if (maxTokens) {
-      setMaxTokens(maxTokens);
-    }
+    if (baseURL) setBaseURL(baseURL);
+    if (model) setModel(model);
+    if (maxTokens) setMaxTokens(maxTokens);
   };
 
   const onRemove = () => {
@@ -114,62 +105,113 @@ export const OpenAISettings = () => {
           <FormField
             name="apiKey"
             control={form.control}
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t`OpenAI/Ollama API Key`}</FormLabel>
-                <FormControl>
-                  <Input type="password" placeholder="sk-..." {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            render={({ field, fieldState }) => {
+              const inputId = "apiKey-input";
+              const errorId = `${inputId}-error`;
+              return (
+                <FormItem>
+                  <FormLabel htmlFor={inputId}>{t`OpenAI/Ollama API Key`}</FormLabel>
+                  <FormControl>
+                    <Input
+                      id={inputId}
+                      type="password"
+                      placeholder="sk-..."
+                      {...field}
+                      aria-invalid={fieldState.invalid}
+                      aria-describedby={fieldState.invalid ? errorId : undefined}
+                    />
+                  </FormControl>
+                  {fieldState.error && (
+                    <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                  )}
+                </FormItem>
+              );
+            }}
           />
+
           <FormField
             name="baseURL"
             control={form.control}
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t`Base URL`}</FormLabel>
-                <FormControl>
-                  <Input type="text" placeholder="http://localhost:11434/v1" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            render={({ field, fieldState }) => {
+              const inputId = "baseURL-input";
+              const errorId = `${inputId}-error`;
+              return (
+                <FormItem>
+                  <FormLabel htmlFor={inputId}>{t`Base URL`}</FormLabel>
+                  <FormControl>
+                    <Input
+                      id={inputId}
+                      type="text"
+                      placeholder="http://localhost:11434/v1"
+                      {...field}
+                      aria-invalid={fieldState.invalid}
+                      aria-describedby={fieldState.invalid ? errorId : undefined}
+                    />
+                  </FormControl>
+                  {fieldState.error && (
+                    <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                  )}
+                </FormItem>
+              );
+            }}
           />
+
           <FormField
             name="model"
             control={form.control}
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t`Model`}</FormLabel>
-                <FormControl>
-                  <Input type="text" placeholder={DEFAULT_MODEL} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            render={({ field, fieldState }) => {
+              const inputId = "model-input";
+              const errorId = `${inputId}-error`;
+              return (
+                <FormItem>
+                  <FormLabel htmlFor={inputId}>{t`Model`}</FormLabel>
+                  <FormControl>
+                    <Input
+                      id={inputId}
+                      type="text"
+                      placeholder={DEFAULT_MODEL}
+                      {...field}
+                      aria-invalid={fieldState.invalid}
+                      aria-describedby={fieldState.invalid ? errorId : undefined}
+                    />
+                  </FormControl>
+                  {fieldState.error && (
+                    <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                  )}
+                </FormItem>
+              );
+            }}
           />
+
           <FormField
             name="maxTokens"
             control={form.control}
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t`Max Tokens`}</FormLabel>
-                <FormControl>
-                  <Input
-                    type="number"
-                    placeholder={`${DEFAULT_MAX_TOKENS}`}
-                    {...field}
-                    onChange={(e) => {
-                      field.onChange(e.target.valueAsNumber);
-                    }}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            render={({ field, fieldState }) => {
+              const inputId = "maxTokens-input";
+              const errorId = `${inputId}-error`;
+              return (
+                <FormItem>
+                  <FormLabel htmlFor={inputId}>{t`Max Tokens`}</FormLabel>
+                  <FormControl>
+                    <Input
+                      id={inputId}
+                      type="number"
+                      placeholder={`${DEFAULT_MAX_TOKENS}`}
+                      {...field}
+                      aria-invalid={fieldState.invalid}
+                      aria-describedby={fieldState.invalid ? errorId : undefined}
+                      // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
+                      onChange={(e) => field.onChange(e.target.valueAsNumber)}
+                    />
+                  </FormControl>
+                  {fieldState.error && (
+                    <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                  )}
+                </FormItem>
+              );
+            }}
           />
+
           <div className="flex items-center space-x-2 self-end sm:col-start-2">
             <Button type="submit" disabled={!form.formState.isValid}>
               {isEnabled && <FloppyDisk className="mr-2" />}

@@ -38,7 +38,7 @@ msgstr "<0>Tôi xây dựng Reactive Resume trong thời gian rảnh rỗi với
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Tôi chắc chắn rằng ứng dụng này không hoàn hảo nhưng tôi muốn nó như vậy.</0> <1>Nếu bạn gặp phải bất kỳ vấn đề nào khi tạo sơ yếu lý lịch của mình hoặc có ý tưởng có thể giúp bạn và những người dùng khác tạo sơ yếu lý lịch của bạn dễ dàng hơn, hãy gửi vấn đề đó vào kho lưu trữ hoặc gửi email cho tôi về vấn đề đó.</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:201
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:243
 msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>Lưu ý:</0> Bằng cách sử dụng API OpenAI, bạn thừa nhận và chấp nhận <1>điều khoản sử dụng</1> và <2>chính sách quyền riêng tư</2> được phác thảo bởi OpenAI. Xin lưu ý rằng Reactive Resume không chịu trách nhiệm đối với bất kỳ việc sử dụng dịch vụ không đúng cách hoặc trái phép nào và mọi hậu quả hoặc trách nhiệm pháp lý phát sinh chỉ thuộc về người dùng."
 
@@ -46,11 +46,11 @@ msgstr "<0>Lưu ý:</0> Bằng cách sử dụng API OpenAI, bạn thừa nhận
 #~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 #~ msgstr "<0>Cộng đồng đã dành rất nhiều thời gian để viết tài liệu về Reactive Resume, tôi chắc chắn tài liệu này sẽ giúp bạn mới bắt đầu sử dụng ứng dụng.</0> <1>Ngoài ra cũng còn có rất nhiều ví dụ khác giúp bạn sử dụng các tính năng mà bạn có thể chưa biết để có thể giúp bạn xây dựng sơ yếu lý lịch hoàn hảo của mình.</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:140
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:166
 msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
 msgstr "<0>Xác thực hai yếu tố hiện bị tắt.</0> Bạn có thể kích hoạt nó bằng cách thêm ứng dụng xác thực vào tài khoản của mình."
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:133
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:159
 msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
 msgstr "<0>Chứng thực hai yếu tố được kích hoạt.</0> Bạn sẽ được yêu cầu nhập mã mỗi khi đăng nhập."
 
@@ -115,9 +115,17 @@ msgstr ""
 msgid "Accepts only {accept} files"
 msgstr "Chỉ chấp nhận tệp {accept}"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:103
 msgid "Account"
 msgstr "Tài khoản"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:113
+#~ msgid "Account settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:188
+msgid "Activer l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:175
 msgid "Add a custom field"
@@ -254,7 +262,7 @@ msgstr "Mã Backup"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "Mã backup chỉ có thể chứa chữ cái viết thường hoặc số và phải có chính xác 10 ký tự."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:132
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:140
 msgid "Base URL"
 msgstr ""
 
@@ -308,7 +316,7 @@ msgid "Center Artboard"
 msgstr "Trung Tâm Bảng Vẽ"
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:99
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:115
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:141
 msgid "Change Password"
 msgstr "Thay đổi mật khẩu"
 
@@ -320,9 +328,26 @@ msgstr "Thay Đổi Tông"
 msgid "Changed your mind about the name? Give it a new one."
 msgstr "Đã thay đổi ý kiến về tên? Đặt tên mới cho nó."
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:70
+#: apps/client/src/components/locale-switch.tsx:20
+#: apps/client/src/components/locale-switch.tsx:21
+msgid "Changer la langue"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:69
 msgid "Check your email for the confirmation link to update your email address."
 msgstr "Kiểm tra email để nhận liên kết cập nhật địa chỉ email của bạn."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+msgid "Choisissez un nom d'utilisateur unique."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+#~ msgid "Choose a unique username."
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:98
+#~ msgid "Choose the visual appearance that best suits you."
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:144
 msgid "Circle"
@@ -415,7 +440,7 @@ msgstr ""
 msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
 msgid "Current Password"
 msgstr ""
 
@@ -465,7 +490,7 @@ msgstr "Ngày hoặc Khoảng ngày"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:137
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:158
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:121
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:126
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -475,6 +500,10 @@ msgstr "Xóa"
 #: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:94
 msgid "Delete Account"
 msgstr "Xóa tài khoản"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:177
+msgid "Désactiver l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:50
@@ -492,16 +521,25 @@ msgstr "Thiết kế sơ yếu lý lịch một/nhiều trang"
 msgid "Disable"
 msgstr "Tắt"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:154
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:182
 msgid "Disable 2FA"
 msgstr "Tắt xác thực 2FA"
 
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#~ msgid "Disable two-factor authentication"
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:220
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:258
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:118
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:144
 msgid "Discard"
 msgstr "Hủy"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:249
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:144
+#~ msgid "Discard changes"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:101
 msgid "Documentation"
@@ -541,7 +579,7 @@ msgstr "Tải về"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:181
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:246
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -567,13 +605,17 @@ msgstr "Hiệu ứng"
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:141
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:181
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
 msgstr "Email"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:193
 msgid "Enable 2FA"
 msgstr "Bật xác thực 2FA"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:174
+#~ msgid "Enable two-factor authentication"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:24
 msgid "Enfin,"
@@ -582,6 +624,10 @@ msgstr ""
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "Nhập mật khẩu mới bên dưới và đảm bảo mật khẩu đó an toàn."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:130
+msgid "Enter a URL or upload an image."
+msgstr ""
 
 #: apps/client/src/pages/auth/backup-otp/page.tsx:59
 msgid "Enter one of the 10 backup codes you saved when you enabled two-factor authentication."
@@ -629,6 +675,11 @@ msgstr "Ngay cả khi bạn không có khả năng đóng góp tài chính, bạ
 msgid "Export"
 msgstr "Xuất"
 
+#: apps/client/src/pages/dashboard/layout.tsx:36
+#: apps/client/src/pages/dashboard/layout.tsx:37
+msgid "Fermer le menu latéral"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:255
 msgid "File"
 msgstr "Tệp"
@@ -669,7 +720,7 @@ msgstr "Biến thể Font"
 msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
 msgstr "Ví dụ: thông tin về công ty bạn đã gửi bản lý lịch này đến hoặc các liên kết đến mô tả công việc có thể được ghi lại ở đây."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:182
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:224
 msgid "Forget"
 msgstr "Quên"
 
@@ -747,7 +798,7 @@ msgstr "Lưới"
 msgid "Headline"
 msgstr "Tiêu đề"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:107
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
 msgid "Here, you can update your account information such as your profile picture, name and username."
 msgstr "Tại đây, bạn có thể cập nhật thông tin tài khoản của mình như ảnh hồ sơ, họ tên và tên người dùng."
 
@@ -927,7 +978,7 @@ msgstr "Ngôn ngữ"
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:92
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "Cập nhật lần cuối {lastUpdated}"
@@ -996,7 +1047,7 @@ msgid "Location"
 msgstr "Vị trí"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:120
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1044,7 +1095,7 @@ msgstr "03/2023 - Hiện tại"
 msgid "Margin"
 msgstr "Lề"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:158
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:194
 msgid "Max Tokens"
 msgstr ""
 
@@ -1060,7 +1111,7 @@ msgstr ""
 msgid "MIT License"
 msgstr "Giấy phép MIT"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:167
 msgid "Model"
 msgstr ""
 
@@ -1077,7 +1128,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:39
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:88
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:153
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:168
 msgid "Name"
 msgstr "Tên"
 
@@ -1090,7 +1141,7 @@ msgstr "Tên"
 msgid "Network"
 msgstr "Mạng"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:96
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:112
 msgid "New Password"
 msgstr "Mật khẩu mới"
 
@@ -1123,7 +1174,7 @@ msgstr "Mật khẩu sử dụng một lần"
 msgid "Oops, the server returned an error."
 msgstr "Rất tiếc, máy chủ đã trả về lỗi."
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:97
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:102
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -1143,11 +1194,11 @@ msgstr "OpenAI không trả về bất kỳ phản hồi nào cho văn bản c�
 msgid "OpenAI Integration"
 msgstr "Tích hợp OpenAI"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:119
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:113
 msgid "OpenAI/Ollama API Key"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:79
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:70
 msgid "OpenAI/Ollama Integration"
 msgstr ""
 
@@ -1175,6 +1226,11 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:96
 msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/layout.tsx:22
+#: apps/client/src/pages/dashboard/layout.tsx:23
+msgid "Ouvrir le menu latéral"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
@@ -1223,7 +1279,7 @@ msgid "Pick any font from Google Fonts"
 msgstr "Tìm font trong Google Fonts"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:121
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:119
 msgid "Picture"
 msgstr "Hình ảnh"
 
@@ -1285,6 +1341,18 @@ msgstr "Chuyên nghiệp"
 msgid "Profile"
 msgstr "Hồ sơ"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:66
+#~ msgid "Profile settings"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:75
+#~ msgid "Profile settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:134
+#~ msgid "Provide a URL to your profile picture or upload an image."
+#~ msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr "Công khai"
@@ -1343,13 +1411,13 @@ msgid "Remove Page"
 msgstr "Xóa trang"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:111
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:101
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:106
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
 msgstr "Đổi tên"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:199
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:236
 msgid "Resend email confirmation link"
 msgstr "Gửi lại email xác minh"
 
@@ -1380,6 +1448,15 @@ msgstr "Sơ yếu lý lịch"
 msgid "Resumes Generated"
 msgstr "Sơ yếu lý lịch được tạo"
 
+#: apps/client/src/pages/auth/layout.tsx:30
+msgid "Retour à l'accuei"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+msgid "Retour à l'accueil"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:105
 msgid "Rich in features, not in pricing."
 msgstr "Tính năng phong phú, không quan trọng giá cả."
@@ -1394,16 +1471,20 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:255
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:131
 msgid "Save Changes"
 msgstr "Lưu thay đổi"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Save Locally"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:141
+#~ msgid "Save your changes"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Saved"
 msgstr ""
 
@@ -1455,6 +1536,14 @@ msgstr "Bảo mật với xác thực hai yếu tố"
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:65
 msgid "Security"
 msgstr "Bảo mật"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
+#~ msgid "Select a theme"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:112
+#~ msgid "Select your language"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Self-host with Docker"
@@ -1586,7 +1675,6 @@ msgstr "Bắt đầu xây dựng từ đầu"
 msgid "Start building your resume by giving it a name."
 msgstr "Bắt đầu xây dựng hồ sơ của bạn bằng cách đặt tên cho nó."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:22
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
 msgid "Statistics"
@@ -1628,13 +1716,17 @@ msgstr "Hỗ trợ định dạng trang A4/Letter"
 msgid "System"
 msgstr "Hệ thống"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:90
+#~ msgid "System (default)"
+#~ msgstr ""
+
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:67
 msgid "Témoignages"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:65
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:25
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:26
 msgid "Template"
 msgstr "Mẫu"
 
@@ -1668,6 +1760,10 @@ msgstr "Sơ yếu lý lịch bạn muốn cập nhật đã bị khóa, vui lòn
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
 msgid "Theme"
 msgstr "Chủ đề"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:83
+#~ msgid "Theme preference"
+#~ msgstr ""
 
 #: apps/client/src/services/errors/translate-error.ts:40
 msgid "There was an error connecting to the browser. Please make sure 'chrome' is running and reachable."
@@ -1720,7 +1816,7 @@ msgstr "Theo dõi lượt xem và lượt tải xuống"
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
 #: apps/client/src/pages/auth/verify-otp/page.tsx:57
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:129
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:155
 msgid "Two-Factor Authentication"
 msgstr "Xác thực hai yếu tố"
 
@@ -1764,7 +1860,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -1774,7 +1870,7 @@ msgstr "Mở khoá"
 msgid "Unlocking a resume will allow you to make changes to it again."
 msgstr "Mở khóa sơ yếu lý lịch sẽ cho phép bạn điều chỉnh thay đổi."
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Unverified"
 msgstr "Chưa xác minh"
 
@@ -1786,9 +1882,27 @@ msgstr "Cập nhật một mục hiện có"
 msgid "Update an existing resume"
 msgstr "Cập nhật sơ yếu lý lịch hiện có"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:68
+#~ msgid "Update your preferences to customize your experience, including language and theme."
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:212
 msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
 msgstr "Tải tệp lên từ một trong các nguồn được chấp nhận để phân tích dữ liệu hiện có và nhập tệp đó vào Reactive Resume để chỉnh sửa dễ dàng hơn."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:152
+msgid "Upload an image"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:142
+msgid "Upload an image file"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:146
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:155
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:156
+#~ msgid "Upload profile picture"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1809,7 +1923,7 @@ msgstr "Người dùng không có bản ghi 'bí mật' liên quan. Vui lòng b�
 
 #: apps/client/src/pages/auth/register/page.tsx:119
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:55
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:167
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "Tên Người Dùng"
 
@@ -1829,7 +1943,7 @@ msgstr "Đã xác thực"
 msgid "Value"
 msgstr "Giá trị"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Verified"
 msgstr "Đã xác minh"
 
@@ -1860,6 +1974,10 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:138
 msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+msgid "Votre nom complet."
 msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:61
@@ -1899,11 +2017,11 @@ msgstr "Bạn có thể thêm nhiều từ khóa bằng cách phân tách chúng
 msgid "You can also enter your username."
 msgstr "Bạn cũng có thể nhập tên người dùng của bạn."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:103
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:94
 msgid "You can also integrate with Ollama simply by setting the API key to `sk-1234567890abcdef` and the Base URL to your Ollama URL, i.e. `http://localhost:11434/v1`. You can also pick and choose models and set the max tokens as per your preference."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:81
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:72
 msgid "You can make use of the OpenAI API to help you generate content, or improve your writing while composing your resume."
 msgstr "Bạn có thể sử dụng API OpenAI để giúp bạn tạo nội dung hoặc cải thiện khả năng viết của mình trong khi soạn sơ yếu lý lịch."
 
@@ -1915,7 +2033,7 @@ msgstr "Bạn có thể theo dõi số lượt xem sơ yếu lý lịch của b�
 msgid "You don't have permission to access this page."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:87
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:78
 msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
 msgstr "Bạn có tùy chọn <0>lấy Key API OpenAI của bạn</0>. Key này cho phép bạn tận dụng API phù hợp với bạn. Ngoài ra, nếu bạn muốn tắt hoàn toàn các tính năng AI trong Reactive Resume, bạn chỉ cần xóa Key khỏi cài đặt của mình."
 
@@ -1932,13 +2050,17 @@ msgstr "Bạn vừa nhận thư!"
 msgid "Your account and all your data has been deleted successfully. Goodbye!"
 msgstr "Tài khoản của bạn và tất cả dữ liệu của bạn đã được xóa thành công. Tạm biệt!"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:191
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:233
 msgid "Your API key is securely stored in the browser's local storage and is only utilized when making requests to OpenAI via their official SDK. Rest assured that your key is not transmitted to any external server except when interacting with OpenAI's services."
 msgstr "Key API của bạn được lưu trữ an toàn trong bộ nhớ cục bộ của trình duyệt và chỉ được sử dụng khi gửi yêu cầu tới OpenAI thông qua SDK chính thức của họ. Hãy yên tâm rằng Key của bạn không được truyền đến bất kỳ máy chủ bên ngoài nào ngoại trừ khi tương tác với các dịch vụ của OpenAI."
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:28
 msgid "Your email address has been verified successfully."
 msgstr "Địa chỉ email của bạn đã được xác minh thành công."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+#~ msgid "Your full name."
+#~ msgstr ""
 
 #: apps/client/src/services/openai/client.ts:11
 msgid "Your OpenAI API Key has not been set yet. Please go to your account settings to enable OpenAI Integration."

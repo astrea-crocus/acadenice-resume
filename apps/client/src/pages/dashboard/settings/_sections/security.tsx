@@ -77,29 +77,55 @@ export const SecuritySettings = () => {
                 <FormField
                   name="currentPassword"
                   control={form.control}
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>{t`Current Password`}</FormLabel>
-                      <FormControl>
-                        <Input type="password" autoComplete="current-password" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
+                  render={({ field, fieldState }) => {
+                    const inputId = "current-password-input";
+                    const errorId = `${inputId}-error`;
+                    return (
+                      <FormItem>
+                        <FormLabel htmlFor={inputId}>{t`Current Password`}</FormLabel>
+                        <FormControl>
+                          <Input
+                            id={inputId}
+                            type="password"
+                            autoComplete="current-password"
+                            {...field}
+                            aria-invalid={fieldState.invalid}
+                            aria-describedby={fieldState.error ? errorId : undefined}
+                          />
+                        </FormControl>
+                        {fieldState.error && (
+                          <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                        )}
+                      </FormItem>
+                    );
+                  }}
                 />
 
                 <FormField
                   name="newPassword"
                   control={form.control}
-                  render={({ field, fieldState }) => (
-                    <FormItem>
-                      <FormLabel>{t`New Password`}</FormLabel>
-                      <FormControl>
-                        <Input type="password" autoComplete="new-password" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
+                  render={({ field, fieldState }) => {
+                    const inputId = "new-password-input";
+                    const errorId = `${inputId}-error`;
+                    return (
+                      <FormItem>
+                        <FormLabel htmlFor={inputId}>{t`New Password`}</FormLabel>
+                        <FormControl>
+                          <Input
+                            id={inputId}
+                            type="password"
+                            autoComplete="new-password"
+                            {...field}
+                            aria-invalid={fieldState.invalid}
+                            aria-describedby={fieldState.error ? errorId : undefined}
+                          />
+                        </FormControl>
+                        {fieldState.error && (
+                          <FormMessage id={errorId}>{fieldState.error.message}</FormMessage>
+                        )}
+                      </FormItem>
+                    );
+                  }}
                 />
 
                 <AnimatePresence presenceAffectsLayout>
@@ -146,7 +172,9 @@ export const SecuritySettings = () => {
 
             {user?.twoFactorEnabled ? (
               <Button
+                type="button"
                 variant="outline"
+                aria-label={t`Désactiver l'authentification à deux facteurs`}
                 onClick={() => {
                   open("delete");
                 }}
@@ -155,7 +183,9 @@ export const SecuritySettings = () => {
               </Button>
             ) : (
               <Button
+                type="button"
                 variant="outline"
+                aria-label={t`Activer l'authentification à deux facteurs`}
                 onClick={() => {
                   open("create");
                 }}

@@ -92,7 +92,7 @@ export const ResumeCard = ({ resume }: Props) => {
             <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
           </div>
 
-          <img src={`/templates/jpg/${normalized}.jpg`} alt=" " className="rounded-sm opacity-80" />
+          <img src={`/templates/jpg/${normalized}.jpg`} alt="" className="rounded-sm opacity-80" />
         </BaseCard>
       </DropdownMenuTrigger>
 

@@ -63,7 +63,6 @@ export const AccountSettings = () => {
   const onSubmit = async (data: UpdateUserDto) => {
     if (!user) return;
 
-    // Check if email has changed and display a toast message to confirm the email change
     if (user.email !== data.email) {
       toast({
         variant: "info",
@@ -93,7 +92,6 @@ export const AccountSettings = () => {
 
   const onResendVerificationEmail = async () => {
     const data = await resendVerificationEmail();
-
     toast({ variant: "success", title: data.message });
   };
 
@@ -118,26 +116,43 @@ export const AccountSettings = () => {
                 <UserAvatar />
 
                 <FormItem className="flex-1">
-                  <FormLabel>{t`Picture`}</FormLabel>
+                  <FormLabel htmlFor="picture-input">{t`Picture`}</FormLabel>
                   <FormControl>
-                    <Input placeholder="https://..." {...field} value={field.value ?? ""} />
+                    <Input
+                      id="picture-input"
+                      placeholder="https://..."
+                      {...field}
+                      value={field.value ?? ""}
+                      aria-describedby="picture-description"
+                    />
                   </FormControl>
+                  <FormDescription id="picture-description">
+                    {t`Enter a URL or upload an image.`}
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
 
                 {!user.picture && (
                   <>
-                    <input ref={inputRef} hidden type="file" onChange={onSelectImage} />
-
+                    <input
+                      ref={inputRef}
+                      hidden
+                      type="file"
+                      id="upload-image"
+                      aria-label={t`Upload an image file`}
+                      onChange={onSelectImage}
+                    />
                     <motion.button
+                      type="button"
                       disabled={isUploading}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       className={cn(buttonVariants({ size: "icon", variant: "ghost" }))}
+                      aria-label={t`Upload an image`}
                       onClick={() => inputRef.current?.click()}
                     >
-                      <UploadSimple />
+                      <UploadSimple aria-hidden="true" />
                     </motion.button>
                   </>
                 )}
@@ -150,10 +165,16 @@ export const AccountSettings = () => {
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t`Name`}</FormLabel>
+                <FormLabel htmlFor="name-input">{t`Name`}</FormLabel>
                 <FormControl>
-                  <Input autoComplete="name" {...field} />
+                  <Input
+                    id="name-input"
+                    autoComplete="name"
+                    {...field}
+                    aria-describedby="name-description"
+                  />
                 </FormControl>
+                <FormDescription id="name-description">{t`Votre nom complet.`}</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -164,10 +185,17 @@ export const AccountSettings = () => {
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t`Username`}</FormLabel>
+                <FormLabel htmlFor="username-input">{t`Username`}</FormLabel>
                 <FormControl>
-                  <Input autoComplete="username" className="lowercase" {...field} />
+                  <Input
+                    id="username-input"
+                    autoComplete="username"
+                    className="lowercase"
+                    {...field}
+                    aria-describedby="username-description"
+                  />
                 </FormControl>
+                <FormDescription id="username-description">{t`Choisissez un nom d'utilisateur unique.`}</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -178,11 +206,19 @@ export const AccountSettings = () => {
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t`Email`}</FormLabel>
+                <FormLabel htmlFor="email-input">{t`Email`}</FormLabel>
                 <FormControl>
-                  <Input type="email" autoComplete="email" className="lowercase" {...field} />
+                  <Input
+                    id="email-input"
+                    type="email"
+                    autoComplete="email"
+                    className="lowercase"
+                    {...field}
+                    aria-describedby="email-status"
+                  />
                 </FormControl>
                 <FormDescription
+                  id="email-status"
                   className={cn(
                     "flex items-center gap-x-1.5 font-medium opacity-100",
                     user.emailVerified ? "text-success-accent" : "text-warning-accent",
@@ -192,6 +228,7 @@ export const AccountSettings = () => {
                   {user.emailVerified ? t`Verified` : t`Unverified`}
                   {!user.emailVerified && (
                     <Button
+                      type="button"
                       variant="link"
                       className="h-auto text-xs"
                       onClick={onResendVerificationEmail}
@@ -200,6 +237,7 @@ export const AccountSettings = () => {
                     </Button>
                   )}
                 </FormDescription>
+                <FormMessage />
               </FormItem>
             )}
           />

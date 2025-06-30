@@ -15,7 +15,7 @@ export const Picture = ({ className }: PictureProps) => {
   return (
     <img
       src={picture.url}
-      alt=" "
+      alt=""
       className={cn(
         "relative z-20 object-cover",
         picture.effects.border && "border-primary",

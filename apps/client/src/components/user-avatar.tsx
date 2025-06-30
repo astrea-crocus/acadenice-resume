@@ -17,7 +17,7 @@ export const UserAvatar = ({ size = 36, className }: Props) => {
   if (user.picture) {
     picture = (
       <img
-        alt=" "
+        alt=""
         src={user.picture}
         className="rounded-full"
         style={{ width: size, height: size }}

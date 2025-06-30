@@ -38,7 +38,7 @@ msgstr "<0>Jeg bygde Reactive Resume for det meste alene på fritiden, med mye h
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Jeg er sikker på at appen ikke er perfekt, men jeg vil gjerne at den skal være det.</0><1>Hvis du har møtt på noen problemer mens du lagde CV-en din, eller har en idé som ville hjulpet deg selv eller andre brukere med å lage CV-en din mer enkelt, legg inn et problem på GitHub Repository eller send meg en e-post om det.</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:201
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:243
 msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>Merk:</0> Ved å bruke OpenAI API, erkjenner og godtar du <1>bruksvilkårene</1> og <2>personvernreglene</2> skissert av OpenAI. Vær oppmerksom på at Reactive Resume ikke har noe ansvar for feil eller uautorisert bruk av tjenesten, og eventuelle følgevirkninger eller ansvar hviler utelukkende på brukeren."
 
@@ -46,11 +46,11 @@ msgstr "<0>Merk:</0> Ved å bruke OpenAI API, erkjenner og godtar du <1>bruksvil
 #~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 #~ msgstr "<0>Fellesskapet har brukt mye tid på å skrive dokumentasjonen for Reactive Resume, og jeg er sikker på at det vil hjelpe deg med å komme i gang med appen.</0><1>Det er også mange eksempler som hjelper deg med å komme i gang, og funksjoner du kanskje ikke visste om som kan hjelpe deg med å skape din perfekte CV.</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:140
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:166
 msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
 msgstr "<0>Tofaktorautentisering er for øyeblikket deaktivert.</0> Du kan aktivere den ved å legge til en autentiseringsapp til kontoen din."
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:133
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:159
 msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
 msgstr "<0>Tofaktorautentisering er aktivert.</0> Du vil bli bedt om å skrive inn en kode hver gang du logger på."
 
@@ -115,9 +115,17 @@ msgstr ""
 msgid "Accepts only {accept} files"
 msgstr "Godtar kun {accept} filer"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:103
 msgid "Account"
 msgstr "Konto"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:113
+#~ msgid "Account settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:188
+msgid "Activer l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:175
 msgid "Add a custom field"
@@ -254,7 +262,7 @@ msgstr "Sikkerhetskopi-kode"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "Sikkerhetskopi-koder kan bare inneholde små bokstaver eller tall, og må være nøyaktig 10 tegn."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:132
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:140
 msgid "Base URL"
 msgstr "Basis-URL"
 
@@ -308,7 +316,7 @@ msgid "Center Artboard"
 msgstr "Sentrer Kunstbrett"
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:99
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:115
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:141
 msgid "Change Password"
 msgstr "Bytt Passord"
 
@@ -320,9 +328,26 @@ msgstr "Endre Tone"
 msgid "Changed your mind about the name? Give it a new one."
 msgstr "Har du ombestemt deg angående navnet? Gi det et nytt navn."
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:70
+#: apps/client/src/components/locale-switch.tsx:20
+#: apps/client/src/components/locale-switch.tsx:21
+msgid "Changer la langue"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:69
 msgid "Check your email for the confirmation link to update your email address."
 msgstr "Sjekk e-posten din for bekreftelseslenken for å oppdatere e-postadressen din."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+msgid "Choisissez un nom d'utilisateur unique."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+#~ msgid "Choose a unique username."
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:98
+#~ msgid "Choose the visual appearance that best suits you."
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:144
 msgid "Circle"
@@ -415,7 +440,7 @@ msgstr ""
 msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
 msgid "Current Password"
 msgstr ""
 
@@ -465,7 +490,7 @@ msgstr "Dato eller Datoperiode"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:137
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:158
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:121
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:126
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -475,6 +500,10 @@ msgstr "Slett"
 #: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:94
 msgid "Delete Account"
 msgstr "Slett Konto"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:177
+msgid "Désactiver l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:50
@@ -492,16 +521,25 @@ msgstr "Design enkelt-/flerside-CV"
 msgid "Disable"
 msgstr "Deaktiver"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:154
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:182
 msgid "Disable 2FA"
 msgstr "Deaktiver 2FA"
 
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#~ msgid "Disable two-factor authentication"
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:220
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:258
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:118
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:144
 msgid "Discard"
 msgstr "Forkast"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:249
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:144
+#~ msgid "Discard changes"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:101
 msgid "Documentation"
@@ -541,7 +579,7 @@ msgstr "Nedlastinger"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:181
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:246
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -567,13 +605,17 @@ msgstr "Effekter"
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:141
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:181
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
 msgstr "E-post"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:193
 msgid "Enable 2FA"
 msgstr "Aktiver 2FA"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:174
+#~ msgid "Enable two-factor authentication"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:24
 msgid "Enfin,"
@@ -582,6 +624,10 @@ msgstr ""
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "Skriv inn et nytt passord nedenfor, og sørg for at det er sikkert."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:130
+msgid "Enter a URL or upload an image."
+msgstr ""
 
 #: apps/client/src/pages/auth/backup-otp/page.tsx:59
 msgid "Enter one of the 10 backup codes you saved when you enabled two-factor authentication."
@@ -629,6 +675,11 @@ msgstr "Selv om du ikke er i stand til å bidra økonomisk, kan du fortsatt gjø
 msgid "Export"
 msgstr "Eksporter"
 
+#: apps/client/src/pages/dashboard/layout.tsx:36
+#: apps/client/src/pages/dashboard/layout.tsx:37
+msgid "Fermer le menu latéral"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:255
 msgid "File"
 msgstr "Fil"
@@ -669,7 +720,7 @@ msgstr "Skriftvarianter"
 msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
 msgstr "For eksempel kan du notere informasjon om hvilke selskaper du har sendt denne CV-en til eller lenkene til stillingsbeskrivelsene her."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:182
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:224
 msgid "Forget"
 msgstr "Glem"
 
@@ -747,7 +798,7 @@ msgstr "Rutenett"
 msgid "Headline"
 msgstr "Overskrift"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:107
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
 msgid "Here, you can update your account information such as your profile picture, name and username."
 msgstr "Her kan du oppdatere kontoinformasjonen din, som profilbildet, navnet og brukernavnet ditt."
 
@@ -927,7 +978,7 @@ msgstr "Språk"
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:92
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "Sist oppdatert {lastUpdated}"
@@ -996,7 +1047,7 @@ msgid "Location"
 msgstr "Sted"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:120
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1044,7 +1095,7 @@ msgstr "Mars 2023 - Nåværende"
 msgid "Margin"
 msgstr "Margin"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:158
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:194
 msgid "Max Tokens"
 msgstr "Maks antall tegn"
 
@@ -1060,7 +1111,7 @@ msgstr ""
 msgid "MIT License"
 msgstr "MIT-lisens"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:167
 msgid "Model"
 msgstr "Modell"
 
@@ -1077,7 +1128,7 @@ msgstr "Modell"
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:39
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:88
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:153
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:168
 msgid "Name"
 msgstr "Navn"
 
@@ -1090,7 +1141,7 @@ msgstr "Navn"
 msgid "Network"
 msgstr "Nettverk"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:96
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:112
 msgid "New Password"
 msgstr "Nytt Passord"
 
@@ -1123,7 +1174,7 @@ msgstr "Engangspassord"
 msgid "Oops, the server returned an error."
 msgstr "Oops, serveren returnerte en feil."
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:97
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:102
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -1143,11 +1194,11 @@ msgstr "OpenAI returnerte ingen valg for teksten din."
 msgid "OpenAI Integration"
 msgstr "OpenAI-integrasjon"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:119
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:113
 msgid "OpenAI/Ollama API Key"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:79
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:70
 msgid "OpenAI/Ollama Integration"
 msgstr ""
 
@@ -1175,6 +1226,11 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:96
 msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/layout.tsx:22
+#: apps/client/src/pages/dashboard/layout.tsx:23
+msgid "Ouvrir le menu latéral"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
@@ -1223,7 +1279,7 @@ msgid "Pick any font from Google Fonts"
 msgstr "Velg hvilken som helst skrifttype fra Google Fonts"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:121
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:119
 msgid "Picture"
 msgstr "Bilde"
 
@@ -1285,6 +1341,18 @@ msgstr "Profesjonell"
 msgid "Profile"
 msgstr "Profil"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:66
+#~ msgid "Profile settings"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:75
+#~ msgid "Profile settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:134
+#~ msgid "Provide a URL to your profile picture or upload an image."
+#~ msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr "Offentlig"
@@ -1343,13 +1411,13 @@ msgid "Remove Page"
 msgstr "Fjern Side"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:111
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:101
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:106
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
 msgstr "Endre navn"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:199
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:236
 msgid "Resend email confirmation link"
 msgstr "Send e-post bekreftelselenken på nytt"
 
@@ -1380,6 +1448,15 @@ msgstr "CV-er"
 msgid "Resumes Generated"
 msgstr "CV-er Generert"
 
+#: apps/client/src/pages/auth/layout.tsx:30
+msgid "Retour à l'accuei"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+msgid "Retour à l'accueil"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:105
 msgid "Rich in features, not in pricing."
 msgstr "Rik på funksjoner, ikke på pris."
@@ -1394,16 +1471,20 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:255
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:131
 msgid "Save Changes"
 msgstr "Lagre Endringer"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Save Locally"
 msgstr "Lagre lokalt"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:141
+#~ msgid "Save your changes"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Saved"
 msgstr "Lagret"
 
@@ -1455,6 +1536,14 @@ msgstr "Sikker med tofaktorautentisering"
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:65
 msgid "Security"
 msgstr "Sikkerhet"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
+#~ msgid "Select a theme"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:112
+#~ msgid "Select your language"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Self-host with Docker"
@@ -1586,7 +1675,6 @@ msgstr "Begynn å bygge fra bunnen av"
 msgid "Start building your resume by giving it a name."
 msgstr "Begynn å bygge din CV ved å gi den et navn."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:22
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
 msgid "Statistics"
@@ -1628,13 +1716,17 @@ msgstr "Støtter A4/Brev sideformater"
 msgid "System"
 msgstr "System"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:90
+#~ msgid "System (default)"
+#~ msgstr ""
+
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:67
 msgid "Témoignages"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:65
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:25
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:26
 msgid "Template"
 msgstr "Mal"
 
@@ -1668,6 +1760,10 @@ msgstr "CV-en du vil oppdatere er låst. Lås opp hvis du ønsker å gjøre endr
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
 msgid "Theme"
 msgstr "Tema"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:83
+#~ msgid "Theme preference"
+#~ msgstr ""
 
 #: apps/client/src/services/errors/translate-error.ts:40
 msgid "There was an error connecting to the browser. Please make sure 'chrome' is running and reachable."
@@ -1720,7 +1816,7 @@ msgstr "Spor visninger og nedlastinger"
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
 #: apps/client/src/pages/auth/verify-otp/page.tsx:57
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:129
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:155
 msgid "Two-Factor Authentication"
 msgstr "Tofaktorautentisering"
 
@@ -1764,7 +1860,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -1774,7 +1870,7 @@ msgstr "Lås opp"
 msgid "Unlocking a resume will allow you to make changes to it again."
 msgstr "Å låse opp en CV vil tillate deg å gjøre endringer i den igjen."
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Unverified"
 msgstr "Ubekreftet"
 
@@ -1786,9 +1882,27 @@ msgstr "Oppdater et eksisterende element"
 msgid "Update an existing resume"
 msgstr "Oppdater en eksisterende CV"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:68
+#~ msgid "Update your preferences to customize your experience, including language and theme."
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:212
 msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
 msgstr "Last opp en fil fra en av de aksepterte kildene for å analysere eksisterende data og importere den til Reactive Resume for enklere redigering."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:152
+msgid "Upload an image"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:142
+msgid "Upload an image file"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:146
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:155
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:156
+#~ msgid "Upload profile picture"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1809,7 +1923,7 @@ msgstr "Brukeren har ikke tilknyttet en 'secrets' oppføring. Vennligst rapporte
 
 #: apps/client/src/pages/auth/register/page.tsx:119
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:55
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:167
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "Brukernavn"
 
@@ -1829,7 +1943,7 @@ msgstr "Validert"
 msgid "Value"
 msgstr "Verdi"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Verified"
 msgstr "Verifisert"
 
@@ -1860,6 +1974,10 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:138
 msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+msgid "Votre nom complet."
 msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:61
@@ -1899,11 +2017,11 @@ msgstr "Du kan legge til flere nøkkelord ved å skille dem med et komma eller t
 msgid "You can also enter your username."
 msgstr "Du kan også skrive inn brukernavnet ditt."
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:103
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:94
 msgid "You can also integrate with Ollama simply by setting the API key to `sk-1234567890abcdef` and the Base URL to your Ollama URL, i.e. `http://localhost:11434/v1`. You can also pick and choose models and set the max tokens as per your preference."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:81
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:72
 msgid "You can make use of the OpenAI API to help you generate content, or improve your writing while composing your resume."
 msgstr "Du kan bruke OpenAI API for å hjelpe deg med å generere innhold, eller forbedre skrivingen din mens du skriver din CV."
 
@@ -1915,7 +2033,7 @@ msgstr "Du kan spore antall visninger CV-en din har mottatt, eller hvor mange pe
 msgid "You don't have permission to access this page."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:87
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:78
 msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
 msgstr "Du har muligheten til å <0>skaffe din egen OpenAI API-nøkkel</0>. Denne nøkkelen gir deg mulighet til å utnytte API-en slik det passer deg. Alternativt, hvis du ønsker å deaktivere KI-funksjonene i Reactive Resume helt, kan du ganske enkelt fjerne nøkkelen fra innstillingene dine."
 
@@ -1932,13 +2050,17 @@ msgstr "Du har fått e-post!"
 msgid "Your account and all your data has been deleted successfully. Goodbye!"
 msgstr "Kontoen din og alle dataene dine er slettet. Ha det bra!"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:191
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:233
 msgid "Your API key is securely stored in the browser's local storage and is only utilized when making requests to OpenAI via their official SDK. Rest assured that your key is not transmitted to any external server except when interacting with OpenAI's services."
 msgstr "API-nøkkelen din er trygt lagret i nettleserens lokale lagring og brukes kun når du sender forespørsler til OpenAI via deres offisielle SDK. Du kan være trygg på at nøkkelen din ikke overføres til noen ekstern server bortsett fra når du samhandler med OpenAI's tjenester."
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:28
 msgid "Your email address has been verified successfully."
 msgstr "E-postadressen din har blitt bekreftet."
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+#~ msgid "Your full name."
+#~ msgstr ""
 
 #: apps/client/src/services/openai/client.ts:11
 msgid "Your OpenAI API Key has not been set yet. Please go to your account settings to enable OpenAI Integration."

@@ -38,7 +38,7 @@ msgstr "<0>Reactive Resumeは、素晴らしいオープンソースコントリ
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>このアプリは完璧ではないと思いますが、完璧にしたいと思っています。</0><1>もし履歴書作成中に問題に直面したり、あなたや他のユーザーがもっと簡単に履歴書を作成できるようなアイデアがあれば、リポジトリにissueを作成するか、私にメールを送ってください。</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:201
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:243
 msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>注意：</0>OpenAI APIを利用することにより、利用者はOpenAIの<1>利用規約と</1> <2>プライバシーポリシーに</2>同意したものとみなされます。Reactive Resumeは、サービスの不適切な利用や不正利用に対して一切の責任を負わず、その結果生じるいかなる影響や責任も利用者のみにあることにご注意ください。"
 
@@ -46,11 +46,11 @@ msgstr "<0>注意：</0>OpenAI APIを利用することにより、利用者はO
 #~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 #~ msgstr "<0>コミュニティはReactive Resumeのドキュメントを作成することに多くの時間を費やしました。</0><1>また、使い始めるのに役立つ例や、完璧な履歴書を作成するのに役立つあなたが知らないかもしれない機能もたくさんあります。</1>"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:140
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:166
 msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
 msgstr "<0>二要素認証は現在無効になっています。</0>アカウントに認証アプリを追加することで有効にできます。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:133
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:159
 msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
 msgstr "<0>二要素認証が有効になっています。</0>サインインのたびにコードの入力が求められます。"
 
@@ -115,9 +115,17 @@ msgstr ""
 msgid "Accepts only {accept} files"
 msgstr "{accept} ファイルのみ"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:103
 msgid "Account"
 msgstr "アカウント"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:113
+#~ msgid "Account settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:188
+msgid "Activer l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:175
 msgid "Add a custom field"
@@ -254,7 +262,7 @@ msgstr "バックアップコード"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "バックアップコードは小文字のアルファベットまたは数字のみを含んだ10文字である必要があります。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:132
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:140
 msgid "Base URL"
 msgstr "ベースURL"
 
@@ -308,7 +316,7 @@ msgid "Center Artboard"
 msgstr "中央のアート"
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:99
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:115
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:141
 msgid "Change Password"
 msgstr "パスワードを変更"
 
@@ -320,9 +328,26 @@ msgstr "トーンを変更"
 msgid "Changed your mind about the name? Give it a new one."
 msgstr "名前についてのあなたの心を変えましたか? それを新しいものを与えます。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:70
+#: apps/client/src/components/locale-switch.tsx:20
+#: apps/client/src/components/locale-switch.tsx:21
+msgid "Changer la langue"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:69
 msgid "Check your email for the confirmation link to update your email address."
 msgstr "メールアドレスを更新するには、確認用のリンクをメールで確認してください。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+msgid "Choisissez un nom d'utilisateur unique."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
+#~ msgid "Choose a unique username."
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:98
+#~ msgid "Choose the visual appearance that best suits you."
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:144
 msgid "Circle"
@@ -415,7 +440,7 @@ msgstr ""
 msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
 msgid "Current Password"
 msgstr ""
 
@@ -465,7 +490,7 @@ msgstr "日付または日付の範囲"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:137
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:158
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:121
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:126
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -475,6 +500,10 @@ msgstr "削除する"
 #: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:94
 msgid "Delete Account"
 msgstr "アカウントを削除する"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:177
+msgid "Désactiver l'authentification à deux facteurs"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:50
@@ -492,16 +521,25 @@ msgstr "デザインシングル/マルチページの再開"
 msgid "Disable"
 msgstr "無効"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:154
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:182
 msgid "Disable 2FA"
 msgstr "2段階認証を無効にする"
 
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#~ msgid "Disable two-factor authentication"
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:220
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:258
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:118
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:144
 msgid "Discard"
 msgstr "破棄する"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:249
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:144
+#~ msgid "Discard changes"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:101
 msgid "Documentation"
@@ -541,7 +579,7 @@ msgstr "ダウンロード"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:181
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:246
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -567,13 +605,17 @@ msgstr "効果"
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:141
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:181
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
 msgstr "Eメール"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:193
 msgid "Enable 2FA"
 msgstr "二段階認証を有効にする"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:174
+#~ msgid "Enable two-factor authentication"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:24
 msgid "Enfin,"
@@ -582,6 +624,10 @@ msgstr ""
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "以下に新しいパスワードを入力し、安全であることを確認してください。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:130
+msgid "Enter a URL or upload an image."
+msgstr ""
 
 #: apps/client/src/pages/auth/backup-otp/page.tsx:59
 msgid "Enter one of the 10 backup codes you saved when you enabled two-factor authentication."
@@ -629,6 +675,11 @@ msgstr "たとえ金銭的に貢献する立場にないとしても、GitHubリ
 msgid "Export"
 msgstr "輸出"
 
+#: apps/client/src/pages/dashboard/layout.tsx:36
+#: apps/client/src/pages/dashboard/layout.tsx:37
+msgid "Fermer le menu latéral"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:255
 msgid "File"
 msgstr "ファイル"
@@ -669,7 +720,7 @@ msgstr "Font Variants"
 msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
 msgstr "例えば、どの会社にこの履歴書を送ったか、または仕事の説明へのリンクについての情報はここに記述することができる。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:182
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:224
 msgid "Forget"
 msgstr "忘れた"
 
@@ -747,7 +798,7 @@ msgstr "グリッド"
 msgid "Headline"
 msgstr "見出し"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:107
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
 msgid "Here, you can update your account information such as your profile picture, name and username."
 msgstr "ここでは、プロフィール画像、名前、ユーザー名などのアカウント情報を更新できます。"
 
@@ -927,7 +978,7 @@ msgstr "言語"
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:92
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "最終更新 {lastUpdated}"
@@ -996,7 +1047,7 @@ msgid "Location"
 msgstr "場所"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:120
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1044,7 +1095,7 @@ msgstr "2023年3月-現在"
 msgid "Margin"
 msgstr "マージン（マージン）"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:158
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:194
 msgid "Max Tokens"
 msgstr "最大トークン"
 
@@ -1060,7 +1111,7 @@ msgstr ""
 msgid "MIT License"
 msgstr "MIT ライセンス"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:167
 msgid "Model"
 msgstr "モデル"
 
@@ -1077,7 +1128,7 @@ msgstr "モデル"
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:39
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:88
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:153
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:168
 msgid "Name"
 msgstr "名前"
 
@@ -1090,7 +1141,7 @@ msgstr "名前"
 msgid "Network"
 msgstr "ネットワーク"
 
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:96
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:112
 msgid "New Password"
 msgstr "新しいパスワード"
 
@@ -1123,7 +1174,7 @@ msgstr "ワンタイムパスワード"
 msgid "Oops, the server returned an error."
 msgstr "サーバーがエラーを返しました。"
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:97
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:102
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -1143,11 +1194,11 @@ msgstr "OpenAIはテキストの選択肢を返しませんでした。"
 msgid "OpenAI Integration"
 msgstr "OpenAI 統合"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:119
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:113
 msgid "OpenAI/Ollama API Key"
 msgstr "OpenAI/OllamaのAPIキー"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:79
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:70
 msgid "OpenAI/Ollama Integration"
 msgstr "OpenAIとOllamaの統合"
 
@@ -1175,6 +1226,11 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:96
 msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/layout.tsx:22
+#: apps/client/src/pages/dashboard/layout.tsx:23
+msgid "Ouvrir le menu latéral"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
@@ -1223,7 +1279,7 @@ msgid "Pick any font from Google Fonts"
 msgstr "Googleフォントから任意のフォントを選択"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:121
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:119
 msgid "Picture"
 msgstr "写真"
 
@@ -1285,6 +1341,18 @@ msgstr "プロフェッショナル"
 msgid "Profile"
 msgstr "プロフィール"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:66
+#~ msgid "Profile settings"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:75
+#~ msgid "Profile settings form"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:134
+#~ msgid "Provide a URL to your profile picture or upload an image."
+#~ msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr "公開"
@@ -1343,13 +1411,13 @@ msgid "Remove Page"
 msgstr "ページを削除"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:111
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:101
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:106
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
 msgstr "名前の変更"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:199
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:236
 msgid "Resend email confirmation link"
 msgstr "メール確認リンクを再送信する"
 
@@ -1380,6 +1448,15 @@ msgstr "再開する"
 msgid "Resumes Generated"
 msgstr "生成された再開"
 
+#: apps/client/src/pages/auth/layout.tsx:30
+msgid "Retour à l'accuei"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:102
+msgid "Retour à l'accueil"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:105
 msgid "Rich in features, not in pricing."
 msgstr "豊富な機能、価格設定ではありません。"
@@ -1394,16 +1471,20 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:255
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:131
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Save Locally"
 msgstr "地元で節約する"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:141
+#~ msgid "Save your changes"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:218
 msgid "Saved"
 msgstr "保存"
 
@@ -1455,6 +1536,14 @@ msgstr "2要素認証で保護"
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:65
 msgid "Security"
 msgstr "セキュリティ"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
+#~ msgid "Select a theme"
+#~ msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:112
+#~ msgid "Select your language"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Self-host with Docker"
@@ -1586,7 +1675,6 @@ msgstr "最初からビルドを開始"
 msgid "Start building your resume by giving it a name."
 msgstr "履歴書の作成を開始するには名前を付けてください。"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:22
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
 msgid "Statistics"
@@ -1628,13 +1716,17 @@ msgstr "A4/レターページ形式に対応"
 msgid "System"
 msgstr "システム"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:90
+#~ msgid "System (default)"
+#~ msgstr ""
+
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:67
 msgid "Témoignages"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:65
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
-#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:25
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:26
 msgid "Template"
 msgstr "テンプレート"
 
@@ -1668,6 +1760,10 @@ msgstr "更新したい履歴書はロックされています。変更を加え
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
 msgid "Theme"
 msgstr "テーマ"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:83
+#~ msgid "Theme preference"
+#~ msgstr ""
 
 #: apps/client/src/services/errors/translate-error.ts:40
 msgid "There was an error connecting to the browser. Please make sure 'chrome' is running and reachable."
@@ -1720,7 +1816,7 @@ msgstr "ビューとダウンロードを追跡する"
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
 #: apps/client/src/pages/auth/verify-otp/page.tsx:57
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:129
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:155
 msgid "Two-Factor Authentication"
 msgstr "2要素認証"
 
@@ -1764,7 +1860,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -1774,7 +1870,7 @@ msgstr "ロック解除"
 msgid "Unlocking a resume will allow you to make changes to it again."
 msgstr "履歴書のロックを解除すると、再び変更することができます。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Unverified"
 msgstr "未認証"
 
@@ -1786,9 +1882,27 @@ msgstr "既存のアイテムを更新"
 msgid "Update an existing resume"
 msgstr "既存の履歴書を更新"
 
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:68
+#~ msgid "Update your preferences to customize your experience, including language and theme."
+#~ msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:212
 msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
 msgstr "承認されたソースのいずれかからファイルをアップロードして、既存のデータをパースし、Reactive Resume にインポートして編集を容易にします。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:152
+msgid "Upload an image"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:142
+msgid "Upload an image file"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:146
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:155
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:156
+#~ msgid "Upload profile picture"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1809,7 +1923,7 @@ msgstr "ユーザーには関連する「秘密」レコードがありません
 
 #: apps/client/src/pages/auth/register/page.tsx:119
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:55
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:167
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "ユーザー名"
 
@@ -1829,7 +1943,7 @@ msgstr "検証済み"
 msgid "Value"
 msgstr "値"
 
-#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Verified"
 msgstr "確認済み"
 
@@ -1860,6 +1974,10 @@ msgstr "利用可能なアイコンのリストについては、<0>Phosphor Ico
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:138
 msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
+msgstr ""
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+msgid "Votre nom complet."
 msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:61
@@ -1899,11 +2017,11 @@ msgstr "複数のキーワードを追加するには、カンマで区切るか
 msgid "You can also enter your username."
 msgstr "ユーザー名を入力することもできます。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:103
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:94
 msgid "You can also integrate with Ollama simply by setting the API key to `sk-1234567890abcdef` and the Base URL to your Ollama URL, i.e. `http://localhost:11434/v1`. You can also pick and choose models and set the max tokens as per your preference."
 msgstr "APIキーを`sk-1234567890abcdef`に設定し、ベースURLをOllamaのURL、つまり`http://localhost:11434/v1`に設定するだけで、Ollamaと統合することもできます。また、好みに応じてモデルを選択し、最大トークンを設定することもできます。"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:81
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:72
 msgid "You can make use of the OpenAI API to help you generate content, or improve your writing while composing your resume."
 msgstr "OpenAI API を使用して、コンテンツを生成したり、履歴書を作成したりする際に書き込みを改善したりできます。"
 
@@ -1915,7 +2033,7 @@ msgstr "公開共有を有効にすることで、履歴書が受信した閲覧
 msgid "You don't have permission to access this page."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:87
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:78
 msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
 msgstr "<0>あなた自身のOpenAI APIキー</0>を取得するオプションがあります。このキーは、あなたが適切にAPIを活用することを可能にします。 Reactive Resume で AI 機能を完全に無効にしたい場合は、設定からキーを削除することもできます。"
 
@@ -1932,13 +2050,17 @@ msgstr "メールを受け取りました！"
 msgid "Your account and all your data has been deleted successfully. Goodbye!"
 msgstr "アカウントとすべてのデータが正常に削除されました。さようなら！"
 
-#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:191
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:233
 msgid "Your API key is securely stored in the browser's local storage and is only utilized when making requests to OpenAI via their official SDK. Rest assured that your key is not transmitted to any external server except when interacting with OpenAI's services."
 msgstr "API キーはブラウザーのローカルストレージに安全に保存され、公式の SDK 経由で OpenAI へのリクエストを行う場合にのみ使用されます。 OpenAIのサービスと相互作用する場合を除き、キーが外部サーバーに送信されることはありませんのでご安心ください。"
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:28
 msgid "Your email address has been verified successfully."
 msgstr "メールアドレスの確認が完了しました。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:177
+#~ msgid "Your full name."
+#~ msgstr ""
 
 #: apps/client/src/services/openai/client.ts:11
 msgid "Your OpenAI API Key has not been set yet. Please go to your account settings to enable OpenAI Integration."

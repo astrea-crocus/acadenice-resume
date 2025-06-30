@@ -11,7 +11,7 @@ export const AnimatedLogo = () => {
       {/* Desktop XL logo */}
       <img
         src="/logo/teal.png"
-        alt="Logo XL"
+        alt=""
         width={size}
         height={size}
         className={`hidden xl:block ${fadeClass}`}
@@ -23,7 +23,7 @@ export const AnimatedLogo = () => {
       {/* Mobile logo */}
       <img
         src="/logo/light.png"
-        alt="Logo mobile"
+        alt=""
         width={size}
         height={size}
         className={`lg:hidden ${fadeClass}`}

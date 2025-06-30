@@ -27,7 +27,7 @@ export const AuthLayout = () => {
     <div className="flex h-screen w-screen">
       <div className="relative flex w-full flex-col justify-center gap-y-8 px-12 sm:mx-auto sm:basis-[420px] sm:px-0 lg:basis-[480px] lg:px-12">
         <div className="flex items-center justify-between">
-          <Link to="/" className="size-24">
+          <Link to="/" className="size-24" aria-label={t`Retour à l'accuei`}>
             <Logo className="-ml-3" size={96} />
           </Link>
 
@@ -62,7 +62,7 @@ export const AuthLayout = () => {
         <img
           width={1920}
           height={1080}
-          alt=" "
+          alt=""
           className="h-screen w-full object-cover object-center"
           src="/backgrounds/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
         />
