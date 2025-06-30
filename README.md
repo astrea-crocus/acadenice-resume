@@ -94,3 +94,7 @@
 ## 27 Juin 2025
 - Fin personnalisation du premier template
 - Ajout de 4 autres templates
+
+## 28 Juin 2025
+- Ajustement du template Euphorbia
+- Ajustement de la couleur du texte du bloc de remarque sur OpenAI

@@ -56,7 +56,7 @@ export const RightSidebar = () => {
         </div>
       </ScrollArea>
 
-      <div className="hidden basis-12 flex-col items-center justify-between bg-secondary-accent/30 py-4 sm:flex">
+      <div className="hidden basis-12 flex-col items-center justify-between bg-primary-accent/25 py-4 sm:flex">
         <div />
 
         <div className="flex flex-col items-center justify-center gap-y-2">
@@ -109,13 +109,13 @@ export const RightSidebar = () => {
               scrollIntoView("#sharing");
             }}
           />
-          <SectionIcon
+          {/* <SectionIcon
             id="statistics"
             name={t`Statistics`}
             onClick={() => {
               scrollIntoView("#statistics");
             }}
-          />
+          /> */}
           <SectionIcon
             id="export"
             name={t`Export`}

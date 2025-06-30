@@ -197,7 +197,7 @@ export const OpenAISettings = () => {
       </div>
 
       <Alert variant="warning">
-        <div className="prose prose-neutral max-w-full text-xs leading-relaxed text-primary dark:prose-invert">
+        <div className="prose prose-neutral max-w-full text-xs leading-relaxed text-black dark:prose-invert">
           <Trans>
             <span className="font-medium">Note: </span>
             By utilizing the OpenAI API, you acknowledge and accept the{" "}
@@ -205,6 +205,7 @@ export const OpenAISettings = () => {
               href="https://openai.com/policies/terms-of-use"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              className="font-bold"
             >
               terms of use
             </a>{" "}
@@ -213,6 +214,7 @@ export const OpenAISettings = () => {
               href="https://openai.com/policies/privacy-policy"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              className="font-bold"
             >
               privacy policy
             </a>{" "}

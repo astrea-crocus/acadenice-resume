@@ -17,7 +17,7 @@ export const UserAvatar = ({ size = 36, className }: Props) => {
   if (user.picture) {
     picture = (
       <img
-        alt={user.name}
+        alt=" "
         src={user.picture}
         className="rounded-full"
         style={{ width: size, height: size }}
@@ -29,7 +29,7 @@ export const UserAvatar = ({ size = 36, className }: Props) => {
     picture = (
       <div
         style={{ width: size, height: size }}
-        className="flex items-center justify-center rounded-full bg-secondary text-center text-[10px] font-semibold text-secondary-foreground"
+        className="flex items-center justify-center rounded-full bg-primary text-center text-[10px] font-semibold text-white"
       >
         {initials}
       </div>

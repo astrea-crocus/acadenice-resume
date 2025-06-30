@@ -602,7 +602,7 @@ export const Euphorbia = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
   return (
-    <div className="p-custom grid grid-cols-3 space-x-6">
+    <div className="p-custom grid grid-cols-3 gap-x-6">
       <div className="sidebar group space-y-4">
         {isFirstPage && <Picture className="w-full !max-w-none" />}
 
@@ -618,7 +618,7 @@ export const Euphorbia = ({ columns, isFirstPage = false }: TemplateProps) => {
           <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
         ))}
       </div>
-      <div className="absolute bottom-0 right-0 w-full bg-primary">
+      <div className="group col-span-3 space-y-4 bg-primary">
         <SealWhite maxHeight={5} />
       </div>
     </div>
