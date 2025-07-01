@@ -163,7 +163,7 @@
     },
     "profiles": {
       "name": "Profiles",
-      "columns": 1,
+      "columns": 3,
       "visible": true,
       "id": "profiles",
       "items": [
@@ -204,7 +204,7 @@
     },
     "projects": {
       "name": "Projects",
-      "columns": 1,
+      "columns": 2,
       "visible": true,
       "id": "projects",
       "items": [
@@ -297,20 +297,18 @@
     "custom": {}
   },
   "metadata": {
-    "template": "euphorbia",
+    "template": "antman",
     "layout": [
       [
-        ["summary", "experience", "education", "projects"],
+        ["profiles", "summary", "experience", "education", "projects", "volunteer"],
         [
-          "profiles",
           "skills",
-          "certifications",
-          "languages",
-          "references",
           "interests",
+          "certifications",
           "awards",
-          "volunteer",
-          "publications"
+          "publications",
+          "languages",
+          "references"
         ]
       ]
     ],
@@ -338,9 +336,9 @@
         "variants": ["regular"],
         "size": 13
       },
-      "lineHeight": 1.5,
+      "lineHeight": 1.75,
       "hideIcons": false,
-      "underlineLinks": false
+      "underlineLinks": true
     },
     "notes": ""
   }

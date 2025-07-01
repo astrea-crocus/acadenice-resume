@@ -26,9 +26,13 @@ msgstr "Anda telah berhasil mengaktifkan autentikasi dua faktor."
 msgid "{templatesCount} resume templates to choose from"
 msgstr "{templatesCount} templat resume yang dapat dipilih"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:142
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:158
 msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, other {Kolom}}"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:174
+#~ msgid "& > section:last-of-type"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:21
 msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
@@ -64,7 +68,7 @@ msgstr "<0>Autentikasi dua faktor diaktifkan.</0> Anda akan diminta untuk memasu
 #~ msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
 #~ msgstr "Pembuat resume gratis dan bersumber terbuka yang menyederhanakan proses pembuatan, pembaruan, dan berbagi resume Anda."
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:59
+#: apps/client/src/pages/builder/_components/toolbar.tsx:57
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
 msgid "A link has been copied to your clipboard."
 msgstr "Tautan telah disalin ke papan klip Anda."
@@ -123,36 +127,142 @@ msgstr "Akun"
 #~ msgid "Account settings form"
 #~ msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
+msgid "Actions d'aide par intelligence artificielle pour le résumé"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:188
 msgid "Activer l'authentification à deux facteurs"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:175
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:100
+msgid "Activer la séparation des liens"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:198
+msgid "Activer ou désactiver l'effet bordure"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:186
+msgid "Activer ou désactiver l'effet caché"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:210
+msgid "Activer ou désactiver l'effet niveaux de gris"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:194
 msgid "Add a custom field"
 msgstr "Tambahkan kolom kustom"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:119
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:170
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:171
+#~ msgid "Add a new custom section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:93
 msgctxt "For example, add a new work experience, or add a new profile."
 msgid "Add a new item"
 msgstr "Tambah item baru"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:91
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:93
 msgid "Add a new item"
 msgstr "Tambah item baru"
 
-#: apps/client/src/pages/builder/sidebars/left/index.tsx:146
-#: apps/client/src/pages/builder/sidebars/left/index.tsx:263
-msgid "Add a new section"
-msgstr "Tambahkan bagian baru"
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:169
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:286
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:290
+#~ msgid "Add a new section"
+#~ msgstr "Tambahkan bagian baru"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:261
 msgid "Add New Page"
 msgstr "Tambah halaman baru"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:112
+msgid "Afficher la section"
+msgstr ""
+
 #: apps/client/src/components/ai-actions.tsx:79
 msgid "AI"
 msgstr "Kecerdasan buatan"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:190
+msgid "Ajouter un champ personnalisé"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:91
+msgid "Ajouter un nouvel élément"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:182
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:305
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:309
+msgid "Ajouter une nouvelle section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:184
+msgid "Ajouter une nouvelle section personnalisée"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:165
+msgid "Aller à la section Bénévolat"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:141
+msgid "Aller à la section Centres d'intérêt"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:133
+msgid "Aller à la section Certifications"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:109
+msgid "Aller à la section Compétences"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:93
+msgid "Aller à la section Expériences"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:101
+msgid "Aller à la section Formations"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:69
+msgid "Aller à la section Informations de base"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:117
+msgid "Aller à la section Langues"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:85
+msgid "Aller à la section Profils"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:149
+msgid "Aller à la section Projets"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:157
+msgid "Aller à la section Publications"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:125
+msgid "Aller à la section Récompenses"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:173
+msgid "Aller à la section Références"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:77
+msgid "Aller à la section Résumé"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:55
+msgid "Aller au tableau de bord"
+msgstr ""
 
 #: apps/client/src/pages/auth/register/page.tsx:71
 msgid "Already have an account?"
@@ -178,11 +288,19 @@ msgstr ""
 msgid "and many more..."
 msgstr "dan masih banyak lagi..."
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:185
+msgid "Annuler"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:184
+msgid "Annuler la suppression"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:57
 msgid "Anyone with the link can view and download the resume."
 msgstr "Siapa pun yang memiliki tautan dapat melihat dan mengunduh resume."
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:60
+#: apps/client/src/pages/builder/_components/toolbar.tsx:58
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:30
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr "Siapa pun yang memiliki tautan ini dapat melihat dan mengunduh resume tesebut. Bagikan di profil Anda atau dengan para perekrut."
@@ -192,8 +310,8 @@ msgid "Apply Custom CSS"
 msgstr "Menerapkan CSS Khusus"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:128
-msgid "Are you sure you want to delete this item?"
-msgstr "Apakah Anda yakin Anda ingin menghapus item ini?"
+#~ msgid "Are you sure you want to delete this item?"
+#~ msgstr "Apakah Anda yakin Anda ingin menghapus item ini?"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:149
 msgid "Are you sure you want to delete your resume?"
@@ -216,11 +334,11 @@ msgid "Are you sure?"
 msgstr "Apakah Anda yakin?"
 
 #. For example, Computer Science or Business Administration
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:73
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:83
 msgid "Area of Study"
 msgstr "Area belajar"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:79
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:85
 msgid "Aspect Ratio"
 msgstr "Rasio Aspek"
 
@@ -241,11 +359,11 @@ msgid "Available in {languagesCount} languages"
 msgstr "Tersedia dalam {languagesCount} bahasa"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:53
-msgid "Awarder"
-msgstr "Pemberi penghargaan"
+#~ msgid "Awarder"
+#~ msgstr "Pemberi penghargaan"
 
 #: apps/client/src/pages/auth/backup-otp/page.tsx:99
-#: apps/client/src/pages/auth/forgot-password/page.tsx:100
+#: apps/client/src/pages/auth/forgot-password/page.tsx:107
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:243
 msgid "Back"
 msgstr "Kembali"
@@ -262,30 +380,55 @@ msgstr "Kode Cadangan"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "Kode Cadangan hanya boleh berisi huruf kecil atau angka, dan harus tepat 10 karakter."
 
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:47
+msgid "Barre latérale de l'éditeur de CV"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:142
+msgid "Basculer la visibilité de l'élément : {itemTitle}"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:140
 msgid "Base URL"
 msgstr "URL dasar"
 
-#: apps/client/src/pages/builder/sidebars/left/index.tsx:55
-msgctxt "The basics section of a resume consists of User's Picture, Full Name, Location etc."
-msgid "Basics"
-msgstr "Dasar-dasar"
-
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:21
-msgid "Basics"
-msgstr "Dasar-dasar"
+#~ msgid "Basics"
+#~ msgstr "Dasar-dasar"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:55
+#~ msgctxt "The basics section of a resume consists of User's Picture, Full Name, Location etc."
+#~ msgid "Basics"
+#~ msgstr "Dasar-dasar"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:164
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:109
+msgid "Bénévolat"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:13
 msgid "Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:191
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:203
 msgid "Border"
 msgstr "Perbatasan"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:124
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
 msgid "Border Radius"
 msgstr "Radius Perbatasan"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:143
+msgid "Bouton pour créer un nouvel élément"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:151
+msgid "Bouton pour dupliquer l'élément"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:147
+msgid "Bouton pour enregistrer les modifications"
+msgstr ""
 
 #: apps/client/src/pages/public/page.tsx:93
 msgid "Built with"
@@ -295,7 +438,6 @@ msgstr "Dibangun dengan"
 msgid "By the community, for the community."
 msgstr "Oleh komunitas, untuk komunitas."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:135
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:49
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:156
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:137
@@ -311,9 +453,51 @@ msgstr "Santai"
 msgid "Ce site a été adapté pour accompagner les apprenants d’AcadéNice dans la création d’un CV professionnel, en phase avec les standards actuels du recrutement."
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:130
+#: apps/client/src/pages/builder/_components/toolbar.tsx:166
+msgid "Center artboard"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:161
 msgid "Center Artboard"
 msgstr "Papan Seni Tengah"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:140
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:103
+msgid "Centres d'intérêt"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:132
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:100
+msgid "Certifications"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:178
+msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
+msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:101
+msgid "Champ de saisie pour le nom du champ personnalisé: {fieldName}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:74
+msgid "Champ de saisie pour modifier l'icône"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:128
+msgid "Champ de saisie pour renommer la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:31
+msgid "Champ pour saisir l'URL"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:35
+msgid "Champ pour saisir le libellé associé à l'URL"
+msgstr ""
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:99
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:141
@@ -337,6 +521,34 @@ msgstr ""
 msgid "Check your email for the confirmation link to update your email address."
 msgstr "Periksa email Anda untuk mendapatkan tautan konfirmasi untuk memperbarui alamat email Anda."
 
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:148
+msgid "Choisir bord arrondi"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:142
+msgid "Choisir bord carré"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:154
+msgid "Choisir bord en cercle"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:146
+msgid "Choisir le nombre de colonnes"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:95
+msgid "Choisir le ratio carré"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:101
+msgid "Choisir le ratio horizontal"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:107
+msgid "Choisir le ratio portrait"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:198
 msgid "Choisissez un nom d'utilisateur unique."
 msgstr ""
@@ -349,7 +561,7 @@ msgstr ""
 #~ msgid "Choose the visual appearance that best suits you."
 #~ msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:144
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:153
 msgid "Circle"
 msgstr "Lingkaran"
 
@@ -365,7 +577,7 @@ msgstr "Kode"
 msgid "Code must be exactly 6 digits long."
 msgstr "Kode harus terdiri dari 6 digit."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:136
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:148
 msgid "Columns"
 msgstr "Kolom"
 
@@ -377,29 +589,45 @@ msgstr ""
 msgid "Company"
 msgstr "Perusahaan"
 
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:108
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:118
+msgid "Compétences"
+msgstr ""
+
 #: apps/client/src/components/ai-actions.tsx:115
 #: apps/client/src/components/ai-actions.tsx:118
 msgid "Confident"
 msgstr "Percaya diri"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:188
+msgid "Confirmer la suppression"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
+msgid "Contenu éditable du résumé"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:234
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:246
 msgid "Continue"
 msgstr "Lanjutkan"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:96
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:119
 msgid "Copy"
 msgstr "Salin"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:164
+#: apps/client/src/pages/builder/_components/toolbar.tsx:203
 msgid "Copy Link to Resume"
 msgstr "Salin Tautan ke Resume"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:209
+msgid "Copy public link to resume"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:78
 msgid "Copy to Clipboard"
 msgstr "Menyalin ke Papan Klip"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:179
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:244
 msgid "Create"
 msgstr "Membuat"
@@ -410,8 +638,8 @@ msgid "Create a new account"
 msgstr "Membuat akun baru"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:163
-msgid "Create a new item"
-msgstr "Membuat item baru"
+#~ msgid "Create a new item"
+#~ msgstr "Membuat item baru"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:178
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:28
@@ -428,6 +656,10 @@ msgstr "Buat satu sekarang"
 msgid "Create Sample Resume"
 msgstr "Buat Contoh Resume"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:247
+msgid "Créer"
+msgstr ""
+
 #: apps/client/src/components/copyright.tsx:26
 msgid "Créer par"
 msgstr ""
@@ -436,8 +668,16 @@ msgstr ""
 msgid "Créer son CV en ligne"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:223
+msgid "Créer un nouvel élément"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/hero/index.tsx:26
 msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:98
+msgid "CSS personnalisé"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
@@ -474,21 +714,56 @@ msgstr "Zona Bahaya"
 msgid "Dark"
 msgstr "Gelap"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:67
-#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:76
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:75
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:67
 msgid "Date"
 msgstr "Tanggal"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:87
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:110
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:72
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:84
+msgid "Date à laquelle la récompense a été obtenue"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:83
+msgid "Date d'obtention de la certification"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:73
+msgid "Date de publication"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:95
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:129
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:80
 #: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:101
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:71
 msgid "Date or Date Range"
 msgstr "Tanggal atau Rentang Tanggal"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:137
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:99
+msgid "Date ou période associée à cette section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:77
+msgid "Date ou période bénévole"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:85
+msgid "Date ou période d'emploi"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:134
+msgid "Date ou période d'études"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:107
+msgid "Date ou période du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:58
+msgid "Décerné par"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:158
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:126
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
@@ -501,21 +776,69 @@ msgstr "Menghapus"
 msgid "Delete Account"
 msgstr "Menghapus Akun"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:85
+msgid "Déplacer la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:49
+msgid "Déplacer le champ personnalisé"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:177
 msgid "Désactiver l'authentification à deux facteurs"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:73
-#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:50
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:99
+msgid "Désactiver la séparation des liens"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:77
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:54
 #: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:87
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:53
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:63
 msgid "Description"
 msgstr "Deskripsi"
 
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:81
+msgid "Description courte de la section personnalisée"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:68
+msgid "Description de la compétence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:58
+msgid "Description de la référence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:89
+msgid "Description du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:58
+msgid "Description ou commentaire sur la langue"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:58
 msgid "Design single/multi page resumes"
 msgstr "Desain resume satu / beberapa halaman"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:163
+msgid "Dialogue de confirmation de suppression"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:124
+msgid "Dialogue de création d'un nouvel élément"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:132
+msgid "Dialogue de duplication d'un élément existant"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:128
+msgid "Dialogue de mise à jour d'un élément existant"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:139
 msgid "Disable"
@@ -541,9 +864,21 @@ msgstr "Buang"
 #~ msgid "Discard changes"
 #~ msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:89
+msgid "Disposition"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:88
+msgid "Distinctions"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:101
 msgid "Documentation"
 msgstr "Dokumentasi"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:91
+msgid "Domaine ou spécialité d'étude"
+msgstr ""
 
 #: apps/client/src/pages/auth/login/page.tsx:62
 msgid "Don't have an account?"
@@ -569,15 +904,18 @@ msgstr "Unduh cuplikan JSON dari resume Anda. File ini dapat digunakan untuk men
 msgid "Download a PDF of your resume. This file can be used to print your resume, send it to recruiters, or upload on job portals."
 msgstr "Unduh file PDF resume Anda. File ini dapat digunakan untuk mencetak resume Anda, mengirimkannya ke perekrut, atau mengunggahnya di portal pekerjaan."
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:176
+#: apps/client/src/pages/builder/_components/toolbar.tsx:216
 msgid "Download PDF"
 msgstr "Unduh PDF"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:222
+msgid "Download resume as PDF"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:58
 msgid "Downloads"
 msgstr "Unduhan"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:181
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:246
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
@@ -586,25 +924,41 @@ msgid "Duplicate"
 msgstr "Duplikat"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:165
-msgid "Duplicate an existing item"
-msgstr "Menduplikasi item yang sudah ada"
+#~ msgid "Duplicate an existing item"
+#~ msgstr "Menduplikasi item yang sudah ada"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:180
 msgid "Duplicate an existing resume"
 msgstr "Menggandakan resume yang sudah ada"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:92
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:249
+msgid "Dupliquer"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:225
+msgid "Dupliquer un élément existant"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:115
 msgid "Edit"
 msgstr "Sunting"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:169
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:46
+msgid "Éditeur de texte pour le résumé"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:55
+msgid "Éditeur ou organisme"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:179
 msgid "Effects"
 msgstr "Efek"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:82
 #: apps/client/src/pages/auth/login/page.tsx:90
-#: apps/client/src/pages/auth/register/page.tsx:141
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
+#: apps/client/src/pages/auth/register/page.tsx:143
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:70
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
 msgstr "Email"
@@ -621,6 +975,10 @@ msgstr "Aktifkan 2FA"
 msgid "Enfin,"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:248
+msgid "Enregistrer"
+msgstr ""
+
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
 msgstr "Masukkan kata sandi baru di bawah ini, dan pastikan kata sandi tersebut aman."
@@ -634,8 +992,8 @@ msgid "Enter one of the 10 backup codes you saved when you enabled two-factor au
 msgstr "Masukkan salah satu dari 10 kode cadangan yang Anda simpan saat mengaktifkan autentikasi dua faktor."
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:63
-msgid "Enter Phosphor Icon"
-msgstr "Masukkan Ikon Phosphor"
+#~ msgid "Enter Phosphor Icon"
+#~ msgstr "Masukkan Ikon Phosphor"
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:170
 msgid "Enter the 6-digit code from your authenticator app to verify that 2FA has been setup correctly."
@@ -649,6 +1007,14 @@ msgstr "Masukkan kata sandi sekali pakai yang disediakan oleh aplikasi autentika
 msgid "Enter your email address and we will send you a link to reset your password if the account exists."
 msgstr "Masukkan alamat email Anda dan kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda jika akun tersebut ada."
 
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:121
+msgid "Entrer manuellement le ratio d'aspect"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:168
+msgid "Entrer manuellement le rayon des bords"
+msgstr ""
+
 #: apps/client/src/pages/public/error.tsx:46
 msgid "Error {statusCode}"
 msgstr ""
@@ -661,9 +1027,21 @@ msgstr "Kesalahan"
 msgid "Est-ce que mes données sont stockées en sécurité ?"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:176
+msgid "Êtes-vous sûr de vouloir supprimer cet élément ?"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "Meskipun Anda belum bisa berkontribusi secara finansial, Anda masih bisa berkontribusi dengan cara memberikan bintang pada repositori GitHub, menyebarkannya ke teman-teman Anda, atau mengirimkan pesan singkat kepada saya bagaimana Reactive Resume telah membantu Anda. Umpan balik dan dukungan Anda selalu diterima dan sangat kami hargai!"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:94
+msgid "Expérience professionnelle"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:92
+msgid "Expériences"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
 #~ msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
@@ -674,6 +1052,10 @@ msgstr "Meskipun Anda belum bisa berkontribusi secara finansial, Anda masih bisa
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
 msgid "Export"
 msgstr "Ekspor"
+
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:113
+msgid "Exporter le CV"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/layout.tsx:36
 #: apps/client/src/pages/dashboard/layout.tsx:37
@@ -737,6 +1119,14 @@ msgstr "Lupa kata sandi Anda?"
 msgid "Format"
 msgstr "Format"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:97
+msgid "Formation"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:100
+msgid "Formations"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:50
 msgid "Found a bug, or have an idea for a new feature?"
 msgstr "Ada bug, atau ide untuk fitur baru?"
@@ -751,8 +1141,8 @@ msgid "Friendly"
 msgstr "Ramah"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:31
-msgid "Full Name"
-msgstr "Nama Lengkap"
+#~ msgid "Full Name"
+#~ msgstr "Nama Lengkap"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:202
 msgid "Generate a random title for your resume"
@@ -774,19 +1164,83 @@ msgstr "Bintang GitHub"
 msgid "Give your old resume a new name."
 msgstr "Berikan nama baru pada resume lama Anda."
 
+#: apps/client/src/pages/builder/_components/header.tsx:49
+msgid "Go back to dashboard"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:118
+#~ msgid "Go to Awards section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:69
+#~ msgid "Go to Basics section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:125
+#~ msgid "Go to Certifications section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:55
+#~ msgid "Go to dashboard"
+#~ msgstr ""
+
 #: apps/client/src/pages/auth/verify-email/page.tsx:67
 msgid "Go to Dashboard"
 msgstr "Buka Dasbor"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:97
+#~ msgid "Go to Education section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:90
+#~ msgid "Go to Experience section"
+#~ msgstr ""
 
 #: apps/client/src/pages/public/error.tsx:55
 msgid "Go to home"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:132
+#~ msgid "Go to Interests section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:111
+#~ msgid "Go to Languages section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:83
+#~ msgid "Go to Profiles section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:139
+#~ msgid "Go to Projects section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:146
+#~ msgid "Go to Publications section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:160
+#~ msgid "Go to References section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:104
+#~ msgid "Go to Skills section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:76
+#~ msgid "Go to Summary section"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:153
+#~ msgid "Go to Volunteer section"
+#~ msgstr ""
+
 #: apps/client/src/pages/auth/_components/social-auth.tsx:31
 msgid "Google"
 msgstr "Google"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:202
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:215
 msgid "Grayscale"
 msgstr "Skala abu-abu"
 
@@ -795,8 +1249,8 @@ msgid "Grid"
 msgstr "Grid"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:43
-msgid "Headline"
-msgstr "Judul"
+#~ msgid "Headline"
+#~ msgstr "Judul"
 
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
 msgid "Here, you can update your account information such as your profile picture, name and username."
@@ -806,13 +1260,13 @@ msgstr "Di sini, Anda dapat memperbarui informasi akun Anda seperti gambar profi
 msgid "Here, you can update your profile to customize and personalize your experience."
 msgstr "Di sini, Anda dapat memperbarui profil Anda untuk menyesuaikan dan mempersonalisasi pengalaman Anda."
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:80
-#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:94
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:180
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:92
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:103
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:191
 msgid "Hidden"
 msgstr "Tersembunyi"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:106
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:116
 msgid "Hide"
 msgstr "Sembunyikan"
 
@@ -821,12 +1275,12 @@ msgid "Hide Icons"
 msgstr "Sembunyikan Ikon"
 
 #: apps/client/src/pages/auth/login/page.tsx:115
-#: apps/client/src/pages/auth/register/page.tsx:168
+#: apps/client/src/pages/auth/register/page.tsx:171
 #: apps/client/src/pages/auth/reset-password/page.tsx:88
 msgid "Hold <0>Ctrl</0> to display your password temporarily."
 msgstr "Tahan <0>Ctrl</0> untuk menampilkan kata sandi Anda sementara."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:93
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:100
 msgid "Horizontal"
 msgstr "Horisontal"
 
@@ -842,10 +1296,21 @@ msgstr "Tampilkan resume Anda secara publik"
 msgid "ici"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:83
-#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:98
 msgid "Icon"
 msgstr "Ikon"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:58
+msgid "Icône"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:28
+msgid "Icône de la section Informations de base"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:28
+msgid "Icône de la section Résumé"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:47
 msgid "If this app has helped you with your job hunt, let me know by reaching out through <0>this contact form</0>."
@@ -899,13 +1364,26 @@ msgstr "Pada bagian ini, Anda dapat menghapus akun dan semua data yang terkait d
 msgid "Information"
 msgstr "Informasi"
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:116
+msgid "Informations"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:68
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:30
+msgid "Informations de base"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:82
+msgid "Informations personnelles"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:39
 msgid "Institution"
 msgstr "Institusi"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:53
-msgid "Issuer"
-msgstr "Penerbit"
+#~ msgid "Issuer"
+#~ msgstr "Penerbit"
 
 #: apps/client/src/services/errors/translate-error.ts:7
 msgid "It doesn't look like a user exists with the credentials you provided."
@@ -940,12 +1418,12 @@ msgctxt "Localized version of a placeholder name. For example, Max Mustermann in
 msgid "John Doe"
 msgstr "John Doe"
 
-#: apps/client/src/pages/auth/register/page.tsx:123
+#: apps/client/src/pages/auth/register/page.tsx:124
 msgctxt "Localized version of a placeholder username. For example, max.mustermann in German or jan.kowalski in Polish."
 msgid "john.doe"
 msgstr "john.doe"
 
-#: apps/client/src/pages/auth/register/page.tsx:145
+#: apps/client/src/pages/auth/register/page.tsx:147
 msgctxt "Localized version of a placeholder email. For example, max.mustermann@example.de in German or jan.kowalski@example.pl in Polish."
 msgid "john.doe@example.com"
 msgstr "john.doe@example.com"
@@ -954,25 +1432,38 @@ msgstr "john.doe@example.com"
 msgid "JSON"
 msgstr "JSON"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:159
-#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:63
-#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:159
-#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:109
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:181
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:171
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:119
 msgid "Keywords"
 msgstr "Kata kunci"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:83
+msgid "L'adresse email est invalide."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:87
 msgid "La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:42
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:52
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:56
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:70
 msgid "Label"
 msgstr "Label"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:101
 msgid "Language"
 msgstr "Bahasa"
+
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:104
+msgid "Langue"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:116
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:106
+msgid "Langues"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:51
 msgid "Langues actuellement disponibles :"
@@ -988,6 +1479,10 @@ msgstr "Terakhir diperbarui {lastUpdated}"
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:198
 msgid "Layout"
 msgstr "Tata letak"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:52
+msgid "Le nom complet est invalide."
+msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:18
 msgid "Le site sauvegarde automatiquement votre travail. Une fois votre CV prêt, vous pouvez le télécharger en PDF ou le partager via un lien."
@@ -1009,14 +1504,38 @@ msgstr "Surat"
 msgid "leur site web"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:64
-#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:77
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:72
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:81
 msgid "Level"
 msgstr "Tingkat"
 
 #: apps/client/src/components/copyright.tsx:16
 #~ msgid "Licensed under <0>MIT</0>"
 #~ msgstr "Berlisensi <0>MIT</0>"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:102
+msgid "Lien vers la certification en ligne"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:102
+msgid "Lien vers le site web relatif à la récompense"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:135
+msgid "Lien vers un site web associé"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:103
+msgid "Lieu de travail ou localisation de l'emploi"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:92
+msgid "Lieu du bénévolat"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:117
+msgid "Lieu lié à cette section personnalisée"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
 msgid "Light"
@@ -1039,10 +1558,22 @@ msgstr "LinkedIn, Resume JSON, dll."
 msgid "List"
 msgstr "Daftar"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:101
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:86
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:81
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:93
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:174
+msgid "Liste des champs personnalisés"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:188
+msgid "Liste des mots-clés"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:115
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:119
+msgid "Localisation"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:113
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:99
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:90
 msgid "Location"
 msgstr "Lokasi"
 
@@ -1077,17 +1608,14 @@ msgstr "Utama"
 msgid "Manage multiple resumes"
 msgstr "Mengelola beberapa resume"
 
-#. The month and year should be uniform across all languages.
-#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:71
-#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:69
-#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:69
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:72
 msgid "March 2023"
 msgstr "Maret 2023"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:112
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:74
-#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:103
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:69
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:133
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:84
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:106
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:76
 msgid "March 2023 - Present"
 msgstr "Maret 2023 - Sekarang"
 
@@ -1095,9 +1623,28 @@ msgstr "Maret 2023 - Sekarang"
 msgid "Margin"
 msgstr "Margin"
 
+#. Le mois et l'année doivent être uniformes dans toutes les langues.
+#. Le mois et l'année doivent être uniformes dans toutes les langues.
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:80
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:79
+msgid "Mars 2023"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:112
+msgid "Masquer la section"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:194
 msgid "Max Tokens"
 msgstr "Token Max"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:88
+msgid "Menu des options de section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:224
+msgid "Mettre à jour un élément existant"
+msgstr ""
 
 #: apps/client/src/components/copyright.tsx:27
 #~ msgid "mis à disposition pour vous."
@@ -1115,9 +1662,45 @@ msgstr "Lisensi MIT"
 msgid "Model"
 msgstr "Model"
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:86
+msgid "Modèle de CV"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:64
+msgid "Modifier l'icône du champ personnalisé"
+msgstr ""
+
 #: apps/client/src/components/copyright.tsx:27
 #~ msgid "modifier par nos soins."
 #~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:236
+msgid "Modifiez les champs pour mettre à jour cet élément dans la section."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:238
+msgid "Modifiez les champs si vous souhaitez dupliquer cet élément avec des modifications."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:210
+msgid "Mot-clé: {item}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:186
+msgid "Mots-clés associés à cette section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:72
+msgid "Mots-clés associés à l'intérêt, séparez-les par des virgules ou appuyez sur Entrée"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:176
+msgid "Mots-clés du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:124
+msgid "Mots-clés pour la compétence"
+msgstr ""
 
 #: apps/client/src/pages/auth/register/page.tsx:98
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:59
@@ -1127,15 +1710,22 @@ msgstr "Model"
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:39
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:39
 #: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:49
-#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:88
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:168
 msgid "Name"
 msgstr "Nama"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:39
-msgctxt "Name of the Certification"
-msgid "Name"
-msgstr "Nama"
+#~ msgctxt "Name of the Certification"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:64
+#~ msgid "Navigate sections"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:64
+msgid "Navigation des sections"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:40
 msgid "Network"
@@ -1145,6 +1735,14 @@ msgstr "Jaringan"
 msgid "New Password"
 msgstr "Kata Sandi Baru"
 
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:91
+msgid "Niveau de compétence de 0 à 5"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:80
+msgid "Niveau de maîtrise de la langue, de 0 à 5"
+msgstr ""
+
 #: apps/client/src/components/locale-combobox.tsx:45
 msgid "No results found"
 msgstr "Tidak ada hasil yang ditemukan"
@@ -1153,6 +1751,88 @@ msgstr "Tidak ada hasil yang ditemukan"
 msgid "No user tracking or advertising"
 msgstr "Tidak ada pelacakan pengguna atau iklan"
 
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:39
+msgctxt "Nom de la certification"
+msgid "Nom"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:28
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:99
+msgid "Nom"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:40
+msgid "Nom complet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:66
+msgid "Nom d'utilisateur sur la plateforme"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:43
+msgid "Nom de l'entreprise ou organisation"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:43
+msgid "Nom de l'établissement d'enseignement"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:108
+msgid "Nom de l'icône de la plateforme"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:52
+msgid "Nom de l'intérêt"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:61
+msgid "Nom de l'organisme ayant délivré la certification"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:62
+msgid "Nom de l'organisme ou personne ayant décerné la récompense"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:43
+msgid "Nom de la certification"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:51
+msgid "Nom de la compétence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:40
+msgid "Nom de la langue"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:41
+msgid "Nom de la publication"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:41
+msgid "Nom de la référence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:63
+msgid "Nom de la section personnalisée"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:75
+msgid "Nom du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:47
+msgid "Nom du réseau social ou plateforme"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:153
+msgid "Nombre de colonnes dans la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:115
+msgid "Note, mention ou moyenne obtenue"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:133
 msgid "Note: This will make your account less secure."
 msgstr "Catatan: Hal ini akan membuat akun Anda kurang aman."
@@ -1160,8 +1840,13 @@ msgstr "Catatan: Hal ini akan membuat akun Anda kurang aman."
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:128
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:16
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:17
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:83
 msgid "Notes"
 msgstr "Catatan"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:107
+msgid "Numéro de téléphone"
+msgstr ""
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:82
 msgid "One-Time Password"
@@ -1207,10 +1892,26 @@ msgstr "Integrasi OpenAI/Ollama"
 msgid "Options"
 msgstr "Pilihan"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:35
+msgid "Options pour la section Résumé"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:198
+msgid "Options utilisateur"
+msgstr ""
+
 #: apps/client/src/pages/auth/layout.tsx:47
 msgctxt "The user can either login with email/password, or continue with GitHub or Google."
 msgid "or continue with"
 msgstr "atau lanjutkan dengan"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:44
+msgid "Organisation bénévole"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:57
+msgid "Organisme délivrant"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:39
 msgid "Organization"
@@ -1228,14 +1929,39 @@ msgstr ""
 msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais partagées sans votre consentement. Vous pouvez exporter ou supprimer vos données à tout moment depuis les paramètres de votre compte."
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
+msgid "Ouvrir le champ pour modifier le libellé de l'URL"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/layout.tsx:22
 #: apps/client/src/pages/dashboard/layout.tsx:23
 msgid "Ouvrir le menu latéral"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:83
+msgid "Ouvrir les options de la section {sectionName}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:63
+msgid "Ouvrir les options de la section {sectionTitle}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:56
+msgid "Ouvrir les options de la section Expérience"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:59
+msgid "Ouvrir les options de la section Formation"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:53
+msgid "Ouvrir les options de la section Profil"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:101
 msgid "Page"
 msgstr "Halaman"
 
@@ -1247,8 +1973,12 @@ msgstr "Halaman {pageNumber}"
 msgid "Panneau de contrôle"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:107
+msgid "Partage"
+msgstr ""
+
 #: apps/client/src/pages/auth/login/page.tsx:110
-#: apps/client/src/pages/auth/register/page.tsx:163
+#: apps/client/src/pages/auth/register/page.tsx:166
 #: apps/client/src/pages/auth/reset-password/page.tsx:83
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:73
 msgid "Password"
@@ -1267,8 +1997,8 @@ msgid "Personal notes for each resume"
 msgstr "Catatan pribadi untuk setiap resume"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:81
-msgid "Phone"
-msgstr "Telepon"
+#~ msgid "Phone"
+#~ msgstr "Telepon"
 
 #: apps/client/src/pages/auth/layout.tsx:76
 msgid "Photograph by Patrick Tomasso"
@@ -1295,18 +2025,26 @@ msgstr "Pilih jenis file"
 msgid "Please store your backup codes in a secure location. You can use one of these one-time use codes to login in case you lose access to your authenticator app."
 msgstr "Simpanlah kode cadangan Anda di tempat yang aman. Anda dapat menggunakan salah satu dari kode sekali pakai ini untuk masuk jika Anda kehilangan akses ke aplikasi autentikator."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:99
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:106
 msgid "Portrait"
 msgstr "Potret"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:54
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:58
 msgctxt "Position held at a company, for example, Software Engineer"
 msgid "Position"
 msgstr "Posisi"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:53
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:57
 msgid "Position"
 msgstr "Posisi"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:59
+msgid "Poste bénévole"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:66
+msgid "Poste occupé dans l'entreprise"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:118
 msgid "Pour en savoir plus sur AcadéNice, visitez"
@@ -1320,7 +2058,7 @@ msgstr ""
 msgid "Powered by"
 msgstr "Didukung oleh"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:115
 msgid "Powered by <0>Simple Icons</0>"
 msgstr "Didukung oleh <0>Simple Icons</0>"
 
@@ -1349,6 +2087,16 @@ msgstr "Profil"
 #~ msgid "Profile settings form"
 #~ msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:84
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:91
+msgid "Profils"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:148
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:112
+msgid "Projets"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:134
 #~ msgid "Provide a URL to your profile picture or upload an image."
 #~ msgstr ""
@@ -1356,6 +2104,11 @@ msgstr "Profil"
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr "Publik"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:156
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:115
+msgid "Publications"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:53
 msgid "Publisher"
@@ -1397,12 +2150,30 @@ msgstr "Reactive Resume adalah proyek penuh semangat yang telah dikerjakan selam
 msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
 msgstr "Reactive Resume berkembang berkat komunitasnya yang dinamis. Proyek ini berkembang berkat banyak orang yang telah mendedikasikan waktu dan keterampilan mereka. Di bawah ini, kami merayakan para pembuat kode yang telah meningkatkan fitur-fiturnya di GitHub dan ahli bahasa yang terjemahannya di Crowdin telah membuatnya dapat diakses oleh audiens yang lebih luas."
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:89
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:124
+msgid "Récompenses"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:92
+#: apps/client/src/pages/builder/_components/toolbar.tsx:97
 msgid "Redo"
 msgstr "Ulangi."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:100
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:157
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:172
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:121
+msgid "Références"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:137
+msgid "Réinitialiser le nom de la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:168
+msgid "Réinitialiser les éléments de la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:123
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:182
 msgid "Remove"
 msgstr "Menghapus"
 
@@ -1410,18 +2181,26 @@ msgstr "Menghapus"
 msgid "Remove Page"
 msgstr "Hapus Halaman"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:111
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:234
+msgid "Remplissez le formulaire pour créer un nouvel élément dans cette section."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:121
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:106
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
 msgstr "Ganti nama"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:119
+msgid "Renommer la section"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:236
 msgid "Resend email confirmation link"
 msgstr "Kirim ulang tautan konfirmasi email"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:152
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:172
 msgid "Reset"
 msgstr "Atur ulang"
 
@@ -1434,9 +2213,64 @@ msgstr "Atur Ulang Tata Letak"
 msgid "Reset your password"
 msgstr "Atur ulang kata sandi Anda"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:124
+#: apps/client/src/pages/builder/_components/toolbar.tsx:154
+msgid "Reset zoom"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:149
 msgid "Reset Zoom"
 msgstr "Atur Ulang Zoom"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:116
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:116
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:76
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:85
+msgid "Résumé"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:75
+msgid "Resume builder toolbar"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:145
+msgid "Résumé du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:47
+#~ msgid "Resume editor sidebar"
+#~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:110
+msgid "Résumé ou description"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:139
+msgid "Résumé ou description détaillée de l'expérience"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:120
+msgid "Résumé ou description détaillée de la récompense"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:170
+msgid "Résumé ou description détaillée des études"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:128
+msgid "Résumé ou détails du bénévolat"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:120
+msgid "Résumé ou détails supplémentaires sur la certification"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:95
+msgid "Résumé ou notes concernant la référence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:153
+msgid "Résumé ou texte libre pour décrire cette section"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/_components/sidebar.tsx:86
 #: apps/client/src/pages/dashboard/resumes/page.tsx:20
@@ -1461,7 +2295,7 @@ msgstr ""
 msgid "Rich in features, not in pricing."
 msgstr "Kaya di fitur, bukan di harga."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:138
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:147
 msgid "Rounded"
 msgstr "Bulat"
 
@@ -1469,7 +2303,10 @@ msgstr "Bulat"
 msgid "S'inscrire"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:73
+msgid "Saisir le nom d'icône Phosphor"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:255
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:131
@@ -1493,15 +2330,15 @@ msgid "Scan the QR code below with your authenticator app to setup 2FA on your a
 msgstr "Pindai kode QR di bawah ini dengan aplikasi autentikator Anda untuk menyiapkan 2FA di akun Anda."
 
 #. Score or honors for the degree, for example, CGPA or magna cum laude
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:92
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:106
 msgid "Score"
 msgstr "Skor"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:104
+#: apps/client/src/pages/builder/_components/toolbar.tsx:108
 msgid "Scroll to Pan"
 msgstr "Gulir ke Geser"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:104
+#: apps/client/src/pages/builder/_components/toolbar.tsx:108
 msgid "Scroll to Zoom"
 msgstr "Gulir ke Zoom"
 
@@ -1529,6 +2366,18 @@ msgstr "Mencari varian font"
 msgid "Search for a language"
 msgstr "Mencari bahasa"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:105
+msgid "Section {sectionName}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:22
+msgid "Section Informations de base"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:24
+msgid "Section Résumé du CV"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:56
 msgid "Secure with two-factor authentication"
 msgstr "Aman dengan autentikasi dua faktor"
@@ -1545,11 +2394,19 @@ msgstr "Keamanan"
 #~ msgid "Select your language"
 #~ msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:91
+msgid "Sélectionnez le ratio d'aspect de l'image, valeur actuelle : {ratioLabel}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:138
+msgid "Sélectionnez le rayon des bords de l'image"
+msgstr ""
+
 #: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Self-host with Docker"
 msgstr "Host mandiri dengan Docker"
 
-#: apps/client/src/pages/auth/forgot-password/page.tsx:104
+#: apps/client/src/pages/auth/forgot-password/page.tsx:111
 msgid "Send Email"
 msgstr "Kirim Email"
 
@@ -1557,7 +2414,7 @@ msgstr "Kirim Email"
 msgid "Send me a message"
 msgstr "Kirimi saya pesan"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:97
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:104
 msgid "Separate Links"
 msgstr "Tautan Terpisah"
 
@@ -1578,7 +2435,7 @@ msgstr "Menyiapkan autentikasi dua faktor di akun Anda"
 msgid "Sharing"
 msgstr "Berbagi"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:106
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:116
 msgid "Show"
 msgstr "Tampilkan"
 
@@ -1625,7 +2482,7 @@ msgstr "Masuk dengan GitHub"
 msgid "Sign in with Google"
 msgstr "Masuk dengan Google"
 
-#: apps/client/src/pages/auth/register/page.tsx:179
+#: apps/client/src/pages/auth/register/page.tsx:182
 msgid "Sign up"
 msgstr "Daftar"
 
@@ -1637,7 +2494,25 @@ msgstr "Masuk melalui email saat ini dinonaktifkan oleh administrator."
 msgid "Signups are currently disabled by the administrator."
 msgstr "Pendaftaran saat ini dinonaktifkan oleh administrator."
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:65
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:98
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:97
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:89
+msgid "Site web"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:152
+msgid "Site web associé à cet établissement ou formation"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:121
+msgid "Site web associé à l'emploi ou l'entreprise"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:109
+msgid "Site web associé au bénévolat"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:70
 msgid "Size (in px)"
 msgstr "Ukuran (dalam px)"
 
@@ -1661,8 +2536,8 @@ msgstr "Terjadi kesalahan saat memproses permintaan Anda. Silakan coba lagi nant
 msgid "Sous licence"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:87
-#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:94
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:141
 msgid "Square"
 msgstr "Persegi"
 
@@ -1684,19 +2559,21 @@ msgstr "Statistik"
 msgid "Statistics are available only for public resumes."
 msgstr "Statistik hanya tersedia untuk resume publik."
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:110
+msgid "Statistiques"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:162
 msgid "Store your backup codes securely"
 msgstr "Menyimpan kode cadangan Anda dengan aman"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:101
-#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:95
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:129
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:138
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:114
-#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:129
-#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:95
-#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:81
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:109
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:149
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:166
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:135
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:139
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:104
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:89
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:122
 msgid "Summary"
 msgstr "Ringkasan"
 
@@ -1712,6 +2589,31 @@ msgstr "Mendukung Resume Reaktif"
 msgid "Supports A4/Letter page formats"
 msgstr "Mendukung format halaman A4/Surat"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:191
+msgid "Supprimer"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:178
+msgid "Supprimer la section"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:121
+msgid "Supprimer le champ personnalisé nommé {fieldName}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:217
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:152
+msgid "Supprimer le mot-clé {item}"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:112
+msgid "Switch to scroll to pan"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:112
+msgid "Switch to scroll to zoom"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:85
 msgid "System"
 msgstr "Sistem"
@@ -1719,6 +2621,14 @@ msgstr "Sistem"
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:90
 #~ msgid "System (default)"
 #~ msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:77
+msgid "Taille de l'image en pixels, valeur actuelle : {size}"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:102
+msgid "Téléphone"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:67
 msgid "Témoignages"
@@ -1761,6 +2671,10 @@ msgstr "Resume yang ingin Anda perbarui terkunci, silakan buka kuncinya jika And
 msgid "Theme"
 msgstr "Tema"
 
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:95
+msgid "Thème de couleurs"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:83
 #~ msgid "Theme preference"
 #~ msgstr ""
@@ -1770,8 +2684,8 @@ msgid "There was an error connecting to the browser. Please make sure 'chrome' i
 msgstr "Terjadi kesalahan saat menghubungkan ke browser. Pastikan 'chrome' berjalan dan dapat dijangkau."
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:130
-msgid "This action can be reverted by clicking on the undo button in the floating toolbar."
-msgstr "Tindakan ini dapat dikembalikan dengan mengeklik tombol undo di toolbar mengambang."
+#~ msgid "This action can be reverted by clicking on the undo button in the floating toolbar."
+#~ msgstr "Tindakan ini dapat dikembalikan dengan mengeklik tombol undo di toolbar mengambang."
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:151
 msgid "This action cannot be undone. This will permanently delete your resume and cannot be recovered."
@@ -1781,7 +2695,7 @@ msgstr "Tindakan ini tidak dapat dibatalkan. Tindakan ini akan menghapus resume 
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "Alamat email ini dikaitkan dengan akun OAuth. Silakan masuk dengan penyedia OAuth Anda."
 
-#: apps/client/src/pages/builder/_components/header.tsx:57
+#: apps/client/src/pages/builder/_components/header.tsx:63
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "Resume ini terkunci, silakan buka kunci untuk membuat perubahan lebih lanjut."
 
@@ -1793,22 +2707,52 @@ msgstr "Bagian ini disediakan untuk catatan pribadi Anda yang khusus untuk resum
 msgid "Tip: You can name the resume referring to the position you are applying for."
 msgstr "Tip: Anda dapat memberi nama resume yang mengacu pada posisi yang Anda lamar."
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:39
-msgctxt "Name of the Award"
-msgid "Title"
-msgstr "Judul"
-
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:196
 msgid "Title"
 msgstr "Judul"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:138
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:39
+#~ msgctxt "Name of the Award"
+#~ msgid "Title"
+#~ msgstr "Judul"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:40
+msgctxt "Nom de la récompense"
+msgid "Titre"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:44
+msgid "Titre de la récompense"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:58
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:62
+msgid "Titre professionnel"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/header.tsx:39
+msgid "Toggle left panel"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:179
+msgid "Toggle page break line"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:175
 msgid "Toggle Page Break Line"
 msgstr "Beralih ke Garis Hentian Halaman"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:150
+#: apps/client/src/pages/builder/_components/toolbar.tsx:192
+msgid "Toggle page numbers"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:188
 msgid "Toggle Page Numbers"
 msgstr "Beralih Nomor Halaman"
+
+#: apps/client/src/pages/builder/_components/header.tsx:73
+msgid "Toggle right panel"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:68
 msgid "Track views and downloads"
@@ -1832,10 +2776,18 @@ msgstr "Autentikasi dua faktor tidak diaktifkan untuk akun ini."
 msgid "Type <0>delete</0> to confirm deleting your account."
 msgstr "Ketik <0>hapus</0> untuk mengonfirmasi penghapusan akun Anda."
 
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:66
+msgid "Type de diplôme ou formation (exemple : Licence, Master)"
+msgstr ""
+
 #. For example, Bachelor's Degree or Master's Degree
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:54
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:58
 msgid "Type of Study"
 msgstr "Jenis Studi"
+
+#: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
+msgid "Typographie"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
@@ -1851,7 +2803,8 @@ msgstr "Tipografi"
 msgid "Underline Links"
 msgstr "Garis bawahi Tautan"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:76
+#: apps/client/src/pages/builder/_components/toolbar.tsx:78
+#: apps/client/src/pages/builder/_components/toolbar.tsx:83
 msgid "Undo"
 msgstr "Membatalkan"
 
@@ -1875,8 +2828,8 @@ msgid "Unverified"
 msgstr "Tidak diverifikasi"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:164
-msgid "Update an existing item"
-msgstr "Memperbarui item yang sudah ada"
+#~ msgid "Update an existing item"
+#~ msgstr "Memperbarui item yang sudah ada"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:179
 msgid "Update an existing resume"
@@ -1908,7 +2861,27 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:85
+msgid "URL du profil"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:94
+msgid "URL du site web"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:91
+msgid "URL du site web de la publication"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:76
+msgid "URL du site web de la référence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:126
+msgid "URL du site web du projet"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:82
 msgid "URL must start with https://"
 msgstr "URL harus dimulai dengan https://"
 
@@ -1921,8 +2894,12 @@ msgstr "Gunakan kode cadangan Anda"
 msgid "User does not have an associated 'secrets' record. Please report this issue on GitHub."
 msgstr "Pengguna tidak memiliki catatan 'rahasia' yang terkait. Silakan laporkan masalah ini di GitHub."
 
-#: apps/client/src/pages/auth/register/page.tsx:119
-#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:55
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:180
+#~ msgid "User options"
+#~ msgstr ""
+
+#: apps/client/src/pages/auth/register/page.tsx:120
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:60
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "Nama pengguna"
@@ -1930,6 +2907,11 @@ msgstr "Nama pengguna"
 #: apps/client/src/pages/home/sections/statistics/index.tsx:13
 msgid "Users Signed Up"
 msgstr "Pengguna Mendaftar"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:29
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:109
+msgid "Valeur"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:296
 msgid "Validate"
@@ -1940,8 +2922,8 @@ msgid "Validated"
 msgstr "Tervalidasi"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:97
-msgid "Value"
-msgstr "Nilai"
+#~ msgid "Value"
+#~ msgstr "Nilai"
 
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:228
 msgid "Verified"
@@ -1964,13 +2946,17 @@ msgstr "Verifikasi alamat email Anda"
 msgid "Views"
 msgstr "Tampilan"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:87
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:110
 msgid "Visible"
 msgstr "Terlihat"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:70
-msgid "Visit <0>Phosphor Icons</0> for a list of available icons"
-msgstr "Kunjungi Ikon <0>Fosfor</0> untuk daftar ikon yang tersedia"
+#~ msgid "Visit <0>Phosphor Icons</0> for a list of available icons"
+#~ msgstr "Kunjungi Ikon <0>Fosfor</0> untuk daftar ikon yang tersedia"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:81
+msgid "Visitez <0>Phosphor Icons</0> pour voir la liste des icônes disponibles"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:138
 msgid "Voici les réponses aux questions fréquentes sur l’utilisation de ce site."
@@ -1984,17 +2970,14 @@ msgstr ""
 msgid "We verify your email address only to ensure that we can send you a password reset link in case you forget your password."
 msgstr "Kami memverifikasi alamat email Anda hanya untuk memastikan bahwa kami dapat mengirimkan tautan pengaturan ulang kata sandi jika Anda lupa kata sandi."
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:87
-#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:81
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:115
-#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:124
-#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:100
-#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:69
-#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:115
-#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:81
-#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:67
-#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:95
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:69
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:131
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:148
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:117
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:79
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:120
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:86
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:71
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:104
 msgid "Website"
 msgstr "Situs web"
 
@@ -2006,10 +2989,10 @@ msgstr "Situs web"
 msgid "You are not authorized to access this page."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:164
-#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:68
-#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:164
-#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:114
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:191
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:80
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:181
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:129
 msgid "You can add multiple keywords by separating them with a comma or pressing enter."
 msgstr "Anda dapat menambahkan beberapa kata kunci dengan memisahkannya dengan koma atau menekan enter."
 
@@ -2070,10 +3053,18 @@ msgstr "Kunci API OpenAI Anda belum ditetapkan. Silakan buka pengaturan akun And
 msgid "Your password has been updated successfully."
 msgstr "Kata sandi Anda telah berhasil diperbarui."
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:112
+#: apps/client/src/pages/builder/_components/toolbar.tsx:130
+msgid "Zoom in"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:125
 msgid "Zoom In"
 msgstr "Perbesar"
 
-#: apps/client/src/pages/builder/_components/toolbar.tsx:118
+#: apps/client/src/pages/builder/_components/toolbar.tsx:142
+msgid "Zoom out"
+msgstr ""
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:137
 msgid "Zoom Out"
 msgstr "Perkecil"

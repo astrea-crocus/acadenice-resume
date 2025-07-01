@@ -95,7 +95,17 @@
 - Fin personnalisation du premier template
 - Ajout de 4 autres templates
 
-## 28 Juin 2025
-- Ajustement du template Euphorbia
+## 30 Juin 2025
+- Ajustement du template IronMan
 - Ajustement de la couleur du texte du bloc de remarque sur OpenAI
-- Amélioration de l'accéssibilité du site
+- Amélioration de l'accéssibilité du site 
+
+~~non je ne ma suis pas gourré de date avant~~
+
+## 01 Juillet 2025
+- Continuation de l'amélioration de l'accéssibilité du site
+- Traduction des noms de sections des CVs
+- Renommage des templates
+- Réajustment des logos
+  - Antman OK
+  - CaptainAmerica En Cours

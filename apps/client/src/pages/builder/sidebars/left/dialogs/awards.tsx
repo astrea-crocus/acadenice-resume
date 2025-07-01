@@ -19,7 +19,6 @@ import { SectionDialog } from "../sections/shared/section-dialog";
 import { URLInput } from "../sections/shared/url-input";
 
 const formSchema = awardSchema;
-
 type FormValues = z.infer<typeof formSchema>;
 
 export const AwardsDialog = () => {
@@ -27,6 +26,8 @@ export const AwardsDialog = () => {
     defaultValues: defaultAward,
     resolver: zodResolver(formSchema),
   });
+
+  // Idéalement, pour accessibilité : associer chaque champ à son label + ajouter aria-label explicites si besoin
 
   return (
     <SectionDialog<FormValues> id="awards" form={form} defaultValues={defaultAward}>
@@ -36,11 +37,15 @@ export const AwardsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t({ message: "Title", context: "Name of the Award" })}</FormLabel>
+              <FormLabel>{t({ message: "Titre", context: "Nom de la récompense" })}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t`Titre de la récompense`}
+                  aria-describedby="description-title"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-title" />
             </FormItem>
           )}
         />
@@ -50,11 +55,15 @@ export const AwardsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Awarder`}</FormLabel>
+              <FormLabel>{t`Décerné par`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t`Nom de l'organisme ou personne ayant décerné la récompense`}
+                  aria-describedby="description-awarder"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-awarder" />
             </FormItem>
           )}
         />
@@ -69,12 +78,14 @@ export const AwardsDialog = () => {
                 <Input
                   {...field}
                   placeholder={t({
-                    message: "March 2023",
-                    comment: "The month and year should be uniform across all languages.",
+                    message: "Mars 2023",
+                    comment: "Le mois et l'année doivent être uniformes dans toutes les langues.",
                   })}
+                  aria-label={t`Date à laquelle la récompense a été obtenue`}
+                  aria-describedby="description-date"
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-date" />
             </FormItem>
           )}
         />
@@ -84,11 +95,15 @@ export const AwardsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel>{t`Site web`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  aria-label={t`Lien vers le site web relatif à la récompense`}
+                  aria-describedby="description-url"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-url" />
             </FormItem>
           )}
         />
@@ -98,10 +113,12 @@ export const AwardsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel>{t`Résumé`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
+                  aria-label={t`Résumé ou description détaillée de la récompense`}
+                  aria-describedby="description-summary"
                   content={field.value}
                   footer={(editor) => (
                     <AiActions
@@ -117,7 +134,7 @@ export const AwardsDialog = () => {
                   }}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-summary" />
             </FormItem>
           )}
         />

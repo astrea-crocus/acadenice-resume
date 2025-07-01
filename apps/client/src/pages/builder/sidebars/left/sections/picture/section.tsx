@@ -51,7 +51,7 @@ export const PictureSection = () => {
     <div className="flex items-center gap-x-4">
       <div className="group relative cursor-pointer" onClick={onAvatarClick}>
         <Avatar className="size-14 bg-secondary">
-          <AvatarImage src={picture.url} />
+          <AvatarImage src={picture.url} alt="" />
         </Avatar>
 
         {isValidUrl ? (

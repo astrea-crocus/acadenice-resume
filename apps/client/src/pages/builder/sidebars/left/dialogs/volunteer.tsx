@@ -36,9 +36,13 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Organization`}</FormLabel>
+              <FormLabel htmlFor="volunteer-organization">{t`Organization`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  id="volunteer-organization"
+                  aria-label={t`Organisation bénévole`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -50,9 +54,9 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Position`}</FormLabel>
+              <FormLabel htmlFor="volunteer-position">{t`Position`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="volunteer-position" aria-label={t`Poste bénévole`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -64,9 +68,14 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Date or Date Range`}</FormLabel>
+              <FormLabel htmlFor="volunteer-date">{t`Date or Date Range`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023 - Present`} />
+                <Input
+                  {...field}
+                  id="volunteer-date"
+                  placeholder={t`March 2023 - Present`}
+                  aria-label={t`Date ou période bénévole`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -78,9 +87,9 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Location`}</FormLabel>
+              <FormLabel htmlFor="volunteer-location">{t`Location`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="volunteer-location" aria-label={t`Lieu du bénévolat`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -92,9 +101,13 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel htmlFor="volunteer-url">{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  id="volunteer-url"
+                  aria-label={t`Site web associé au bénévolat`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -106,11 +119,13 @@ export const VolunteerDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel htmlFor="volunteer-summary">{t`Summary`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
+                  id="volunteer-summary"
                   content={field.value}
+                  aria-label={t`Résumé ou détails du bénévolat`}
                   footer={(editor) => (
                     <AiActions
                       value={editor.getText()}

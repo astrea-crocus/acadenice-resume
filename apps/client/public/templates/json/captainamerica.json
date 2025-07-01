@@ -271,7 +271,7 @@
     "custom": {}
   },
   "metadata": {
-    "template": "zinnia",
+    "template": "captainamerica",
     "layout": [
       [
         ["summary", "experience", "education", "projects", "references"],
@@ -285,7 +285,8 @@
           "volunteer",
           "publications"
         ]
-      ]
+      ],
+      [[], []]
     ],
     "css": {
       "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",

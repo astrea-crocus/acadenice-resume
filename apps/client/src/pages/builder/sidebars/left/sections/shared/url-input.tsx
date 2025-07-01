@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
   Tooltip,
 } from "@reactive-resume/ui";
-import { forwardRef, useMemo } from "react";
+import { forwardRef, useId, useMemo } from "react";
 
 type Props = {
   id?: string;
@@ -21,7 +21,19 @@ type Props = {
 
 export const URLInput = forwardRef<HTMLInputElement, Props>(
   ({ id, value, placeholder, onChange }, ref) => {
+    // Générer un id unique pour le message d'erreur
+    const errorId = useId();
+
     const hasError = useMemo(() => !urlSchema.safeParse(value).success, [value]);
+
+    // Fonction pour aria-labels dynamiques en français avec switch si besoin (ici simple)
+    const getUrlInputAriaLabel = () => {
+      return t`Champ pour saisir l'URL`;
+    };
+
+    const getLabelInputAriaLabel = () => {
+      return t`Champ pour saisir le libellé associé à l'URL`;
+    };
 
     return (
       <>
@@ -33,6 +45,8 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
             className="flex-1"
             hasError={hasError}
             placeholder={placeholder}
+            aria-label={getUrlInputAriaLabel()}
+            aria-describedby={hasError ? errorId : undefined}
             onChange={(event) => {
               onChange({ ...value, href: event.target.value });
             }}
@@ -41,7 +55,11 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
           <Popover>
             <Tooltip content={t`Label`}>
               <PopoverTrigger asChild>
-                <Button size="icon" variant="ghost">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  aria-label={t`Ouvrir le champ pour modifier le libellé de l'URL`}
+                >
                   <Tag />
                 </Button>
               </PopoverTrigger>
@@ -50,6 +68,7 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
               <Input
                 value={value.label}
                 placeholder={t`Label`}
+                aria-label={getLabelInputAriaLabel()}
                 onChange={(event) => {
                   onChange({ ...value, label: event.target.value });
                 }}
@@ -58,7 +77,11 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
           </Popover>
         </div>
 
-        {hasError && <small className="opacity-75">{t`URL must start with https://`}</small>}
+        {hasError && (
+          <small id={errorId} className="opacity-75" role="alert">
+            {t`URL must start with https://`}
+          </small>
+        )}
       </>
     );
   },

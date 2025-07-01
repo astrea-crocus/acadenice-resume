@@ -46,9 +46,9 @@ export const SkillsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Name`}</FormLabel>
+              <FormLabel htmlFor="skill-name">{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="skill-name" aria-label={t`Nom de la compétence`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -60,9 +60,13 @@ export const SkillsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Description`}</FormLabel>
+              <FormLabel htmlFor="skill-description">{t`Description`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  id="skill-description"
+                  aria-label={t`Description de la compétence`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -74,24 +78,30 @@ export const SkillsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Level`}</FormLabel>
+              <FormLabel htmlFor="skill-level">{t`Level`}</FormLabel>
               <FormControl className="py-2">
                 <div className="flex items-center gap-x-4">
                   <Slider
                     {...field}
+                    id="skill-level"
                     min={0}
                     max={5}
                     value={[field.value]}
                     orientation="horizontal"
+                    aria-label={t`Niveau de compétence de 0 à 5`}
                     onValueChange={(value) => {
                       field.onChange(value[0]);
                     }}
                   />
 
                   {field.value > 0 ? (
-                    <span className="text-base font-bold">{field.value}</span>
+                    <span className="text-base font-bold" aria-live="polite" aria-atomic="true">
+                      {field.value}
+                    </span>
                   ) : (
-                    <span className="text-base font-bold">{t`Hidden`}</span>
+                    <span className="text-base font-bold" aria-live="polite" aria-atomic="true">
+                      {t`Hidden`}
+                    </span>
                   )}
                 </div>
               </FormControl>
@@ -106,9 +116,14 @@ export const SkillsDialog = () => {
           render={({ field }) => (
             <div className="space-y-3 sm:col-span-2">
               <FormItem>
-                <FormLabel>{t`Keywords`}</FormLabel>
+                <FormLabel htmlFor="skill-keywords">{t`Keywords`}</FormLabel>
                 <FormControl>
-                  <BadgeInput {...field} setPendingKeyword={setPendingKeyword} />
+                  <BadgeInput
+                    {...field}
+                    id="skill-keywords"
+                    aria-label={t`Mots-clés pour la compétence`}
+                    setPendingKeyword={setPendingKeyword}
+                  />
                 </FormControl>
                 <FormDescription>
                   {t`You can add multiple keywords by separating them with a comma or pressing enter.`}
@@ -116,7 +131,11 @@ export const SkillsDialog = () => {
                 <FormMessage />
               </FormItem>
 
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-3">
+              <div
+                className="flex flex-wrap items-center gap-x-2 gap-y-3"
+                aria-live="polite"
+                aria-atomic="true"
+              >
                 <AnimatePresence>
                   {field.value.map((item, index) => (
                     <motion.div
@@ -128,8 +147,17 @@ export const SkillsDialog = () => {
                     >
                       <Badge
                         className="cursor-pointer"
+                        role="button"
+                        tabIndex={0}
+                        aria-label={t`Supprimer le mot-clé ${item}`}
                         onClick={() => {
                           field.onChange(field.value.filter((v) => item !== v));
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            field.onChange(field.value.filter((v) => item !== v));
+                          }
                         }}
                       >
                         <span className="mr-1">{item}</span>

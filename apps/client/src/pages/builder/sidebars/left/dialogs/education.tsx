@@ -38,9 +38,13 @@ export const EducationDialog = () => {
             <FormItem>
               <FormLabel>{t`Institution`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Nom de l'établissement d'enseignement" })}
+                  aria-describedby="description-institution"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-institution" />
             </FormItem>
           )}
         />
@@ -57,9 +61,15 @@ export const EducationDialog = () => {
                 })}
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({
+                    message: "Type de diplôme ou formation (exemple : Licence, Master)",
+                  })}
+                  aria-describedby="description-studyType"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-studyType" />
             </FormItem>
           )}
         />
@@ -76,9 +86,13 @@ export const EducationDialog = () => {
                 })}
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Domaine ou spécialité d'étude" })}
+                  aria-describedby="description-area"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-area" />
             </FormItem>
           )}
         />
@@ -95,9 +109,14 @@ export const EducationDialog = () => {
                 })}
               </FormLabel>
               <FormControl>
-                <Input {...field} placeholder="9.2 GPA" />
+                <Input
+                  {...field}
+                  placeholder="9.2 GPA"
+                  aria-label={t({ message: "Note, mention ou moyenne obtenue" })}
+                  aria-describedby="description-score"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-score" />
             </FormItem>
           )}
         />
@@ -109,9 +128,14 @@ export const EducationDialog = () => {
             <FormItem className="sm:col-span-2">
               <FormLabel>{t`Date or Date Range`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023 - Present`} />
+                <Input
+                  {...field}
+                  placeholder={t`March 2023 - Present`}
+                  aria-label={t({ message: "Date ou période d'études" })}
+                  aria-describedby="description-date"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-date" />
             </FormItem>
           )}
         />
@@ -123,9 +147,13 @@ export const EducationDialog = () => {
             <FormItem className="sm:col-span-2">
               <FormLabel>{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  aria-label={t({ message: "Site web associé à cet établissement ou formation" })}
+                  aria-describedby="description-url"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-url" />
             </FormItem>
           )}
         />
@@ -139,6 +167,8 @@ export const EducationDialog = () => {
               <FormControl>
                 <RichInput
                   {...field}
+                  aria-label={t({ message: "Résumé ou description détaillée des études" })}
+                  aria-describedby="description-summary"
                   content={field.value}
                   footer={(editor) => (
                     <AiActions
@@ -154,7 +184,7 @@ export const EducationDialog = () => {
                   }}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-summary" />
             </FormItem>
           )}
         />

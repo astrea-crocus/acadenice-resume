@@ -58,9 +58,13 @@ export const CustomSectionDialog = () => {
             <FormItem>
               <FormLabel>{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Nom de la section personnalisée" })}
+                  aria-describedby="description-name"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-name" />
             </FormItem>
           )}
         />
@@ -72,9 +76,13 @@ export const CustomSectionDialog = () => {
             <FormItem>
               <FormLabel>{t`Description`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Description courte de la section personnalisée" })}
+                  aria-describedby="description-description"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-description" />
             </FormItem>
           )}
         />
@@ -86,9 +94,13 @@ export const CustomSectionDialog = () => {
             <FormItem>
               <FormLabel>{t`Date or Date Range`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Date ou période associée à cette section" })}
+                  aria-describedby="description-date"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-date" />
             </FormItem>
           )}
         />
@@ -100,9 +112,13 @@ export const CustomSectionDialog = () => {
             <FormItem>
               <FormLabel>{t`Location`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Lieu lié à cette section personnalisée" })}
+                  aria-describedby="description-location"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-location" />
             </FormItem>
           )}
         />
@@ -114,9 +130,13 @@ export const CustomSectionDialog = () => {
             <FormItem className="sm:col-span-2">
               <FormLabel>{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  aria-label={t({ message: "Lien vers un site web associé" })}
+                  aria-describedby="description-url"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-url" />
             </FormItem>
           )}
         />
@@ -130,6 +150,8 @@ export const CustomSectionDialog = () => {
               <FormControl>
                 <RichInput
                   {...field}
+                  aria-label={t({ message: "Résumé ou texte libre pour décrire cette section" })}
+                  aria-describedby="description-summary"
                   content={field.value}
                   footer={(editor) => (
                     <AiActions
@@ -145,7 +167,7 @@ export const CustomSectionDialog = () => {
                   }}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-summary" />
             </FormItem>
           )}
         />
@@ -158,9 +180,14 @@ export const CustomSectionDialog = () => {
               <FormItem>
                 <FormLabel>{t`Keywords`}</FormLabel>
                 <FormControl>
-                  <BadgeInput {...field} setPendingKeyword={setPendingKeyword} />
+                  <BadgeInput
+                    {...field}
+                    setPendingKeyword={setPendingKeyword}
+                    aria-label={t({ message: "Mots-clés associés à cette section" })}
+                    aria-describedby="description-keywords"
+                  />
                 </FormControl>
-                <FormDescription>
+                <FormDescription id="description-keywords">
                   {t`You can add multiple keywords by separating them with a comma or pressing enter.`}
                 </FormDescription>
                 <FormMessage />

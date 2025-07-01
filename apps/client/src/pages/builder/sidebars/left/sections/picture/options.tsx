@@ -59,6 +59,11 @@ export const PictureOptions = () => {
     setValue("basics.picture.borderRadius", stringToBorderRadiusMap[value as BorderRadius]);
   };
 
+  // Variables simples pour aria-labels
+  const size = picture.size;
+  const ratioLabel = aspectRatio;
+  const borderRadiusLabel = borderRadius;
+
   return (
     <div className="flex flex-col gap-y-5">
       <div className="grid grid-cols-3 items-center gap-x-6">
@@ -67,8 +72,9 @@ export const PictureOptions = () => {
           type="number"
           id="picture.size"
           placeholder="128"
-          value={picture.size}
+          value={size}
           className="col-span-2"
+          aria-label={t`Taille de l'image en pixels, valeur actuelle : ${size}`}
           onChange={(event) => {
             setValue("basics.picture.size", event.target.valueAsNumber);
           }}
@@ -80,24 +86,25 @@ export const PictureOptions = () => {
         <div className="col-span-2 flex items-center justify-between">
           <ToggleGroup
             type="single"
-            value={aspectRatio}
+            value={ratioLabel}
             className="flex items-center justify-center"
+            aria-label={t`Sélectionnez le ratio d'aspect de l'image, valeur actuelle : ${ratioLabel}`}
             onValueChange={onAspectRatioChange}
           >
             <Tooltip content={t`Square`}>
-              <ToggleGroupItem value="square">
+              <ToggleGroupItem value="square" aria-label={t`Choisir le ratio carré`}>
                 <div className="size-3 border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
 
             <Tooltip content={t`Horizontal`}>
-              <ToggleGroupItem value="horizontal">
+              <ToggleGroupItem value="horizontal" aria-label={t`Choisir le ratio horizontal`}>
                 <div className="h-2 w-3 border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
 
             <Tooltip content={t`Portrait`}>
-              <ToggleGroupItem value="portrait">
+              <ToggleGroupItem value="portrait" aria-label={t`Choisir le ratio portrait`}>
                 <div className="h-3 w-2 border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
@@ -111,6 +118,7 @@ export const PictureOptions = () => {
             className="w-[60px]"
             id="picture.aspectRatio"
             value={picture.aspectRatio}
+            aria-label={t`Entrer manuellement le ratio d'aspect`}
             onChange={(event) => {
               if (!event.target.valueAsNumber) return;
               if (Number.isNaN(event.target.valueAsNumber)) return;
@@ -125,24 +133,25 @@ export const PictureOptions = () => {
         <div className="col-span-2 flex items-center justify-between">
           <ToggleGroup
             type="single"
-            value={borderRadius}
+            value={borderRadiusLabel}
             className="flex items-center justify-center"
+            aria-label={t`Sélectionnez le rayon des bords de l'image`}
             onValueChange={onBorderRadiusChange}
           >
             <Tooltip content={t`Square`}>
-              <ToggleGroupItem value="square">
+              <ToggleGroupItem value="square" aria-label={t`Choisir bord carré`}>
                 <div className="size-3 border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
 
             <Tooltip content={t`Rounded`}>
-              <ToggleGroupItem value="rounded">
+              <ToggleGroupItem value="rounded" aria-label={t`Choisir bord arrondi`}>
                 <div className="size-3 rounded-sm border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
 
             <Tooltip content={t`Circle`}>
-              <ToggleGroupItem value="circle">
+              <ToggleGroupItem value="circle" aria-label={t`Choisir bord en cercle`}>
                 <div className="size-3 rounded-full border border-foreground" />
               </ToggleGroupItem>
             </Tooltip>
@@ -156,6 +165,7 @@ export const PictureOptions = () => {
             className="w-[60px]"
             id="picture.borderRadius"
             value={picture.borderRadius}
+            aria-label={t`Entrer manuellement le rayon des bords`}
             onChange={(event) => {
               setValue("basics.picture.borderRadius", event.target.valueAsNumber);
             }}
@@ -173,6 +183,7 @@ export const PictureOptions = () => {
               <Checkbox
                 id="picture.effects.hidden"
                 checked={picture.effects.hidden}
+                aria-label={t`Activer ou désactiver l'effet caché`}
                 onCheckedChange={(checked) => {
                   setValue("basics.picture.effects.hidden", checked);
                 }}
@@ -184,6 +195,7 @@ export const PictureOptions = () => {
               <Checkbox
                 id="picture.effects.border"
                 checked={picture.effects.border}
+                aria-label={t`Activer ou désactiver l'effet bordure`}
                 onCheckedChange={(checked) => {
                   setValue("basics.picture.effects.border", checked);
                 }}
@@ -195,6 +207,7 @@ export const PictureOptions = () => {
               <Checkbox
                 id="picture.effects.grayscale"
                 checked={picture.effects.grayscale}
+                aria-label={t`Activer ou désactiver l'effet niveaux de gris`}
                 onCheckedChange={(checked) => {
                   setValue("basics.picture.effects.grayscale", checked);
                 }}

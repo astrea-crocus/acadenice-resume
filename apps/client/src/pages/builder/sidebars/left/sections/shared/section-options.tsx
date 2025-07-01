@@ -76,22 +76,29 @@ export const SectionOptions = ({ id }: Props) => {
     removeSection(id);
   };
 
+  const sectionName = section.name || "";
+
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger asChild aria-label={t`Ouvrir les options de la section ${sectionName}`}>
         <Button variant="ghost" size="icon">
           <List weight="bold" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mr-4 w-48">
+      <DropdownMenuContent className="mr-4 w-48" aria-label={t`Menu des options de section`}>
         {hasItems && (
           <>
-            <DropdownMenuItem onClick={onCreate}>
+            <DropdownMenuItem aria-label={t`Ajouter un nouvel élément`} onClick={onCreate}>
               <Plus />
               <span className="ml-2">{t`Add a new item`}</span>
             </DropdownMenuItem>
             <DropdownMenuCheckboxItem
               checked={section.separateLinks}
+              aria-label={
+                section.separateLinks
+                  ? t`Désactiver la séparation des liens`
+                  : t`Activer la séparation des liens`
+              }
               onCheckedChange={toggleSeperateLinks}
             >
               <span className="ml-0">{t`Separate Links`}</span>
@@ -101,12 +108,15 @@ export const SectionOptions = ({ id }: Props) => {
         )}
 
         <DropdownMenuGroup>
-          <DropdownMenuItem onClick={toggleVisibility}>
+          <DropdownMenuItem
+            aria-label={section.visible ? t`Masquer la section` : t`Afficher la section`}
+            onClick={toggleVisibility}
+          >
             {section.visible ? <Eye /> : <EyeSlash />}
             <span className="ml-2">{section.visible ? t`Hide` : t`Show`}</span>
           </DropdownMenuItem>
           <DropdownMenuSub>
-            <DropdownMenuSubTrigger>
+            <DropdownMenuSubTrigger aria-label={t`Renommer la section`}>
               <PencilSimple />
               <span className="ml-2">{t`Rename`}</span>
             </DropdownMenuSubTrigger>
@@ -115,6 +125,7 @@ export const SectionOptions = ({ id }: Props) => {
                 <Input
                   id={`sections.${id}.name`}
                   value={section.name}
+                  aria-label={t`Champ de saisie pour renommer la section`}
                   onChange={(event) => {
                     setValue(`sections.${id}.name`, event.target.value);
                   }}
@@ -123,6 +134,7 @@ export const SectionOptions = ({ id }: Props) => {
                   size="icon"
                   variant="link"
                   className="absolute inset-y-0 right-0"
+                  aria-label={t`Réinitialiser le nom de la section`}
                   onClick={onResetName}
                 >
                   <ArrowCounterClockwise />
@@ -131,12 +143,16 @@ export const SectionOptions = ({ id }: Props) => {
             </DropdownMenuSubContent>
           </DropdownMenuSub>
           <DropdownMenuSub>
-            <DropdownMenuSubTrigger>
+            <DropdownMenuSubTrigger aria-label={t`Choisir le nombre de colonnes`}>
               <Columns />
               <span className="ml-2">{t`Columns`}</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuSubContent>
-              <DropdownMenuRadioGroup value={`${section.columns}`} onValueChange={onChangeColumns}>
+              <DropdownMenuRadioGroup
+                value={`${section.columns}`}
+                aria-label={t`Nombre de colonnes dans la section`}
+                onValueChange={onChangeColumns}
+              >
                 {Array.from({ length: 5 }, (_, i) => i + 1).map((value) => (
                   <DropdownMenuRadioItem key={value} value={`${value}`}>
                     {value} {plural(value, { one: "Column", other: "Columns" })}
@@ -147,12 +163,21 @@ export const SectionOptions = ({ id }: Props) => {
           </DropdownMenuSub>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem disabled={!hasItems} onClick={onResetItems}>
+        <DropdownMenuItem
+          disabled={!hasItems}
+          aria-label={t`Réinitialiser les éléments de la section`}
+          onClick={onResetItems}
+        >
           <Broom />
           <span className="ml-2">{t`Reset`}</span>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="text-error" disabled={!isCustomSection} onClick={onRemove}>
+        <DropdownMenuItem
+          className="text-error"
+          disabled={!isCustomSection}
+          aria-label={t`Supprimer la section`}
+          onClick={onRemove}
+        >
           <TrashSimple />
           <span className="ml-2">{t`Remove`}</span>
         </DropdownMenuItem>

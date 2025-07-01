@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import type { IconProps } from "@phosphor-icons/react";
 import {
   Article,
@@ -75,6 +76,56 @@ const getSectionIcon = (id: SectionKey, props: IconProps = {}) => {
   }
 };
 
+const getAriaLabel = (id: SectionKey): string => {
+  switch (id) {
+    case "basics": {
+      return t`Informations personnelles`;
+    }
+    case "summary": {
+      return t`Résumé`;
+    }
+    case "awards": {
+      return t`Distinctions`;
+    }
+    case "profiles": {
+      return t`Profils`;
+    }
+    case "experience": {
+      return t`Expérience professionnelle`;
+    }
+    case "education": {
+      return t`Formation`;
+    }
+    case "certifications": {
+      return t`Certifications`;
+    }
+    case "interests": {
+      return t`Centres d'intérêt`;
+    }
+    case "languages": {
+      return t`Langues`;
+    }
+    case "volunteer": {
+      return t`Bénévolat`;
+    }
+    case "projects": {
+      return t`Projets`;
+    }
+    case "publications": {
+      return t`Publications`;
+    }
+    case "skills": {
+      return t`Compétences`;
+    }
+    case "references": {
+      return t`Références`;
+    }
+    default: {
+      return "";
+    }
+  }
+};
+
 type SectionIconProps = Omit<ButtonProps, "size"> & {
   id: SectionKey;
   name?: string;
@@ -89,7 +140,13 @@ export const SectionIcon = ({ id, name, icon, size = 14, ...props }: SectionIcon
 
   return (
     <Tooltip side="right" content={name ?? section.name}>
-      <Button size="icon" variant="ghost" className="size-8 rounded-full" {...props}>
+      <Button
+        size="icon"
+        variant="ghost"
+        className="size-8 rounded-full"
+        aria-label={getAriaLabel(id)}
+        {...props}
+      >
         {icon ?? getSectionIcon(id, { size })}
       </Button>
     </Tooltip>

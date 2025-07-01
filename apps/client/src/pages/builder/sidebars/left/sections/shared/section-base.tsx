@@ -88,6 +88,13 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
     setValue(`sections.${id}.items[${index}].visible`, !visible);
   };
 
+  // Variables intermédiaires pour lingui et eslint
+  const sectionName = section.name;
+  const addNewItemLabel = t({
+    message: "Add a new item",
+    context: "For example, add a new work experience, or add a new profile.",
+  });
+
   return (
     <motion.section
       id={id}
@@ -95,11 +102,12 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="grid gap-y-6"
+      aria-label={t`Section ${sectionName}`}
     >
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id={id} size={18} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{section.name}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{sectionName}</h2>
         </div>
 
         <div className="flex items-center gap-x-2">
@@ -112,15 +120,11 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
           <Button
             variant="outline"
             className="gap-x-2 border-dashed py-6 leading-relaxed hover:bg-secondary-accent"
+            aria-label={addNewItemLabel}
             onClick={onCreate}
           >
             <Plus size={14} />
-            <span className="font-medium">
-              {t({
-                message: "Add a new item",
-                context: "For example, add a new work experience, or add a new profile.",
-              })}
-            </span>
+            <span className="font-medium">{addNewItemLabel}</span>
           </Button>
         )}
 
@@ -132,27 +136,34 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
         >
           <SortableContext items={section.items} strategy={verticalListSortingStrategy}>
             <AnimatePresence>
-              {section.items.map((item, index) => (
-                <SectionListItem
-                  key={item.id}
-                  id={item.id}
-                  visible={item.visible}
-                  title={title(item as T)}
-                  description={description?.(item as T)}
-                  onUpdate={() => {
-                    onUpdate(item as T);
-                  }}
-                  onDelete={() => {
-                    onDelete(item as T);
-                  }}
-                  onDuplicate={() => {
-                    onDuplicate(item as T);
-                  }}
-                  onToggleVisibility={() => {
-                    onToggleVisibility(index);
-                  }}
-                />
-              ))}
+              {section.items.map((item, index) => {
+                const itemTitle = title(item as T);
+                const itemDescription = description?.(item as T);
+                const toggleVisibilityLabel = t`Basculer la visibilité de l'élément : ${itemTitle}`;
+
+                return (
+                  <SectionListItem
+                    key={item.id}
+                    id={item.id}
+                    visible={item.visible}
+                    title={itemTitle}
+                    description={itemDescription}
+                    aria-label={toggleVisibilityLabel}
+                    onUpdate={() => {
+                      onUpdate(item as T);
+                    }}
+                    onDelete={() => {
+                      onDelete(item as T);
+                    }}
+                    onDuplicate={() => {
+                      onDuplicate(item as T);
+                    }}
+                    onToggleVisibility={() => {
+                      onToggleVisibility(index);
+                    }}
+                  />
+                );
+              })}
             </AnimatePresence>
           </SortableContext>
         </DndContext>
@@ -163,15 +174,11 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
           <Button
             variant="outline"
             className="ml-auto gap-x-2 text-xs lg:text-sm"
+            aria-label={addNewItemLabel}
             onClick={onCreate}
           >
             <Plus />
-            <span>
-              {t({
-                message: "Add a new item",
-                context: "For example, add a new work experience, or add a new profile.",
-              })}
-            </span>
+            <span>{addNewItemLabel}</span>
           </Button>
         </footer>
       )}

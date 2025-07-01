@@ -12,9 +12,9 @@
     "customFields": [],
     "picture": {
       "url": "https://i.imgur.com/HgwyOuJ.jpg",
-      "size": 140,
+      "size": 120,
       "aspectRatio": 1,
-      "borderRadius": 4,
+      "borderRadius": 0,
       "effects": {
         "hidden": false,
         "border": false,
@@ -144,26 +144,11 @@
       "columns": 1,
       "visible": true,
       "id": "languages",
-      "items": [
-        {
-          "id": "ey0c353j3apepzqmyl8zd37c",
-          "visible": true,
-          "name": "English",
-          "description": "Native Speaker",
-          "level": 0
-        },
-        {
-          "id": "a4dnf32wyj5phgln2rx97qk2",
-          "visible": true,
-          "name": "Spanish",
-          "description": "Intermediate",
-          "level": 0
-        }
-      ]
+      "items": []
     },
     "profiles": {
       "name": "Profiles",
-      "columns": 3,
+      "columns": 1,
       "visible": true,
       "id": "profiles",
       "items": [
@@ -188,23 +173,12 @@
             "label": "",
             "href": "https://github.com/johndoe"
           }
-        },
-        {
-          "id": "k97vdxzmssmgel79km48kxgg",
-          "visible": true,
-          "network": "StackOverflow",
-          "username": "johndoe",
-          "icon": "stackoverflow",
-          "url": {
-            "label": "",
-            "href": "https://stackoverflow.com/u/johndoe"
-          }
         }
       ]
     },
     "projects": {
       "name": "Projects",
-      "columns": 2,
+      "columns": 1,
       "visible": true,
       "id": "projects",
       "items": [
@@ -246,7 +220,7 @@
     "references": {
       "name": "References",
       "columns": 1,
-      "visible": true,
+      "visible": false,
       "id": "references",
       "items": [
         {
@@ -297,18 +271,19 @@
     "custom": {}
   },
   "metadata": {
-    "template": "amaranth",
+    "template": "thor",
     "layout": [
       [
-        ["profiles", "summary", "experience", "education", "projects", "volunteer"],
+        ["summary", "experience", "education", "projects", "references"],
         [
+          "profiles",
           "skills",
-          "interests",
           "certifications",
-          "awards",
-          "publications",
+          "interests",
           "languages",
-          "references"
+          "awards",
+          "volunteer",
+          "publications"
         ]
       ]
     ],
@@ -336,7 +311,7 @@
         "variants": ["regular"],
         "size": 13
       },
-      "lineHeight": 1.75,
+      "lineHeight": 1.6,
       "hideIcons": false,
       "underlineLinks": true
     },

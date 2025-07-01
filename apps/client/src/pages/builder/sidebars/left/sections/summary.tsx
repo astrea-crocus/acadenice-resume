@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import { defaultSections } from "@reactive-resume/schema";
 import { RichInput } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
@@ -16,24 +17,37 @@ export const SummarySection = () => {
   );
 
   return (
-    <section id="summary" className="grid gap-y-6">
+    <section
+      id="summary"
+      className="grid gap-y-6"
+      aria-labelledby="summary-title"
+      aria-label={t`Section Résumé du CV`}
+    >
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
-          <SectionIcon id="summary" size={18} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{section.name}</h2>
+          <SectionIcon id="summary" size={18} aria-label={t`Icône de la section Résumé`} />
+          <h2 id="summary-title" className="line-clamp-1 text-2xl font-bold lg:text-3xl">
+            {section.name}
+          </h2>
         </div>
 
         <div className="flex items-center gap-x-2">
-          <SectionOptions id="summary" />
+          <SectionOptions id="summary" aria-label={t`Options pour la section Résumé`} />
         </div>
       </header>
 
-      <main className={cn(!section.visible && "opacity-50")}>
+      <main
+        className={cn(!section.visible && "opacity-50")}
+        role="group"
+        aria-label={t`Contenu éditable du résumé`}
+      >
         <RichInput
           content={section.content}
+          aria-label={t`Éditeur de texte pour le résumé`}
           footer={(editor) => (
             <AiActions
               value={editor.getText()}
+              aria-label={t`Actions d'aide par intelligence artificielle pour le résumé`}
               onChange={(value) => {
                 editor.commands.setContent(value, true);
                 setValue("sections.summary.content", value);

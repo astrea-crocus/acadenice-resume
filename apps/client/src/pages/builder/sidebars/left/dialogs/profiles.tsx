@@ -37,10 +37,15 @@ export const ProfilesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Network`}</FormLabel>
+              <FormLabel htmlFor="profile-network">{t`Network`}</FormLabel>
               <FormControl>
                 {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
-                <Input {...field} placeholder="GitHub" />
+                <Input
+                  {...field}
+                  id="profile-network"
+                  placeholder="GitHub"
+                  aria-label={t`Nom du réseau social ou plateforme`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -52,9 +57,14 @@ export const ProfilesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Username`}</FormLabel>
+              <FormLabel htmlFor="profile-username">{t`Username`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="john.doe" />
+                <Input
+                  {...field}
+                  id="profile-username"
+                  placeholder="john.doe"
+                  aria-label={t`Nom d'utilisateur sur la plateforme`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -66,9 +76,14 @@ export const ProfilesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel htmlFor="profile-url">{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} placeholder="https://github.com/johndoe" />
+                <URLInput
+                  {...field}
+                  id="profile-url"
+                  placeholder="https://github.com/johndoe"
+                  aria-label={t`URL du profil`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -80,13 +95,19 @@ export const ProfilesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel htmlFor="iconSlug">{t`Icon`}</FormLabel>
+              <FormLabel htmlFor="profile-icon">{t`Icon`}</FormLabel>
               <FormControl>
                 <div className="flex items-center gap-x-2">
-                  <Avatar className="size-8 bg-white p-1.5">
+                  <Avatar className="size-8 bg-white p-1.5" aria-hidden="true">
                     <BrandIcon slug={field.value} />
                   </Avatar>
-                  <Input {...field} placeholder="github" onChange={field.onChange} />
+                  <Input
+                    {...field}
+                    id="profile-icon"
+                    placeholder="github"
+                    aria-label={t`Nom de l'icône de la plateforme`}
+                    onChange={field.onChange}
+                  />
                 </div>
               </FormControl>
               <FormMessage />

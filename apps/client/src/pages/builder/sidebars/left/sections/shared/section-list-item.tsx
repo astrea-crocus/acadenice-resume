@@ -47,6 +47,24 @@ export const SectionListItem = ({
     transition,
   };
 
+  const getMenuAriaLabel = (sectionTitle: string) => {
+    switch (sectionTitle) {
+      case "Profil": {
+        return t`Ouvrir les options de la section Profil`;
+      }
+      case "Expérience": {
+        return t`Ouvrir les options de la section Expérience`;
+      }
+      case "Formation": {
+        return t`Ouvrir les options de la section Formation`;
+      }
+      // Ajoute d’autres cas si besoin
+      default: {
+        return t`Ouvrir les options de la section ${sectionTitle}`;
+      }
+    }
+  };
+
   return (
     <motion.section
       ref={setNodeRef}
@@ -64,18 +82,23 @@ export const SectionListItem = ({
             "flex w-5 cursor-move items-center justify-center",
             !isDragging && "hover:bg-secondary",
           )}
+          aria-label={t`Déplacer la section`}
+          role="button"
+          tabIndex={0}
         >
           <DotsSixVertical weight="bold" size={12} />
         </div>
 
         {/* List Item */}
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger asChild aria-label={getMenuAriaLabel(title)}>
             <div
               className={cn(
                 "flex-1 cursor-context-menu p-4 hover:bg-secondary-accent",
                 !visible && "opacity-50",
               )}
+              role="button"
+              tabIndex={0}
               onClick={onUpdate}
             >
               <h4 className="font-medium leading-relaxed">{title}</h4>

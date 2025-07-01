@@ -36,9 +36,9 @@ export const ReferencesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Name`}</FormLabel>
+              <FormLabel htmlFor="reference-name">{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="reference-name" aria-label={t`Nom de la référence`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -50,9 +50,13 @@ export const ReferencesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Description`}</FormLabel>
+              <FormLabel htmlFor="reference-description">{t`Description`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  id="reference-description"
+                  aria-label={t`Description de la référence`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -64,9 +68,13 @@ export const ReferencesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel htmlFor="reference-url">{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  id="reference-url"
+                  aria-label={t`URL du site web de la référence`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -78,11 +86,13 @@ export const ReferencesDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel htmlFor="reference-summary">{t`Summary`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
+                  id="reference-summary"
                   content={field.value}
+                  aria-label={t`Résumé ou notes concernant la référence`}
                   footer={(editor) => (
                     <AiActions
                       value={editor.getText()}

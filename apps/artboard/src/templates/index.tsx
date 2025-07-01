@@ -1,10 +1,10 @@
 import type { Template } from "@reactive-resume/utils";
 
-import { Amaranth } from "./acadenice/amaranth";
-import { Euphorbia } from "./acadenice/euphorbia";
-import { Hellebore } from "./acadenice/hellebore";
-import { Ladyfern } from "./acadenice/ladyfern";
-import { Zinnia } from "./acadenice/zinnia";
+import { AntMan } from "./acadenice/antman";
+import { CaptainAmerica } from "./acadenice/captainamerica";
+import { Hulk } from "./acadenice/hulk";
+import { IronMan } from "./acadenice/ironman";
+import { Thor } from "./acadenice/thor";
 import { Azurill } from "./azurill";
 import { Bronzor } from "./bronzor";
 import { Chikorita } from "./chikorita";
@@ -29,20 +29,20 @@ export const getTemplate = (template: Template) => {
   const normalizedTemplate = normalizeTemplateName(template);
 
   switch (normalizedTemplate) {
-    case "amaranth": {
-      return Amaranth;
+    case "antman": {
+      return AntMan;
     }
-    case "euphorbia": {
-      return Euphorbia;
+    case "ironman": {
+      return IronMan;
     }
-    case "hellebore": {
-      return Hellebore;
+    case "hulk": {
+      return Hulk;
     }
-    case "ladyfern": {
-      return Ladyfern;
+    case "captainamerica": {
+      return CaptainAmerica;
     }
-    case "zinnia": {
-      return Zinnia;
+    case "thor": {
+      return Thor;
     }
     case "azurill": {
       return Azurill;
@@ -81,7 +81,7 @@ export const getTemplate = (template: Template) => {
       return Rhyhorn;
     }
     default: {
-      return Amaranth;
+      return AntMan;
     }
   }
 };

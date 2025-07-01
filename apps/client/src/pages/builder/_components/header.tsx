@@ -23,39 +23,45 @@ export const BuilderHeader = () => {
   };
 
   return (
-    <div
+    <header
       style={{ left: `${leftPanelSize}%`, right: `${rightPanelSize}%` }}
       className={cn(
         "fixed inset-x-0 top-0 z-[60] h-16 bg-secondary-accent/50 backdrop-blur-lg lg:z-20",
         !isDragging && "transition-[left,right]",
       )}
+      role="banner"
     >
       <div className="flex h-full items-center justify-between px-4">
         <Button
           size="icon"
           variant="ghost"
           className="flex lg:hidden"
+          aria-label={t`Toggle left panel`}
           onClick={() => {
             onToggle("left");
           }}
         >
-          <SidebarSimple />
+          <SidebarSimple aria-hidden="true" />
         </Button>
 
         <div className="flex items-center justify-center gap-x-1 lg:mx-auto">
           <Button asChild size="icon" variant="ghost">
-            <Link to="/dashboard/resumes">
-              <HouseSimple />
+            <Link to="/dashboard/resumes" aria-label={t`Go back to dashboard`}>
+              <HouseSimple aria-hidden="true" />
             </Link>
           </Button>
 
-          <span className="mr-2 text-xs opacity-40">{"/"}</span>
+          <span className="mr-2 text-xs opacity-40" aria-hidden="true">
+            /
+          </span>
 
-          <h1 className="font-medium">{title}</h1>
+          <h1 className="max-w-[12ch] truncate text-base font-medium" title={title}>
+            {title}
+          </h1>
 
           {locked && (
             <Tooltip content={t`This resume is locked, please unlock to make further changes.`}>
-              <Lock size={14} className="ml-2 opacity-75" />
+              <Lock size={14} className="ml-2 opacity-75" aria-hidden="true" />
             </Tooltip>
           )}
         </div>
@@ -64,13 +70,14 @@ export const BuilderHeader = () => {
           size="icon"
           variant="ghost"
           className="flex lg:hidden"
+          aria-label={t`Toggle right panel`}
           onClick={() => {
             onToggle("right");
           }}
         >
-          <SidebarSimple className="-scale-x-100" />
+          <SidebarSimple className="-scale-x-100" aria-hidden="true" />
         </Button>
       </div>
-    </div>
+    </header>
   );
 };

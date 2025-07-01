@@ -38,9 +38,13 @@ export const ExperienceDialog = () => {
             <FormItem>
               <FormLabel>{t`Company`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Nom de l'entreprise ou organisation" })}
+                  aria-describedby="description-company"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-company" />
             </FormItem>
           )}
         />
@@ -57,9 +61,13 @@ export const ExperienceDialog = () => {
                 })}
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Poste occupé dans l'entreprise" })}
+                  aria-describedby="description-position"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-position" />
             </FormItem>
           )}
         />
@@ -71,9 +79,14 @@ export const ExperienceDialog = () => {
             <FormItem>
               <FormLabel>{t`Date or Date Range`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023 - Present`} />
+                <Input
+                  {...field}
+                  placeholder={t`March 2023 - Present`}
+                  aria-label={t({ message: "Date ou période d'emploi" })}
+                  aria-describedby="description-date"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-date" />
             </FormItem>
           )}
         />
@@ -85,9 +98,13 @@ export const ExperienceDialog = () => {
             <FormItem>
               <FormLabel>{t`Location`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Lieu de travail ou localisation de l'emploi" })}
+                  aria-describedby="description-location"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-location" />
             </FormItem>
           )}
         />
@@ -99,9 +116,13 @@ export const ExperienceDialog = () => {
             <FormItem className="sm:col-span-2">
               <FormLabel>{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  aria-label={t({ message: "Site web associé à l'emploi ou l'entreprise" })}
+                  aria-describedby="description-url"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-url" />
             </FormItem>
           )}
         />
@@ -115,6 +136,8 @@ export const ExperienceDialog = () => {
               <FormControl>
                 <RichInput
                   {...field}
+                  aria-label={t({ message: "Résumé ou description détaillée de l'expérience" })}
+                  aria-describedby="description-summary"
                   content={field.value}
                   footer={(editor) => (
                     <AiActions
@@ -130,7 +153,7 @@ export const ExperienceDialog = () => {
                   }}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-summary" />
             </FormItem>
           )}
         />

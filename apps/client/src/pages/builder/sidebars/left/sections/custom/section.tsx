@@ -24,6 +24,10 @@ type CustomFieldProps = {
 export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => {
   const controls = useDragControls();
 
+  // Variable simple pour aria-label Lingui-friendly
+  const fieldName = field.name || t`Nom`;
+  const fieldValue = field.value || t`Valeur`;
+
   const handleChange = (key: "icon" | "name" | "value", value: string) => {
     onChange({ ...field, [key]: value });
   };
@@ -42,6 +46,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
           size="icon"
           variant="ghost"
           className="shrink-0"
+          aria-label={t`Déplacer le champ personnalisé`}
           onPointerDown={(event) => {
             controls.start(event);
           }}
@@ -50,9 +55,14 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
         </Button>
 
         <Popover>
-          <Tooltip content={t`Icon`}>
+          <Tooltip content={t`Icône`}>
             <PopoverTrigger asChild>
-              <Button size="icon" variant="ghost" className="shrink-0">
+              <Button
+                size="icon"
+                variant="ghost"
+                className="shrink-0"
+                aria-label={t`Modifier l'icône du champ personnalisé`}
+              >
                 {field.icon ? <i className={cn(`ph ph-${field.icon}`)} /> : <Envelope />}
               </Button>
             </PopoverTrigger>
@@ -60,7 +70,8 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
           <PopoverContent side="bottom" align="start" className="flex flex-col gap-y-1.5 p-1.5">
             <Input
               value={field.icon}
-              placeholder={t`Enter Phosphor Icon`}
+              placeholder={t`Saisir le nom d'icône Phosphor`}
+              aria-label={t`Champ de saisie pour modifier l'icône`}
               onChange={(event) => {
                 onChange({ ...field, icon: event.target.value });
               }}
@@ -68,7 +79,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
 
             <p className="text-xs opacity-80">
               <Trans>
-                Visit{" "}
+                Visitez{" "}
                 <a
                   href="https://phosphoricons.com/"
                   target="_blank"
@@ -77,7 +88,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
                 >
                   Phosphor Icons
                 </a>{" "}
-                for a list of available icons
+                pour voir la liste des icônes disponibles
               </Trans>
             </p>
           </PopoverContent>
@@ -85,8 +96,9 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
 
         <Input
           className="mx-2"
-          placeholder={t`Name`}
+          placeholder={t`Nom`}
           value={field.name}
+          aria-label={t`Champ de saisie pour le nom du champ personnalisé: ${fieldName}`}
           onChange={(event) => {
             handleChange("name", event.target.value);
           }}
@@ -94,8 +106,9 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
 
         <Input
           className="mx-2"
-          placeholder={t`Value`}
+          placeholder={t`Valeur`}
           value={field.value}
+          aria-label={t`Champ de saisie pour la valeur du champ personnalisé: ${fieldValue}`}
           onChange={(event) => {
             handleChange("value", event.target.value);
           }}
@@ -105,6 +118,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
           size="icon"
           variant="ghost"
           className="shrink-0"
+          aria-label={t`Supprimer le champ personnalisé nommé ${fieldName}`}
           onClick={() => {
             onRemove(field.id);
           }}
@@ -157,6 +171,7 @@ export const CustomFieldsSection = ({ className }: Props) => {
           axis="y"
           className="space-y-4"
           values={customFields}
+          aria-label={t`Liste des champs personnalisés`}
           onReorder={onReorderCustomFields}
         >
           {customFields.map((field) => (
@@ -170,7 +185,11 @@ export const CustomFieldsSection = ({ className }: Props) => {
         </Reorder.Group>
       </AnimatePresence>
 
-      <Button variant="link" onClick={onAddCustomField}>
+      <Button
+        variant="link"
+        aria-label={t`Ajouter un champ personnalisé`}
+        onClick={onAddCustomField}
+      >
         <Plus className="mr-2" />
         <span>{t`Add a custom field`}</span>
       </Button>

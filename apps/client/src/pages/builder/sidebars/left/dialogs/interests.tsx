@@ -47,9 +47,13 @@ export const InterestsDialog = () => {
             <FormItem className="col-span-2">
               <FormLabel>{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Nom de l'intérêt" })}
+                  aria-describedby="description-name"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-name" />
             </FormItem>
           )}
         />
@@ -62,9 +66,17 @@ export const InterestsDialog = () => {
               <FormItem>
                 <FormLabel>{t`Keywords`}</FormLabel>
                 <FormControl>
-                  <BadgeInput {...field} setPendingKeyword={setPendingKeyword} />
+                  <BadgeInput
+                    {...field}
+                    setPendingKeyword={setPendingKeyword}
+                    aria-label={t({
+                      message:
+                        "Mots-clés associés à l'intérêt, séparez-les par des virgules ou appuyez sur Entrée",
+                    })}
+                    aria-describedby="description-keywords"
+                  />
                 </FormControl>
-                <FormDescription>
+                <FormDescription id="description-keywords">
                   {t`You can add multiple keywords by separating them with a comma or pressing enter.`}
                 </FormDescription>
                 <FormMessage />

@@ -70,9 +70,9 @@ export const ProjectsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Name`}</FormLabel>
+              <FormLabel htmlFor="project-name">{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="project-name" aria-label={t`Nom du projet`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -84,9 +84,9 @@ export const ProjectsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Description`}</FormLabel>
+              <FormLabel htmlFor="project-description">{t`Description`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="project-description" aria-label={t`Description du projet`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -98,9 +98,14 @@ export const ProjectsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Date or Date Range`}</FormLabel>
+              <FormLabel htmlFor="project-date">{t`Date or Date Range`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023 - Present`} />
+                <Input
+                  {...field}
+                  id="project-date"
+                  placeholder={t`March 2023 - Present`}
+                  aria-label={t`Date ou période du projet`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,9 +117,14 @@ export const ProjectsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel htmlFor="project-url">{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} placeholder="https://rxresu.me" />
+                <URLInput
+                  {...field}
+                  id="project-url"
+                  placeholder="https://rxresu.me"
+                  aria-label={t`URL du site web du projet`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -126,11 +136,13 @@ export const ProjectsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel htmlFor="project-summary">{t`Summary`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
                   content={field.value}
+                  id="project-summary"
+                  aria-label={t`Résumé du projet`}
                   footer={(editor) => (
                     <AiActions
                       value={editor.getText()}
@@ -156,9 +168,14 @@ export const ProjectsDialog = () => {
           render={({ field }) => (
             <div className="space-y-3 sm:col-span-2">
               <FormItem>
-                <FormLabel>{t`Keywords`}</FormLabel>
+                <FormLabel htmlFor="project-keywords">{t`Keywords`}</FormLabel>
                 <FormControl>
-                  <BadgeInput {...field} setPendingKeyword={setPendingKeyword} />
+                  <BadgeInput
+                    {...field}
+                    id="project-keywords"
+                    aria-label={t`Mots-clés du projet`}
+                    setPendingKeyword={setPendingKeyword}
+                  />
                 </FormControl>
                 <FormDescription>
                   {t`You can add multiple keywords by separating them with a comma or pressing enter.`}
@@ -166,7 +183,11 @@ export const ProjectsDialog = () => {
                 <FormMessage />
               </FormItem>
 
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-3">
+              <div
+                className="flex flex-wrap items-center gap-x-2 gap-y-3"
+                aria-label={t`Liste des mots-clés`}
+                role="list"
+              >
                 <AnimatePresence>
                   {field.value.map((item, index) => (
                     <motion.div
@@ -176,6 +197,8 @@ export const ProjectsDialog = () => {
                       initial={{ opacity: 0, y: -50 }}
                       animate={{ opacity: 1, y: 0, transition: { delay: index * 0.1 } }}
                       exit={{ opacity: 0, x: -50 }}
+                      role="listitem"
+                      aria-grabbed={draggedIndex === index ? "true" : "false"}
                       onDragStart={() => {
                         setDraggedIndex(index);
                       }}
@@ -184,14 +207,22 @@ export const ProjectsDialog = () => {
                         handleDrop(e, index, field);
                       }}
                     >
-                      <Badge className="cursor-move">
+                      <Badge className="cursor-move" aria-label={t`Mot-clé: ${item}`}>
                         <span className="mr-1">{item}</span>
                         <X
                           className="cursor-pointer"
                           size={12}
                           weight="bold"
+                          role="button"
+                          aria-label={t`Supprimer le mot-clé ${item}`}
+                          tabIndex={0}
                           onClick={() => {
                             field.onChange(field.value.filter((v) => item !== v));
+                          }}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                              field.onChange(field.value.filter((v) => item !== v));
+                            }
                           }}
                         />
                       </Badge>

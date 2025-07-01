@@ -49,9 +49,9 @@ export const SectionDialog = <T extends SectionItem>({
   const { isOpen, mode, close, payload } = useDialog<T>(id);
 
   const setValue = useResumeStore((state) => state.setValue);
-  const section = useResumeStore((state) => {
-    return get(state.resume.data.sections, id);
-  }) as SectionWithItem<T> | null;
+  const section = useResumeStore((state) =>
+    get(state.resume.data.sections, id),
+  ) as SectionWithItem<T> | null;
 
   const isCreate = mode === "create";
   const isUpdate = mode === "update";
@@ -118,23 +118,77 @@ export const SectionDialog = <T extends SectionItem>({
     if (isDelete) form.reset({ ...defaultValues, ...payload.item });
   };
 
+  let dialogAriaLabel: string | undefined;
+  switch (true) {
+    case isCreate: {
+      dialogAriaLabel = t`Dialogue de création d'un nouvel élément`;
+      break;
+    }
+    case isUpdate: {
+      dialogAriaLabel = t`Dialogue de mise à jour d'un élément existant`;
+      break;
+    }
+    case isDuplicate: {
+      dialogAriaLabel = t`Dialogue de duplication d'un élément existant`;
+      break;
+    }
+    default: {
+      dialogAriaLabel = undefined;
+    }
+  }
+
+  let buttonAriaLabel: string | undefined;
+  switch (true) {
+    case isCreate: {
+      buttonAriaLabel = t`Bouton pour créer un nouvel élément`;
+      break;
+    }
+    case isUpdate: {
+      buttonAriaLabel = t`Bouton pour enregistrer les modifications`;
+      break;
+    }
+    case isDuplicate: {
+      buttonAriaLabel = t`Bouton pour dupliquer l'élément`;
+      break;
+    }
+    default: {
+      buttonAriaLabel = undefined;
+    }
+  }
+
   if (isDelete) {
     return (
-      <AlertDialog open={isOpen} onOpenChange={close}>
-        <AlertDialogContent className="z-50">
+      <AlertDialog
+        open={isOpen}
+        aria-label={t`Dialogue de confirmation de suppression`}
+        onOpenChange={close}
+      >
+        <AlertDialogContent
+          className="z-50"
+          role="alertdialog"
+          aria-modal="true"
+          aria-labelledby="delete-dialog-title"
+          aria-describedby="delete-dialog-description"
+        >
           <Form {...form}>
             <form>
               <AlertDialogHeader>
-                <AlertDialogTitle>{t`Are you sure you want to delete this item?`}</AlertDialogTitle>
-                <AlertDialogDescription>
-                  {t`This action can be reverted by clicking on the undo button in the floating toolbar.`}
+                <AlertDialogTitle id="delete-dialog-title">{t`Êtes-vous sûr de vouloir supprimer cet élément ?`}</AlertDialogTitle>
+                <AlertDialogDescription id="delete-dialog-description">
+                  {t`Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante.`}
                 </AlertDialogDescription>
               </AlertDialogHeader>
 
               <AlertDialogFooter>
-                <AlertDialogCancel>{t`Cancel`}</AlertDialogCancel>
-                <AlertDialogAction variant="error" onClick={form.handleSubmit(onSubmit)}>
-                  {t`Delete`}
+                <AlertDialogCancel
+                  aria-label={t`Annuler la suppression`}
+                >{t`Annuler`}</AlertDialogCancel>
+                <AlertDialogAction
+                  variant="error"
+                  aria-label={t`Confirmer la suppression`}
+                  onClick={form.handleSubmit(onSubmit)}
+                >
+                  {t`Supprimer`}
                 </AlertDialogAction>
               </AlertDialogFooter>
             </form>
@@ -145,40 +199,54 @@ export const SectionDialog = <T extends SectionItem>({
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={close}>
-      <DialogContent className="z-50">
+    <Dialog open={isOpen} aria-label={dialogAriaLabel} onOpenChange={close}>
+      <DialogContent
+        className="z-50"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="section-dialog-title"
+      >
         <Form {...form}>
           <ScrollArea>
             <form
               className="max-h-[60vh] space-y-6 lg:max-h-fit"
+              aria-describedby="section-dialog-description"
               onSubmit={form.handleSubmit(onSubmit)}
             >
               <DialogHeader>
-                <DialogTitle>
+                <DialogTitle id="section-dialog-title">
                   <div className="flex items-center space-x-2.5">
-                    {isCreate && <Plus />}
-                    {isUpdate && <PencilSimple />}
-                    {isDuplicate && <CopySimple />}
+                    {isCreate && <Plus aria-hidden="true" />}
+                    {isUpdate && <PencilSimple aria-hidden="true" />}
+                    {isDuplicate && <CopySimple aria-hidden="true" />}
                     <h2>
-                      {isCreate && t`Create a new item`}
-                      {isUpdate && t`Update an existing item`}
-                      {isDuplicate && t`Duplicate an existing item`}
+                      {isCreate && t`Créer un nouvel élément`}
+                      {isUpdate && t`Mettre à jour un élément existant`}
+                      {isDuplicate && t`Dupliquer un élément existant`}
                     </h2>
                   </div>
                 </DialogTitle>
 
+                {/* Description cachée pour les lecteurs d’écran */}
                 <VisuallyHidden>
-                  <DialogDescription />
+                  <DialogDescription id="section-dialog-description">
+                    {isCreate &&
+                      t`Remplissez le formulaire pour créer un nouvel élément dans cette section.`}
+                    {isUpdate &&
+                      t`Modifiez les champs pour mettre à jour cet élément dans la section.`}
+                    {isDuplicate &&
+                      t`Modifiez les champs si vous souhaitez dupliquer cet élément avec des modifications.`}
+                  </DialogDescription>
                 </VisuallyHidden>
               </DialogHeader>
 
               {children}
 
               <DialogFooter>
-                <Button type="submit">
-                  {isCreate && t`Create`}
-                  {isUpdate && t`Save Changes`}
-                  {isDuplicate && t`Duplicate`}
+                <Button type="submit" aria-label={buttonAriaLabel}>
+                  {isCreate && t`Créer`}
+                  {isUpdate && t`Enregistrer`}
+                  {isDuplicate && t`Dupliquer`}
                 </Button>
               </DialogFooter>
             </form>

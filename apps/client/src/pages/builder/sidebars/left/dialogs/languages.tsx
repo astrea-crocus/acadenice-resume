@@ -35,9 +35,13 @@ export const LanguagesDialog = () => {
             <FormItem>
               <FormLabel>{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Nom de la langue" })}
+                  aria-describedby="description-name"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-name" />
             </FormItem>
           )}
         />
@@ -49,9 +53,13 @@ export const LanguagesDialog = () => {
             <FormItem>
               <FormLabel>{t`Description`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t({ message: "Description ou commentaire sur la langue" })}
+                  aria-describedby="description-description"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-description" />
             </FormItem>
           )}
         />
@@ -69,15 +77,20 @@ export const LanguagesDialog = () => {
                     min={0}
                     max={5}
                     value={[field.value]}
+                    aria-label={t({ message: "Niveau de maîtrise de la langue, de 0 à 5" })}
                     onValueChange={(value) => {
                       field.onChange(value[0]);
                     }}
                   />
 
                   {field.value > 0 ? (
-                    <span className="text-base font-bold">{field.value}</span>
+                    <span className="text-base font-bold" aria-live="polite">
+                      {field.value}
+                    </span>
                   ) : (
-                    <span className="text-base font-bold">{t`Hidden`}</span>
+                    <span className="text-base font-bold" aria-live="polite">
+                      {t`Hidden`}
+                    </span>
                   )}
                 </div>
               </FormControl>

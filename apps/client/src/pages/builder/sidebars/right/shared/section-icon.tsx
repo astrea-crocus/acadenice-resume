@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import type { IconProps } from "@phosphor-icons/react";
 import {
   Code,
@@ -76,6 +77,50 @@ const getSectionIcon = (id: MetadataKey, props: IconProps = {}) => {
   }
 };
 
+const getAriaLabel = (id: MetadataKey): string => {
+  switch (id) {
+    case "notes": {
+      return t`Notes`;
+    }
+    case "template": {
+      return t`Modèle de CV`;
+    }
+    case "layout": {
+      return t`Disposition`;
+    }
+    case "typography": {
+      return t`Typographie`;
+    }
+    case "theme": {
+      return t`Thème de couleurs`;
+    }
+    case "css": {
+      return t`CSS personnalisé`;
+    }
+    case "page": {
+      return t`Page`;
+    }
+    case "locale": {
+      return t`Langue`;
+    }
+    case "sharing": {
+      return t`Partage`;
+    }
+    case "statistics": {
+      return t`Statistiques`;
+    }
+    case "export": {
+      return t`Exporter le CV`;
+    }
+    case "information": {
+      return t`Informations`;
+    }
+    default: {
+      return "";
+    }
+  }
+};
+
 type SectionIconProps = Omit<ButtonProps, "size"> & {
   id: MetadataKey;
   name: string;
@@ -85,7 +130,13 @@ type SectionIconProps = Omit<ButtonProps, "size"> & {
 
 export const SectionIcon = ({ id, name, icon, size = 14, ...props }: SectionIconProps) => (
   <Tooltip side="left" content={name}>
-    <Button size="icon" variant="ghost" className="size-8 rounded-full" {...props}>
+    <Button
+      size="icon"
+      variant="ghost"
+      className="size-8 rounded-full"
+      aria-label={getAriaLabel(id)}
+      {...props}
+    >
       {icon ?? getSectionIcon(id, { size })}
     </Button>
   </Tooltip>

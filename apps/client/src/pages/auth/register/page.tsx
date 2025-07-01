@@ -106,6 +106,7 @@ export const RegisterPage = () => {
                       {...field}
                     />
                   </FormControl>
+                  <FormDescription />
                   <FormMessage />
                 </FormItem>
               )}
@@ -128,6 +129,7 @@ export const RegisterPage = () => {
                       {...field}
                     />
                   </FormControl>
+                  <FormDescription />
                   <FormMessage />
                 </FormItem>
               )}
@@ -150,6 +152,7 @@ export const RegisterPage = () => {
                       {...field}
                     />
                   </FormControl>
+                  <FormDescription />
                   <FormMessage />
                 </FormItem>
               )}

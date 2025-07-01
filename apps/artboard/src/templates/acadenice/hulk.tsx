@@ -15,72 +15,85 @@ import type {
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
-import {
-  cn,
-  hexToRgb,
-  isEmptyString,
-  isUrl,
-  linearTransform,
-  sanitize,
-} from "@reactive-resume/utils";
+import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
 
-import { SealTeal } from "../../components/acdenice-seal";
 import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
+import { SealTeal } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
 
   return (
-    <div className="flex flex-col items-center space-y-4 text-center">
-      <Picture />
+    <div className="p-custom relative grid grid-cols-3 space-x-4 pb-0">
+      <Picture className="mx-auto" />
 
-      <div className="space-y-4">
-        <div>
-          <div className="text-2xl font-bold">{basics.name}</div>
-          <div className="text-base">{basics.headline}</div>
+      <div className="relative z-10 col-span-2 text-background">
+        <div className="space-y-0.5">
+          <h2 className="text-3xl font-bold">{basics.name}</h2>
+          <p>{basics.headline}</p>
         </div>
 
-        <div className="flex flex-col items-start gap-y-1.5 rounded border border-primary px-3 py-4 text-left text-sm">
-          {basics.location && (
-            <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-map-pin text-primary" />
-              <div>{basics.location}</div>
-            </div>
-          )}
-          {basics.phone && (
-            <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-phone text-primary" />
-              <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
-                {basics.phone}
-              </a>
-            </div>
-          )}
-          {basics.email && (
-            <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-at text-primary" />
-              <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
-                {basics.email}
-              </a>
-            </div>
-          )}
-          <Link url={basics.url} />
-          {basics.customFields.map((item) => (
-            <div key={item.id} className="flex items-center gap-x-1.5">
-              <i className={cn(`ph ph-bold ph-${item.icon} text-primary`)} />
-              {isUrl(item.value) ? (
-                <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
-                  {item.name || item.value}
-                </a>
-              ) : (
-                <span>{[item.name, item.value].filter(Boolean).join(": ")}</span>
-              )}
-            </div>
-          ))}
+        <div className="col-span-2 col-start-2 mt-10 text-foreground">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
+            {basics.location && (
+              <>
+                <div className="flex items-center gap-x-1.5">
+                  <i className="ph ph-bold ph-map-pin text-primary" />
+                  <div>{basics.location}</div>
+                </div>
+                <div className="bg-text size-1 rounded-full last:hidden" />
+              </>
+            )}
+
+            {basics.phone && (
+              <>
+                <div className="flex items-center gap-x-1.5">
+                  <i className="ph ph-bold ph-phone text-primary" />
+                  <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
+                    {basics.phone}
+                  </a>
+                </div>
+                <div className="bg-text size-1 rounded-full last:hidden" />
+              </>
+            )}
+            {basics.email && (
+              <>
+                <div className="flex items-center gap-x-1.5">
+                  <i className="ph ph-bold ph-at text-primary" />
+                  <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
+                    {basics.email}
+                  </a>
+                </div>
+                <div className="bg-text size-1 rounded-full last:hidden" />
+              </>
+            )}
+            {isUrl(basics.url.href) && (
+              <>
+                <Link url={basics.url} />
+                <div className="bg-text size-1 rounded-full last:hidden" />
+              </>
+            )}
+            {basics.customFields.map((item) => (
+              <Fragment key={item.id}>
+                <div className="flex items-center gap-x-1.5">
+                  <i className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
+                  {isUrl(item.value) ? (
+                    <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
+                      {item.name || item.value}
+                    </a>
+                  ) : (
+                    <span>{[item.name, item.value].filter(Boolean).join(": ")}</span>
+                  )}
+                </div>
+                <div className="bg-text size-1 rounded-full last:hidden" />
+              </Fragment>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -94,7 +107,7 @@ const Summary = () => {
 
   return (
     <section id={section.id}>
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
+      <h4 className="mb-2 text-base font-bold">{section.name}</h4>
 
       <div
         dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
@@ -107,22 +120,16 @@ const Summary = () => {
 
 type RatingProps = { level: number };
 
-const Rating = ({ level }: RatingProps) => {
-  const primaryColor = useArtboardStore((state) => state.resume.metadata.theme.primary);
-
-  return (
-    <div className="relative">
+const Rating = ({ level }: RatingProps) => (
+  <div className="flex items-center gap-x-1.5">
+    {Array.from({ length: 5 }).map((_, index) => (
       <div
-        className="h-2.5 w-full rounded-sm"
-        style={{ backgroundColor: hexToRgb(primaryColor, 0.4) }}
+        key={index}
+        className={cn("h-2 w-4 border border-primary", level > index && "bg-primary")}
       />
-      <div
-        className="absolute inset-y-0 left-0 h-2.5 w-full rounded-sm bg-primary"
-        style={{ width: `${linearTransform(level, 0, 5, 0, 100)}%` }}
-      />
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
 type LinkProps = {
   url: URL;
@@ -137,8 +144,7 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
 
   return (
     <div className="flex items-center gap-x-1.5">
-      {!iconOnRight &&
-        (icon ?? <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-primary" />)}
+      {!iconOnRight && (icon ?? <i className="ph ph-bold ph-link text-primary" />)}
       <a
         href={url.href}
         target="_blank"
@@ -147,8 +153,7 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
       >
         {label ?? (url.label || url.href)}
       </a>
-      {iconOnRight &&
-        (icon ?? <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-primary" />)}
+      {iconOnRight && (icon ?? <i className="ph ph-bold ph-link text-primary" />)}
     </div>
   );
 };
@@ -165,7 +170,7 @@ const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps
     <Link
       url={url}
       label={name}
-      icon={<i className="ph ph-bold ph-globe text-primary group-[.sidebar]:text-primary" />}
+      icon={<i className="ph ph-bold ph-globe text-primary" />}
       iconOnRight={true}
       className={className}
     />
@@ -197,9 +202,7 @@ const Section = <T,>({
 
   return (
     <section id={section.id} className="grid">
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold group-[.sidebar]:text-primary">
-        {section.name}
-      </h4>
+      <h4 className="mb-2 text-base font-bold">{section.name}</h4>
 
       <div
         className="grid gap-x-6 gap-y-3"
@@ -214,10 +217,17 @@ const Section = <T,>({
             const keywords = (keywordsKey && get(item, keywordsKey, [])) as string[] | undefined;
 
             return (
-              <div key={item.id} className={cn("space-y-2", className)}>
-                <div>
-                  {children?.(item as T)}
-                  {url !== undefined && section.separateLinks && <Link url={url} />}
+              <div
+                key={item.id}
+                className={cn("relative space-y-2 pl-4 group-[.sidebar]:pl-0", className)}
+              >
+                <div className="relative -ml-4 group-[.sidebar]:ml-0">
+                  <div className="pl-4 group-[.sidebar]:pl-0">
+                    {children?.(item as T)}
+                    {url !== undefined && section.separateLinks && <Link url={url} />}
+                  </div>
+
+                  <div className="absolute inset-y-0 -left-px border-l-4 border-primary group-[.sidebar]:hidden" />
                 </div>
 
                 {summary !== undefined && !isEmptyString(summary) && (
@@ -232,11 +242,32 @@ const Section = <T,>({
                 {keywords !== undefined && keywords.length > 0 && (
                   <p className="text-sm">{keywords.join(", ")}</p>
                 )}
+
+                <div className="absolute inset-y-0 left-0 border-l border-primary group-[.sidebar]:hidden" />
               </div>
             );
           })}
       </div>
     </section>
+  );
+};
+
+const Profiles = () => {
+  const section = useArtboardStore((state) => state.resume.sections.profiles);
+
+  return (
+    <Section<Profile> section={section}>
+      {(item) => (
+        <div>
+          {isUrl(item.url.href) ? (
+            <Link url={item.url} label={item.username} icon={<BrandIcon slug={item.icon} />} />
+          ) : (
+            <p>{item.username}</p>
+          )}
+          {!item.icon && <p className="text-sm">{item.network}</p>}
+        </div>
+      )}
+    </Section>
   );
 };
 
@@ -289,25 +320,6 @@ const Education = () => {
             <div className="font-bold">{item.date}</div>
             <div>{item.studyType}</div>
           </div>
-        </div>
-      )}
-    </Section>
-  );
-};
-
-const Profiles = () => {
-  const section = useArtboardStore((state) => state.resume.sections.profiles);
-
-  return (
-    <Section<Profile> section={section}>
-      {(item) => (
-        <div>
-          {isUrl(item.url.href) ? (
-            <Link url={item.url} label={item.username} icon={<BrandIcon slug={item.icon} />} />
-          ) : (
-            <p>{item.username}</p>
-          )}
-          {!item.icon && <p className="text-sm">{item.network}</p>}
         </div>
       )}
     </Section>
@@ -379,7 +391,7 @@ const Interests = () => {
   const section = useArtboardStore((state) => state.resume.sections.interests);
 
   return (
-    <Section<Interest> section={section} keywordsKey="keywords" className="space-y-0.5">
+    <Section<Interest> section={section} className="space-y-0" keywordsKey="keywords">
       {(item) => <div className="font-bold">{item.name}</div>}
     </Section>
   );
@@ -444,7 +456,7 @@ const Languages = () => {
   return (
     <Section<Language> section={section} levelKey="level">
       {(item) => (
-        <div className="space-y-0.5">
+        <div>
           <div className="font-bold">{item.name}</div>
           <div>{item.description}</div>
         </div>
@@ -580,33 +592,35 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-export const Zinnia = ({ columns, isFirstPage = false }: TemplateProps) => {
+export const Hulk = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
-  const primaryColor = useArtboardStore((state) => state.resume.metadata.theme.primary);
-
   return (
-    <div className="grid min-h-[inherit] grid-cols-3">
-      <div
-        className={cn("sidebar p-custom group space-y-4", sidebar.length === 0 && "hidden")}
-        style={{ backgroundColor: hexToRgb(primaryColor, 0.2) }}
-      >
-        {isFirstPage && <Header />}
+    <div>
+      {isFirstPage && (
+        <div className="relative">
+          <Header />
+          <div className="absolute inset-x-0 top-0 h-[85px] w-full bg-primary" />
+        </div>
+      )}
 
-        {sidebar.map((section) => (
-          <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-        ))}
-      </div>
+      <div className="grid grid-cols-3">
+        <div className="sidebar p-custom group space-y-4">
+          {sidebar.map((section) => (
+            <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+          ))}
+        </div>
 
-      <div
-        className={cn(
-          "main p-custom group space-y-4",
-          sidebar.length > 0 ? "col-span-2" : "col-span-3",
-        )}
-      >
-        {main.map((section) => (
-          <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-        ))}
+        <div
+          className={cn(
+            "main p-custom group space-y-4",
+            sidebar.length > 0 ? "col-span-2" : "col-span-3",
+          )}
+        >
+          {main.map((section) => (
+            <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+          ))}
+        </div>
       </div>
       <div className="absolute bottom-0 left-0 w-1/3">
         <SealTeal />

@@ -36,11 +36,15 @@ export const CertificationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t({ message: "Name", context: "Name of the Certification" })}</FormLabel>
+              <FormLabel>{t({ message: "Nom", context: "Nom de la certification" })}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t`Nom de la certification`}
+                  aria-describedby="description-name"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-name" />
             </FormItem>
           )}
         />
@@ -50,11 +54,15 @@ export const CertificationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Issuer`}</FormLabel>
+              <FormLabel>{t`Organisme délivrant`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  {...field}
+                  aria-label={t`Nom de l'organisme ayant délivré la certification`}
+                  aria-describedby="description-issuer"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-issuer" />
             </FormItem>
           )}
         />
@@ -66,9 +74,17 @@ export const CertificationsDialog = () => {
             <FormItem>
               <FormLabel>{t`Date`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023`} />
+                <Input
+                  {...field}
+                  placeholder={t({
+                    message: "Mars 2023",
+                    comment: "Le mois et l'année doivent être uniformes dans toutes les langues.",
+                  })}
+                  aria-label={t`Date d'obtention de la certification`}
+                  aria-describedby="description-date"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-date" />
             </FormItem>
           )}
         />
@@ -78,11 +94,16 @@ export const CertificationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel>{t`Site web`}</FormLabel>
               <FormControl>
-                <URLInput {...field} placeholder="https://udemy.com/certificate/UC-..." />
+                <URLInput
+                  {...field}
+                  placeholder="https://udemy.com/certificate/UC-..."
+                  aria-label={t`Lien vers la certification en ligne`}
+                  aria-describedby="description-url"
+                />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-url" />
             </FormItem>
           )}
         />
@@ -92,10 +113,12 @@ export const CertificationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel>{t`Résumé`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
+                  aria-label={t`Résumé ou détails supplémentaires sur la certification`}
+                  aria-describedby="description-summary"
                   content={field.value}
                   footer={(editor) => (
                     <AiActions
@@ -111,7 +134,7 @@ export const CertificationsDialog = () => {
                   }}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage id="description-summary" />
             </FormItem>
           )}
         />

@@ -204,7 +204,7 @@
     },
     "projects": {
       "name": "Projects",
-      "columns": 2,
+      "columns": 1,
       "visible": true,
       "id": "projects",
       "items": [
@@ -297,7 +297,7 @@
     "custom": {}
   },
   "metadata": {
-    "template": "hellebore",
+    "template": "ironman",
     "layout": [
       [
         ["summary", "experience", "education", "projects"],
@@ -338,9 +338,9 @@
         "variants": ["regular"],
         "size": 13
       },
-      "lineHeight": 1.75,
+      "lineHeight": 1.5,
       "hideIcons": false,
-      "underlineLinks": true
+      "underlineLinks": false
     },
     "notes": ""
   }

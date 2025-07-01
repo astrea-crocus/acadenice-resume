@@ -46,14 +46,12 @@ export const BuilderToolbar = () => {
 
   const onPrint = async () => {
     const { url } = await printResume({ id });
-
     openInNewTab(url);
   };
 
   const onCopy = async () => {
     const { url } = await printResume({ id });
     await navigator.clipboard.writeText(url);
-
     toast({
       variant: "success",
       title: t`A link has been copied to your clipboard.`,
@@ -71,18 +69,23 @@ export const BuilderToolbar = () => {
   };
 
   return (
-    <motion.div className="fixed inset-x-0 bottom-0 mx-auto hidden py-6 text-center md:block">
+    <motion.div
+      className="fixed inset-x-0 bottom-0 mx-auto hidden py-6 text-center md:block"
+      role="toolbar"
+      aria-label={t`Resume builder toolbar`}
+    >
       <div className="inline-flex items-center justify-center rounded-full bg-background px-4 shadow-xl">
         <Tooltip content={t`Undo`}>
           <Button
             size="icon"
             variant="ghost"
             className="rounded-none"
+            aria-label={t`Undo`}
             onClick={() => {
               undo();
             }}
           >
-            <ArrowCounterClockwise />
+            <ArrowCounterClockwise aria-hidden="true" />
           </Button>
         </Tooltip>
 
@@ -91,59 +94,94 @@ export const BuilderToolbar = () => {
             size="icon"
             variant="ghost"
             className="rounded-none"
+            aria-label={t`Redo`}
             onClick={() => {
               redo();
             }}
           >
-            <ArrowClockwise />
+            <ArrowClockwise aria-hidden="true" />
           </Button>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" />
+        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
 
         <Tooltip content={panMode ? t`Scroll to Pan` : t`Scroll to Zoom`}>
-          <Toggle className="rounded-none" pressed={panMode} onPressedChange={onTogglePanMode}>
-            {panMode ? <ArrowsOutCardinal /> : <MagnifyingGlass />}
+          <Toggle
+            className="rounded-none"
+            pressed={panMode}
+            aria-label={panMode ? t`Switch to scroll to pan` : t`Switch to scroll to zoom`}
+            onPressedChange={onTogglePanMode}
+          >
+            {panMode ? (
+              <ArrowsOutCardinal aria-hidden="true" />
+            ) : (
+              <MagnifyingGlass aria-hidden="true" />
+            )}
           </Toggle>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" />
+        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
 
         <Tooltip content={t`Zoom In`}>
-          <Button size="icon" variant="ghost" className="rounded-none" onClick={onZoomIn}>
-            <MagnifyingGlassPlus />
+          <Button
+            size="icon"
+            variant="ghost"
+            className="rounded-none"
+            aria-label={t`Zoom in`}
+            onClick={onZoomIn}
+          >
+            <MagnifyingGlassPlus aria-hidden="true" />
           </Button>
         </Tooltip>
 
         <Tooltip content={t`Zoom Out`}>
-          <Button size="icon" variant="ghost" className="rounded-none" onClick={onZoomOut}>
-            <MagnifyingGlassMinus />
+          <Button
+            size="icon"
+            variant="ghost"
+            className="rounded-none"
+            aria-label={t`Zoom out`}
+            onClick={onZoomOut}
+          >
+            <MagnifyingGlassMinus aria-hidden="true" />
           </Button>
         </Tooltip>
 
         <Tooltip content={t`Reset Zoom`}>
-          <Button size="icon" variant="ghost" className="rounded-none" onClick={onResetView}>
-            <ClockClockwise />
+          <Button
+            size="icon"
+            variant="ghost"
+            className="rounded-none"
+            aria-label={t`Reset zoom`}
+            onClick={onResetView}
+          >
+            <ClockClockwise aria-hidden="true" />
           </Button>
         </Tooltip>
 
         <Tooltip content={t`Center Artboard`}>
-          <Button size="icon" variant="ghost" className="rounded-none" onClick={onCenterView}>
-            <CubeFocus />
+          <Button
+            size="icon"
+            variant="ghost"
+            className="rounded-none"
+            aria-label={t`Center artboard`}
+            onClick={onCenterView}
+          >
+            <CubeFocus aria-hidden="true" />
           </Button>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" />
+        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
 
         <Tooltip content={t`Toggle Page Break Line`}>
           <Toggle
             className="rounded-none"
             pressed={pageOptions.breakLine}
+            aria-label={t`Toggle page break line`}
             onPressedChange={(pressed) => {
               setValue("metadata.page.options.breakLine", pressed);
             }}
           >
-            <LineSegment />
+            <LineSegment aria-hidden="true" />
           </Toggle>
         </Tooltip>
 
@@ -151,15 +189,16 @@ export const BuilderToolbar = () => {
           <Toggle
             className="rounded-none"
             pressed={pageOptions.pageNumbers}
+            aria-label={t`Toggle page numbers`}
             onPressedChange={(pressed) => {
               setValue("metadata.page.options.pageNumbers", pressed);
             }}
           >
-            <Hash />
+            <Hash aria-hidden="true" />
           </Toggle>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" />
+        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
 
         <Tooltip content={t`Copy Link to Resume`}>
           <Button
@@ -167,9 +206,10 @@ export const BuilderToolbar = () => {
             variant="ghost"
             className="rounded-none"
             disabled={!isPublic}
+            aria-label={t`Copy public link to resume`}
             onClick={onCopy}
           >
-            <LinkSimple />
+            <LinkSimple aria-hidden="true" />
           </Button>
         </Tooltip>
 
@@ -179,9 +219,14 @@ export const BuilderToolbar = () => {
             variant="ghost"
             disabled={loading}
             className="rounded-none"
+            aria-label={t`Download resume as PDF`}
             onClick={onPrint}
           >
-            {loading ? <CircleNotch className="animate-spin" /> : <FilePdf />}
+            {loading ? (
+              <CircleNotch className="animate-spin" aria-hidden="true" />
+            ) : (
+              <FilePdf aria-hidden="true" />
+            )}
           </Button>
         </Tooltip>
       </div>

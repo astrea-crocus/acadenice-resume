@@ -36,9 +36,9 @@ export const PublicationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Name`}</FormLabel>
+              <FormLabel htmlFor="publication-name">{t`Name`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="publication-name" aria-label={t`Nom de la publication`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -50,9 +50,9 @@ export const PublicationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Publisher`}</FormLabel>
+              <FormLabel htmlFor="publication-publisher">{t`Publisher`}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} id="publication-publisher" aria-label={t`Éditeur ou organisme`} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -64,9 +64,14 @@ export const PublicationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Date`}</FormLabel>
+              <FormLabel htmlFor="publication-date">{t`Date`}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder={t`March 2023`} />
+                <Input
+                  {...field}
+                  id="publication-date"
+                  placeholder={t`March 2023`}
+                  aria-label={t`Date de publication`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -78,9 +83,13 @@ export const PublicationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t`Website`}</FormLabel>
+              <FormLabel htmlFor="publication-url">{t`Website`}</FormLabel>
               <FormControl>
-                <URLInput {...field} />
+                <URLInput
+                  {...field}
+                  id="publication-url"
+                  aria-label={t`URL du site web de la publication`}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -92,11 +101,13 @@ export const PublicationsDialog = () => {
           control={form.control}
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
-              <FormLabel>{t`Summary`}</FormLabel>
+              <FormLabel htmlFor="publication-summary">{t`Summary`}</FormLabel>
               <FormControl>
                 <RichInput
                   {...field}
+                  id="publication-summary"
                   content={field.value}
+                  aria-label={t`Résumé ou description`}
                   footer={(editor) => (
                     <AiActions
                       value={editor.getText()}
