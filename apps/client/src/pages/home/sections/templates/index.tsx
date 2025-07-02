@@ -1,6 +1,7 @@
 /* eslint-disable lingui/text-restrictions */
 import { t } from "@lingui/macro";
 import { templatesList } from "@reactive-resume/utils";
+import { normalizeToFileName } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
 
 export const TemplatesSection = () => (
@@ -33,7 +34,7 @@ export const TemplatesSection = () => (
               key={index}
               target="_blank"
               rel="noreferrer"
-              href={`templates/pdf/${template}.pdf`}
+              href={`templates/pdf/${normalizeToFileName(template)}.pdf`}
               className="max-w-none flex-none"
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -100 }}
@@ -42,7 +43,7 @@ export const TemplatesSection = () => (
               <img
                 alt={template}
                 loading="lazy"
-                src={`/templates/jpg/${template}.jpg`}
+                src={`/templates/jpg/${normalizeToFileName(template)}.jpg`}
                 className="aspect-[1/1.4142] h-[400px] rounded object-cover lg:h-[600px]"
               />
             </motion.a>

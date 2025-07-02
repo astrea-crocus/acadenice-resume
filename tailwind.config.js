@@ -44,6 +44,33 @@ module.exports = {
           accent: "hsl(var(--warning-accent))",
           foreground: "hsl(var(--warning-foreground))",
         },
+
+        customTeal: {
+          50: "#e6f7f5",
+          100: "#c0e9e4",
+          200: "#8bd5cd",
+          300: "#5cc5bb",
+          400: "#37bbaa",
+          500: "#4cccb8",
+          600: "#3ea89a",
+          700: "#358473",
+          800: "#2c6457",
+          900: "#23453c",
+          950: "#162a25", // très foncé, presque noir avec teinte teal
+        },
+        customOrange: {
+          50: "#fff3e0",
+          100: "#ffe0b2",
+          200: "#ffc471",
+          300: "#ffa940",
+          400: "#ff9100",
+          500: "#fda100",
+          600: "#cc7d00",
+          700: "#995c00",
+          800: "#663d00",
+          900: "#3b2200",
+          950: "#1f1100", // très foncé, presque noir avec teinte orange
+        },
       },
       fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],

@@ -28,6 +28,7 @@ export const Picture = ({ className }: PictureProps) => {
         borderRadius: `${picture.borderRadius}px`,
         borderWidth: `${picture.effects.border ? fontSize / 3 : 0}px`,
       }}
+      role="presentation"
     />
   );
 };

@@ -18,13 +18,13 @@ import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { cn, hexToRgb, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
-import styled from "styled-components";
 
 import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
-import { SealTeal } from "./component/seal";
+import { Group } from "./component/group";
+import { ContactATS, SealTeal } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
@@ -41,13 +41,13 @@ const Header = () => {
       <div className="flex flex-col items-start gap-y-2 text-sm">
         {basics.location && (
           <div className="flex items-center gap-x-1.5">
-            <i className="ph ph-bold ph-map-pin" />
+            <i aria-hidden className="ph ph-bold ph-map-pin" />
             <div>{basics.location}</div>
           </div>
         )}
         {basics.phone && (
           <div className="flex items-center gap-x-1.5">
-            <i className="ph ph-bold ph-phone" />
+            <i aria-hidden className="ph ph-bold ph-phone" />
             <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
               {basics.phone}
             </a>
@@ -55,7 +55,7 @@ const Header = () => {
         )}
         {basics.email && (
           <div className="flex items-center gap-x-1.5">
-            <i className="ph ph-bold ph-at" />
+            <i aria-hidden className="ph ph-bold ph-at" />
             <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
               {basics.email}
             </a>
@@ -65,7 +65,7 @@ const Header = () => {
         {basics.customFields.map((item) => (
           <Fragment key={item.id}>
             <div className="flex items-center gap-x-1.5">
-              <i className={cn(`ph ph-bold ph-${item.icon}`)} />
+              <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`)} />
               {isUrl(item.value) ? (
                 <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
                   {item.name || item.value}
@@ -128,7 +128,10 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
     <div className="flex items-center gap-x-1.5">
       {!iconOnRight &&
         (icon ?? (
-          <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-background" />
+          <i
+            aria-hidden
+            className="ph ph-bold ph-link text-primary group-[.sidebar]:text-background"
+          />
         ))}
       <a
         href={url.href}
@@ -140,7 +143,10 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
       </a>
       {iconOnRight &&
         (icon ?? (
-          <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-background" />
+          <i
+            aria-hidden
+            className="ph ph-bold ph-link text-primary group-[.sidebar]:text-background"
+          />
         ))}
     </div>
   );
@@ -158,7 +164,9 @@ const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps
     <Link
       url={url}
       label={name}
-      icon={<i className="ph ph-bold ph-globe text-primary group-[.sidebar]:text-primary" />}
+      icon={
+        <i aria-hidden className="ph ph-bold ph-globe text-primary group-[.sidebar]:text-primary" />
+      }
       iconOnRight={true}
       className={className}
     />
@@ -568,14 +576,6 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-const SideBar = styled.div`
-  height: 100%;
-  display: grid;
-  align-content: space-between;
-  align-items: end;
-  justify-items: center;
-`;
-
 export const CaptainAmerica = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
@@ -583,27 +583,30 @@ export const CaptainAmerica = ({ columns, isFirstPage = false }: TemplateProps) 
 
   return (
     <div className="grid min-h-[inherit] grid-cols-3">
-      <SideBar>
-        <div
-          className={cn(
-            "sidebar group flex flex-col",
-            !(isFirstPage || sidebar.length > 0) && "hidden",
-          )}
-        >
-          {isFirstPage && <Header />}
+      <div
+        className={cn(
+          "sidebar group flex flex-col",
+          !(isFirstPage || sidebar.length > 0) && "hidden",
+        )}
+      >
+        {isFirstPage && <Header />}
 
-          <div
-            className="p-custom flex-1 space-y-4"
-            style={{ backgroundColor: hexToRgb(primaryColor, 0.2) }}
-          >
-            {sidebar.map((section) => (
-              <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-            ))}
-          </div>
+        <div
+          className="p-custom flex-1 space-y-4"
+          style={{ backgroundColor: hexToRgb(primaryColor, 0.2) }}
+        >
+          <Group>
+            <div>
+              {sidebar.map((section) => (
+                <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+              ))}
+            </div>
+            <SealTeal aria-hidden="true" />
+          </Group>
         </div>
-        <SealTeal />
-      </SideBar>
-      <div className={cn("main group", sidebar.length > 0 ? "col-span-2" : "col-span-3")}>
+      </div>
+
+      <div className={cn("main group", sidebar.length > 0 ? "col-span-2" : "col-span-3")} id="main">
         {isFirstPage && <Summary />}
 
         <div className="p-custom space-y-4">
@@ -612,6 +615,8 @@ export const CaptainAmerica = ({ columns, isFirstPage = false }: TemplateProps) 
           ))}
         </div>
       </div>
+
+      <ContactATS />
     </div>
   );
 };

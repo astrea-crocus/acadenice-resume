@@ -23,7 +23,7 @@ import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
-import { SealWhite } from "./component/seal";
+import { ContactATS, SealWhite } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
@@ -46,7 +46,7 @@ const Header = () => {
           {basics.location && (
             <>
               <div className="flex items-center gap-x-1.5">
-                <i className="ph ph-bold ph-map-pin" />
+                <i aria-hidden className="ph ph-bold ph-map-pin" />
                 <div>{basics.location}</div>
               </div>
               <div className="size-1 rounded-full bg-background last:hidden" />
@@ -55,7 +55,7 @@ const Header = () => {
           {basics.phone && (
             <>
               <div className="flex items-center gap-x-1.5">
-                <i className="ph ph-bold ph-phone" />
+                <i aria-hidden className="ph ph-bold ph-phone" />
                 <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                   {basics.phone}
                 </a>
@@ -66,7 +66,7 @@ const Header = () => {
           {basics.email && (
             <>
               <div className="flex items-center gap-x-1.5">
-                <i className="ph ph-bold ph-at" />
+                <i aria-hidden className="ph ph-bold ph-at" />
                 <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                   {basics.email}
                 </a>
@@ -83,7 +83,7 @@ const Header = () => {
           {basics.customFields.map((item) => (
             <Fragment key={item.id}>
               <div className="flex items-center gap-x-1.5">
-                <i className={cn(`ph ph-bold ph-${item.icon}`)} />
+                <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`)} />
                 {isUrl(item.value) ? (
                   <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
                     {item.name || item.value}
@@ -155,7 +155,10 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
     <div className="flex items-center gap-x-1.5">
       {!iconOnRight &&
         (icon ?? (
-          <i className="ph ph-bold ph-link text-primary group-[.summary]:text-background" />
+          <i
+            aria-hidden
+            className="ph ph-bold ph-link text-primary group-[.summary]:text-background"
+          />
         ))}
       <a
         href={url.href}
@@ -167,7 +170,10 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
       </a>
       {iconOnRight &&
         (icon ?? (
-          <i className="ph ph-bold ph-link text-primary group-[.summary]:text-background" />
+          <i
+            aria-hidden
+            className="ph ph-bold ph-link text-primary group-[.summary]:text-background"
+          />
         ))}
     </div>
   );
@@ -185,7 +191,12 @@ const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps
     <Link
       url={url}
       label={name}
-      icon={<i className="ph ph-bold ph-globe text-primary group-[.summary]:text-background" />}
+      icon={
+        <i
+          aria-hidden
+          className="ph ph-bold ph-globe text-primary group-[.summary]:text-background"
+        />
+      }
       iconOnRight={true}
       className={className}
     />
@@ -621,6 +632,8 @@ export const IronMan = ({ columns, isFirstPage = false }: TemplateProps) => {
       <div className="group col-span-3 space-y-4 bg-primary">
         <SealWhite maxHeight={5} />
       </div>
+
+      <ContactATS />
     </div>
   );
 };

@@ -23,7 +23,8 @@ import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
-import { SealTeal } from "./component/seal";
+import { Group } from "./component/group";
+import { ContactATS, SealTeal } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
@@ -43,7 +44,7 @@ const Header = () => {
             {basics.location && (
               <>
                 <div className="flex items-center gap-x-1.5">
-                  <i className="ph ph-bold ph-map-pin text-primary" />
+                  <i aria-hidden className="ph ph-bold ph-map-pin text-primary" />
                   <div>{basics.location}</div>
                 </div>
                 <div className="bg-text size-1 rounded-full last:hidden" />
@@ -53,7 +54,7 @@ const Header = () => {
             {basics.phone && (
               <>
                 <div className="flex items-center gap-x-1.5">
-                  <i className="ph ph-bold ph-phone text-primary" />
+                  <i aria-hidden className="ph ph-bold ph-phone text-primary" />
                   <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                     {basics.phone}
                   </a>
@@ -64,7 +65,7 @@ const Header = () => {
             {basics.email && (
               <>
                 <div className="flex items-center gap-x-1.5">
-                  <i className="ph ph-bold ph-at text-primary" />
+                  <i aria-hidden className="ph ph-bold ph-at text-primary" />
                   <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                     {basics.email}
                   </a>
@@ -81,7 +82,7 @@ const Header = () => {
             {basics.customFields.map((item) => (
               <Fragment key={item.id}>
                 <div className="flex items-center gap-x-1.5">
-                  <i className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
+                  <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
                   {isUrl(item.value) ? (
                     <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
                       {item.name || item.value}
@@ -144,7 +145,7 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
 
   return (
     <div className="flex items-center gap-x-1.5">
-      {!iconOnRight && (icon ?? <i className="ph ph-bold ph-link text-primary" />)}
+      {!iconOnRight && (icon ?? <i aria-hidden className="ph ph-bold ph-link text-primary" />)}
       <a
         href={url.href}
         target="_blank"
@@ -153,7 +154,7 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
       >
         {label ?? (url.label || url.href)}
       </a>
-      {iconOnRight && (icon ?? <i className="ph ph-bold ph-link text-primary" />)}
+      {iconOnRight && (icon ?? <i aria-hidden className="ph ph-bold ph-link text-primary" />)}
     </div>
   );
 };
@@ -170,7 +171,7 @@ const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps
     <Link
       url={url}
       label={name}
-      icon={<i className="ph ph-bold ph-globe text-primary" />}
+      icon={<i aria-hidden className="ph ph-bold ph-globe text-primary" />}
       iconOnRight={true}
       className={className}
     />
@@ -606,9 +607,14 @@ export const Hulk = ({ columns, isFirstPage = false }: TemplateProps) => {
 
       <div className="grid grid-cols-3">
         <div className="sidebar p-custom group space-y-4">
-          {sidebar.map((section) => (
-            <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-          ))}
+          <Group>
+            <div>
+              {sidebar.map((section) => (
+                <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+              ))}
+            </div>
+            <SealTeal />
+          </Group>
         </div>
 
         <div
@@ -622,9 +628,7 @@ export const Hulk = ({ columns, isFirstPage = false }: TemplateProps) => {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-1/3">
-        <SealTeal />
-      </div>
+      <ContactATS />
     </div>
   );
 };

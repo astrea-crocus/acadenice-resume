@@ -271,7 +271,7 @@
     "custom": {}
   },
   "metadata": {
-    "template": "thor",
+    "template": "Thor",
     "layout": [
       [
         ["summary", "experience", "education", "projects", "references"],

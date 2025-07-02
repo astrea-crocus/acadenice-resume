@@ -18,13 +18,13 @@ import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
-import styled from "styled-components";
 
 import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
-import { SealWhite } from "./component/seal";
+import { Group } from "./component/group";
+import { ContactATS, SealWhite } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
@@ -42,13 +42,13 @@ const Header = () => {
         <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
           {basics.location && (
             <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-map-pin text-primary" />
+              <i aria-hidden className="ph ph-bold ph-map-pin text-primary" />
               <div>{basics.location}</div>
             </div>
           )}
           {basics.phone && (
             <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-phone text-primary" />
+              <i aria-hidden className="ph ph-bold ph-phone text-primary" />
               <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                 {basics.phone}
               </a>
@@ -56,7 +56,7 @@ const Header = () => {
           )}
           {basics.email && (
             <div className="flex items-center gap-x-1.5">
-              <i className="ph ph-bold ph-at text-primary" />
+              <i aria-hidden className="ph ph-bold ph-at text-primary" />
               <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                 {basics.email}
               </a>
@@ -65,7 +65,7 @@ const Header = () => {
           <Link url={basics.url} />
           {basics.customFields.map((item) => (
             <div key={item.id} className="flex items-center gap-x-1.5">
-              <i className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
+              <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
               {isUrl(item.value) ? (
                 <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
                   {item.name || item.value}
@@ -129,7 +129,9 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
   return (
     <div className="flex items-center gap-x-1.5">
       {!iconOnRight &&
-        (icon ?? <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />)}
+        (icon ?? (
+          <i aria-hidden className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />
+        ))}
       <a
         href={url.href}
         target="_blank"
@@ -139,7 +141,9 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
         {label ?? (url.label || url.href)}
       </a>
       {iconOnRight &&
-        (icon ?? <i className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />)}
+        (icon ?? (
+          <i aria-hidden className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />
+        ))}
     </div>
   );
 };
@@ -156,7 +160,7 @@ const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps
     <Link
       url={url}
       label={name}
-      icon={<i className="ph ph-bold ph-globe text-primary" />}
+      icon={<i aria-hidden className="ph ph-bold ph-globe text-primary" />}
       iconOnRight={true}
       className={className}
     />
@@ -566,14 +570,6 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-const SideBar = styled.div`
-  height: 100%;
-  display: grid;
-  align-content: space-between;
-  align-items: end;
-  justify-items: center;
-`;
-
 export const AntMan = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
@@ -598,7 +594,7 @@ export const AntMan = ({ columns, isFirstPage = false }: TemplateProps) => {
           sidebar.length === 0 && "hidden",
         )}
       >
-        <SideBar>
+        <Group>
           <div>
             {sidebar.map((section) => (
               <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
@@ -606,8 +602,9 @@ export const AntMan = ({ columns, isFirstPage = false }: TemplateProps) => {
           </div>
 
           <SealWhite />
-        </SideBar>
+        </Group>
       </div>
+      <ContactATS />
     </div>
   );
 };

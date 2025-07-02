@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
+import { normalizeToFileName } from "@reactive-resume/utils";
 import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router";
@@ -28,13 +29,6 @@ type Props = {
   resume: ResumeDto;
 };
 
-const normalizeTemplateName = (name: string) => {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036F]/g, "");
-};
-
 export const ResumeCard = ({ resume }: Props) => {
   const navigate = useNavigate();
   const { open } = useDialog<ResumeDto>("resume");
@@ -42,7 +36,7 @@ export const ResumeCard = ({ resume }: Props) => {
 
   //template
   const template = resume.data.metadata.template;
-  const normalized = normalizeTemplateName(template);
+  const normalized = normalizeToFileName(template);
   const lastUpdated = dayjs().to(resume.updatedAt);
 
   const onOpen = () => {

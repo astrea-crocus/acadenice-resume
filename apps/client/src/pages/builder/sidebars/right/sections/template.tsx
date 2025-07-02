@@ -1,18 +1,12 @@
 import { t } from "@lingui/macro";
 import { AspectRatio } from "@reactive-resume/ui";
 import { cn, templatesList } from "@reactive-resume/utils";
+import { normalizeToFileName } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
 
 import { useResumeStore } from "@/client/stores/resume";
 
 import { SectionIcon } from "../shared/section-icon";
-
-const normalizeTemplateName = (name: string) => {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036F]/g, "");
-};
 
 export const TemplateSection = () => {
   const setValue = useResumeStore((state) => state.setValue);
@@ -30,7 +24,7 @@ export const TemplateSection = () => {
       <main className="grid grid-cols-2 gap-8 @lg/right:grid-cols-3 @2xl/right:grid-cols-4">
         {templatesList.map((template, index) => {
           // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
-          const normalized = normalizeTemplateName(template);
+          const normalized = normalizeToFileName(template);
 
           return (
             <AspectRatio key={template} ratio={1 / 1.4142}>
@@ -46,11 +40,7 @@ export const TemplateSection = () => {
                   setValue("metadata.template", template);
                 }}
               >
-                <img
-                  src={`/templates/jpg/${normalized}.jpg`}
-                  alt={template}
-                  className="rounded-sm"
-                />
+                <img src={`/templates/jpg/${normalized}.jpg`} alt="" className="rounded-sm" />
 
                 <div className="absolute inset-x-0 bottom-0 h-32 w-full bg-gradient-to-b from-transparent to-background/80">
                   <p className="absolute inset-x-0 bottom-2 text-center font-bold capitalize text-primary">

@@ -322,11 +322,11 @@ export const sampleResume: ResumeData = {
     theme: {
       background: "#ffffff",
       text: "#000000",
-      primary: "#ca8a04",
+      primary: "#4cccb8",
     },
     typography: {
       font: {
-        family: "Merriweather",
+        family: "Josephin Sans",
         subset: "latin",
         variants: ["regular"],
         size: 13,

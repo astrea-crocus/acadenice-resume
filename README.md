@@ -106,6 +106,17 @@
 - Continuation de l'amélioration de l'accéssibilité du site
 - Traduction des noms de sections des CVs
 - Renommage des templates
-- Réajustment des logos
+- Réajustment des cachets
   - Antman OK
   - CaptainAmerica En Cours
+
+## 02 Juillet 2025
+- Revision de la logique des cachets
+  - Un cachet est visible pour les humains uniquement, l'autre pour les robots et filtres
+- Continuation du réajustement des logos
+  - Antman OK
+  - CaptainAmerica OK
+  - Hulk OK
+  - IronMan OK
+  - Thor OK
+- Revision des noms des templates

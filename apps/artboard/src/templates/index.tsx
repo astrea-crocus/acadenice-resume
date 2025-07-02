@@ -1,4 +1,5 @@
 import type { Template } from "@reactive-resume/utils";
+import { normalizeTemplateName } from "@reactive-resume/utils";
 
 import { AntMan } from "./acadenice/antman";
 import { CaptainAmerica } from "./acadenice/captainamerica";
@@ -18,30 +19,23 @@ import { Onyx } from "./onyx";
 import { Pikachu } from "./pikachu";
 import { Rhyhorn } from "./rhyhorn";
 
-const normalizeTemplateName = (name: string) => {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036F]/g, "");
-};
-
 export const getTemplate = (template: Template) => {
   const normalizedTemplate = normalizeTemplateName(template);
 
   switch (normalizedTemplate) {
-    case "antman": {
+    case "Ant Man": {
       return AntMan;
     }
-    case "ironman": {
+    case "Iron Man": {
       return IronMan;
     }
-    case "hulk": {
+    case "Hulk": {
       return Hulk;
     }
-    case "captainamerica": {
+    case "Captain America": {
       return CaptainAmerica;
     }
-    case "thor": {
+    case "Thor": {
       return Thor;
     }
     case "azurill": {
