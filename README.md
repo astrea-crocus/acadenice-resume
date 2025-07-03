@@ -120,3 +120,6 @@
   - IronMan OK
   - Thor OK
 - Revision des noms des templates
+
+## 03 Juillet 2025
+- Changement du screenshot du build affiché sur l'acceuil

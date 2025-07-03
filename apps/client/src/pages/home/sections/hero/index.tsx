@@ -47,9 +47,17 @@ export const HeroSection = () => (
               <img
                 width={3600}
                 height={2078}
-                src="/screenshots/builder.jpg"
+                src="/screenshots/builder-light.png"
                 alt=""
-                className="w-[76rem] rounded-lg bg-background/5 shadow-2xl ring-1 ring-foreground/10"
+                className="w-[76rem] rounded-lg bg-background/5 shadow-2xl ring-1 ring-foreground/10 dark:hidden"
+              />
+
+              <img
+                width={3600}
+                height={2078}
+                src="/screenshots/builder-dark.png"
+                alt=""
+                className="hidden w-[76rem] rounded-lg bg-background/5 shadow-2xl ring-1 ring-foreground/10 dark:block"
               />
             </Tilt>
           </motion.div>
