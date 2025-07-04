@@ -2,14 +2,14 @@ import type { ResumeData } from "./index";
 
 export const sampleResume: ResumeData = {
   basics: {
-    name: "John Doe",
-    headline: "Creative and Innovative Web Developer",
-    email: "john.doe@gmail.com",
-    phone: "(555) 123-4567",
-    location: "Pleasantville, CA 94588",
+    name: "Jean Dupont",
+    headline: "Développeur Web Créatif et Innovant",
+    email: "jean.dupont@gmail.com",
+    phone: "06 00 00 00 00",
+    location: "Nice, 06000",
     url: {
       label: "",
-      href: "https://johndoe.me/",
+      href: "https://jeandupont.me/",
     },
     customFields: [],
     picture: {
@@ -26,16 +26,16 @@ export const sampleResume: ResumeData = {
   },
   sections: {
     summary: {
-      name: "Summary",
+      name: "Résumé",
       columns: 1,
       separateLinks: true,
       visible: true,
       id: "summary",
       content:
-        "<p>Innovative Web Developer with 5 years of experience in building impactful and user-friendly websites and applications. Specializes in <strong>front-end technologies</strong> and passionate about modern web standards and cutting-edge development techniques. Proven track record of leading successful projects from concept to deployment.</p>",
+        "<p>Développeur Web innovant avec 5 ans d'expérience dans la création de sites et d'applications percutants et conviviaux. Spécialisé dans les <strong>technologies front-end</strong> et passionné par les standards modernes du web et les techniques de développement de pointe. Expérience avérée dans la conduite de projets réussis de la conception au déploiement.</p>",
     },
     awards: {
-      name: "Awards",
+      name: "Récompenses",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -52,7 +52,7 @@ export const sampleResume: ResumeData = {
         {
           id: "spdhh9rrqi1gvj0yqnbqunlo",
           visible: true,
-          name: "Full-Stack Web Development",
+          name: "Développement Web Full-Stack",
           issuer: "CodeAcademy",
           date: "2020",
           summary: "",
@@ -64,7 +64,7 @@ export const sampleResume: ResumeData = {
         {
           id: "n838rddyqv47zexn6cxauwqp",
           visible: true,
-          name: "AWS Certified Developer",
+          name: "Développeur Certifié AWS",
           issuer: "Amazon Web Services",
           date: "2019",
           summary: "",
@@ -76,7 +76,7 @@ export const sampleResume: ResumeData = {
       ],
     },
     education: {
-      name: "Education",
+      name: "Formation",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -85,11 +85,11 @@ export const sampleResume: ResumeData = {
         {
           id: "yo3p200zo45c6cdqc6a2vtt3",
           visible: true,
-          institution: "University of California",
-          studyType: "Bachelor's in Computer Science",
+          institution: "Université de Californie",
+          studyType: "Licence en Informatique",
           area: "Berkeley, CA",
           score: "",
-          date: "August 2012 to May 2016",
+          date: "Août 2012 à Mai 2016",
           summary: "",
           url: {
             label: "",
@@ -99,7 +99,7 @@ export const sampleResume: ResumeData = {
       ],
     },
     experience: {
-      name: "Experience",
+      name: "Expériences Professionnelles",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -109,11 +109,11 @@ export const sampleResume: ResumeData = {
           id: "lhw25d7gf32wgdfpsktf6e0x",
           visible: true,
           company: "Creative Solutions Inc.",
-          position: "Senior Web Developer",
+          position: "Développeur Web Senior",
           location: "San Francisco, CA",
-          date: "January 2019 to Present",
+          date: "Janvier 2019 à Aujourd’hui",
           summary:
-            "<ul><li><p>Spearheaded the redesign of the main product website, resulting in a 40% increase in user engagement.</p></li><li><p>Developed and implemented a new responsive framework, improving cross-device compatibility.</p></li><li><p>Mentored a team of four junior developers, fostering a culture of technical excellence.</p></li></ul>",
+            "<ul><li><p>Dirigé la refonte du site produit principal, augmentant l'engagement utilisateur de 40%.</p></li><li><p>Développé et mis en œuvre un nouveau framework responsive, améliorant la compatibilité multi-appareils.</p></li><li><p>Encadré une équipe de quatre développeurs juniors, favorisant une culture d'excellence technique.</p></li></ul>",
           url: {
             label: "",
             href: "https://creativesolutions.inc/",
@@ -123,11 +123,11 @@ export const sampleResume: ResumeData = {
           id: "r6543lil53ntrxmvel53gbtm",
           visible: true,
           company: "TechAdvancers",
-          position: "Web Developer",
+          position: "Développeur Web",
           location: "San Jose, CA",
-          date: "June 2016 to December 2018",
+          date: "Juin 2016 à Décembre 2018",
           summary:
-            "<ul><li><p>Collaborated in a team of 10 to develop high-quality web applications using React.js and Node.js.</p></li><li><p>Managed the integration of third-party services such as Stripe for payments and Twilio for SMS services.</p></li><li><p>Optimized application performance, achieving a 30% reduction in load times.</p></li></ul>",
+            "<ul><li><p>Travaillé en équipe de 10 pour développer des applications web de haute qualité en React.js et Node.js.</p></li><li><p>Géré l'intégration de services tiers tels que Stripe pour les paiements et Twilio pour les SMS.</p></li><li><p>Optimisé les performances des applications, réduisant les temps de chargement de 30%.</p></li></ul>",
           url: {
             label: "",
             href: "https://techadvancers.com/",
@@ -136,7 +136,7 @@ export const sampleResume: ResumeData = {
       ],
     },
     volunteer: {
-      name: "Volunteering",
+      name: "Bénévolat",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -144,7 +144,7 @@ export const sampleResume: ResumeData = {
       items: [],
     },
     interests: {
-      name: "Interests",
+      name: "Centres d’intérêt",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -152,7 +152,7 @@ export const sampleResume: ResumeData = {
       items: [],
     },
     languages: {
-      name: "Languages",
+      name: "Langues",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -160,7 +160,7 @@ export const sampleResume: ResumeData = {
       items: [],
     },
     profiles: {
-      name: "Profiles",
+      name: "Portfolio",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -170,28 +170,28 @@ export const sampleResume: ResumeData = {
           id: "cnbk5f0aeqvhx69ebk7hktwd",
           visible: true,
           network: "LinkedIn",
-          username: "johndoe",
+          username: "jeandupont",
           icon: "linkedin",
           url: {
             label: "",
-            href: "https://linkedin.com/in/johndoe",
+            href: "https://linkedin.com/in/jeandupont",
           },
         },
         {
           id: "ukl0uecvzkgm27mlye0wazlb",
           visible: true,
           network: "GitHub",
-          username: "johndoe",
+          username: "jeandupont",
           icon: "github",
           url: {
             label: "",
-            href: "https://github.com/johndoe",
+            href: "https://github.com/jeandupont",
           },
         },
       ],
     },
     projects: {
-      name: "Projects",
+      name: "Projets",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -200,11 +200,11 @@ export const sampleResume: ResumeData = {
         {
           id: "yw843emozcth8s1ubi1ubvlf",
           visible: true,
-          name: "E-Commerce Platform",
-          description: "Project Lead",
+          name: "Plateforme E-Commerce",
+          description: "Chef de projet",
           date: "",
           summary:
-            "<p>Led the development of a full-stack e-commerce platform, improving sales conversion by 25%.</p>",
+            "<p>Dirigé le développement d’une plateforme e-commerce full-stack, augmentant le taux de conversion de 25%.</p>",
           keywords: [],
           url: {
             label: "",
@@ -214,11 +214,11 @@ export const sampleResume: ResumeData = {
         {
           id: "ncxgdjjky54gh59iz2t1xi1v",
           visible: true,
-          name: "Interactive Dashboard",
-          description: "Frontend Developer",
+          name: "Tableau de bord interactif",
+          description: "Développeur Frontend",
           date: "",
           summary:
-            "<p>Created an interactive analytics dashboard for a SaaS application, enhancing data visualization for clients.</p>",
+            "<p>Créé un tableau de bord analytique interactif pour une application SaaS, améliorant la visualisation des données pour les clients.</p>",
           keywords: [],
           url: {
             label: "",
@@ -236,7 +236,7 @@ export const sampleResume: ResumeData = {
       items: [],
     },
     references: {
-      name: "References",
+      name: "Références",
       columns: 1,
       separateLinks: true,
       visible: false,
@@ -245,7 +245,7 @@ export const sampleResume: ResumeData = {
         {
           id: "f2sv5z0cce6ztjl87yuk8fak",
           visible: true,
-          name: "Available upon request",
+          name: "Disponible sur demande",
           description: "",
           summary: "",
           url: {
@@ -256,7 +256,7 @@ export const sampleResume: ResumeData = {
       ],
     },
     skills: {
-      name: "Skills",
+      name: "Compétences",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -265,24 +265,24 @@ export const sampleResume: ResumeData = {
         {
           id: "hn0keriukh6c0ojktl9gsgjm",
           visible: true,
-          name: "Web Technologies",
-          description: "Advanced",
+          name: "Technologies Web",
+          description: "Avancé",
           level: 0,
           keywords: ["HTML5", "JavaScript", "PHP", "Python"],
         },
         {
           id: "r8c3y47vykausqrgmzwg5pur",
           visible: true,
-          name: "Web Frameworks",
-          description: "Intermediate",
+          name: "Frameworks Web",
+          description: "Intermédiaire",
           level: 0,
           keywords: ["React.js", "Angular", "Vue.js", "Laravel", "Django"],
         },
         {
           id: "b5l75aseexqv17quvqgh73fe",
           visible: true,
-          name: "Tools",
-          description: "Intermediate",
+          name: "Outils",
+          description: "Intermédiaire",
           level: 0,
           keywords: ["Webpack", "Git", "Jenkins", "Docker", "JIRA"],
         },
@@ -291,7 +291,7 @@ export const sampleResume: ResumeData = {
     custom: {},
   },
   metadata: {
-    template: "glalie",
+    template: "Captain America",
     layout: [
       [
         ["summary", "experience", "education", "projects", "references"],
@@ -326,12 +326,12 @@ export const sampleResume: ResumeData = {
     },
     typography: {
       font: {
-        family: "Josephin Sans",
+        family: "Josefin Sans",
         subset: "latin",
         variants: ["regular"],
         size: 13,
       },
-      lineHeight: 1.75,
+      lineHeight: 1.6,
       hideIcons: false,
       underlineLinks: true,
     },
