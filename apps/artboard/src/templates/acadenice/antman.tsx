@@ -23,7 +23,7 @@ import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
 import type { TemplateProps } from "../../types/template";
-import { Group } from "./component/group";
+import { Group } from "./component/_group";
 import { ContactATS, SealWhite } from "./component/seal";
 
 const Header = () => {

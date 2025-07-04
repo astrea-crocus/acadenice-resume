@@ -1,19 +1,126 @@
-# Changelog
+# Journal de bord
 
-### What’s changed from v3 to v4?
+## 23 Juin 2025
 
-**The entire app has been rebuilt and reimagined from the ground up.**
+### Côté Client
 
-The **user interface** has been greatly streamlined to prioritise your content and resume. The design of templates has also undergone a major overhaul. Previously, we utilised TailwindCSS for creating templates, but now you can rely on CSS (styled-components) to build any design you prefer. With this change, I hope to offer a **much wider variety of templates** compared to the previous version.
+- Footer personnalisé
+  - Ajout du logo de l'AcadéNice
+  - Suppression de textes et images non utiles
+- Modification de la favicon
+- Ajustement des couleurs de thème
+- Installation de la police `Josephin Sans`
+- Modification de `apps/client/src/libs/lingui.ts` pour mettre le site en `fr-FR` par défaut
+- Modification du Gradient de `apps/client/src/pages/home/sections/hero/decoration.tsx` pour utiliser les couleurs de l'AcadéNice
 
-When it comes to features, there are many to mention, but some highlights include the **ability to use your own OpenAI API key** (stored on your browser) and leverage GPTs to enhance your resume writing skills. With this, you can improve your writing, correct spelling and grammar, and even adjust the tone of the text to be more confident or casual.
+### Github
 
-When you make your resume publicly available, you are provided with a link that you can share with potential recruiters and employers. This change allows you to **track the number of views or downloads your resume has received**, so you can stay informed about when someone has checked out your resume.
+- Création d'un fork sur [AcadéNice](https://github.com/AcadeNice)
 
-When it comes to **security**, you now have the option to protect your account with **two-factor authentication**. This means that whenever you log in to Reactive Resume, you will also need to enter a one-time code generated on your phone. This additional step ensures that only you have access to your account.
+### Autre
 
-From a **design** perspective, the motivation behind this is to ensure that Reactive Resume is taken more seriously and not perceived as just another subpar side-project, which is often associated with free software. My goal is to demonstrate that this is not the case, and that **free and open source software can be just as good**, if not better, than paid alternatives.
+- Modification du README.md pour en faire un journal de bord (l'original a été renommé en `rx.README.md`)
+- Ajout d'une fonction `pnpm docker:restart` qui exécute les commandes suivantes :
+  ```bash
+  docker compose down
+  docker compose build
+  docker compose up -d
+  ```
 
-From a **self-hosting perspective**, it has never been simpler. Instead of running two separate services on your Docker (one for the client and one for the server) and struggling to establish communication between them, now you only need to pull a single image. Additionally, there are a few dependent services available on Docker (such as Postgres, Minio etc.) that you can also pull and have them all working together seamlessly.
+---
 
-I'm excited for you to try out the app, as I've spent months building it to perfection. If you enjoy the experience of building your resume using the app, please consider supporting by [becoming a GitHub Sponsor](https://github.com/sponsors/AmruthPillai).
+## 24 Juin 2025
+
+- Le site contenait encore du texte en anglais, donc modifications supplémentaires jusqu’à obtention de textes en français :
+  - Modification de `lingui.config.ts` :
+    ```ts
+    sourceLocale: "fr-FR",
+    ```
+  - Modification de `apps/client/src/main.tsx` (sugérer par ChatGPT) :
+    ```tsx
+    dynamicActivate(defaultLocale)
+      .then(() => {
+        root.render(
+          <StrictMode>
+            <RouterProvider router={router} />
+          </StrictMode>,
+        );
+      })
+      // eslint-disable-next-line unicorn/prefer-top-level-await
+      .catch((error: unknown) => {
+        // eslint-disable-next-line no-console
+        console.error("Erreur lors du chargement de la langue :", error);
+        root.render(
+          <StrictMode>
+            <RouterProvider router={router} />
+          </StrictMode>,
+        );
+      });
+    ```
+- Ajout des couleurs de l'AcadéNice dans la palette proposée dans le constructeur de CV
+- Ajout de la police `Josefin Sans` dans les polices proposées dans le constructeur de CV
+- Création de `routes-reactive-resume.md` pour garder une vue d'ensemble du projet>
+
+## 25 Juin 2025
+
+- Vérifications des `<title>` de toutes les pages
+  - Changement de ``{t`Reactive Resume`}`` en ``{t`AcadéNice`}``
+  - Compilation de Lingui
+- Vérification des `alt=` des `<img>`
+  - Suppression du contenu des `alt=` inutile pour une meilleur lecture des logiciels pour malvoyants
+- Modification du contenu du mail envoyé pour réinitialiser le mot de passe
+- Modification des textes sur les pages pour qu'ils puissent être traduisable plus tard, puis recompilation avec Lingui
+- Ajout de nouveaux scripts :
+  ```json
+  "scripts": {
+    "lingui:extract": "lingui extract",
+    "lingui:compile": "lingui compile",
+    "lingui:update": "lingui extract && lingui compile"
+  }
+  ```
+- Petite personnalisation de la sidebar du builder de CV
+- Léger ajustement du header pour que le logo ne soit plus au dessus de textes lorsque l'utilisateur scroll sur son pc
+
+## 26 Juin 2025
+- Ajustement de certains textes
+- Modifications blocs de la sidebar de droite
+  - Retrait du bloc "Statistique"
+  - Modificatiom du bloc "Info"
+- Template CV AcadéNice
+  - Ajout d'un nouveau template AcadéNice
+  - Le template AcadéNice est le template par défaut
+  - Ajout du logo et d'informations de contact pour la référante d'entreprise
+
+## 27 Juin 2025
+- Fin personnalisation du premier template
+- Ajout de 4 autres templates
+
+## 30 Juin 2025
+- Ajustement du template IronMan
+- Ajustement de la couleur du texte du bloc de remarque sur OpenAI
+- Amélioration de l'accéssibilité du site 
+
+~~non je ne ma suis pas gourré de date avant~~
+
+## 01 Juillet 2025
+- Continuation de l'amélioration de l'accéssibilité du site
+- Traduction des noms de sections des CVs
+- Renommage des templates
+- Réajustment des cachets
+  - Antman OK
+  - CaptainAmerica En Cours
+
+## 02 Juillet 2025
+- Revision de la logique des cachets
+  - Un cachet est visible pour les humains uniquement, l'autre pour les robots et filtres
+- Continuation du réajustement des logos
+  - Antman OK
+  - CaptainAmerica OK
+  - Hulk OK
+  - IronMan OK
+  - Thor OK
+- Revision des noms des templates
+
+## 03 Juillet 2025
+- Changement du screenshot du build affiché sur l'acceuil
+- Ajout de commentaires dans les fichiers modifier pour de futurs modifications

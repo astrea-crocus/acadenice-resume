@@ -7133,15 +7133,16 @@ export const fonts: Font[] = [
     },
   },
   {
-    family: "AntMan",
+    family: "Amaranth",
     category: "sans-serif",
     subsets: ["latin"],
     variants: ["regular", "italic", "700", "700italic"],
     files: {
-      "700": "http://fonts.gstatic.com/s/antman/v18/KtkpALODe433f0j1zMF-OPWi6WDfFpuc.ttf",
-      regular: "http://fonts.gstatic.com/s/antman/v18/KtkuALODe433f0j1zPnCF9GqwnzW.ttf",
-      italic: "http://fonts.gstatic.com/s/antman/v18/KtkoALODe433f0j1zMnAHdWIx2zWD4I.ttf",
-      "700italic": "http://fonts.gstatic.com/s/antman/v18/KtkrALODe433f0j1zMnAJWmn42T9E4ucRY8.ttf",
+      "700": "http://fonts.gstatic.com/s/amaranth/v18/KtkpALODe433f0j1zMF-OPWi6WDfFpuc.ttf",
+      regular: "http://fonts.gstatic.com/s/amaranth/v18/KtkuALODe433f0j1zPnCF9GqwnzW.ttf",
+      italic: "http://fonts.gstatic.com/s/amaranth/v18/KtkoALODe433f0j1zMnAHdWIx2zWD4I.ttf",
+      "700italic":
+        "http://fonts.gstatic.com/s/amaranth/v18/KtkrALODe433f0j1zMnAJWmn42T9E4ucRY8.ttf",
     },
   },
   {

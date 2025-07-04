@@ -1,125 +1,38 @@
-# Journal de bord
+# Documentation
 
-## 23 Juin 2025
+## Créer un nouveau template
 
-### Côté Client
+### Comment nommer mon nouveau template ?
 
-- Footer personnalisé
-  - Ajout du logo de l'AcadéNice
-  - Suppression de textes et images non utiles
-- Modification de la favicon
-- Ajustement des couleurs de thème
-- Installation de la police `Josephin Sans`
-- Modification de `apps/client/src/libs/lingui.ts` pour mettre le site en `fr-FR` par défaut
-- Modification du Gradient de `apps/client/src/pages/home/sections/hero/decoration.tsx` pour utiliser les couleurs de l'AcadéNice
+Les noms des templates d'AcadéNice proviennent des héros de Marvel.  
+Pour la création d'un nouveau template, prenons "Spider Man" comme nom de nouveau template.
 
-### Github
+### Par quoi dois-je commencer ?
 
-- Création d'un fork sur [AcadéNice](https://github.com/AcadeNice)
+- D'abord, on créer un fichier `spiderman.tsx` dans [apps/artboard/src/templates/acadenice](apps/artboard/src/templates/acadenice).  
+   Il est tout à fait possible de dupliquer un ancien template pour commencer. Ils ont souvent cette structure :
+  ```tsx
+  import type { Award, Certification, CustomSection, CustomSectionGroup, Interest, Language, Profile, Project, Publication, Reference, SectionKey, SectionWithItem, Skill, URL, } from "@reactive-resume/schema";
+  import { Education, Experience, Volunteer } from "@reactive-resume/schema";
+  import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
+  import get from "lodash.get";
+  import { Fragment } from "react";
 
-### Autre
-
-- Modification du README.md pour en faire un journal de bord (l'original a été renommé en `rx.README.md`)
-- Ajout d'une fonction `pnpm docker:restart` qui exécute les commandes suivantes :
-  ```bash
-  docker compose down
-  docker compose build
-  docker compose up -d
+  import { BrandIcon } from "../../components/brand-icon";
+  import { Picture } from "../../components/picture";
+  import { useArtboardStore } from "../../store/artboard";
+  import type { TemplateProps } from "../../types/template";
   ```
 
 ---
 
-## 24 Juin 2025
-
-- Le site contenait encore du texte en anglais, donc modifications supplémentaires jusqu’à obtention de textes en français :
-  - Modification de `lingui.config.ts` :
-    ```ts
-    sourceLocale: "fr-FR",
-    ```
-  - Modification de `apps/client/src/main.tsx` (sugérer par ChatGPT) :
-    ```tsx
-    dynamicActivate(defaultLocale)
-      .then(() => {
-        root.render(
-          <StrictMode>
-            <RouterProvider router={router} />
-          </StrictMode>,
-        );
-      })
-      // eslint-disable-next-line unicorn/prefer-top-level-await
-      .catch((error: unknown) => {
-        // eslint-disable-next-line no-console
-        console.error("Erreur lors du chargement de la langue :", error);
-        root.render(
-          <StrictMode>
-            <RouterProvider router={router} />
-          </StrictMode>,
-        );
-      });
-    ```
-- Ajout des couleurs de l'AcadéNice dans la palette proposée dans le constructeur de CV
-- Ajout de la police `Josefin Sans` dans les polices proposées dans le constructeur de CV
-- Création de `routes-reactive-resume.md` pour garder une vue d'ensemble du projet>
-
-## 25 Juin 2025
-
-- Vérifications des `<title>` de toutes les pages
-  - Changement de ``{t`Reactive Resume`}`` en ``{t`AcadéNice`}``
-  - Compilation de Lingui
-- Vérification des `alt=` des `<img>`
-  - Suppression du contenu des `alt=` inutile pour une meilleur lecture des logiciels pour malvoyants
-- Modification du contenu du mail envoyé pour réinitialiser le mot de passe
-- Modification des textes sur les pages pour qu'ils puissent être traduisable plus tard, puis recompilation avec Lingui
-- Ajout de nouveaux scripts :
-  ```json
-  "scripts": {
-    "lingui:extract": "lingui extract",
-    "lingui:compile": "lingui compile",
-    "lingui:update": "lingui extract && lingui compile"
-  }
-  ```
-- Petite personnalisation de la sidebar du builder de CV
-- Léger ajustement du header pour que le logo ne soit plus au dessus de textes lorsque l'utilisateur scroll sur son pc
-
-## 26 Juin 2025
-- Ajustement de certains textes
-- Modifications blocs de la sidebar de droite
-  - Retrait du bloc "Statistique"
-  - Modificatiom du bloc "Info"
-- Template CV AcadéNice
-  - Ajout d'un nouveau template AcadéNice
-  - Le template AcadéNice est le template par défaut
-  - Ajout du logo et d'informations de contact pour la référante d'entreprise
-
-## 27 Juin 2025
-- Fin personnalisation du premier template
-- Ajout de 4 autres templates
-
-## 30 Juin 2025
-- Ajustement du template IronMan
-- Ajustement de la couleur du texte du bloc de remarque sur OpenAI
-- Amélioration de l'accéssibilité du site 
-
-~~non je ne ma suis pas gourré de date avant~~
-
-## 01 Juillet 2025
-- Continuation de l'amélioration de l'accéssibilité du site
-- Traduction des noms de sections des CVs
-- Renommage des templates
-- Réajustment des cachets
-  - Antman OK
-  - CaptainAmerica En Cours
-
-## 02 Juillet 2025
-- Revision de la logique des cachets
-  - Un cachet est visible pour les humains uniquement, l'autre pour les robots et filtres
-- Continuation du réajustement des logos
-  - Antman OK
-  - CaptainAmerica OK
-  - Hulk OK
-  - IronMan OK
-  - Thor OK
-- Revision des noms des templates
-
-## 03 Juillet 2025
-- Changement du screenshot du build affiché sur l'acceuil
+- Templates d'AcadéNice : [apps/artboard/src/templates/acadenice](apps/artboard/src/templates/acadenice)
+  - Ajouter un template :
+    - [apps/artboard/src/templates/index.tsx](apps/artboard/src/templates/index.tsx)
+    - [libs/utils/src/namespaces/template.ts](libs/utils/src/namespaces/template.ts)
+- Modifier le tampon AcadéNice
+  - [apps/artboard/src/templates/acadenice/component/contact.tsx](apps/artboard/src/templates/acadenice/component/contact.tsx)
+  - [apps/artboard/src/templates/acadenice/component/seal.tsx](apps/artboard/src/templates/acadenice/component/seal.tsx)
+- Ajouter une couleur dans la palette de couleurs des CVs :
+  - [apps/client/src/constants/colors.ts](apps/client/src/constants/colors.ts)
+- [libs/utils/src/normalized.ts](libs/utils/src/normalized.ts)
