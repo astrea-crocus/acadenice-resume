@@ -3,17 +3,17 @@
   :root {
     --background: var(--white);
     --foreground: var(--black);
-    --border: var(--ac-teal-200);
+    --border: var(--acadenice-200);
 
     /* Primary */
-    --primary: var(--ac-teal-500);
-    --primary-accent: var(--ac-teal-300);
-    --primary-foreground: var(--ac-teal-50);
+    --primary: var(--acadenice-500);
+    --primary-accent: var(--acadenice-300);
+    --primary-foreground: var(--acadenice-50);
 
     /* Secondary */
-    --secondary: var(--ac-teal-200);
-    --secondary-accent: var(--ac-teal-100);
-    --secondary-foreground: var(--ac-teal-950);
+    --secondary: var(--acadenice-200);
+    --secondary-accent: var(--acadenice-100);
+    --secondary-foreground: var(--acadenice-950);
 
     /* Error */
     --error: var(--rose-500);
@@ -39,17 +39,17 @@
   .dark {
     --background: var(--black);
     --foreground: var(--white);
-    --border: var(--ac-teal-800);
+    --border: var(--acadenice-800);
 
     /* Primary */
-    --primary: var(--ac-teal-500);
-    --primary-accent: var(--ac-teal-800);
-    --primary-foreground: var(--ac-teal-50);
+    --primary: var(--acadenice-500);
+    --primary-accent: var(--acadenice-800);
+    --primary-foreground: var(--acadenice-50);
 
     /* Secondary */
-    --secondary: var(--ac-teal-800);
-    --secondary-accent: var(--ac-teal-900);
-    --secondary-foreground: var(--ac-teal-50);
+    --secondary: var(--acadenice-800);
+    --secondary-accent: var(--acadenice-900);
+    --secondary-foreground: var(--acadenice-50);
 
     /* Error */
     --error: var(--rose-700);

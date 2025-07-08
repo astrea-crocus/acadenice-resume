@@ -2,6 +2,7 @@ import { t } from "@lingui/macro";
 import { HouseSimple, Lock, SidebarSimple } from "@phosphor-icons/react";
 import { Button, Tooltip } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 import { useBuilderStore } from "@/client/stores/builder";
@@ -18,13 +19,30 @@ export const BuilderHeader = () => {
   const leftPanelSize = useBuilderStore((state) => state.panel.left.size);
   const rightPanelSize = useBuilderStore((state) => state.panel.right.size);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => {
+      window.removeEventListener("resize", checkScreen);
+    };
+  }, []);
+
   const onToggle = (side: "left" | "right") => {
     toggle(side);
   };
 
   return (
     <header
-      style={{ left: `${leftPanelSize}%`, right: `${rightPanelSize}%` }}
+      style={{
+        left: isMobile ? "0" : `${leftPanelSize}%`,
+        right: isMobile ? "0" : `${rightPanelSize}%`,
+      }}
       className={cn(
         "fixed inset-x-0 top-0 z-[60] h-16 bg-secondary-accent/50 backdrop-blur-lg lg:z-20",
         !isDragging && "transition-[left,right]",
@@ -55,7 +73,7 @@ export const BuilderHeader = () => {
             /
           </span>
 
-          <h1 className="max-w-[12ch] truncate text-base font-medium" title={title}>
+          <h1 className="max-w-[200px] truncate text-base font-medium" title={title}>
             {title}
           </h1>
 

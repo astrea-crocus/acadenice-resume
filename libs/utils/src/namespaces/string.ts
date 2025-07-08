@@ -1,3 +1,5 @@
+import { fr } from "date-fns/locale";
+import { format, toZonedTime } from "date-fns-tz";
 import sanitizeHtml from "sanitize-html";
 import type { Config as UniqueNamesConfig } from "unique-names-generator";
 import { adjectives, animals, uniqueNamesGenerator } from "unique-names-generator";
@@ -43,8 +45,11 @@ export const generateRandomName = (options?: Omit<UniqueNamesConfig, "dictionari
 };
 
 export const generateResumeName = (fullName: string): string => {
-  const date = new Intl.DateTimeFormat("fr-FR").format(Date.now());
-  return `CV ${fullName} - ${date}`;
+  const now = new Date();
+  const parisDate = toZonedTime(now, "Europe/Paris");
+  const formattedDate = format(parisDate, "dd/MM/yyyy HH:mm", { locale: fr });
+
+  return `CV ${fullName} - ${formattedDate}`;
 };
 
 export const processUsername = (string?: string | null) => {

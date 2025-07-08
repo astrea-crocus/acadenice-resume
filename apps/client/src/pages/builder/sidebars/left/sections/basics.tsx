@@ -40,6 +40,7 @@ export const BasicsSection = () => {
           <Label htmlFor="basics.name">{t`Nom complet`}</Label>
           <Input
             id="basics.name"
+            placeholder="Jean Dupont"
             value={basics.name}
             aria-invalid={hasNameError}
             aria-describedby={hasNameError ? "basics.name.error" : undefined}
@@ -58,6 +59,7 @@ export const BasicsSection = () => {
           <Label htmlFor="basics.headline">{t`Titre professionnel`}</Label>
           <Input
             id="basics.headline"
+            placeholder="Ex. : Développeur Web Créatif et Innovant"
             value={basics.headline}
             aria-label={t`Titre professionnel`}
             onChange={(event) => {
@@ -70,7 +72,7 @@ export const BasicsSection = () => {
           <Label htmlFor="basics.email">{t`Email`}</Label>
           <Input
             id="basics.email"
-            placeholder="john.doe@example.com"
+            placeholder="jean.dupont@example.com"
             value={basics.email}
             aria-invalid={hasEmailError}
             aria-describedby={hasEmailError ? "basics.email.error" : undefined}
@@ -90,7 +92,7 @@ export const BasicsSection = () => {
           <URLInput
             id="basics.portfolio"
             value={basics.portfolio}
-            placeholder="https://example.com"
+            placeholder="Ex. : https://example.com"
             aria-label={t`URL du portfolio`}
             onChange={(value) => {
               setValue("basics.portfolio", value);
@@ -102,7 +104,7 @@ export const BasicsSection = () => {
           <Label htmlFor="basics.phone">{t`Téléphone`}</Label>
           <Input
             id="basics.phone"
-            placeholder="+1 (123) 4567 7890"
+            placeholder="06 05 04 03 02"
             value={basics.phone}
             aria-label={t`Numéro de téléphone`}
             onChange={(event) => {
@@ -112,11 +114,12 @@ export const BasicsSection = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.location">{t`Localisation`}</Label>
+          <Label htmlFor="basics.location">{t`Ville`}</Label>
           <Input
             id="basics.location"
+            placeholder="Nice, 06000"
             value={basics.location}
-            aria-label={t`Localisation`}
+            aria-label={t`Ville`}
             onChange={(event) => {
               setValue("basics.location", event.target.value);
             }}

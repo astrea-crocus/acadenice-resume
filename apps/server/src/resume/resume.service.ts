@@ -10,8 +10,8 @@ import { defaultResumeData, ResumeData } from "@reactive-resume/schema";
 import type { DeepPartial } from "@reactive-resume/utils";
 import { ErrorMessage, generateRandomName } from "@reactive-resume/utils";
 import slugify from "@sindresorhus/slugify";
-import { format } from "date-fns";
 import { fr } from "date-fns/locale";
+import { format, toZonedTime } from "date-fns-tz";
 import deepmerge from "deepmerge";
 import { PrismaService } from "nestjs-prisma";
 
@@ -50,7 +50,8 @@ export class ResumeService {
 
   import(userId: string, importResumeDto: ImportResumeDto) {
     const now = new Date();
-    const formattedDate = format(now, "dd/MM/yyyy HH:mm", { locale: fr });
+    const parisDate = toZonedTime(now, "Europe/Paris");
+    const formattedDate = format(parisDate, "dd/MM/yyyy HH:mm", { locale: fr });
 
     const baseTitle = importResumeDto.filename
       ? importResumeDto.filename.replace(/\.[^./]+$/, "")

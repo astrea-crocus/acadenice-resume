@@ -265,8 +265,8 @@ export const ImportDialog = () => {
                         const file = event.target.files[0];
                         const filenameWithoutExtension = file.name.replace(/\.[^./]+$/, "");
 
-                        field.onChange(file); // uniquement le File pour 'file'
-                        form.setValue("filename", filenameWithoutExtension); // met à jour 'filename'
+                        field.onChange(file);
+                        form.setValue("filename", filenameWithoutExtension);
                       }}
                     />
                   </FormControl>

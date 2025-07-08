@@ -212,7 +212,7 @@ export const sampleResume: ResumeData = {
       name: "Références",
       columns: 1,
       separateLinks: true,
-      visible: false,
+      visible: true,
       id: "references",
       items: [
         {
@@ -301,17 +301,16 @@ export const sampleResume: ResumeData = {
     template: "Captain America",
     layout: [
       [
-        ["summary", "experience", "education", "projects", "references"],
+        ["summary", "experience", "education", "projects", "certifications", "publications"],
         [
           "socials",
           "hardSkills",
           "softSkills",
-          "certifications",
           "interests",
           "languages",
           "awards",
           "volunteer",
-          "publications",
+          "references",
         ],
       ],
     ],

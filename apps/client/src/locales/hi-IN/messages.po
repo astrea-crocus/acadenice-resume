@@ -115,7 +115,7 @@ msgid "AcadéNice est un centre de formation basé à Nice, spécialisé dans le
 msgstr ""
 
 #. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:270
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:276
 msgid "Accepts only {accept} files"
 msgstr "केवल {accept} फ़ाइलें स्वीकार करता है"
 
@@ -127,9 +127,13 @@ msgstr "खाता"
 #~ msgid "Account settings form"
 #~ msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
-msgid "Actions d'aide par intelligence artificielle pour le résumé"
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:66
+msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
+#~ msgid "Actions d'aide par intelligence artificielle pour le résumé"
+#~ msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:188
 msgid "Activer l'authentification à deux facteurs"
@@ -284,7 +288,7 @@ msgstr "क्या आपके पास पहले से एक खात
 msgid "Amruth Pillai"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:144
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:145
 msgid "An error occurred while validating the file."
 msgstr "फ़ाइल बनाते समय कोई त्रुटि आई"
 
@@ -487,6 +491,10 @@ msgstr ""
 msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:54
+msgid "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
 msgstr ""
@@ -615,9 +623,13 @@ msgstr "आत्मविश्वासी"
 msgid "Confirmer la suppression"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
-msgid "Contenu éditable du résumé"
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
+msgid "Contenu éditable de la phrase d'accroche"
 msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
+#~ msgid "Contenu éditable du résumé"
+#~ msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:234
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:246
@@ -868,7 +880,7 @@ msgstr "2FA निलम्बित करें"
 #~ msgid "Disable two-factor authentication"
 #~ msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:308
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:258
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:144
@@ -959,9 +971,13 @@ msgstr ""
 msgid "Edit"
 msgstr "एडिट करें"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:46
-msgid "Éditeur de texte pour le résumé"
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:62
+msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:46
+#~ msgid "Éditeur de texte pour le résumé"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:55
 msgid "Éditeur ou organisme"
@@ -974,7 +990,7 @@ msgstr "प्रभाव"
 #: apps/client/src/pages/auth/forgot-password/page.tsx:82
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:143
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:70
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:72
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
 msgstr "ई-मेल"
@@ -1035,7 +1051,7 @@ msgstr ""
 msgid "Error {statusCode}"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:283
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:289
 msgid "Errors"
 msgstr "त्रुटि"
 
@@ -1047,9 +1063,17 @@ msgstr ""
 msgid "Êtes-vous sûr de vouloir supprimer cet élément ?"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:57
+msgid "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "भले ही आप वित्तीय रूप से योगदान करने की स्थिति में नहीं हैं, फिर भी आप GitHub रिपॉजिटरी को एक स्टार देकर, अपने दोस्तों तक बात फैलाकर, या मुझे यह बताने के लिए एक त्वरित संदेश भेजकर अंतर ला सकते हैं कि रिएक्टिव रेज़्यूमे ने आपकी कैसे मदद की है। आपकी प्रतिक्रिया और समर्थन का हमेशा स्वागत है और बहुत सराहना की जाती है!"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:56
+msgid "Exemple :"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:98
 msgid "Expérience professionnelle"
@@ -1078,11 +1102,11 @@ msgstr ""
 msgid "Fermer le menu latéral"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:255
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:256
 msgid "File"
 msgstr "फ़ाइल"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:221
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:222
 msgid "Filetype"
 msgstr "फाइल का प्रकार"
 
@@ -1180,7 +1204,7 @@ msgstr "गिटहब सितारे"
 msgid "Give your old resume a new name."
 msgstr "अपने पुराने बायोडाटा को नया नाम दें।"
 
-#: apps/client/src/pages/builder/_components/header.tsx:49
+#: apps/client/src/pages/builder/_components/header.tsx:67
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -1320,13 +1344,17 @@ msgstr "आइकॉन"
 msgid "Icône"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:32
+msgid "Icône de la section \"Phrase d'Accroche\""
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:28
 msgid "Icône de la section Informations de base"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:28
-msgid "Icône de la section Résumé"
-msgstr ""
+#~ msgid "Icône de la section Résumé"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:47
 msgid "If this app has helped you with your job hunt, let me know by reaching out through <0>this contact form</0>."
@@ -1348,11 +1376,11 @@ msgstr ""
 msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:309
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:315
 msgid "Import"
 msgstr "आयात"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:208
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:209
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/import-card.tsx:28
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/import-item.tsx:17
 msgid "Import an existing resume"
@@ -1455,7 +1483,7 @@ msgstr "जेसन"
 msgid "Keywords"
 msgstr "खोजशब्द:"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:83
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:85
 msgid "L'adresse email est invalide."
 msgstr ""
 
@@ -1496,7 +1524,7 @@ msgstr "अंतिम अद्यतन {lastUpdated}"
 msgid "Layout"
 msgstr "लेआउट"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:52
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:53
 msgid "Le nom complet est invalide."
 msgstr ""
 
@@ -1584,8 +1612,8 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:115
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:119
-msgid "Localisation"
-msgstr ""
+#~ msgid "Localisation"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:113
 #: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:99
@@ -1869,7 +1897,7 @@ msgstr "नोट: इससे आपका खाता कम सुरक्
 msgid "Notes"
 msgstr "टिप्पणियाँ"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:107
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:109
 msgid "Numéro de téléphone"
 msgstr ""
 
@@ -1879,7 +1907,7 @@ msgstr "एक बारी पासवर्ड"
 
 #: apps/client/src/components/ai-actions.tsx:56
 #: apps/client/src/libs/axios.ts:30
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:188
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:189
 #: apps/client/src/services/resume/print.tsx:26
 msgid "Oops, the server returned an error."
 msgstr "ओह, सर्वर ने एक त्रुटि लौटा दी।"
@@ -1917,9 +1945,13 @@ msgstr ""
 msgid "Options"
 msgstr "विकल्प"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:35
-msgid "Options pour la section Résumé"
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
+msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:35
+#~ msgid "Options pour la section Résumé"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:207
 msgid "Options utilisateur"
@@ -2042,7 +2074,7 @@ msgstr "चित्र"
 msgid "Please note that this step is completely optional."
 msgstr "कृपया ध्यान दें कि यह चरण पूरी तरह से वैकल्पिक है।"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:225
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:226
 msgid "Please select a file type"
 msgstr "कृपया एक फाइल चुनें"
 
@@ -2050,7 +2082,7 @@ msgstr "कृपया एक फाइल चुनें"
 msgid "Please store your backup codes in a secure location. You can use one of these one-time use codes to login in case you lose access to your authenticator app."
 msgstr "कृपया अपने बैकअप कोड को सुरक्षित स्थान पर संग्रहीत करें। यदि आप अपने प्रमाणक ऐप तक पहुंच खो देते हैं तो आप लॉगिन करने के लिए इन एक बार उपयोग कोड में से किसी एक का उपयोग कर सकते हैं।"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:89
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:91
 msgid "Portfolio"
 msgstr ""
 
@@ -2314,6 +2346,10 @@ msgstr "बायोडाटा"
 msgid "Resumes Generated"
 msgstr "बायोडाटा तैयार किया गया"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:53
+msgid "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
+msgstr ""
+
 #: apps/client/src/pages/auth/layout.tsx:30
 msgid "Retour à l'accuei"
 msgstr ""
@@ -2414,6 +2450,10 @@ msgstr "फ़ॉन्ट प्रकार खोजें"
 msgid "Search for a language"
 msgstr "एक भाषा के लिए खोज करे"
 
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:25
+msgid "Section \"Phrase d'Accroche\" du CV"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:105
 msgid "Section {sectionName}"
 msgstr ""
@@ -2423,8 +2463,8 @@ msgid "Section Informations de base"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:24
-msgid "Section Résumé du CV"
-msgstr ""
+#~ msgid "Section Résumé du CV"
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:56
 msgid "Secure with two-factor authentication"
@@ -2673,7 +2713,7 @@ msgstr "सिस्टम"
 msgid "Taille de l'image en pixels, valeur actuelle : {size}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:102
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:104
 msgid "Téléphone"
 msgstr ""
 
@@ -2742,7 +2782,7 @@ msgstr "इस एक्शन को वापस नहीं किया ज
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "यह ईमेल पता OAuth खाते से संबद्ध है. कृपया अपने OAuth प्रदाता के साथ साइन इन करें।"
 
-#: apps/client/src/pages/builder/_components/header.tsx:63
+#: apps/client/src/pages/builder/_components/header.tsx:81
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "यह बायोडाटा लॉक है, कृपया आगे बदलाव करने के लिए अनलॉक करें।"
 
@@ -2772,12 +2812,12 @@ msgstr ""
 msgid "Titre de la récompense"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:58
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:62
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:59
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:64
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:39
+#: apps/client/src/pages/builder/_components/header.tsx:57
 msgid "Toggle left panel"
 msgstr ""
 
@@ -2797,7 +2837,7 @@ msgstr ""
 msgid "Toggle Page Numbers"
 msgstr "पेज नंबर टॉगल करें"
 
-#: apps/client/src/pages/builder/_components/header.tsx:73
+#: apps/client/src/pages/builder/_components/header.tsx:91
 msgid "Toggle right panel"
 msgstr ""
 
@@ -2886,7 +2926,7 @@ msgstr "किसी मौजूदा आइटम का नक़ल बन�
 #~ msgid "Update your preferences to customize your experience, including language and theme."
 #~ msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:212
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:213
 msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
 msgstr "मौजूदा डेटा को पार्स करने के लिए स्वीकृत स्रोतों में से किसी एक से फ़ाइल अपलोड करें और आसान संपादन के लिए इसे रिएक्टिव रेज़्यूमे में आयात करें।"
 
@@ -2908,7 +2948,7 @@ msgstr ""
 msgid "URL"
 msgstr "यूआरएल"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:94
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:96
 msgid "URL du portfolio"
 msgstr ""
 
@@ -2964,11 +3004,11 @@ msgstr "उपयोगकर्ता साइन अप"
 msgid "Valeur"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:296
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
 msgid "Validate"
 msgstr "वैधीकृत करें"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:314
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:320
 msgid "Validated"
 msgstr "वैधीकृत करें"
 
@@ -2996,6 +3036,11 @@ msgstr "अपने ईमेल पते की पुष्टि करे�
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
 msgid "Views"
 msgstr "दृश्य"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:117
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:122
+msgid "Ville"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:110
 msgid "Visible"

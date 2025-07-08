@@ -1,36 +1,23 @@
 /* Color Palettes */
 @layer base {
   :root {
-    /* AcadéNice - Teal Shades */
-    --ac-teal-50: 170.6 55.7% 98.6%;
-    --ac-teal-100: 170.6 55.7% 94.9%;
-    --ac-teal-200: 170.6 55.7% 84.9%;
-    --ac-teal-300: 170.6 55.7% 74.9%;
-    --ac-teal-400: 170.6 55.7% 64.9%;
-    --ac-teal-500: 170.6 55.7% 54.9%;
-    --ac-teal-600: 170.6 55.7% 44.9%;
-    --ac-teal-700: 170.6 55.7% 34.9%;
-    --ac-teal-800: 170.6 55.7% 24.9%;
-    --ac-teal-900: 170.6 55.7% 14.9%;
-    --ac-teal-950: 170.6 55.7% 7.45%;
-
-    /* AcadéNice - Orange Shades */
-    --ac-orange-50: 38.2 97% 94.4%;
-    --ac-orange-100: 38.2 97% 89.6%;
-    --ac-orange-200: 38.2 97% 79.6%;
-    --ac-orange-300: 38.2 97% 69.6%;
-    --ac-orange-400: 38.2 97% 59.6%;
-    --ac-orange-500: 38.2 97% 49.6%;
-    --ac-orange-600: 38.2 97% 39.6%;
-    --ac-orange-700: 38.2 97% 29.6%;
-    --ac-orange-800: 38.2 97% 19.6%;
-    --ac-orange-900: 38.2 97% 09.6%;
-    --ac-orange-950: 38.2 97% 4.8%;
+    /* Turquoise de l'AcadéNice */
+    --acadenice-50: 170.6 55.7% 98.6%;
+    --acadenice-100: 170.6 55.7% 94.9%;
+    --acadenice-200: 170.6 55.7% 84.9%;
+    --acadenice-300: 170.6 55.7% 74.9%;
+    --acadenice-400: 170.6 55.7% 64.9%;
+    --acadenice-500: 170.6 55.7% 54.9%;
+    --acadenice-600: 170.6 55.7% 44.9%;
+    --acadenice-700: 170.6 55.7% 34.9%;
+    --acadenice-800: 170.6 55.7% 24.9%;
+    --acadenice-900: 170.6 55.7% 14.9%;
+    --acadenice-950: 170.6 55.7% 7.45%;
 
     --white: 0 0% 100%;
     --black: 0 0% 0%;
 
-    /* Zinc - Primary/ac-orange */
+    /* Zinc - Primary/Secondary */
     --zinc-50: 0 0% 98%;
     --zinc-100: 240 4.8% 95.9%;
     --zinc-200: 240 5.9% 90%;

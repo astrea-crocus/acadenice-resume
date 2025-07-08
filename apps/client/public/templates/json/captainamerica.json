@@ -308,17 +308,16 @@
     "template": "Captain America",
     "layout": [
       [
-        ["summary", "experience", "education", "projects", "references"],
+        ["summary", "experience", "education", "projects", "certifications", "publications"],
         [
           "socials",
           "hardSkills",
           "softSkills",
-          "certifications",
           "interests",
           "languages",
           "awards",
           "volunteer",
-          "publications"
+          "references"
         ]
       ]
     ],
