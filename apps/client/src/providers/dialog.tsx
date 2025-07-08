@@ -3,13 +3,15 @@ import { CertificationsDialog } from "../pages/builder/sidebars/left/dialogs/cer
 import { CustomSectionDialog } from "../pages/builder/sidebars/left/dialogs/custom-section";
 import { EducationDialog } from "../pages/builder/sidebars/left/dialogs/education";
 import { ExperienceDialog } from "../pages/builder/sidebars/left/dialogs/experience";
+import { HardSkillsDialog } from "../pages/builder/sidebars/left/dialogs/hard-skills";
 import { InterestsDialog } from "../pages/builder/sidebars/left/dialogs/interests";
 import { LanguagesDialog } from "../pages/builder/sidebars/left/dialogs/languages";
-import { ProfilesDialog } from "../pages/builder/sidebars/left/dialogs/profiles";
+import { SocialsDialog } from "../pages/builder/sidebars/left/dialogs/socials";
 import { ProjectsDialog } from "../pages/builder/sidebars/left/dialogs/projects";
 import { PublicationsDialog } from "../pages/builder/sidebars/left/dialogs/publications";
 import { ReferencesDialog } from "../pages/builder/sidebars/left/dialogs/references";
-import { SkillsDialog } from "../pages/builder/sidebars/left/dialogs/skills";
+// import { SkillsDialog } from "../pages/builder/sidebars/left/dialogs/skills";
+import { SoftSkillsDialog } from "../pages/builder/sidebars/left/dialogs/soft-skills";
 import { VolunteerDialog } from "../pages/builder/sidebars/left/dialogs/volunteer";
 import { ImportDialog } from "../pages/dashboard/resumes/_dialogs/import";
 import { LockDialog } from "../pages/dashboard/resumes/_dialogs/lock";
@@ -36,7 +38,7 @@ export const DialogProvider = ({ children }: Props) => {
 
         {isResumeLoaded && (
           <>
-            <ProfilesDialog />
+            <SocialsDialog />
             <ExperienceDialog />
             <EducationDialog />
             <AwardsDialog />
@@ -46,7 +48,8 @@ export const DialogProvider = ({ children }: Props) => {
             <ProjectsDialog />
             <PublicationsDialog />
             <VolunteerDialog />
-            <SkillsDialog />
+            <HardSkillsDialog />
+            <SoftSkillsDialog />
             <ReferencesDialog />
             <CustomSectionDialog />
           </>

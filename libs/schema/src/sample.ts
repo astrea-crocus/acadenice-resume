@@ -7,13 +7,13 @@ export const sampleResume: ResumeData = {
     email: "jean.dupont@gmail.com",
     phone: "06 00 00 00 00",
     location: "Nice, 06000",
-    url: {
+    portfolio: {
       label: "",
-      href: "https://jeandupont.me/",
+      href: "https://mon-site-perso.fr/",
     },
     customFields: [],
     picture: {
-      url: "https://i.imgur.com/HgwyOuJ.jpg",
+      url: "https://i.imgur.com/IZm1zJx.jpeg",
       size: 120,
       aspectRatio: 1,
       borderRadius: 0,
@@ -26,13 +26,13 @@ export const sampleResume: ResumeData = {
   },
   sections: {
     summary: {
-      name: "Résumé",
+      name: "Phrase d'Accroche",
       columns: 1,
       separateLinks: true,
       visible: true,
       id: "summary",
       content:
-        "<p>Développeur Web innovant avec 5 ans d'expérience dans la création de sites et d'applications percutants et conviviaux. Spécialisé dans les <strong>technologies front-end</strong> et passionné par les standards modernes du web et les techniques de développement de pointe. Expérience avérée dans la conduite de projets réussis de la conception au déploiement.</p>",
+        "<p>Étudiant(e) en développement web à AcadéNice, passionné(e) par la création d’interfaces modernes et dynamiques. À la recherche d’une alternance pour approfondir mes compétences en React.js, Node.js et UX design. Curieux(se), motivé(e) et prêt(e) à relever de nouveaux défis au sein d’une équipe agile et innovante.</p>",
     },
     awards: {
       name: "Récompenses",
@@ -76,7 +76,7 @@ export const sampleResume: ResumeData = {
       ],
     },
     education: {
-      name: "Formation",
+      name: "Formations",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -85,21 +85,22 @@ export const sampleResume: ResumeData = {
         {
           id: "yo3p200zo45c6cdqc6a2vtt3",
           visible: true,
-          institution: "Université de Californie",
-          studyType: "Licence en Informatique",
-          area: "Berkeley, CA",
+          institution: "AcadéNice",
+          studyType: "Parcours Développement Web & Web Mobile",
+          area: "Nice, France",
           score: "",
-          date: "Août 2012 à Mai 2016",
-          summary: "",
+          date: "Septembre 2023 à Juin 2024",
+          summary:
+            "Apprentissage intensif des technologies front-end et back-end modernes, réalisation de projets concrets en équipe et préparation au monde professionnel.",
           url: {
-            label: "",
-            href: "",
+            label: "acadenice.fr",
+            href: "https://acadenice.fr/parcours-de-formation/developpement-web-et-web-mobile/",
           },
         },
       ],
     },
     experience: {
-      name: "Expériences Professionnelles",
+      name: "Expériences Professionelles",
       columns: 1,
       separateLinks: true,
       visible: true,
@@ -108,29 +109,15 @@ export const sampleResume: ResumeData = {
         {
           id: "lhw25d7gf32wgdfpsktf6e0x",
           visible: true,
-          company: "Creative Solutions Inc.",
-          position: "Développeur Web Senior",
-          location: "San Francisco, CA",
-          date: "Janvier 2019 à Aujourd’hui",
+          company: "Start-up locale (Freelance / Stage)",
+          position: "Développeur Web Junior",
+          location: "Nice, France",
+          date: "Avril 2024 à Juin 2024",
           summary:
-            "<ul><li><p>Dirigé la refonte du site produit principal, augmentant l'engagement utilisateur de 40%.</p></li><li><p>Développé et mis en œuvre un nouveau framework responsive, améliorant la compatibilité multi-appareils.</p></li><li><p>Encadré une équipe de quatre développeurs juniors, favorisant une culture d'excellence technique.</p></li></ul>",
+            "<ul><li><p>Participation à la création d’un site vitrine responsive sous React.js pour un commerce local.</p></li><li><p>Intégration d’un back-office avec Node.js et MongoDB.</p></li><li><p>Travail en équipe agile et utilisation de Git pour la gestion de version.</p></li></ul>",
           url: {
             label: "",
-            href: "https://creativesolutions.inc/",
-          },
-        },
-        {
-          id: "r6543lil53ntrxmvel53gbtm",
-          visible: true,
-          company: "TechAdvancers",
-          position: "Développeur Web",
-          location: "San Jose, CA",
-          date: "Juin 2016 à Décembre 2018",
-          summary:
-            "<ul><li><p>Travaillé en équipe de 10 pour développer des applications web de haute qualité en React.js et Node.js.</p></li><li><p>Géré l'intégration de services tiers tels que Stripe pour les paiements et Twilio pour les SMS.</p></li><li><p>Optimisé les performances des applications, réduisant les temps de chargement de 30%.</p></li></ul>",
-          url: {
-            label: "",
-            href: "https://techadvancers.com/",
+            href: "",
           },
         },
       ],
@@ -159,12 +146,12 @@ export const sampleResume: ResumeData = {
       id: "languages",
       items: [],
     },
-    profiles: {
-      name: "Portfolio",
+    socials: {
+      name: "Réseaux Sociaux",
       columns: 1,
       separateLinks: true,
       visible: true,
-      id: "profiles",
+      id: "socials",
       items: [
         {
           id: "cnbk5f0aeqvhx69ebk7hktwd",
@@ -198,27 +185,13 @@ export const sampleResume: ResumeData = {
       id: "projects",
       items: [
         {
-          id: "yw843emozcth8s1ubi1ubvlf",
-          visible: true,
-          name: "Plateforme E-Commerce",
-          description: "Chef de projet",
-          date: "",
-          summary:
-            "<p>Dirigé le développement d’une plateforme e-commerce full-stack, augmentant le taux de conversion de 25%.</p>",
-          keywords: [],
-          url: {
-            label: "",
-            href: "",
-          },
-        },
-        {
           id: "ncxgdjjky54gh59iz2t1xi1v",
           visible: true,
-          name: "Tableau de bord interactif",
-          description: "Développeur Frontend",
-          date: "",
+          name: "Projet Étudiant - AcadéNice",
+          description: "Développeur Front-End",
+          date: "Janvier 2024 à Mars 2024",
           summary:
-            "<p>Créé un tableau de bord analytique interactif pour une application SaaS, améliorant la visualisation des données pour les clients.</p>",
+            "<p>Conception et développement d’une application de gestion de tâches en React.js et Tailwind CSS. Collaboration avec une équipe de 4 étudiants et mise en place d’une API REST pour la gestion des données.</p>",
           keywords: [],
           url: {
             label: "",
@@ -255,12 +228,12 @@ export const sampleResume: ResumeData = {
         },
       ],
     },
-    skills: {
-      name: "Compétences",
+    hardSkills: {
+      name: "Savoirs-Faire",
       columns: 1,
       separateLinks: true,
       visible: true,
-      id: "skills",
+      id: "hardSkills",
       items: [
         {
           id: "hn0keriukh6c0ojktl9gsgjm",
@@ -288,6 +261,40 @@ export const sampleResume: ResumeData = {
         },
       ],
     },
+    softSkills: {
+      name: "Savoirs-Êtres",
+      columns: 1,
+      separateLinks: true,
+      visible: true,
+      id: "softSkills",
+      items: [
+        {
+          id: "x1n8vj5pmcz4u1a0g2h3ykbd",
+          visible: true,
+          name: "Travail en équipe",
+        },
+        {
+          id: "w7k9ph0uz5s2f3dq8n6jrb1v",
+          visible: true,
+          name: "Autonomie",
+        },
+        {
+          id: "q4h2l8nx0f7m9e5r1v6tbzdu",
+          visible: true,
+          name: "Adaptabilité",
+        },
+        {
+          id: "p9c3t1fs8m2v6y7hj4l0xqnb",
+          visible: true,
+          name: "Sens de l’analyse",
+        },
+        {
+          id: "r5z7y2kd0v1h8pl3c9n6bxmw",
+          visible: true,
+          name: "Créativité",
+        },
+      ],
+    },
     custom: {},
   },
   metadata: {
@@ -296,8 +303,9 @@ export const sampleResume: ResumeData = {
       [
         ["summary", "experience", "education", "projects", "references"],
         [
-          "profiles",
-          "skills",
+          "socials",
+          "hardSkills",
+          "softSkills",
           "certifications",
           "interests",
           "languages",

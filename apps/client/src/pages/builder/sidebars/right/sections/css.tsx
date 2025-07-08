@@ -25,7 +25,7 @@ export const CssSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="css" size={18} name={t`Custom CSS`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{t`Custom CSS`}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Custom CSS`}</h2>
         </div>
       </header>
 

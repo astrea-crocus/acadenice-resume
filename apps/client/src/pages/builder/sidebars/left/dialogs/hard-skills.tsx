@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { t } from "@lingui/macro";
 import { X } from "@phosphor-icons/react";
-import { defaultSkill, skillSchema } from "@reactive-resume/schema";
+import { defaultHardSkill, hardSkillSchema } from "@reactive-resume/schema";
 import {
   Badge,
   BadgeInput,
@@ -21,23 +21,21 @@ import type { z } from "zod";
 
 import { SectionDialog } from "../sections/shared/section-dialog";
 
-const formSchema = skillSchema;
+type FormValues = z.infer<typeof hardSkillSchema>;
 
-type FormValues = z.infer<typeof formSchema>;
-
-export const SkillsDialog = () => {
+export const HardSkillsDialog = () => {
   const form = useForm<FormValues>({
-    defaultValues: defaultSkill,
-    resolver: zodResolver(formSchema),
+    defaultValues: defaultHardSkill,
+    resolver: zodResolver(hardSkillSchema),
   });
 
   const [pendingKeyword, setPendingKeyword] = useState("");
 
   return (
     <SectionDialog<FormValues>
-      id="skills"
+      id="hardSkills"
       form={form}
-      defaultValues={defaultSkill}
+      defaultValues={defaultHardSkill}
       pendingKeyword={pendingKeyword}
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

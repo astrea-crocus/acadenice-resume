@@ -25,3 +25,19 @@ export const defaultExperience: Experience = {
   summary: "",
   url: defaultUrl,
 };
+
+// export const personalExperienceItemSchema = z.object({
+//   id: z.string(),
+//   title: z.string(), // Ex: "Bénévole développeur"
+//   name: z.string(), // Ex: "Hackathon Nice 2025"
+//   date: z.string().optional(),
+//   location: z.string().optional(),
+//   description: z.string().optional(),
+//   url: z.string().optional(), // Ex: lien vers le projet perso, github, etc.
+// });
+
+// export const personalExperienceSectionSchema = z.object({
+//   name: z.string(), // Ex: "Expérience personnelle"
+//   type: z.literal("personal_experience"), // <- identifiant unique
+//   items: z.array(personalExperienceItemSchema),
+// });

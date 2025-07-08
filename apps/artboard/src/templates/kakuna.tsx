@@ -3,6 +3,7 @@ import type {
   Certification,
   CustomSection,
   CustomSectionGroup,
+  HardSkill,
   Interest,
   Language,
   Project,
@@ -10,7 +11,7 @@ import type {
   Reference,
   SectionKey,
   SectionWithItem,
-  Skill,
+  SoftSkill,
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
@@ -25,7 +26,7 @@ import type { TemplateProps } from "../types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
-  const profiles = useArtboardStore((state) => state.resume.sections.profiles);
+  const profiles = useArtboardStore((state) => state.resume.sections.socials);
 
   return (
     <div className="flex flex-col items-center justify-center space-y-2 pb-2 text-center">
@@ -60,7 +61,7 @@ const Header = () => {
           </div>
         )}
 
-        <Link url={basics.url} />
+        <Link url={basics.portfolio} />
 
         {basics.customFields.map((item) => (
           <div key={item.id} className="flex items-center gap-x-1.5">
@@ -319,15 +320,29 @@ const Certifications = () => {
   );
 };
 
-const Skills = () => {
-  const section = useArtboardStore((state) => state.resume.sections.skills);
+const HardSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.hardSkills);
 
   return (
-    <Section<Skill> section={section} levelKey="level" keywordsKey="keywords">
+    <Section<HardSkill> section={section} levelKey="level" keywordsKey="keywords">
       {(item) => (
         <div>
           <div className="font-bold">{item.name}</div>
           <div>{item.description}</div>
+        </div>
+      )}
+    </Section>
+  );
+};
+
+const SoftSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.softSkills);
+
+  return (
+    <Section<SoftSkill> section={section}>
+      {(item) => (
+        <div>
+          <div>{item.name}</div>
         </div>
       )}
     </Section>
@@ -491,8 +506,11 @@ const mapSectionToComponent = (section: SectionKey) => {
     case "certifications": {
       return <Certifications />;
     }
-    case "skills": {
-      return <Skills />;
+    case "hardSkills": {
+      return <HardSkills />;
+    }
+    case "softSkills": {
+      return <SoftSkills />;
     }
     case "interests": {
       return <Interests />;

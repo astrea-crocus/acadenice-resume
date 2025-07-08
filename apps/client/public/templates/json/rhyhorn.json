@@ -5,7 +5,7 @@
     "email": "john.doe@gmail.com",
     "phone": "(555) 123-4567",
     "location": "Pleasantville, CA 94588",
-    "url": {
+    "portfolio": {
       "label": "",
       "href": "https://johndoe.me/"
     },
@@ -146,11 +146,11 @@
       "id": "languages",
       "items": []
     },
-    "profiles": {
-      "name": "Profiles",
+    "socials": {
+      "name": "Socials",
       "columns": 4,
       "visible": true,
-      "id": "profiles",
+      "id": "socials",
       "items": [
         {
           "id": "cnbk5f0aeqvhx69ebk7hktwd",
@@ -236,11 +236,11 @@
         }
       ]
     },
-    "skills": {
+    "hardSkills": {
       "name": "Skills",
       "columns": 3,
       "visible": true,
-      "id": "skills",
+      "id": "hardSkills",
       "items": [
         {
           "id": "hn0keriukh6c0ojktl9gsgjm",
@@ -275,13 +275,14 @@
     "layout": [
       [
         [
-          "profiles",
+          "socials",
           "summary",
           "experience",
           "education",
           "projects",
           "certifications",
-          "skills",
+          "hardSkills",
+          "softSkills",
           "references"
         ],
         ["interests", "languages", "awards", "volunteer", "publications"]

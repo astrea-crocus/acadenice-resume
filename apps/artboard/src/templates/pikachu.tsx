@@ -3,15 +3,16 @@ import type {
   Certification,
   CustomSection,
   CustomSectionGroup,
+  HardSkill,
   Interest,
   Language,
-  Profile,
   Project,
   Publication,
   Reference,
   SectionKey,
   SectionWithItem,
-  Skill,
+  Social,
+  SoftSkill,
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
@@ -73,9 +74,9 @@ const Header = () => {
               <div className="size-1 rounded-full bg-background last:hidden" />
             </>
           )}
-          {isUrl(basics.url.href) && (
+          {isUrl(basics.portfolio.href) && (
             <>
-              <Link url={basics.url} />
+              <Link url={basics.portfolio} />
               <div className="size-1 rounded-full bg-background last:hidden" />
             </>
           )}
@@ -257,11 +258,11 @@ const Section = <T,>({
   );
 };
 
-const Profiles = () => {
-  const section = useArtboardStore((state) => state.resume.sections.profiles);
+const Socials = () => {
+  const section = useArtboardStore((state) => state.resume.sections.socials);
 
   return (
-    <Section<Profile> section={section}>
+    <Section<Social> section={section}>
       {(item) => (
         <div>
           {isUrl(item.url.href) ? (
@@ -377,15 +378,29 @@ const Certifications = () => {
   );
 };
 
-const Skills = () => {
-  const section = useArtboardStore((state) => state.resume.sections.skills);
+const HardSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.hardSkills);
 
   return (
-    <Section<Skill> section={section} levelKey="level" keywordsKey="keywords">
+    <Section<HardSkill> section={section} levelKey="level" keywordsKey="keywords">
       {(item) => (
         <div>
           <div className="font-bold">{item.name}</div>
           <div>{item.description}</div>
+        </div>
+      )}
+    </Section>
+  );
+};
+
+const SoftSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.softSkills);
+
+  return (
+    <Section<SoftSkill> section={section}>
+      {(item) => (
+        <div>
+          <div>{item.name}</div>
         </div>
       )}
     </Section>
@@ -550,8 +565,8 @@ const Custom = ({ id }: { id: string }) => {
 
 const mapSectionToComponent = (section: SectionKey) => {
   switch (section) {
-    case "profiles": {
-      return <Profiles />;
+    case "socials": {
+      return <Socials />;
     }
     case "summary": {
       return <Summary />;
@@ -568,8 +583,11 @@ const mapSectionToComponent = (section: SectionKey) => {
     case "certifications": {
       return <Certifications />;
     }
-    case "skills": {
-      return <Skills />;
+    case "hardSkills": {
+      return <HardSkills />;
+    }
+    case "softSkills": {
+      return <SoftSkills />;
     }
     case "interests": {
       return <Interests />;

@@ -42,6 +42,11 @@ export const generateRandomName = (options?: Omit<UniqueNamesConfig, "dictionari
   });
 };
 
+export const generateResumeName = (fullName: string): string => {
+  const date = new Intl.DateTimeFormat("fr-FR").format(Date.now());
+  return `CV ${fullName} - ${date}`;
+};
+
 export const processUsername = (string?: string | null) => {
   if (!string) return "";
 

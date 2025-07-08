@@ -10,6 +10,8 @@ import { defaultResumeData, ResumeData } from "@reactive-resume/schema";
 import type { DeepPartial } from "@reactive-resume/utils";
 import { ErrorMessage, generateRandomName } from "@reactive-resume/utils";
 import slugify from "@sindresorhus/slugify";
+import { format } from "date-fns";
+import { fr } from "date-fns/locale";
 import deepmerge from "deepmerge";
 import { PrismaService } from "nestjs-prisma";
 
@@ -47,15 +49,22 @@ export class ResumeService {
   }
 
   import(userId: string, importResumeDto: ImportResumeDto) {
-    const randomTitle = generateRandomName();
+    const now = new Date();
+    const formattedDate = format(now, "dd/MM/yyyy HH:mm", { locale: fr });
+
+    const baseTitle = importResumeDto.filename
+      ? importResumeDto.filename.replace(/\.[^./]+$/, "")
+      : generateRandomName();
+
+    const finalTitle = `${baseTitle} - ${formattedDate}`;
 
     return this.prisma.resume.create({
       data: {
         userId,
         visibility: "private",
         data: importResumeDto.data,
-        title: importResumeDto.title ?? randomTitle,
-        slug: importResumeDto.slug ?? slugify(randomTitle),
+        title: importResumeDto.title ?? finalTitle,
+        slug: importResumeDto.slug ?? slugify(finalTitle),
       },
     });
   }

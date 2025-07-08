@@ -12,7 +12,7 @@ Pour la création d'un nouveau template, prenons "Spider Man" comme nom de nouve
 - D'abord, on créer un fichier `spiderman.tsx` dans [apps/artboard/src/templates/acadenice](apps/artboard/src/templates/acadenice).  
    Il est tout à fait possible de dupliquer un ancien template pour commencer. Ils ont souvent cette structure :
   ```tsx
-  import type { Award, Certification, CustomSection, CustomSectionGroup, Interest, Language, Profile, Project, Publication, Reference, SectionKey, SectionWithItem, Skill, URL, } from "@reactive-resume/schema";
+  import type { Award, Certification, CustomSection, CustomSectionGroup, Interest, Language, Social, Project, Publication, Reference, SectionKey, SectionWithItem, Skill, URL, } from "@reactive-resume/schema";
   import { Education, Experience, Volunteer } from "@reactive-resume/schema";
   import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
   import get from "lodash.get";

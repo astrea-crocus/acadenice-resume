@@ -5,10 +5,11 @@ import {
   Books,
   Briefcase,
   Certificate,
-  CompassTool,
   GameController,
+  Gear,
   GraduationCap,
   HandHeart,
+  Handshake,
   Medal,
   PuzzlePiece,
   ShareNetwork,
@@ -36,7 +37,7 @@ const getSectionIcon = (id: SectionKey, props: IconProps = {}) => {
     case "awards": {
       return <Medal size={18} {...props} />;
     }
-    case "profiles": {
+    case "socials": {
       return <ShareNetwork size={18} {...props} />;
     }
     case "experience": {
@@ -63,8 +64,11 @@ const getSectionIcon = (id: SectionKey, props: IconProps = {}) => {
     case "publications": {
       return <Books size={18} {...props} />;
     }
-    case "skills": {
-      return <CompassTool size={18} {...props} />;
+    case "hardSkills": {
+      return <Gear size={18} {...props} />;
+    }
+    case "softSkills": {
+      return <Handshake size={18} {...props} />;
     }
     case "references": {
       return <Users size={18} {...props} />;
@@ -87,7 +91,7 @@ const getAriaLabel = (id: SectionKey): string => {
     case "awards": {
       return t`Distinctions`;
     }
-    case "profiles": {
+    case "socials": {
       return t`Profils`;
     }
     case "experience": {
@@ -114,8 +118,11 @@ const getAriaLabel = (id: SectionKey): string => {
     case "publications": {
       return t`Publications`;
     }
-    case "skills": {
-      return t`Compétences`;
+    case "hardSkills": {
+      return t`Savoir-Faires`;
+    }
+    case "softSkills": {
+      return t`Savoir-Être`;
     }
     case "references": {
       return t`Références`;

@@ -3,7 +3,7 @@ import { z } from "zod";
 import { defaultItem, defaultUrl, itemSchema, urlSchema } from "../shared";
 
 // Schema
-export const profileSchema = itemSchema.extend({
+export const socialSchema = itemSchema.extend({
   network: z.string().min(1),
   username: z.string().min(1),
   icon: z
@@ -15,10 +15,10 @@ export const profileSchema = itemSchema.extend({
 });
 
 // Type
-export type Profile = z.infer<typeof profileSchema>;
+export type Social = z.infer<typeof socialSchema>;
 
 // Defaults
-export const defaultProfile: Profile = {
+export const defaultSocial: Social = {
   ...defaultItem,
   network: "",
   username: "",

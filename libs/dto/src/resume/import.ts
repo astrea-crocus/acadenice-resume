@@ -17,6 +17,7 @@ export const importResumeSchema = z.object({
     .optional(),
   visibility: z.enum(["public", "private"]).default("private").optional(),
   data: resumeDataSchema,
+  filename: z.string().optional(),
 });
 
 export class ImportResumeDto extends createZodDto(importResumeSchema) {}

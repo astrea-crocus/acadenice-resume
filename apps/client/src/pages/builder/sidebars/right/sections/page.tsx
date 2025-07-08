@@ -23,7 +23,7 @@ export const PageSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="page" size={18} name={t`Page`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{t`Page`}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Page`}</h2>
         </div>
       </header>
 

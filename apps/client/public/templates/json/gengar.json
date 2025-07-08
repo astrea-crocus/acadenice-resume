@@ -5,7 +5,7 @@
     "email": "john.doe@gmail.com",
     "phone": "(555) 123-4567",
     "location": "Pleasantville, CA 94588",
-    "url": {
+    "portfolio": {
       "label": "",
       "href": "https://johndoe.me/"
     },
@@ -146,11 +146,11 @@
       "id": "languages",
       "items": []
     },
-    "profiles": {
-      "name": "Profiles",
+    "socials": {
+      "name": "Socials",
       "columns": 1,
       "visible": true,
-      "id": "profiles",
+      "id": "socials",
       "items": [
         {
           "id": "cnbk5f0aeqvhx69ebk7hktwd",
@@ -236,11 +236,11 @@
         }
       ]
     },
-    "skills": {
-      "name": "Skills",
+    "hardSkills": {
+      "name": "Hard Skills",
       "columns": 1,
       "visible": true,
-      "id": "skills",
+      "id": "hardSkills",
       "items": [
         {
           "id": "hn0keriukh6c0ojktl9gsgjm",
@@ -268,6 +268,40 @@
         }
       ]
     },
+    "softSkills": {
+      "name": "Soft Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "softSkills",
+      "items": [
+        {
+          "id": "x1n8vj5pmcz4u1a0g2h3ykbd",
+          "visible": true,
+          "name": "Teamwork"
+        },
+        {
+          "id": "w7k9ph0uz5s2f3dq8n6jrb1v",
+          "visible": true,
+          "name": "Autonomy"
+        },
+        {
+          "id": "q4h2l8nx0f7m9e5r1v6tbzdu",
+          "visible": true,
+          "name": "Adaptability"
+        },
+        {
+          "id": "p9c3t1fs8m2v6y7hj4l0xqnb",
+          "visible": true,
+          "name": "Problem Solving"
+        },
+        {
+          "id": "r5z7y2kd0v1h8pl3c9n6bxmw",
+          "visible": true,
+          "name": "Creativity"
+        }
+      ]
+    },
     "custom": {}
   },
   "metadata": {
@@ -276,8 +310,9 @@
       [
         ["summary", "experience", "education", "projects", "references"],
         [
-          "profiles",
-          "skills",
+          "socials",
+          "hardSkills",
+          "softSkills",
           "certifications",
           "interests",
           "languages",

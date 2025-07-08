@@ -110,7 +110,7 @@ export const InformationSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="information" size={18} name={t`Information`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{t`Information`}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Information`}</h2>
         </div>
       </header>
 

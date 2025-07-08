@@ -3,15 +3,16 @@ import type {
   Certification,
   CustomSection,
   CustomSectionGroup,
+  HardSkill,
   Interest,
   Language,
-  Profile,
   Project,
   Publication,
   Reference,
   SectionKey,
   SectionWithItem,
-  Skill,
+  Social,
+  SoftSkill,
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
@@ -59,7 +60,7 @@ const Header = () => {
             </a>
           </div>
         )}
-        {isUrl(basics.url.href) && <Link url={basics.url} />}
+        {isUrl(basics.portfolio.href) && <Link url={basics.portfolio} />}
         {basics.customFields.map((item) => (
           <Fragment key={item.id}>
             <div className="flex items-center gap-x-1.5">
@@ -229,11 +230,11 @@ const Section = <T,>({
   );
 };
 
-const Profiles = () => {
-  const section = useArtboardStore((state) => state.resume.sections.profiles);
+const Socials = () => {
+  const section = useArtboardStore((state) => state.resume.sections.socials);
 
   return (
-    <Section<Profile> section={section}>
+    <Section<Social> section={section}>
       {(item) => (
         <div>
           {isUrl(item.url.href) ? (
@@ -349,15 +350,29 @@ const Certifications = () => {
   );
 };
 
-const Skills = () => {
-  const section = useArtboardStore((state) => state.resume.sections.skills);
+const HardSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.hardSkills);
 
   return (
-    <Section<Skill> section={section} levelKey="level" keywordsKey="keywords">
+    <Section<HardSkill> section={section} levelKey="level" keywordsKey="keywords">
       {(item) => (
         <div>
           <div className="font-bold">{item.name}</div>
           <div>{item.description}</div>
+        </div>
+      )}
+    </Section>
+  );
+};
+
+const SoftSkills = () => {
+  const section = useArtboardStore((state) => state.resume.sections.softSkills);
+
+  return (
+    <Section<SoftSkill> section={section}>
+      {(item) => (
+        <div>
+          <div>{item.name}</div>
         </div>
       )}
     </Section>
@@ -522,8 +537,8 @@ const Custom = ({ id }: { id: string }) => {
 
 const mapSectionToComponent = (section: SectionKey) => {
   switch (section) {
-    case "profiles": {
-      return <Profiles />;
+    case "socials": {
+      return <Socials />;
     }
     case "experience": {
       return <Experience />;
@@ -537,8 +552,11 @@ const mapSectionToComponent = (section: SectionKey) => {
     case "certifications": {
       return <Certifications />;
     }
-    case "skills": {
-      return <Skills />;
+    case "hardSkills": {
+      return <HardSkills />;
+    }
+    case "softSkills": {
+      return <SoftSkills />;
     }
     case "interests": {
       return <Interests />;

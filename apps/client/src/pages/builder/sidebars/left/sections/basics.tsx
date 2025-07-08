@@ -27,7 +27,7 @@ export const BasicsSection = () => {
             size={18}
             aria-label={t`Icône de la section Informations de base`}
           />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{t`Informations de base`}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Informations de base`}</h2>
         </div>
       </header>
 
@@ -86,14 +86,14 @@ export const BasicsSection = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.url">{t`Site web`}</Label>
+          <Label htmlFor="basics.portfolio">{t`Portfolio`}</Label>
           <URLInput
-            id="basics.url"
-            value={basics.url}
+            id="basics.portfolio"
+            value={basics.portfolio}
             placeholder="https://example.com"
-            aria-label={t`URL du site web`}
+            aria-label={t`URL du portfolio`}
             onChange={(value) => {
-              setValue("basics.url", value);
+              setValue("basics.portfolio", value);
             }}
           />
         </div>

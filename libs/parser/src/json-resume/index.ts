@@ -6,11 +6,11 @@ import {
   defaultExperience,
   defaultInterest,
   defaultLanguage,
-  defaultProfile,
   defaultPublication,
   defaultReference,
   defaultResumeData,
   defaultSkill,
+  defaultSocial,
   defaultVolunteer,
 } from "@reactive-resume/schema";
 import type { Json } from "@reactive-resume/utils";
@@ -67,19 +67,19 @@ export class JsonResumeParser implements Parser<Json, JsonResume> {
     result.basics.email = data.basics?.email ?? "";
     result.basics.phone = data.basics?.phone ?? "";
     result.basics.location = data.basics?.location?.address ?? "";
-    result.basics.url.href = data.basics?.url ?? "";
+    result.basics.portfolio.href = data.basics?.url ?? "";
     result.sections.summary.content = data.basics?.summary ?? "";
 
-    // Profiles
+    // Socials
     if (data.basics?.profiles) {
       for (const profile of data.basics.profiles) {
         result.sections.profiles.items.push({
-          ...defaultProfile,
+          ...defaultSocial,
           id: createId(),
           icon: profile.network?.toLocaleLowerCase() ?? "",
           network: profile.network ?? "",
           username: profile.username ?? "",
-          url: { ...defaultProfile.url, href: profile.url ?? "" },
+          url: { ...defaultSocial.url, href: profile.url ?? "" },
         });
       }
     }

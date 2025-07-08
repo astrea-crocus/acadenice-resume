@@ -6,13 +6,14 @@ import type {
   CustomSection,
   Education,
   Experience,
+  HardSkill,
   Interest,
   Language,
-  Profile,
   Project,
   Publication,
   Reference,
-  Skill,
+  Social,
+  SoftSkill,
   Volunteer,
 } from "@reactive-resume/schema";
 import { Button, ScrollArea, Separator } from "@reactive-resume/ui";
@@ -80,11 +81,11 @@ export const LeftSidebar = () => {
             }}
           />
           <SectionIcon
-            id="profiles"
-            name={t`Profils`}
-            aria-label={t`Aller à la section Profils`}
+            id="socials"
+            name={t`Réseaux Sociaux`}
+            aria-label={t`Aller à la section Réseaux Sociaux`}
             onClick={() => {
-              scrollIntoView("#profiles");
+              scrollIntoView("#socials");
             }}
           />
           <SectionIcon
@@ -104,11 +105,19 @@ export const LeftSidebar = () => {
             }}
           />
           <SectionIcon
-            id="skills"
-            name={t`Compétences`}
-            aria-label={t`Aller à la section Compétences`}
+            id="hardSkills"
+            name={t`Savoirs-Faire`}
+            aria-label={t`Aller à la section Savoirs-Faire`}
             onClick={() => {
-              scrollIntoView("#skills");
+              scrollIntoView("#hardSkills");
+            }}
+          />
+          <SectionIcon
+            id="softSkills"
+            name={t`Savoirs-Être`}
+            aria-label={t`Aller à la section Savoirs-Être`}
+            onClick={() => {
+              scrollIntoView("#softSkills");
             }}
           />
           <SectionIcon
@@ -208,8 +217,8 @@ export const LeftSidebar = () => {
           <Separator />
           <SummarySection />
           <Separator />
-          <SectionBase<Profile>
-            id="profiles"
+          <SectionBase<Social>
+            id="socials"
             title={(item) => item.network}
             description={(item) => item.username}
           />
@@ -226,14 +235,16 @@ export const LeftSidebar = () => {
             description={(item) => item.area}
           />
           <Separator />
-          <SectionBase<Skill>
-            id="skills"
+          <SectionBase<HardSkill>
+            id="hardSkills"
             title={(item) => item.name}
             description={(item) =>
               item.description ||
               (item.keywords.length > 0 ? `${item.keywords.length} mots-clés` : undefined)
             }
           />
+          <Separator />
+          <SectionBase<SoftSkill> id="softSkills" title={(item) => item.name} />
           <Separator />
           <SectionBase<Language>
             id="languages"

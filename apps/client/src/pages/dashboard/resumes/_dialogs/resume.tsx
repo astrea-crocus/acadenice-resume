@@ -34,7 +34,7 @@ import {
   Input,
   Tooltip,
 } from "@reactive-resume/ui";
-import { cn, generateRandomName } from "@reactive-resume/utils";
+import { cn, generateResumeName } from "@reactive-resume/utils";
 import slugify from "@sindresorhus/slugify";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
@@ -42,6 +42,7 @@ import { z } from "zod";
 
 import { useCreateResume, useDeleteResume, useUpdateResume } from "@/client/services/resume";
 import { useImportResume } from "@/client/services/resume/import";
+import { useUser } from "@/client/services/user";
 import { useDialog } from "@/client/stores/dialog";
 
 const formSchema = createResumeSchema.extend({ id: idSchema.optional(), slug: z.string() });
@@ -55,6 +56,8 @@ export const ResumeDialog = () => {
   const isUpdate = mode === "update";
   const isDelete = mode === "delete";
   const isDuplicate = mode === "duplicate";
+
+  const { user } = useUser();
 
   const { createResume, loading: createLoading } = useCreateResume();
   const { updateResume, loading: updateLoading } = useUpdateResume();
@@ -121,18 +124,20 @@ export const ResumeDialog = () => {
       form.reset({ id: payload.item?.id, title: payload.item?.title, slug: payload.item?.slug });
   };
 
-  const onGenerateRandomName = () => {
-    const name = generateRandomName();
+  const onGenerateResumeName = () => {
+    // eslint-disable-next-line lingui/no-unlocalized-strings
+    const name = generateResumeName(user?.name ?? "Sans Nom");
     form.setValue("title", name);
     form.setValue("slug", slugify(name));
   };
 
   const onCreateSample = async () => {
-    const randomName = generateRandomName();
+    // eslint-disable-next-line lingui/no-unlocalized-strings
+    const resumeName = generateResumeName("Example");
 
     await duplicateResume({
-      title: randomName,
-      slug: slugify(randomName),
+      title: resumeName,
+      slug: slugify(resumeName),
       data: sampleResume,
     });
 
@@ -204,7 +209,7 @@ export const ResumeDialog = () => {
                             size="icon"
                             type="button"
                             variant="outline"
-                            onClick={onGenerateRandomName}
+                            onClick={onGenerateResumeName}
                           >
                             <MagicWand />
                           </Button>

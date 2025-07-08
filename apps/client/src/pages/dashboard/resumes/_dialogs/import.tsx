@@ -51,6 +51,7 @@ enum ImportType {
 
 const formSchema = z.object({
   file: z.instanceof(File),
+  filename: z.string().optional(),
   type: z.nativeEnum(ImportType),
 });
 
@@ -157,28 +158,28 @@ export const ImportDialog = () => {
         const parser = new ReactiveResumeParser();
         const data = parser.convert(validationResult.result as ResumeData);
 
-        await importResume({ data });
+        await importResume({ data, filename: form.getValues().filename });
       }
 
       if (type === ImportType["reactive-resume-v3-json"]) {
         const parser = new ReactiveResumeV3Parser();
         const data = parser.convert(validationResult.result as ReactiveResumeV3);
 
-        await importResume({ data });
+        await importResume({ data, filename: form.getValues().filename });
       }
 
       if (type === ImportType["json-resume-json"]) {
         const parser = new JsonResumeParser();
         const data = parser.convert(validationResult.result as JsonResume);
 
-        await importResume({ data });
+        await importResume({ data, filename: form.getValues().filename });
       }
 
       if (type === ImportType["linkedin-data-export-zip"]) {
         const parser = new LinkedInParser();
         const data = parser.convert(validationResult.result as LinkedIn);
 
-        await importResume({ data });
+        await importResume({ data, filename: form.getValues().filename });
       }
 
       close();
@@ -260,7 +261,12 @@ export const ImportDialog = () => {
                       accept={accept}
                       onChange={(event) => {
                         if (!event.target.files?.length) return;
-                        field.onChange(event.target.files[0]);
+
+                        const file = event.target.files[0];
+                        const filenameWithoutExtension = file.name.replace(/\.[^./]+$/, "");
+
+                        field.onChange(file); // uniquement le File pour 'file'
+                        form.setValue("filename", filenameWithoutExtension); // met à jour 'filename'
                       }}
                     />
                   </FormControl>

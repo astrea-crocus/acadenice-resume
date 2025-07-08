@@ -74,7 +74,7 @@ export const TypographySection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="typography" size={18} name={t`Typography`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl">{t`Typography`}</h2>
+          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Typography`}</h2>
         </div>
       </header>
 

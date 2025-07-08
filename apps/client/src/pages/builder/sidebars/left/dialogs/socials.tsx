@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { t, Trans } from "@lingui/macro";
-import { defaultProfile, profileSchema } from "@reactive-resume/schema";
+import { defaultSocial, socialSchema } from "@reactive-resume/schema";
 import {
   Avatar,
   FormControl,
@@ -19,18 +19,18 @@ import { BrandIcon } from "@/client/components/brand-icon";
 import { SectionDialog } from "../sections/shared/section-dialog";
 import { URLInput } from "../sections/shared/url-input";
 
-const formSchema = profileSchema;
+const formSchema = socialSchema;
 
 type FormValues = z.infer<typeof formSchema>;
 
-export const ProfilesDialog = () => {
+export const SocialsDialog = () => {
   const form = useForm<FormValues>({
-    defaultValues: defaultProfile,
+    defaultValues: defaultSocial,
     resolver: zodResolver(formSchema),
   });
 
   return (
-    <SectionDialog<FormValues> id="profiles" form={form} defaultValues={defaultProfile}>
+    <SectionDialog<FormValues> id="socials" form={form} defaultValues={defaultSocial}>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <FormField
           name="network"

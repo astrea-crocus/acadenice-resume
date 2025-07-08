@@ -9,11 +9,11 @@ import { educationSchema } from "./education";
 import { experienceSchema } from "./experience";
 import { interestSchema } from "./interest";
 import { languageSchema } from "./language";
-import { profileSchema } from "./profile";
 import { projectSchema } from "./project";
 import { publicationSchema } from "./publication";
 import { referenceSchema } from "./reference";
-import { skillSchema } from "./skill";
+import { hardSkillSchema, softSkillSchema } from "./skill";
+import { socialSchema } from "./social";
 import { volunteerSchema } from "./volunteer";
 
 // Schema
@@ -63,9 +63,9 @@ export const sectionsSchema = z.object({
     id: z.literal("languages"),
     items: z.array(languageSchema),
   }),
-  profiles: sectionSchema.extend({
-    id: z.literal("profiles"),
-    items: z.array(profileSchema),
+  socials: sectionSchema.extend({
+    id: z.literal("socials"),
+    items: z.array(socialSchema),
   }),
   projects: sectionSchema.extend({
     id: z.literal("projects"),
@@ -79,9 +79,13 @@ export const sectionsSchema = z.object({
     id: z.literal("references"),
     items: z.array(referenceSchema),
   }),
-  skills: sectionSchema.extend({
-    id: z.literal("skills"),
-    items: z.array(skillSchema),
+  softSkills: sectionSchema.extend({
+    id: z.literal("softSkills"),
+    items: z.array(softSkillSchema),
+  }),
+  hardSkills: sectionSchema.extend({
+    id: z.literal("hardSkills"),
+    items: z.array(hardSkillSchema),
   }),
   custom: z.record(z.string(), customSchema),
 });
@@ -104,19 +108,26 @@ export const defaultSection: Section = {
 };
 
 export const defaultSections: Sections = {
-  summary: { ...defaultSection, id: "summary", name: "Résumé", content: "" },
+  summary: { ...defaultSection, id: "summary", name: "Phrase d'Accroche", content: "" },
   awards: { ...defaultSection, id: "awards", name: "Récompenses", items: [] },
   certifications: { ...defaultSection, id: "certifications", name: "Certifications", items: [] },
-  education: { ...defaultSection, id: "education", name: "Formation", items: [] },
-  experience: { ...defaultSection, id: "experience", name: "Expérience", items: [] },
+  education: { ...defaultSection, id: "education", name: "Formations", items: [] },
+  experience: {
+    ...defaultSection,
+    id: "experience",
+    name: "Expériences Professionnelles",
+    items: [],
+  },
   volunteer: { ...defaultSection, id: "volunteer", name: "Bénévolat", items: [] },
   interests: { ...defaultSection, id: "interests", name: "Centres d'intérêt", items: [] },
   languages: { ...defaultSection, id: "languages", name: "Langues", items: [] },
-  profiles: { ...defaultSection, id: "profiles", name: "Profils", items: [] },
+  socials: { ...defaultSection, id: "socials", name: "Réseaux Sociaux", items: [] },
   projects: { ...defaultSection, id: "projects", name: "Projets", items: [] },
   publications: { ...defaultSection, id: "publications", name: "Publications", items: [] },
   references: { ...defaultSection, id: "references", name: "Références", items: [] },
-  skills: { ...defaultSection, id: "skills", name: "Compétences", items: [] },
+  softSkills: { ...defaultSection, id: "softSkills", name: "Savoirs-Être", items: [] },
+  hardSkills: { ...defaultSection, id: "hardSkills", name: "Savoirs-Faire", items: [] },
+
   custom: {},
 };
 
@@ -127,9 +138,9 @@ export * from "./education";
 export * from "./experience";
 export * from "./interest";
 export * from "./language";
-export * from "./profile";
 export * from "./project";
 export * from "./publication";
 export * from "./reference";
 export * from "./skill";
+export * from "./social";
 export * from "./volunteer";

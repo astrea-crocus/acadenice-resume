@@ -4,10 +4,10 @@ import {
   defaultEducation,
   defaultExperience,
   defaultLanguage,
-  defaultProfile,
   defaultProject,
   defaultResumeData,
   defaultSkill,
+  defaultSocial,
   resumeDataSchema,
 } from "@reactive-resume/schema";
 import type { Json } from "@reactive-resume/utils";
@@ -72,16 +72,16 @@ export class LinkedInParser implements Parser<JSZip, LinkedIn> {
       // profile.Websites is represented as an array-like structure f.e. [COMPANY:https://some.link,PORTFOLIO:...]
       const extractFirstWebsiteLink = (entry: string) =>
         (parseArrayLikeCSVEntry(entry)[0] ?? "").replace(/.*?:/, "");
-      result.basics.url.href = extractUrl(extractFirstWebsiteLink(profile.Websites)) ?? "";
+      result.basics.portfolio.href = extractUrl(extractFirstWebsiteLink(profile.Websites)) ?? "";
       result.sections.summary.content = profile.Summary;
       if (twitterHandle) {
         result.sections.profiles.items.push({
-          ...defaultProfile,
+          ...defaultSocial,
           id: createId(),
           icon: "twitter",
           network: "Twitter",
           username: twitterHandle,
-          url: { ...defaultProfile.url, href: `https://twitter.com/${twitterHandle}` },
+          url: { ...defaultSocial.url, href: `https://twitter.com/${twitterHandle}` },
         });
       }
     }
