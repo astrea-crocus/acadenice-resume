@@ -22,11 +22,13 @@ import { Fragment } from "react";
 
 import { BrandIcon } from "../components/brand-icon";
 import { Picture } from "../components/picture";
+import { calculateAge } from "../libs/date";
 import { useArtboardStore } from "../store/artboard";
 import type { TemplateProps } from "../types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
+  const age = calculateAge(basics.birthday);
 
   return (
     <div className="p-custom relative grid grid-cols-3 space-x-4 pb-0">
@@ -48,6 +50,12 @@ const Header = () => {
                 </div>
                 <div className="bg-text size-1 rounded-full last:hidden" />
               </>
+            )}
+            {basics.birthday && (
+              <div className="flex items-center gap-x-1.5">
+                <i aria-hidden className="ph ph-bold ph-cake text-primary" />
+                <div>{age} ans</div>
+              </div>
             )}
 
             {basics.phone && (

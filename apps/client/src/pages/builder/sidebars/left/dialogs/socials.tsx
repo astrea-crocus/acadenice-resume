@@ -1,5 +1,6 @@
+/* eslint-disable lingui/no-unlocalized-strings */
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t, Trans } from "@lingui/macro";
+import { t } from "@lingui/macro";
 import { defaultSocial, socialSchema } from "@reactive-resume/schema";
 import {
   Avatar,
@@ -104,7 +105,7 @@ export const SocialsDialog = () => {
                   <Input
                     {...field}
                     id="profile-icon"
-                    placeholder="github"
+                    placeholder="Veuillez à mettre le nom de la plateform en minuscule. Ex. : github"
                     aria-label={t`Nom de l'icône de la plateforme`}
                     onChange={field.onChange}
                   />
@@ -112,17 +113,16 @@ export const SocialsDialog = () => {
               </FormControl>
               <FormMessage />
               <FormDescription className="ml-10">
-                <Trans>
-                  Powered by{" "}
-                  <a
-                    href="https://simpleicons.org/"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="font-medium"
-                  >
-                    Simple Icons
-                  </a>
-                </Trans>
+                Réalisé par{" "}
+                <a
+                  href="https://simpleicons.org/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="font-bold text-acadeorange-600"
+                >
+                  Simple Icons
+                </a>
+                .
               </FormDescription>
             </FormItem>
           )}

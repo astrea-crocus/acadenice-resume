@@ -1,6 +1,7 @@
 import { t } from "@lingui/macro";
 import { basicsSchema } from "@reactive-resume/schema";
 import { Input, Label } from "@reactive-resume/ui";
+import dayjs from "dayjs";
 
 import { useResumeStore } from "@/client/stores/resume";
 
@@ -122,6 +123,27 @@ export const BasicsSection = () => {
             aria-label={t`Ville`}
             onChange={(event) => {
               setValue("basics.location", event.target.value);
+            }}
+          />
+        </div>
+
+        <div className="space-y-1.5">
+          <Label htmlFor="basics.birthday">{t`Date de naissance`}</Label>
+          <Input
+            id="basics.birthday"
+            type="date"
+            min={dayjs().subtract(100, "year").format("YYYY-MM-DD")}
+            max={dayjs().subtract(13, "year").format("YYYY-MM-DD")}
+            value={basics.birthday ? dayjs(basics.birthday).format("YYYY-MM-DD") : ""}
+            aria-label={t`Date de naissance`}
+            onChange={(event) => {
+              const inputValue = event.target.value;
+              const parsed = inputValue ? dayjs(inputValue, "YYYY-MM-DD", true) : null;
+              if (parsed?.isValid()) {
+                setValue("basics.birthday", parsed.toDate());
+              } else {
+                setValue("basics.birthday", undefined);
+              }
             }}
           />
         </div>

@@ -127,7 +127,7 @@ msgstr "Compte"
 #~ msgid "Account settings form"
 #~ msgstr "Account settings form"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:66
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:73
 msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 
@@ -492,8 +492,8 @@ msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation d
 msgstr "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:54
-msgid "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
-msgstr "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
+#~ msgid "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
+#~ msgstr "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
@@ -623,7 +623,7 @@ msgstr "Confiant"
 msgid "Confirmer la suppression"
 msgstr "Confirmer la suppression"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:51
 msgid "Contenu éditable de la phrase d'accroche"
 msgstr "Contenu éditable de la phrase d'accroche"
 
@@ -751,6 +751,11 @@ msgstr "Date à laquelle la récompense a été obtenue"
 #: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:83
 msgid "Date d'obtention de la certification"
 msgstr "Date d'obtention de la certification"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:130
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:135
+msgid "Date de naissance"
+msgstr "Date de naissance"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:73
 msgid "Date de publication"
@@ -971,7 +976,7 @@ msgstr "Dupliquer un élément existant"
 msgid "Edit"
 msgstr "Editer"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:62
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:69
 msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr "Éditeur de texte pour la phrase d'accroche"
 
@@ -1064,16 +1069,16 @@ msgid "Êtes-vous sûr de vouloir supprimer cet élément ?"
 msgstr "Êtes-vous sûr de vouloir supprimer cet élément ?"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:57
-msgid "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
-msgstr "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
+#~ msgid "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
+#~ msgstr "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "Même si vous n'êtes pas en mesure de contribuer financièrement, vous pouvez toujours faire la différence en attribuant une étoile au référentiel GitHub, en passant le message à vos amis ou en envoyant un message rapide pour me faire savoir comment Reactive Resume vous a aidé. Vos commentaires et votre soutien sont toujours les bienvenus et très appréciés !"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:56
-msgid "Exemple :"
-msgstr "Exemple :"
+#~ msgid "Exemple :"
+#~ msgstr "Exemple :"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:98
 msgid "Expérience professionnelle"
@@ -1336,7 +1341,7 @@ msgstr "Hébergez votre CV publiquement"
 msgid "ici"
 msgstr "ici"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:98
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:99
 msgid "Icon"
 msgstr "Icône"
 
@@ -1344,7 +1349,7 @@ msgstr "Icône"
 msgid "Icône"
 msgstr "Icône"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:32
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:33
 msgid "Icône de la section \"Phrase d'Accroche\""
 msgstr "Icône de la section \"Phrase d'Accroche\""
 
@@ -1776,7 +1781,7 @@ msgstr "Nom"
 msgid "Navigation des sections"
 msgstr "Navigation des sections"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:40
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:41
 msgid "Network"
 msgstr "Réseau"
 
@@ -1814,7 +1819,7 @@ msgstr "Nom"
 msgid "Nom complet"
 msgstr "Nom complet"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:66
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:67
 msgid "Nom d'utilisateur sur la plateforme"
 msgstr "Nom d'utilisateur sur la plateforme"
 
@@ -1826,7 +1831,7 @@ msgstr "Nom de l'entreprise ou organisation"
 msgid "Nom de l'établissement d'enseignement"
 msgstr "Nom de l'établissement d'enseignement"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:108
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:109
 msgid "Nom de l'icône de la plateforme"
 msgstr "Nom de l'icône de la plateforme"
 
@@ -1870,7 +1875,7 @@ msgstr "Nom de la section personnalisée"
 msgid "Nom du projet"
 msgstr "Nom du projet"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:47
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:48
 msgid "Nom du réseau social ou plateforme"
 msgstr "Nom du réseau social ou plateforme"
 
@@ -1945,7 +1950,7 @@ msgstr "Intégration OpenAI/Ollama"
 msgid "Options"
 msgstr "Options"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:43
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr "Options pour la section \"Phrase d'Accroche\""
 
@@ -2120,8 +2125,8 @@ msgid "Powered by"
 msgstr "Propulsé par"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:115
-msgid "Powered by <0>Simple Icons</0>"
-msgstr "Réalisé par <0>Simple Icons</0>"
+#~ msgid "Powered by <0>Simple Icons</0>"
+#~ msgstr "Réalisé par <0>Simple Icons</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
@@ -2347,8 +2352,8 @@ msgid "Resumes Generated"
 msgstr "CV générés"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:53
-msgid "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
-msgstr "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
+#~ msgid "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
+#~ msgstr "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
 
 #: apps/client/src/pages/auth/layout.tsx:30
 msgid "Retour à l'accuei"
@@ -2450,7 +2455,7 @@ msgstr "Rechercher une variante de police"
 msgid "Search for a language"
 msgstr "Rechercher une langue"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:25
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:26
 msgid "Section \"Phrase d'Accroche\" du CV"
 msgstr "Section \"Phrase d'Accroche\" du CV"
 
@@ -2952,7 +2957,7 @@ msgstr "URL"
 msgid "URL du portfolio"
 msgstr "URL du portfolio"
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:85
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:86
 msgid "URL du profil"
 msgstr "URL du profil"
 
@@ -2990,7 +2995,7 @@ msgstr "L'utilisateur n'a pas d'enregistrement de « secrets » associé. Veui
 #~ msgstr "User options"
 
 #: apps/client/src/pages/auth/register/page.tsx:120
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:60
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:61
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "Nom d’utilisateur"
@@ -3072,7 +3077,7 @@ msgstr "Nous vérifions votre adresse électronique uniquement pour nous assurer
 #: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:120
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:86
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:71
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:79
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:80
 #: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:104
 msgid "Website"
 msgstr "Site Web"

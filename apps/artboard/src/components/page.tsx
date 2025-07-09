@@ -42,7 +42,7 @@ export const Page = ({ mode = "preview", pageNumber, children }: Props) => {
             top: `${pageSizeMap[page.format].height * MM_TO_PX}px`,
           }}
         >
-          <span className="x-auto absolute bottom-[-12.5px] left-[-110px] inline-flex items-center rounded-md bg-acadeorange-50 px-2 py-1 text-xs font-medium text-acadeorange-600 ring-1 ring-inset ring-acadeorange-500/10">
+          <span className="absolute bottom-[-1.125rem] left-[-12.5rem] inline-flex min-w-48 items-center justify-center rounded-md bg-acadeorange-50 px-2 py-1 text-lg text-acadeorange-600 ring-1 ring-inset ring-acadeorange-500/10">
             Fin du format {page.format === "a4" ? "A4" : "Lettre"}
           </span>
         </div>

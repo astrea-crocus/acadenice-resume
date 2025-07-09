@@ -3,6 +3,17 @@ import { z } from "zod";
 import { defaultUrl, urlSchema } from "../shared";
 import { customFieldSchema } from "./custom";
 
+function getDefaultBirthday() {
+  const date = new Date();
+  date.setFullYear(date.getFullYear() - 14);
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+const defaultBirthday = getDefaultBirthday();
+
 // Schema
 export const basicsSchema = z.object({
   name: z.string(),
@@ -23,6 +34,7 @@ export const basicsSchema = z.object({
       grayscale: z.boolean().default(false),
     }),
   }),
+  birthday: z.string().optional(),
 });
 
 // Type
@@ -48,6 +60,7 @@ export const defaultBasics: Basics = {
       grayscale: false,
     },
   },
+  birthday: defaultBirthday,
 };
 
 export * from "./custom";

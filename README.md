@@ -18,6 +18,8 @@ Pour la création d'un nouveau template, prenons "Spider Man" comme nom de nouve
   import get from "lodash.get";
   import { Fragment } from "react";
 
+import { calculateAge } from "@/artboard/libs/date";
+
   import { BrandIcon } from "../../components/brand-icon";
   import { Picture } from "../../components/picture";
   import { useArtboardStore } from "../../store/artboard";

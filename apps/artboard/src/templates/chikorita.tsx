@@ -22,11 +22,13 @@ import { Fragment } from "react";
 
 import { BrandIcon } from "../components/brand-icon";
 import { Picture } from "../components/picture";
+import { calculateAge } from "../libs/date";
 import { useArtboardStore } from "../store/artboard";
 import type { TemplateProps } from "../types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
+  const age = calculateAge(basics.birthday);
 
   return (
     <div className="flex items-center space-x-4">
@@ -43,6 +45,12 @@ const Header = () => {
             <div className="flex items-center gap-x-1.5">
               <i className="ph ph-bold ph-map-pin text-primary" />
               <div>{basics.location}</div>
+            </div>
+          )}
+          {basics.birthday && (
+            <div className="flex items-center gap-x-1.5">
+              <i aria-hidden className="ph ph-bold ph-cake text-primary" />
+              <div>{age} ans</div>
             </div>
           )}
           {basics.phone && (

@@ -23,6 +23,7 @@ export const sampleResume: ResumeData = {
         grayscale: false,
       },
     },
+    birthday: "01-01-2000",
   },
   sections: {
     summary: {

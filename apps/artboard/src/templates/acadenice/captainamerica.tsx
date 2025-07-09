@@ -20,6 +20,8 @@ import { cn, hexToRgb, isEmptyString, isUrl, sanitize } from "@reactive-resume/u
 import get from "lodash.get";
 import { Fragment } from "react";
 
+import { calculateAge } from "@/artboard/libs/date";
+
 import { BrandIcon } from "../../components/brand-icon";
 import { Picture } from "../../components/picture";
 import { useArtboardStore } from "../../store/artboard";
@@ -29,6 +31,7 @@ import { ContactATS, SealTeal } from "./component/seal";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
+  const age = calculateAge(basics.birthday);
 
   return (
     <div className="p-custom space-y-4 bg-primary text-background">
@@ -44,6 +47,12 @@ const Header = () => {
           <div className="flex items-center gap-x-1.5">
             <i aria-hidden className="ph ph-bold ph-map-pin" />
             <div>{basics.location}</div>
+          </div>
+        )}
+        {basics.birthday && (
+          <div className="flex items-center gap-x-1.5">
+            <i aria-hidden className="ph ph-bold ph-cake" />
+            <div>{age} ans</div>
           </div>
         )}
         {basics.phone && (

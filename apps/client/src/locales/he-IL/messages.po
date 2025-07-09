@@ -127,7 +127,7 @@ msgstr "חשבון"
 #~ msgid "Account settings form"
 #~ msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:66
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:73
 msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr ""
 
@@ -492,8 +492,8 @@ msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation d
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:54
-msgid "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
-msgstr ""
+#~ msgid "Cette phrase doit être concise, précise et donner immédiatement une idée claire de votre projet ou de votre motivation."
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
@@ -623,7 +623,7 @@ msgstr "מלא בטחון עצמי"
 msgid "Confirmer la suppression"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:50
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:51
 msgid "Contenu éditable de la phrase d'accroche"
 msgstr ""
 
@@ -750,6 +750,11 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:83
 msgid "Date d'obtention de la certification"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:130
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:135
+msgid "Date de naissance"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:73
@@ -971,7 +976,7 @@ msgstr ""
 msgid "Edit"
 msgstr "עריכה"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:62
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:69
 msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr ""
 
@@ -1064,16 +1069,16 @@ msgid "Êtes-vous sûr de vouloir supprimer cet élément ?"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:57
-msgid "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
-msgstr ""
+#~ msgid "Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre."
+#~ msgstr ""
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
 msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "אפילו אם אין לך יכולת לתרום כלכלית, עדיין אפשר לחולל שינוי על ידי הענקת כוכב למאגר ב־GitHub, הפצת המיזם בקרב חבריך או שליחת הודעה אליי כדי לספר לי איך Reactive Resume סייע לך. המשוב והתמיכה שלך תמיד מחממים את הלב ומאוד מוערכים!"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:56
-msgid "Exemple :"
-msgstr ""
+#~ msgid "Exemple :"
+#~ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:98
 msgid "Expérience professionnelle"
@@ -1336,7 +1341,7 @@ msgstr "אחסון ציבורי של קורות החיים שלך"
 msgid "ici"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:98
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:99
 msgid "Icon"
 msgstr "סמל"
 
@@ -1344,7 +1349,7 @@ msgstr "סמל"
 msgid "Icône"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:32
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:33
 msgid "Icône de la section \"Phrase d'Accroche\""
 msgstr ""
 
@@ -1776,7 +1781,7 @@ msgstr "שם"
 msgid "Navigation des sections"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:40
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:41
 msgid "Network"
 msgstr "רשת"
 
@@ -1814,7 +1819,7 @@ msgstr ""
 msgid "Nom complet"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:66
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:67
 msgid "Nom d'utilisateur sur la plateforme"
 msgstr ""
 
@@ -1826,7 +1831,7 @@ msgstr ""
 msgid "Nom de l'établissement d'enseignement"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:108
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:109
 msgid "Nom de l'icône de la plateforme"
 msgstr ""
 
@@ -1870,7 +1875,7 @@ msgstr ""
 msgid "Nom du projet"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:47
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:48
 msgid "Nom du réseau social ou plateforme"
 msgstr ""
 
@@ -1945,7 +1950,7 @@ msgstr ""
 msgid "Options"
 msgstr "אפשרויות"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:42
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:43
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
 
@@ -2120,8 +2125,8 @@ msgid "Powered by"
 msgstr "מופעל על גבי"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:115
-msgid "Powered by <0>Simple Icons</0>"
-msgstr "נעזר ב־<0>Simple Icons</0>"
+#~ msgid "Powered by <0>Simple Icons</0>"
+#~ msgstr "נעזר ב־<0>Simple Icons</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
@@ -2347,8 +2352,8 @@ msgid "Resumes Generated"
 msgstr "נוצרו מסמכי קורות חיים"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:53
-msgid "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
-msgstr ""
+#~ msgid "Résumez en quelques mots votre objectif professionnel ou ce que vous recherchez."
+#~ msgstr ""
 
 #: apps/client/src/pages/auth/layout.tsx:30
 msgid "Retour à l'accuei"
@@ -2450,7 +2455,7 @@ msgstr "חיפוש הגוון גופן"
 msgid "Search for a language"
 msgstr "חיפוש שפה"
 
-#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:25
+#: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:26
 msgid "Section \"Phrase d'Accroche\" du CV"
 msgstr ""
 
@@ -2952,7 +2957,7 @@ msgstr "כתובת"
 msgid "URL du portfolio"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:85
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:86
 msgid "URL du profil"
 msgstr ""
 
@@ -2990,7 +2995,7 @@ msgstr "למשתמש אין רשומת ‚סודות’ (secrets) משויכת �
 #~ msgstr ""
 
 #: apps/client/src/pages/auth/register/page.tsx:120
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:60
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:61
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:188
 msgid "Username"
 msgstr "שם משתמש"
@@ -3072,7 +3077,7 @@ msgstr "אנו מאמתים את כתובת הדוא״ל שלך רק כדי לו
 #: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:120
 #: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:86
 #: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:71
-#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:79
+#: apps/client/src/pages/builder/sidebars/left/dialogs/socials.tsx:80
 #: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:104
 msgid "Website"
 msgstr "אתר אינטרנט"

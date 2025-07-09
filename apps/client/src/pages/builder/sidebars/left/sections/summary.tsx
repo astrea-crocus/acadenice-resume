@@ -50,18 +50,19 @@ export const SummarySection = () => {
         role="group"
         aria-label={t`Contenu éditable de la phrase d'accroche`}
       >
-        <p className="mb-2 select-none text-sm leading-relaxed text-foreground">
+        <p className="mb-2 text-sm leading-relaxed text-foreground">
           Résumez <strong>en quelques mots</strong> votre objectif professionnel ou ce que vous
           recherchez. Cette phrase doit être concise, précise et donner immédiatement une idée
           claire de votre projet ou de votre motivation.
-          <br />
-          <u>Exemple :</u>
-          <br />
-          <span className="select-none italic text-secondary-foreground">
+        </p>
+
+        <div className="mt-2 rounded-md bg-gray-50 p-3 text-sm text-gray-500 dark:bg-zinc-800/50 dark:text-gray-400">
+          <span className="mb-1 block font-medium text-gray-600 dark:text-gray-300">Exemple :</span>
+          <span className="pointer-events-none select-none italic">
             Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en
             entreprise, 1 jour en cours) dès septembre.
           </span>
-        </p>
+        </div>
 
         <RichInput
           content={section.content}
