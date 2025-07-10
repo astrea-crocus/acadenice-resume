@@ -2,7 +2,6 @@ import type {
   Award,
   Certification,
   CustomSection,
-  CustomSectionGroup,
   HardSkill,
   Interest,
   Language,
@@ -10,20 +9,20 @@ import type {
   Publication,
   Reference,
   SectionKey,
-  SectionWithItem,
   Social,
   SoftSkill,
-  URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
-import get from "lodash.get";
 import { Fragment } from "react";
 
-import { BrandIcon } from "@/artboard/components/brand-icon";
-import { Picture } from "@/artboard/components/picture";
+import { CustomFieldItem, Headline, InfoItem, Name } from "@/artboard/components/acadenice";
+import { Section, SectionContent, SectionTitle } from "@/artboard/components/acadenice";
 import { Group } from "@/artboard/components/acadenice/group";
 import { ContactATS, SealWhite } from "@/artboard/components/acadenice/seal";
+import { Link, LinkedEntity } from "@/artboard/components/acadenice/shared";
+import { BrandIcon } from "@/artboard/components/brand-icon";
+import { Picture } from "@/artboard/components/picture";
 import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 import type { TemplateProps } from "@/artboard/types/template";
@@ -38,51 +37,38 @@ const Header = () => {
 
       <div className="space-y-2">
         <div>
-          <div className="text-2xl font-bold">{basics.name}</div>
-          <div className="text-base">{basics.headline}</div>
+          <Name>{basics.name}</Name>
+          <Headline>{basics.headline}</Headline>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
           {basics.location && (
-            <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-map-pin text-primary" />
+            <InfoItem icon="map-pin">
               <div>{basics.location}</div>
-            </div>
+            </InfoItem>
           )}
-          {basics.birthday && (
-            <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-cake text-primary" />
+          {age && (
+            <InfoItem icon="cake">
               <div>{age} ans</div>
-            </div>
+            </InfoItem>
           )}
           {basics.phone && (
-            <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-phone text-primary" />
+            <InfoItem icon="phone">
               <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                 {basics.phone}
               </a>
-            </div>
+            </InfoItem>
           )}
           {basics.email && (
-            <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-at text-primary" />
+            <InfoItem icon="at">
               <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                 {basics.email}
               </a>
-            </div>
+            </InfoItem>
           )}
           <Link url={basics.portfolio} />
           {basics.customFields.map((item) => (
-            <div key={item.id} className="flex items-center gap-x-1.5">
-              <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
-              {isUrl(item.value) ? (
-                <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
-                  {item.name || item.value}
-                </a>
-              ) : (
-                <span>{[item.name, item.value].filter(Boolean).join(": ")}</span>
-              )}
-            </div>
+            <CustomFieldItem key={item.id} icon={item.icon} name={item.name} value={item.value} />
           ))}
         </div>
       </div>
@@ -97,147 +83,11 @@ const Summary = () => {
 
   return (
     <section id={section.id}>
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
+      <SectionTitle>{section.name}</SectionTitle>
 
-      <div
-        dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
-        style={{ columns: section.columns }}
-        className="wysiwyg"
-      />
-    </section>
-  );
-};
-
-type RatingProps = { level: number };
-
-const Rating = ({ level }: RatingProps) => (
-  <div className="flex items-center gap-x-1.5">
-    {Array.from({ length: 5 }).map((_, index) => (
-      <div
-        key={index}
-        className={cn(
-          "size-2 rounded-full border border-primary group-[.sidebar]:border-background",
-          level > index && "bg-primary group-[.sidebar]:bg-background",
-        )}
-      />
-    ))}
-  </div>
-);
-
-type LinkProps = {
-  url: URL;
-  icon?: React.ReactNode;
-  iconOnRight?: boolean;
-  label?: string;
-  className?: string;
-};
-
-const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
-  if (!isUrl(url.href)) return null;
-
-  return (
-    <div className="flex items-center gap-x-1.5">
-      {!iconOnRight &&
-        (icon ?? (
-          <i aria-hidden className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />
-        ))}
-      <a
-        href={url.href}
-        target="_blank"
-        rel="noreferrer noopener nofollow"
-        className={cn("inline-block", className)}
-      >
-        {label ?? (url.label || url.href)}
-      </a>
-      {iconOnRight &&
-        (icon ?? (
-          <i aria-hidden className="ph ph-bold ph-link text-primary group-[.sidebar]:text-white" />
-        ))}
-    </div>
-  );
-};
-
-type LinkedEntityProps = {
-  name: string;
-  url: URL;
-  separateLinks: boolean;
-  className?: string;
-};
-
-const LinkedEntity = ({ name, url, separateLinks, className }: LinkedEntityProps) => {
-  return !separateLinks && isUrl(url.href) ? (
-    <Link
-      url={url}
-      label={name}
-      icon={<i aria-hidden className="ph ph-bold ph-globe text-primary" />}
-      iconOnRight={true}
-      className={className}
-    />
-  ) : (
-    <div className={className}>{name}</div>
-  );
-};
-
-type SectionProps<T> = {
-  section: SectionWithItem<T> | CustomSectionGroup;
-  children?: (item: T) => React.ReactNode;
-  className?: string;
-  urlKey?: keyof T;
-  levelKey?: keyof T;
-  summaryKey?: keyof T;
-  keywordsKey?: keyof T;
-};
-
-const Section = <T,>({
-  section,
-  children,
-  className,
-  urlKey,
-  levelKey,
-  summaryKey,
-  keywordsKey,
-}: SectionProps<T>) => {
-  if (!section.visible || section.items.length === 0) return null;
-
-  return (
-    <section id={section.id}>
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
-
-      <div
-        className="grid gap-x-6 gap-y-3"
-        style={{ gridTemplateColumns: `repeat(${section.columns}, 1fr)` }}
-      >
-        {section.items
-          .filter((item) => item.visible)
-          .map((item) => {
-            const url = (urlKey && get(item, urlKey)) as URL | undefined;
-            const level = (levelKey && get(item, levelKey, 0)) as number | undefined;
-            const summary = (summaryKey && get(item, summaryKey, "")) as string | undefined;
-            const keywords = (keywordsKey && get(item, keywordsKey, [])) as string[] | undefined;
-
-            return (
-              <div key={item.id} className={cn("space-y-2", className)}>
-                <div>
-                  {children?.(item as T)}
-                  {url !== undefined && section.separateLinks && <Link url={url} />}
-                </div>
-
-                {summary !== undefined && !isEmptyString(summary) && (
-                  <div
-                    dangerouslySetInnerHTML={{ __html: sanitize(summary) }}
-                    className="wysiwyg group-[.sidebar]:prose-invert"
-                  />
-                )}
-
-                {level !== undefined && level > 0 && <Rating level={level} />}
-
-                {keywords !== undefined && keywords.length > 0 && (
-                  <p className="text-sm">{keywords.join(", ")}</p>
-                )}
-              </div>
-            );
-          })}
-      </div>
+      <SectionContent columns={section.columns}>
+        <div dangerouslySetInnerHTML={{ __html: sanitize(section.content) }} className="wysiwyg" />
+      </SectionContent>
     </section>
   );
 };
@@ -596,7 +446,7 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-export const Example = ({ columns, isFirstPage = false }: TemplateProps) => {
+export const ExampleA = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
   return (

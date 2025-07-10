@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Contact } from "../../../components/contact"; // Import du composant de contact et réexport plus bas
+import { Contact } from "./contact"; // Import du composant de contact et réexport plus bas
 
 // Type pour les props optionnelles du conteneur du seal (maxHeight en rem)
 type SealProps = {
@@ -53,4 +53,4 @@ export const SealTeal = (props: SealProps & { id?: string }) => (
 );
 
 // Réexport de ContactATS pour le rendre accessible depuis ce module
-export { ContactATS } from "../../../components/contact";
+export { ContactATS } from "./contact";

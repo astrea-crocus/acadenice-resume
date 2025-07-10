@@ -22,7 +22,7 @@ import { Fragment } from "react";
 
 import { BrandIcon } from "@/artboard/components/brand-icon";
 import { Picture } from "@/artboard/components/picture";
-import { ContactATS, SealWhite } from "@/artboard/components/seal";
+import { ContactATS, SealWhite } from "@/artboard/components/acadenice/seal";
 import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 import type { TemplateProps } from "@/artboard/types/template";

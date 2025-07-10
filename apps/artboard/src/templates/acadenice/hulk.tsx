@@ -21,9 +21,9 @@ import get from "lodash.get";
 import { Fragment } from "react";
 
 import { BrandIcon } from "@/artboard/components/brand-icon";
-import { Group } from "@/artboard/components/group";
 import { Picture } from "@/artboard/components/picture";
-import { ContactATS, SealTeal } from "@/artboard/components/seal";
+import { Group } from "@/artboard/components/acadenice/group";
+import { ContactATS, SealTeal } from "@/artboard/components/acadenice/seal";
 import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 import type { TemplateProps } from "@/artboard/types/template";

@@ -44,12 +44,22 @@ export const generateRandomName = (options?: Omit<UniqueNamesConfig, "dictionari
   });
 };
 
-export const generateResumeName = (fullName: string): string => {
+/**
+ * Génère un nom de CV sous la forme :
+ * "CV <string> - <date et heure en Europe/Paris>"
+ *
+ * Exemple :
+ * generateResumeName("John Doe") → "CV John Doe - 10/07/2025 15:42"
+ *
+ * @param string - Texte à inclure dans le nom (par ex. nom du candidat)
+ * @returns Chaîne formattée prête à être utilisée comme nom de fichier ou titre
+ */
+export const generateResumeName = (string: string): string => {
   const now = new Date();
   const parisDate = toZonedTime(now, "Europe/Paris");
   const formattedDate = format(parisDate, "dd/MM/yyyy HH:mm", { locale: fr });
 
-  return `CV ${fullName} - ${formattedDate}`;
+  return `CV ${string} - ${formattedDate}`;
 };
 
 export const processUsername = (string?: string | null) => {

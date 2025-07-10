@@ -10,22 +10,24 @@ type SectionTitleProps = {
   children: React.ReactNode;
 };
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ className, children }) => (
-  <h4 className={cn("mb-2 border-b pb-0.5 text-sm font-bold", className)}>
-    {children}
-  </h4>
+export const SectionTitle: React.FC<SectionTitleProps> = ({ className, children }) => (
+  <h4 className={cn("mb-2 border-b pb-0.5 text-sm font-bold", className)}>{children}</h4>
 );
 
+type SectionContentProps = {
+  className?: string;
+  columns?: number;
+  children: React.ReactNode;
+};
 
-
-
-
-
-
-
-
-
-
+export const SectionContent: React.FC<SectionContentProps> = ({ className, columns, children }) => (
+  <div
+    className={cn("grid gap-x-6 gap-y-3", className)}
+    style={{ gridTemplateColumns: columns ? `repeat(${columns}, 1fr)` : undefined }}
+  >
+    {children}
+  </div>
+);
 
 type SectionProps<T> = {
   section: SectionWithItem<T> | CustomSectionGroup;
@@ -50,15 +52,9 @@ export const Section = <T,>({
 
   return (
     <section id={section.id}>
-      {/* Faire un composant SectionTitle avec des className modifiables */}
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
-      
+      <SectionTitle>{section.name}</SectionTitle>
 
-      {/* Faire un composant SectionContent avec des className modifiables */}
-      <div
-        className="grid gap-x-6 gap-y-3"
-        style={{ gridTemplateColumns: `repeat(${section.columns}, 1fr)` }}
-      >
+      <SectionContent columns={section.columns}>
         {section.items
           .filter((item) => item.visible)
           .map((item) => {
@@ -71,10 +67,10 @@ export const Section = <T,>({
               <div key={item.id} className={cn("space-y-2", className)}>
                 <div>
                   {children?.(item as T)}
-                  {url !== undefined && section.separateLinks && <Link url={url} />}
+                  {url && section.separateLinks && <Link url={url} />}
                 </div>
 
-                {summary !== undefined && !isEmptyString(summary) && (
+                {summary && !isEmptyString(summary) && (
                   <div
                     dangerouslySetInnerHTML={{ __html: sanitize(summary) }}
                     className="wysiwyg group-[.sidebar]:prose-invert"
@@ -83,13 +79,13 @@ export const Section = <T,>({
 
                 {level !== undefined && level > 0 && <Rating level={level} />}
 
-                {keywords !== undefined && keywords.length > 0 && (
+                {keywords && keywords.length > 0 && (
                   <p className="text-sm">{keywords.join(", ")}</p>
                 )}
               </div>
             );
           })}
-      </div>
+      </SectionContent>
     </section>
   );
 };
