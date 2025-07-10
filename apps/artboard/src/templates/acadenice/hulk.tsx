@@ -20,14 +20,13 @@ import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
 
+import { BrandIcon } from "@/artboard/components/brand-icon";
+import { Group } from "@/artboard/components/group";
+import { Picture } from "@/artboard/components/picture";
+import { ContactATS, SealTeal } from "@/artboard/components/seal";
 import { calculateAge } from "@/artboard/libs/date";
-
-import { BrandIcon } from "../../components/brand-icon";
-import { Picture } from "../../components/picture";
-import { useArtboardStore } from "../../store/artboard";
-import type { TemplateProps } from "../../types/template";
-import { Group } from "./component/_group";
-import { ContactATS, SealTeal } from "./component/seal";
+import { useArtboardStore } from "@/artboard/store/artboard";
+import type { TemplateProps } from "@/artboard/types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
