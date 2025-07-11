@@ -11,8 +11,8 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
   - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
   - [🗑️ Supprimer un template](#-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
-  - [`example.tsx` & `example2.tsx`](#exampletsx--example2tsx)
-  - [Modifier le contact AcadéNice affiché sur le CV](#automatisation-du-build-et-gestion-des-traductions)
+  - [🔍 `example.tsx` & `example2.tsx`](#-exampletsx--example2tsx)
+  - [✏️ Modifier le contact AcadéNice affiché sur le CV](#-modifier-le-contact-acadénice-affiché-sur-le-cv)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
 - [❓ FAQ](#-faq)
 
@@ -76,7 +76,7 @@ default: {
 }
 ```
 
-### `example.tsx` & `example2.tsx`
+### 🔍 `example.tsx` & `example2.tsx`
 
 Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/example.tsx), [_example2.tsx_](apps/artboard/src/templates/example2.tsx)).  
 Ils servent de base pour créer facilement de nouveaux templates : il suffit de les copier et d’adapter leur contenu selon tes besoins.
@@ -124,7 +124,7 @@ Ils servent de base pour créer facilement de nouveaux templates : il suffit d
 
 ---
 
-### Modifier le contact AcadéNice affiché sur le CV
+### ✏️ Modifier le contact AcadéNice affiché sur le CV
 
 Le composant de contact se trouve dans :  
 `apps/artboard/src/components/acadenice/contact.tsx`
