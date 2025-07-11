@@ -1,12 +1,28 @@
-## Gérer les templates
+# 📝 Reactive Resume AcadéNice
 
-### Ajouter un nouveau template
+Bienvenue dans le projet **Reactive Resume AcadéNice** !  
+Ce guide t’explique comment gérer les templates de CV, personnaliser l’application et contribuer facilement.
 
-1. Créer un fichier de composant React, par ex. :
-   ```text
-   apps/artboard/src/templates/acadenice/spiderman.tsx
-   ```
-2. Exemple minimal :
+---
+
+## 🚀 Sommaire
+
+
+- [🎨 Gérer les templates](#-gérer-les-templates)
+  - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
+  - [🗑️ Supprimer un template](#️-supprimer-un-template)
+  - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
+- [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
+- [ℹ️ Nota Bene](#ℹ️-nota-bene)
+- [❓ FAQ](#-faq)
+
+---
+
+## 🎨 Gérer les templates
+
+### ➕ Ajouter un nouveau template
+
+1. **Créer un composant React** dans `apps/artboard/src/templates/acadenice/`, par exemple : `spiderman.tsx`
    ```tsx
    export const SpiderMan = ({ columns, isFirstPage = false }: TemplateProps) => {
      const [main, sidebar] = columns;
@@ -15,37 +31,36 @@
      };
    };
    ```
-3. L’importer dans [index.tsx](apps/artboard/src/templates/index.tsx) :
+2. **Importer le composant** dans `apps/artboard/src/templates/index.tsx` :
    ```tsx
    import { SpiderMan } from "./acadenice/spiderman";
    ```
-4. Ajouter un case dans le switch :
-
+3. **Ajouter un case dans le switch** :
    ```tsx
    case "Spider Man": {
-   return SpiderMan;
+     return SpiderMan;
    }
    ```
+   > ✅ Le texte du `case` doit correspondre à la version normalisée du nom.
 
-   ✅ Le texte du `case` doit correspondre à la version normalisée du nom.
+---
 
-### Supprimer un template
+### 🗑️ Supprimer un template
 
 - Supprimer l’import correspondant.
-- Supprimer le `case` associé.
+- Supprimer le `case` associé dans le switch.
 
-### Changer le template par défaut
+---
 
-Modifier la partie `default` :
+### ⭐ Changer le template par défaut
 
+Modifie la partie `default` du switch :
 ```tsx
 default: {
   return AntMan;
 }
 ```
-
-Par exemple, pour utiliser `SpiderMan` :
-
+Pour utiliser `SpiderMan` :
 ```tsx
 default: {
   return SpiderMan;
@@ -54,95 +69,107 @@ default: {
 
 ---
 
-## 📁 apps/client/
+> [!TIP]
+> Utilise les commandes suivantes avec `pnpm run <commande>` pour automatiser le build et la gestion des traductions :
+> 
+> - **Redémarrer Docker** :
+>   ```json
+>   "docker:restart": "docker compose down && docker compose build && docker compose up -d"
+>   ```
+> - **Extraire les chaînes à traduire** :
+>   ```json
+>   "lingui:extract": "lingui extract"
+>   ```
+> - **Compiler les traductions** :
+>   ```json
+>   "lingui:compile": "lingui compile"
+>   ```
+> - **Mettre à jour toutes les traductions** :
+>   ```json
+>   "lingui:update": "lingui extract && lingui compile"
+>   ```
 
-### public/[templates](apps/client/public/templates)
+---
 
-Ce dossier contient les fichiers jpg, json et pdf des prévisualisations des templates disponibles dans l'application.  
-**Important :** les noms de ces fichiers doivent être en minuscules, sans espaces, tirets, accents ni caractères spéciaux.
+## 📁 Explications de certains fichiers
+
+### `apps/client/`
+
+- **`public/templates`** : Fichiers jpg, json et pdf des prévisualisations.  
+  > ⚠️ Noms en minuscules, sans espaces, accents ou caractères spéciaux.
+
+- **`src/constants/colors.ts`** : Palette de couleurs utilisée dans le builder.
+
+### `apps/artboard/`
+
+- **`src/templates/index.tsx`** : Routeur des templates de CV.  
+  Appelle `getTemplate` avec le nom du template, normalise le nom, compare à la liste et retourne le composant React.
+
+- **`src/libs/date.ts`** :  
+  Fonction `calculateAge` pour calculer l’âge à partir d’une date de naissance.
+
+### `libs/utils/src/`
+
+- **`normalized.ts`** :  
+  Fonctions utilitaires pour nettoyer les noms (`normalizeToFileName`, `normalizeTemplateName`).
+
+- **`namespaces/template.ts`** :  
+  - `templatesList` : Liste fixe de noms de templates.
+  - `Template` : Type TypeScript autorisant uniquement ces noms.
 
 > [!TIP]
-> Dans [`libs/utils/src/namespaces/template.ts`](libs/utils/src/namespaces/template.ts), tu peux nommer un template comme tu veux. Ensuite, la fonction `normalizeToFileName` de [`libs/utils/src/normalized.ts`](libs/utils/src/normalized.ts) permet de faire correspondre un template avec ses fichiers de prévisualisation.
+> Les templates de **super-héros** (_Iron Man_, _Thor_) ont été adaptés pour l'**AcadéNice**.  
+> Les templates de **Pokémon** (_pikachu_, _ditto_) sont ceux de base de **Reactive Resume**.
 
-## 📁 apps/artboard/
+---
 
-### src/templates/[index.tsx](apps/artboard/src/templates/index.tsx)
+## ℹ️ Nota Bene
 
-Ce fichier joue le rôle de routeur des templates de CV.
+Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/acadenice/_example.tsx), [_example2.tsx_](apps/artboard/src/templates/acadenice/_example2.tsx)).  
+Ils servent de base pour créer facilement de nouveaux templates.
 
-Quand l’application veut afficher un CV, elle appelle `getTemplate` avec le nom du template (ex. `Iron Man`, `pikachu`).
+---
 
-**Fonctionnement :**
+## ❓ FAQ
 
-1. Normalise le nom du template (`normalizeTemplateName`).
-2. Compare ce nom à une liste prédéfinie.
-3. Retourne le composant React correspondant (ex. `IronMan`, `Pikachu`).
+### Comment ajouter un nouveau template de CV ?
+Voir la section [Ajouter un nouveau template](#ajouter-un-nouveau-template).
 
-**Résultat** : le design choisi du CV est affiché dans l’éditeur ou à l’export.
+### Pourquoi mon template n’apparaît pas dans l’application ?
+- Vérifie l’import et le `case` dans `index.tsx`.
+- Assure-toi que le nom est bien normalisé.
+- Redémarre l’environnement Docker ou le serveur local.
 
-### src/libs/[date.ts](apps/artboard/src/libs/date.ts)
+### Comment changer le template par défaut ?
+Modifie le bloc `default` dans le switch du fichier `index.tsx`.
 
-#### `calculateAge`
+### Où placer les fichiers de prévisualisation (jpg, pdf, json) ?
+Dans `apps/client/public/templates`.  
+Respecte la règle de nommage : tout en minuscules, sans espaces, accents ou caractères spéciaux.
 
-1. Prend une date de naissance sous forme de chaîne (ex. "2000-01-01").
-2. Vérifie si la date est valide (grâce à dayjs).
-3. Calcule la différence avec la date actuelle en années.
+### Comment ajouter une nouvelle couleur à la palette ?
+Ajoute la couleur dans `apps/client/src/constants/colors.ts`.
 
-<ins>**Exemple :**</ins>
+### Que faire si une commande Docker ou pnpm ne fonctionne pas ?
+- Vérifie que Docker et pnpm sont bien installés.
+- Consulte les logs pour plus d’informations.
+- Redémarre l’environnement avec `pnpm run docker:restart`.
 
-```text
-"2000-01-01" → 25
-"date-invalide" → null
-undefined → null
+### Comment mettre à jour les traductions ?
+Utilise la commande :  
+```bash
+pnpm run lingui:update
 ```
 
-**Utilité :**
-Obtenir rapidement l’âge d’une personne à partir d’une date au format ISO ou "YYYY-MM-DD".
+### Où trouver des exemples de templates ?
+Dans `apps/artboard/src/templates/acadenice/_example.tsx` et `_example2.tsx`.
 
-## 🧰 libs/utils/src/
+### À quoi servent les fonctions de normalisation ?
+Elles uniformisent les noms de fichiers et de templates pour éviter les erreurs de correspondance.
 
-### [normalized.ts](libs/utils/src/normalized.ts)
+### Puis-je utiliser des noms personnalisés pour mes templates ?
+Oui, mais respecte la normalisation et ajoute le nom dans la liste des templates autorisés si nécessaire.
 
-Contient deux fonctions utilitaires pour « nettoyer » les noms.
+---
 
-#### `normalizeToFileName`
-
-1. Met tout en minuscules.
-2. Supprime les accents.
-3. Supprime espaces, tirets et underscores.
-
-<ins>**Exemple :**</ins>
-
-```text
-"Fichier Démo-Test" → "fichierdemotest"
-```
-
-#### `normalizeTemplateName`
-
-1. Supprime les accents.
-2. Garde majuscules, espaces et autres caractères.
-
-<ins>**Exemple :**</ins>
-
-```text
-"Template Démo" → "Template Demo"
-```
-
-### namespaces/[template.ts](libs/utils/src/namespaces/template.ts)
-
-Contient :
-
-- `templatesList` : liste fixe de noms de templates.
-- `Template` : type TypeScript autorisant uniquement ces noms.
-
-> [!TIP]
-> Les templates ayant des noms de **super-héros** (_Iron Man_, _Thor_) ont été modifié pour l'**AcadéNice**.  
-> Les templates ayant des noms de **Pokémon** (_pikachu_, _ditto_) sont les templates de base de **Reactive Resume**.
-
-## Autres
-
-Deux templates d’exemple sont en cours ([1](apps/artboard/src/templates/acadenice/_example.tsx), [2](apps/artboard/src/templates/acadenice/_example2.tsx)).
-Ils servent de base pour créer facilement de nouveaux templates en copiant/collant.
-
-[apps/client/src/constants/colors.ts](apps/client/src/constants/colors.ts)  
-Contient les couleurs utilisées par les templates.
+🎉 Bon développement sur Reactive Resume AcadéNice !
