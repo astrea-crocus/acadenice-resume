@@ -3,15 +3,15 @@ import styled from "styled-components";
 /**
  * Group
  *
- * Conteneur stylisé utilisant CSS Grid.
- * Il remplit toute la hauteur disponible (`height: 100%`),
- * organise ses enfants en grille avec :
- * - `align-content: space-between` : espace maximal entre les éléments sur l'axe vertical,
- * - `align-items: end` : aligne chaque élément au bas de sa cellule,
- * - `justify-items: center` : centre horizontalement chaque élément dans sa cellule.
+ * Composant conteneur basé sur CSS Grid pour organiser verticalement des éléments dans une colonne.
+ * - Remplit toute la hauteur disponible (`height: 100%`).
+ * - Sépare les éléments avec un maximum d'espace entre eux (`align-content: space-between`).
+ * - Aligne chaque élément en bas de sa cellule (`align-items: end`).
+ * - Centre horizontalement chaque élément (`justify-items: center`).
  *
- * Usage typique : permettre d’avoir deux blocs (ex. sections + cachet) répartis verticalement,
- * l’un en haut (par espace), l’autre fixé en bas (grâce à `align-items: end`).
+ * Utilisation recommandée :
+ * - Pour placer un bloc en haut (ex : sections principales) et un bloc en bas (ex : cachet ou signature) dans une sidebar ou une colonne.
+ * - Permet d'obtenir une disposition élégante et équilibrée, même si le contenu varie en hauteur.
  */
 
 export const Group = styled.div`

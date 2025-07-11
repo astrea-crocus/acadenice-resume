@@ -14,9 +14,9 @@ export const sampleResume: ResumeData = {
     customFields: [],
     picture: {
       url: "https://i.imgur.com/IZm1zJx.jpeg",
-      size: 120,
+      size: 140,
       aspectRatio: 1,
-      borderRadius: 0,
+      borderRadius: 4,
       effects: {
         hidden: false,
         border: false,
@@ -33,7 +33,7 @@ export const sampleResume: ResumeData = {
       visible: true,
       id: "summary",
       content:
-        "<p>Étudiant(e) en développement web à AcadéNice, passionné(e) par la création d’interfaces modernes et dynamiques. À la recherche d’une alternance pour approfondir mes compétences en React.js, Node.js et UX design. Curieux(se), motivé(e) et prêt(e) à relever de nouveaux défis au sein d’une équipe agile et innovante.</p>",
+        "<p>Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre.</p>",
     },
     awards: {
       name: "Récompenses",
@@ -137,7 +137,38 @@ export const sampleResume: ResumeData = {
       separateLinks: true,
       visible: true,
       id: "interests",
-      items: [],
+      items: [
+        {
+          id: "g4m1n9c0d3r1nt3r3st1",
+          visible: true,
+          name: "Jeux vidéo",
+          keywords: ["Esport", "Stratégie", "RPG", "Indie Games"],
+        },
+        {
+          id: "w3bcr34t0r1nt3r3st2",
+          visible: true,
+          name: "Création de sites web",
+          keywords: ["Design", "WordPress", "No-code", "SEO"],
+        },
+        {
+          id: "c0d1ngch4ll3ng31nt3r3st3",
+          visible: true,
+          name: "Coding Challenges",
+          keywords: ["LeetCode", "Codewars", "Hackathons"],
+        },
+        {
+          id: "t3chw4tch1nt3r3st4",
+          visible: true,
+          name: "Veille technologique",
+          keywords: ["Nouvelles technologies", "Startups", "IA", "Web3"],
+        },
+        {
+          id: "str34m1ng1nt3r3st5",
+          visible: true,
+          name: "Streaming & Création de contenu",
+          keywords: ["Twitch", "YouTube", "Montage vidéo"],
+        },
+      ],
     },
     languages: {
       name: "Langues",
@@ -145,7 +176,22 @@ export const sampleResume: ResumeData = {
       separateLinks: true,
       visible: true,
       id: "languages",
-      items: [],
+      items: [
+        {
+          id: "l1k2j3h4g5f6d7s8a9q0w1e2",
+          visible: true,
+          name: "Anglais",
+          description: "",
+          level: 4,
+        },
+        {
+          id: "l1k2j3h4g5f6d7s8a9q0w1e2",
+          visible: true,
+          name: "Italien",
+          description: "",
+          level: 3,
+        },
+      ],
     },
     socials: {
       name: "Réseaux Sociaux",
@@ -299,18 +345,25 @@ export const sampleResume: ResumeData = {
     custom: {},
   },
   metadata: {
-    template: "Captain America",
+    template: "Ant Man",
     layout: [
       [
-        ["summary", "experience", "education", "projects", "certifications", "publications"],
         [
           "socials",
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "certifications",
+        ],
+        [
           "hardSkills",
           "softSkills",
           "interests",
-          "languages",
           "awards",
-          "volunteer",
+          "publications",
+          "languages",
           "references",
         ],
       ],
@@ -339,7 +392,7 @@ export const sampleResume: ResumeData = {
         variants: ["regular"],
         size: 13,
       },
-      lineHeight: 1.6,
+      lineHeight: 1.75,
       hideIcons: false,
       underlineLinks: true,
     },

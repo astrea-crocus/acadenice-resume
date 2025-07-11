@@ -20,9 +20,7 @@ import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
 
-import { BrandIcon } from "@/artboard/components/brand-icon";
-import { Picture } from "@/artboard/components/picture";
-import { ContactATS, SealWhite } from "@/artboard/components/acadenice/seal";
+import { BrandIcon, ContactATS, Picture, SealWhite } from "@/artboard/components";
 import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 import type { TemplateProps } from "@/artboard/types/template";

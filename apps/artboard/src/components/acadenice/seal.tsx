@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-import { Contact } from "./contact"; // Import du composant de contact et réexport plus bas
+import { Contact } from "./contact"; // Composant affichant les infos de contact du candidat
 
-// Type pour les props optionnelles du conteneur du seal (maxHeight en rem)
+// Props optionnelles pour le conteneur du seal (logo + contact)
+// Permet de définir la hauteur maximale du logo en rem
 type SealProps = {
-  maxHeight?: number; // en rem
+  maxHeight?: number; // Hauteur max du logo en rem
 };
 
-// Styled component pour le conteneur du seal (logo + contact)
+// Composant styled pour organiser le logo et le contact dans une grille
 const SealContainer = styled.div<SealProps>`
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -25,17 +26,21 @@ const SealContainer = styled.div<SealProps>`
     pointer-events: none;
   }
 
-  order: 999; // permet de forcer l'ordre d'affichage si besoin dans un parent flex ou grid
+  order: 999; // Permet de forcer l'ordre d'affichage dans un parent flex/grid
 `;
 
-// Type des props complètes attendues par le composant Seal de base
+// Props complètes attendues par le composant Seal de base
+// - src : chemin du logo à afficher
+// - colorClass : classe Tailwind pour la couleur du texte
+// - id : identifiant HTML optionnel
 type SealBaseProps = {
-  src: string; // chemin du logo
-  colorClass: string; // classe Tailwind pour la couleur du texte
-  id?: string; // identifiant optionnel
+  src: string;
+  colorClass: string;
+  id?: string;
 } & SealProps;
 
-// Composant de base qui affiche un logo et le contact
+// Composant de base : affiche le logo et le contact dans le conteneur stylé
+// Personnalise le logo via src et la couleur via colorClass
 const Seal = ({ src, colorClass, maxHeight, id }: SealBaseProps) => (
   <SealContainer id={id} maxHeight={maxHeight} className={colorClass}>
     <img src={src} alt="" aria-hidden="true" role="presentation" />
@@ -43,7 +48,9 @@ const Seal = ({ src, colorClass, maxHeight, id }: SealBaseProps) => (
   </SealContainer>
 );
 
-// Variantes prêtes à l'emploi avec logo blanc ou teal
+// Variantes prêtes à l'emploi du seal :
+// - SealWhite : logo blanc, texte blanc
+// - SealTeal : logo teal, texte couleur primaire
 export const SealWhite = (props: SealProps & { id?: string }) => (
   <Seal src="logo/light.png" colorClass="text-white" {...props} />
 );
@@ -52,5 +59,6 @@ export const SealTeal = (props: SealProps & { id?: string }) => (
   <Seal src="logo/teal.png" colorClass="text-primary" {...props} />
 );
 
-// Réexport de ContactATS pour le rendre accessible depuis ce module
+// Réexport du composant ContactATS pour utilisation externe
+
 export { ContactATS } from "./contact";

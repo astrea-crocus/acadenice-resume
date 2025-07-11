@@ -27,14 +27,10 @@ import {
 import get from "lodash.get";
 import { Fragment } from "react";
 
+import { BrandIcon, ContactATS, Group, Picture, SealTeal } from "@/artboard/components";
 import { calculateAge } from "@/artboard/libs/date";
-
-import { BrandIcon } from "../../components/brand-icon";
-import { Picture } from "../../components/picture";
-import { useArtboardStore } from "../../store/artboard";
-import type { TemplateProps } from "../../types/template";
-import { Group } from "../../components/acadenice/group";
-import { ContactATS, SealTeal } from "./component/seal";
+import { useArtboardStore } from "@/artboard/store/artboard";
+import type { TemplateProps } from "@/artboard/types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);

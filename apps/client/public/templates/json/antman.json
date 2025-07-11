@@ -21,7 +21,7 @@
         "grayscale": false
       }
     },
-    "birthday" : "01-01-2000"
+    "birthday": "01-01-2000"
   },
   "sections": {
     "summary": {
@@ -335,12 +335,19 @@
     "template": "Ant Man",
     "layout": [
       [
-        ["socials", "summary", "experience", "education", "projects", "volunteer"],
+        [
+          "socials",
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "certifications"
+        ],
         [
           "hardSkills",
           "softSkills",
           "interests",
-          "certifications",
           "awards",
           "publications",
           "languages",

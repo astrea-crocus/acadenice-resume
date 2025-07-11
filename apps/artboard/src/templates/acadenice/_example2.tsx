@@ -1,3 +1,14 @@
+// ===============================
+// Exemple de template de CV React (version 2)
+// ===============================
+// Ce fichier sert de base pour créer un nouveau template personnalisé.
+// Pour personnaliser :
+//   - Duplique ce fichier et renomme-le.
+//   - Modifie les composants, la structure ou le style selon tes besoins.
+//   - Ajoute ou retire des sections dans mapSectionToComponent.
+//   - Personnalise la disposition dans le composant ExampleA.
+// ===============================
+
 import type {
   Award,
   Certification,
@@ -16,17 +27,28 @@ import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import { Fragment } from "react";
 
-import { CustomFieldItem, Headline, InfoItem, Name } from "@/artboard/components/acadenice";
-import { Section, SectionContent, SectionTitle } from "@/artboard/components/acadenice";
-import { Group } from "@/artboard/components/acadenice/group";
-import { ContactATS, SealWhite } from "@/artboard/components/acadenice/seal";
-import { Link, LinkedEntity } from "@/artboard/components/acadenice/shared";
-import { BrandIcon } from "@/artboard/components/brand-icon";
-import { Picture } from "@/artboard/components/picture";
+import {
+  BrandIcon,
+  ContactATS,
+  CustomFieldItem,
+  Group,
+  Headline,
+  InfoItem,
+  Link,
+  LinkedEntity,
+  Name,
+  Picture,
+  SealWhite,
+  Section,
+  SectionContent,
+  SectionTitle,
+} from "@/artboard/components";
 import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 import type { TemplateProps } from "@/artboard/types/template";
 
+// Header : Affiche les informations principales du candidat (nom, photo, contact, etc.).
+// Personnalise la mise en page ou les champs affichés ici.
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
   const age = calculateAge(basics.birthday);
@@ -76,6 +98,8 @@ const Header = () => {
   );
 };
 
+// Summary : Affiche le résumé du candidat.
+// Tu peux changer le style ou la logique d'affichage.
 const Summary = () => {
   const section = useArtboardStore((state) => state.resume.sections.summary);
 
@@ -92,6 +116,8 @@ const Summary = () => {
   );
 };
 
+// Experience : Affiche la liste des expériences professionnelles.
+// Modifie la présentation ou les champs affichés selon tes besoins.
 const Experience = () => {
   const section = useArtboardStore((state) => state.resume.sections.experience);
 
@@ -119,6 +145,8 @@ const Experience = () => {
   );
 };
 
+// Education : Affiche la liste des diplômes.
+// Personnalise la structure ou les informations affichées.
 const Education = () => {
   const section = useArtboardStore((state) => state.resume.sections.education);
 
@@ -147,6 +175,8 @@ const Education = () => {
   );
 };
 
+// Socials : Affiche les réseaux sociaux du candidat.
+// Personnalise l'affichage des icônes, des liens ou du style.
 const Socials = () => {
   const section = useArtboardStore((state) => state.resume.sections.socials);
 
@@ -166,6 +196,8 @@ const Socials = () => {
   );
 };
 
+// Awards : Affiche la liste des récompenses et distinctions.
+// Modifie la présentation ou les champs affichés selon tes besoins.
 const Awards = () => {
   const section = useArtboardStore((state) => state.resume.sections.awards);
 
@@ -191,6 +223,8 @@ const Awards = () => {
   );
 };
 
+// Certifications : Affiche la liste des certifications obtenues.
+// Personnalise la structure ou les informations affichées.
 const Certifications = () => {
   const section = useArtboardStore((state) => state.resume.sections.certifications);
 
@@ -209,6 +243,8 @@ const Certifications = () => {
   );
 };
 
+// HardSkills : Affiche les compétences techniques (hard skills).
+// Modifie l'affichage, les niveaux ou ajoute des détails selon tes besoins.
 const HardSkills = () => {
   const section = useArtboardStore((state) => state.resume.sections.hardSkills);
 
@@ -224,6 +260,8 @@ const HardSkills = () => {
   );
 };
 
+// SoftSkills : Affiche les compétences comportementales (soft skills).
+// Personnalise la présentation ou ajoute des informations complémentaires.
 const SoftSkills = () => {
   const section = useArtboardStore((state) => state.resume.sections.softSkills);
 
@@ -238,6 +276,8 @@ const SoftSkills = () => {
   );
 };
 
+// Interests : Affiche les centres d'intérêt du candidat.
+// Modifie le style ou la logique d'affichage selon tes besoins.
 const Interests = () => {
   const section = useArtboardStore((state) => state.resume.sections.interests);
 
@@ -248,6 +288,8 @@ const Interests = () => {
   );
 };
 
+// Publications : Affiche la liste des publications du candidat.
+// Personnalise la présentation ou les champs affichés.
 const Publications = () => {
   const section = useArtboardStore((state) => state.resume.sections.publications);
 
@@ -274,6 +316,8 @@ const Publications = () => {
   );
 };
 
+// Volunteer : Affiche les expériences de bénévolat.
+// Modifie la structure ou les informations affichées.
 const Volunteer = () => {
   const section = useArtboardStore((state) => state.resume.sections.volunteer);
 
@@ -301,6 +345,8 @@ const Volunteer = () => {
   );
 };
 
+// Languages : Affiche les langues parlées et leur niveau.
+// Personnalise l'affichage ou ajoute des détails selon tes besoins.
 const Languages = () => {
   const section = useArtboardStore((state) => state.resume.sections.languages);
 
@@ -316,6 +362,8 @@ const Languages = () => {
   );
 };
 
+// Projects : Affiche la liste des projets réalisés.
+// Modifie la présentation ou les champs affichés selon tes besoins.
 const Projects = () => {
   const section = useArtboardStore((state) => state.resume.sections.projects);
 
@@ -342,6 +390,8 @@ const Projects = () => {
   );
 };
 
+// References : Affiche les références professionnelles.
+// Personnalise la structure ou les informations affichées.
 const References = () => {
   const section = useArtboardStore((state) => state.resume.sections.references);
 
@@ -362,6 +412,8 @@ const References = () => {
   );
 };
 
+// Custom : Affiche une section personnalisée définie par l'utilisateur.
+// Modifie la structure ou le style pour répondre à des besoins spécifiques.
 const Custom = ({ id }: { id: string }) => {
   const section = useArtboardStore((state) => state.resume.sections.custom[id]);
 
@@ -394,6 +446,8 @@ const Custom = ({ id }: { id: string }) => {
   );
 };
 
+// mapSectionToComponent : Associe chaque clé de section à son composant.
+// Pour ajouter une nouvelle section, crée un composant et ajoute un case ici.
 const mapSectionToComponent = (section: SectionKey) => {
   switch (section) {
     case "socials": {
@@ -446,6 +500,8 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
+// ExampleA : Composant principal du template.
+// Modifie la disposition (colonnes, couleurs, etc.) ici pour personnaliser le rendu global du CV.
 export const ExampleA = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
