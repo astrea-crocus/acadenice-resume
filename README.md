@@ -9,8 +9,10 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 - [🎨 Gérer les templates](#-gérer-les-templates)
   - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
-  - [🗑️ Supprimer un template](#️-supprimer-un-template)
+  - [🗑️ Supprimer un template](#-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
+  - [`example.tsx` & `example2.tsx`](#exampletsx--example2tsx)
+  - [Modifier le contact AcadéNice affiché sur le CV](#automatisation-du-build-et-gestion-des-traductions)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
 - [❓ FAQ](#-faq)
 
@@ -31,13 +33,9 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
    };
    ```
 
-   > [!NOTE]
-   > Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/example.tsx), [_example2.tsx_](apps/artboard/src/templates/example2.tsx)).  
-   > Ils servent de base pour créer facilement de nouveaux templates : il suffit de les copier et d’adapter leur contenu selon tes besoins.
-
 2. **Importer le composant** dans `apps/artboard/src/templates/acadenice/index.tsx` :
    ```tsx
-   import * from "./spiderman";
+   export * from "./spiderman";
    ```
 3. **Importer le composant** dans `apps/artboard/src/templates/index.tsx` :
    ```tsx
@@ -78,6 +76,52 @@ default: {
 }
 ```
 
+### `example.tsx` & `example2.tsx`
+
+Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/example.tsx), [_example2.tsx_](apps/artboard/src/templates/example2.tsx)).  
+Ils servent de base pour créer facilement de nouveaux templates : il suffit de les copier et d’adapter leur contenu selon tes besoins.
+
+#### 📝 Comparaison détaillée
+
+|                                                              | `example.tsx`                                                                                                                                                                                                              | `example2.tsx`                                                                                                                                 |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nom du composant exporté**                                 | `Example`                                                                                                                                                                                                                  | `ExampleA`                                                                                                                                     |
+| **Texte affiché dans le JSX (placeholder)**                  | `example`                                                                                                                                                                                                                  | `example 2`                                                                                                                                    |
+| **Types importés depuis `@reactive-resume/schema`**          | Plus nombreux : `Award`, `Certification`, `CustomSection`, `CustomSectionGroup`, `HardSkill`, `Interest`, `Language`, `Project`, `Publication`, `Reference`, `SectionKey`, `SectionWithItem`, `Social`, `SoftSkill`, `URL` | Moins nombreux : mêmes types, mais **sans** `CustomSectionGroup`, `SectionWithItem`, `URL`                                                     |
+| **Composants React importés depuis `@/artboard/components`** | 5 composants seulement : `BrandIcon`, `ContactATS`, `Group`, `Picture`, `SealWhite`                                                                                                                                        | Beaucoup plus : ces 5 + `CustomFieldItem`, `Headline`, `InfoItem`, `Link`, `LinkedEntity`, `Name`, `Section`, `SectionContent`, `SectionTitle` |
+| **Utilitaires importés**                                     | `cn`, `isEmptyString`, `isUrl`, `sanitize`, `get` (lodash), `calculateAge`                                                                                                                                                 | idem                                                                                                                                           |
+| **Store**                                                    | utilise `useArtboardStore`                                                                                                                                                                                                 | idem                                                                                                                                           |
+
+---
+
+#### 🧠 **Ce que ça implique pour créer un template de CV**
+
+✅ **`example.tsx`**
+
+- Plus complet et flexible côté **types de données**.
+- Adapté si tu veux gérer beaucoup de types et sections personnalisées.
+- Moins d’aide côté structure visuelle (peu de composants importés).
+
+✅ **`example2.tsx`**
+
+- Plus minimal côté types.
+- Plus riche côté structure et design grâce à de nombreux composants déjà prêts.
+- Idéal pour partir vite d’une base visuelle solide.
+
+---
+
+#### 📦 **En résumé**
+
+|                                                     | `example.tsx`           | `example2.tsx`         |
+| --------------------------------------------------- | ----------------------- | ---------------------- |
+| 🧩 **Richesse des types / données**                 | ✅ plus complet         | moins                  |
+| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche          |
+| 🏗️ **Approche**                                     | base technique flexible | base design structurée |
+
+---
+
+> ✏️ Pour créer ton propre template, copie l’un des deux fichiers, renomme-le et adapte-le selon tes besoins (design, sections, données, etc.).
+
 ---
 
 ### Modifier le contact AcadéNice affiché sur le CV
@@ -88,38 +132,59 @@ Le composant de contact se trouve dans :
 Pour personnaliser le nom, l’email ou le téléphone affichés sur les templates, modifie les constantes suivantes :
 
 ```tsx
-const contactName = "nom";
-const contactEmail = "email";
-const contactPhone = "phone";
-const contactPhoneInternational = "international";
+const contactName = "John Doe";
+const contactEmail = "johndoe@email.fr";
+const contactPhone = "06 05 04 03 02";
+const contactPhoneInternational = toInternationalFormat(contactPhone, "FR");
 ```
 
 Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV et pour l’accessibilité (ATS, export PDF).
 
-> [!TIP]
-> Tu peux aussi personnaliser le style du bloc contact en modifiant le composant `ContactDiv` dans ce même fichier.
+#### 📦 Comment fonctionne `toInternationalFormat`
 
----
+La fonction `toInternationalFormat` permet de convertir automatiquement un numéro de téléphone écrit au format national (ex. « 06 05 04 03 02 ») en un format international normalisé (ex. `+33605040302`).
 
-> [!NOTE]
-> Utilise les commandes suivantes avec `pnpm run <commande>` pour automatiser le build et la gestion des traductions :
->
-> - **Redémarrer Docker** :
->   ```json
->   "docker:restart": "docker compose down && docker compose build && docker compose up -d"
->   ```
-> - **Extraire les chaînes à traduire** :
->   ```json
->   "lingui:extract": "lingui extract"
->   ```
-> - **Compiler les traductions** :
->   ```json
->   "lingui:compile": "lingui compile"
->   ```
-> - **Mettre à jour toutes les traductions** :
->   ```json
->   "lingui:update": "lingui extract && lingui compile"
->   ```
+Elle prend deux arguments :
+
+- `phone` : le numéro au format national
+- `country` : le code pays ISO 3166-1 alpha-2 (par ex. `"FR"` pour la France)
+
+Exemple :
+
+```tsx
+const phone = "06 05 04 03 02";
+const phoneInternational = toInternationalFormat(phone, "FR");
+// Résultat : "+33605040302"
+```
+
+Ce format est pratique pour générer des liens cliquables (`href="tel:+33605040302"`) compatibles sur mobile et pour l’export PDF ATS-friendly.
+
+### Automatisation du build et gestion des traductions
+
+Pour faciliter le développement, utilise les commandes suivantes avec pnpm run <commande> afin d'automatiser le build et la gestion des traductions :
+
+- **Redémarrer Docker**  
+  Cette commande arrête les containers, reconstruit les images, puis relance les containers en arrière-plan :
+  ```json
+  "docker:restart": "docker compose down && docker compose build && docker compose up -d"
+  ```
+- **Extraire les chaînes à traduire**  
+  Cette commande extrait automatiquement les chaînes de texte à traduire dans le code source :
+  ```json
+  "lingui:extract": "lingui extract"
+  ```
+- **Compiler les traductions**
+  Compile les fichiers de traduction après modification :
+  ```json
+  "lingui:compile": "lingui compile"
+  ```
+- **Mettre à jour toutes les traductions**
+  Effectue l'extraction et la compilation en une seule commande :
+  ```json
+  "lingui:update": "lingui extract && lingui compile"
+  ```
+
+Elles sont normalement déjà dans `package.json`, donc si ça ne marche pas, regarde si quelqu'un ne les as pas effacées par mégarde ~~et non par méchanceté~~.
 
 ---
 
@@ -153,8 +218,6 @@ Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV 
 > [!TIP]
 > Les templates de **super-héros** (_Iron Man_, _Thor_) ont été adaptés pour l'**AcadéNice**.  
 > Les templates de **Pokémon** (_pikachu_, _ditto_) sont ceux de base de **Reactive Resume**.
-
----
 
 ## ❓ FAQ
 
@@ -206,7 +269,3 @@ Elles uniformisent les noms de fichiers et de templates pour éviter les erreurs
 ### Puis-je utiliser des noms personnalisés pour mes templates ?
 
 Oui, mais respecte la normalisation et ajoute le nom dans la liste des templates autorisés si nécessaire.
-
----
-
-🎉 Bon développement sur Reactive Resume AcadéNice !

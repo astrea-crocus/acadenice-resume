@@ -1,3 +1,4 @@
+import { toInternationalFormat } from "@reactive-resume/utils";
 import styled from "styled-components";
 
 // Informations de contact centralisées pour l'école ou le référent.
@@ -5,7 +6,7 @@ import styled from "styled-components";
 const contactName = "Sara Djalaoui";
 const contactEmail = "sara@acadenice.fr";
 const contactPhone = "06 62 17 27 98";
-const contactPhoneInternational = "+33662172798";
+const contactPhoneInternational = toInternationalFormat(contactPhone, "FR");
 
 // Composant styled pour organiser le bloc contact dans la grille du CV.
 // Personnalise ici l'apparence du bloc contact (centrage, marges, style du texte).

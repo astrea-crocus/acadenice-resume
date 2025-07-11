@@ -14,3 +14,4 @@ export * from "./namespaces/style";
 export * from "./namespaces/template";
 export * from "./namespaces/types";
 export * from "./normalized";
+export * from "./phone";
