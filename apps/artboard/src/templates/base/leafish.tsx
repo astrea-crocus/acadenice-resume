@@ -15,33 +15,47 @@ import type {
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
-import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
+import { cn, hexToRgb, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import React, { Fragment } from "react";
 
-import { BrandIcon } from "../components/brand-icon";
-import { Picture } from "../components/picture";
-import { calculateAge } from "../libs/date";
-import { useArtboardStore } from "../store/artboard";
-import type { TemplateProps } from "../types/template";
+import { BrandIcon, Picture } from "@/artboard/components";
+import { calculateAge } from "@/artboard/libs/date";
+import { useArtboardStore } from "@/artboard/store/artboard";
+import type { TemplateProps } from "@/artboard/types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
   const age = calculateAge(basics.birthday);
 
+  const section = useArtboardStore((state) => state.resume.sections.summary);
   const profiles = useArtboardStore((state) => state.resume.sections.socials);
+  const primaryColor = useArtboardStore((state) => state.resume.metadata.theme.primary);
 
   return (
-    <div className="flex items-center justify-between space-x-4 border-b border-primary pb-5">
-      <Picture />
+    <div>
+      <div
+        className="p-custom flex items-center space-x-8"
+        style={{ backgroundColor: hexToRgb(primaryColor, 0.2) }}
+      >
+        <div className="space-y-3">
+          <div>
+            <div className="text-3xl font-bold">{basics.name}</div>
+            <div className="text-base font-medium text-primary">{basics.headline}</div>
+          </div>
 
-      <div className="flex-1 space-y-2">
-        <div>
-          <div className="text-2xl font-bold">{basics.name}</div>
-          <div className="text-base">{basics.headline}</div>
+          <div
+            dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
+            style={{ columns: section.columns }}
+            className="wysiwyg"
+          />
         </div>
 
-        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
+        <Picture />
+      </div>
+
+      <div className="p-custom space-y-3" style={{ backgroundColor: hexToRgb(primaryColor, 0.4) }}>
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-sm">
           {basics.location && (
             <div className="flex items-center gap-x-1.5">
               <i className="ph ph-bold ph-map-pin text-primary" />
@@ -84,46 +98,25 @@ const Header = () => {
             </div>
           ))}
         </div>
+
+        {profiles.visible && profiles.items.length > 0 && (
+          <div className="flex items-center gap-x-3 gap-y-0.5">
+            {profiles.items
+              .filter((item) => item.visible)
+              .map((item) => (
+                <div key={item.id} className="flex items-center gap-x-2">
+                  <Link
+                    url={item.url}
+                    label={item.username}
+                    className="text-sm"
+                    icon={<BrandIcon slug={item.icon} />}
+                  />
+                </div>
+              ))}
+          </div>
+        )}
       </div>
-
-      {profiles.visible && profiles.items.length > 0 && (
-        <div
-          className="grid gap-x-4 gap-y-1 text-right"
-          style={{ gridTemplateColumns: `repeat(${profiles.columns}, auto)` }}
-        >
-          {profiles.items
-            .filter((item) => item.visible)
-            .map((item) => (
-              <div key={item.id} className="flex items-center gap-x-2">
-                <Link
-                  url={item.url}
-                  label={item.username}
-                  className="text-sm"
-                  icon={<BrandIcon slug={item.icon} />}
-                />
-              </div>
-            ))}
-        </div>
-      )}
     </div>
-  );
-};
-
-const Summary = () => {
-  const section = useArtboardStore((state) => state.resume.sections.summary);
-
-  if (!section.visible || isEmptyString(section.content)) return null;
-
-  return (
-    <section id={section.id}>
-      <h4 className="font-bold text-primary">{section.name}</h4>
-
-      <div
-        dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
-        style={{ columns: section.columns }}
-        className="wysiwyg"
-      />
-    </section>
   );
 };
 
@@ -134,7 +127,7 @@ const Rating = ({ level }: RatingProps) => (
     {Array.from({ length: 5 }).map((_, index) => (
       <div
         key={index}
-        className={cn("size-3 rounded border-2 border-primary", level > index && "bg-primary")}
+        className={cn("h-3 w-6 border-2 border-primary", level > index && "bg-primary")}
       />
     ))}
   </div>
@@ -211,7 +204,9 @@ const Section = <T,>({
 
   return (
     <section id={section.id} className="grid">
-      <h4 className="font-bold text-primary">{section.name}</h4>
+      <h4 className="mb-2 border-b border-primary text-left font-bold text-primary">
+        {section.name}
+      </h4>
 
       <div
         className="grid gap-x-6 gap-y-3"
@@ -227,10 +222,7 @@ const Section = <T,>({
 
             return (
               <div key={item.id} className={cn("space-y-2", className)}>
-                <div>
-                  {children?.(item as T)}
-                  {url !== undefined && section.separateLinks && <Link url={url} />}
-                </div>
+                <div>{children?.(item as T)}</div>
 
                 {summary !== undefined && !isEmptyString(summary) && (
                   <div
@@ -244,6 +236,8 @@ const Section = <T,>({
                 {keywords !== undefined && keywords.length > 0 && (
                   <p className="text-sm">{keywords.join(", ")}</p>
                 )}
+
+                {url !== undefined && section.separateLinks && <Link url={url} />}
               </div>
             );
           })}
@@ -258,21 +252,16 @@ const Experience = () => {
   return (
     <Section<Experience> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <LinkedEntity
-              name={item.company}
-              url={item.url}
-              separateLinks={section.separateLinks}
-              className="font-bold"
-            />
-            <div>{item.position}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-            <div>{item.location}</div>
-          </div>
+        <div>
+          <LinkedEntity
+            name={item.company}
+            url={item.url}
+            separateLinks={section.separateLinks}
+            className="font-bold"
+          />
+          <div>{item.position}</div>
+          <div>{item.location}</div>
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -285,22 +274,17 @@ const Education = () => {
   return (
     <Section<Education> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <LinkedEntity
-              name={item.institution}
-              url={item.url}
-              separateLinks={section.separateLinks}
-              className="font-bold"
-            />
-            <div>{item.area}</div>
-            <div>{item.score}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-            <div>{item.studyType}</div>
-          </div>
+        <div>
+          <LinkedEntity
+            name={item.institution}
+            url={item.url}
+            separateLinks={section.separateLinks}
+            className="font-bold"
+          />
+          <div>{item.area}</div>
+          <div>{item.score}</div>
+          <div>{item.studyType}</div>
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -313,19 +297,10 @@ const Awards = () => {
   return (
     <Section<Award> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <div className="font-bold">{item.title}</div>
-            <LinkedEntity
-              name={item.awarder}
-              url={item.url}
-              separateLinks={section.separateLinks}
-            />
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-          </div>
+        <div>
+          <div className="font-bold">{item.title}</div>
+          <LinkedEntity name={item.awarder} url={item.url} separateLinks={section.separateLinks} />
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -338,15 +313,10 @@ const Certifications = () => {
   return (
     <Section<Certification> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <div className="font-bold">{item.name}</div>
-            <LinkedEntity name={item.issuer} url={item.url} separateLinks={section.separateLinks} />
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-          </div>
+        <div>
+          <div className="font-bold">{item.name}</div>
+          <LinkedEntity name={item.issuer} url={item.url} separateLinks={section.separateLinks} />
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -398,20 +368,15 @@ const Publications = () => {
   return (
     <Section<Publication> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <LinkedEntity
-              name={item.name}
-              url={item.url}
-              separateLinks={section.separateLinks}
-              className="font-bold"
-            />
-            <div>{item.publisher}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-          </div>
+        <div>
+          <LinkedEntity
+            name={item.name}
+            url={item.url}
+            separateLinks={section.separateLinks}
+            className="font-bold"
+          />
+          <div>{item.publisher}</div>
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -424,21 +389,16 @@ const Volunteer = () => {
   return (
     <Section<Volunteer> section={section} urlKey="url" summaryKey="summary">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
-            <LinkedEntity
-              name={item.organization}
-              url={item.url}
-              separateLinks={section.separateLinks}
-              className="font-bold"
-            />
-            <div>{item.position}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
-            <div>{item.location}</div>
-          </div>
+        <div>
+          <LinkedEntity
+            name={item.organization}
+            url={item.url}
+            separateLinks={section.separateLinks}
+            className="font-bold"
+          />
+          <div>{item.position}</div>
+          <div>{item.location}</div>
+          <div className="font-bold">{item.date}</div>
         </div>
       )}
     </Section>
@@ -451,7 +411,7 @@ const Languages = () => {
   return (
     <Section<Language> section={section} levelKey="level">
       {(item) => (
-        <div className="space-y-0.5">
+        <div>
           <div className="font-bold">{item.name}</div>
           <div>{item.description}</div>
         </div>
@@ -466,8 +426,8 @@ const Projects = () => {
   return (
     <Section<Project> section={section} urlKey="url" summaryKey="summary" keywordsKey="keywords">
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
+        <div>
+          <div>
             <LinkedEntity
               name={item.name}
               url={item.url}
@@ -475,9 +435,6 @@ const Projects = () => {
               className="font-bold"
             />
             <div>{item.description}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
             <div className="font-bold">{item.date}</div>
           </div>
         </div>
@@ -517,8 +474,8 @@ const Custom = ({ id }: { id: string }) => {
       keywordsKey="keywords"
     >
       {(item) => (
-        <div className="flex items-start justify-between">
-          <div className="text-left">
+        <div>
+          <div>
             <LinkedEntity
               name={item.name}
               url={item.url}
@@ -526,11 +483,8 @@ const Custom = ({ id }: { id: string }) => {
               className="font-bold"
             />
             <div>{item.description}</div>
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div className="font-bold">{item.date}</div>
             <div>{item.location}</div>
+            <div className="font-bold">{item.date}</div>
           </div>
         </div>
       )}
@@ -540,9 +494,6 @@ const Custom = ({ id }: { id: string }) => {
 
 const mapSectionToComponent = (section: SectionKey) => {
   switch (section) {
-    case "summary": {
-      return <Summary />;
-    }
     case "experience": {
       return <Experience />;
     }
@@ -587,20 +538,26 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-export const Onyx = ({ columns, isFirstPage = false }: TemplateProps) => {
+export const Leafish = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
   return (
-    <div className="p-custom space-y-4">
+    <div>
       {isFirstPage && <Header />}
 
-      {main.map((section) => (
-        <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-      ))}
+      <div className="p-custom grid grid-cols-2 items-start space-x-6">
+        <div className={cn("grid gap-y-4", sidebar.length === 0 && "col-span-2")}>
+          {main.map((section) => (
+            <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+          ))}
+        </div>
 
-      {sidebar.map((section) => (
-        <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
-      ))}
+        <div className={cn("grid gap-y-4", sidebar.length === 0 && "hidden")}>
+          {sidebar.map((section) => (
+            <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

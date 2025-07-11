@@ -20,11 +20,10 @@ import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 import { Fragment } from "react";
 
-import { BrandIcon } from "../components/brand-icon";
-import { Picture } from "../components/picture";
-import { calculateAge } from "../libs/date";
-import { useArtboardStore } from "../store/artboard";
-import type { TemplateProps } from "../types/template";
+import { BrandIcon, Picture } from "@/artboard/components";
+import { calculateAge } from "@/artboard/libs/date";
+import { useArtboardStore } from "@/artboard/store/artboard";
+import type { TemplateProps } from "@/artboard/types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);

@@ -12,7 +12,6 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
   - [🗑️ Supprimer un template](#️-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
-- [ℹ️ Nota Bene](#ℹ️-nota-bene)
 - [❓ FAQ](#-faq)
 
 ---
@@ -22,6 +21,7 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 ### ➕ Ajouter un nouveau template
 
 1. **Créer un composant React** dans `apps/artboard/src/templates/acadenice/`, par exemple : `spiderman.tsx`
+
    ```tsx
    export const SpiderMan = ({ columns, isFirstPage = false }: TemplateProps) => {
      const [main, sidebar] = columns;
@@ -30,11 +30,20 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
      };
    };
    ```
-2. **Importer le composant** dans `apps/artboard/src/templates/index.tsx` :
+
+   > [!NOTE]
+   > Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/example.tsx), [_example2.tsx_](apps/artboard/src/templates/example2.tsx)).  
+   > Ils servent de base pour créer facilement de nouveaux templates : il suffit de les copier et d’adapter leur contenu selon tes besoins.
+
+2. **Importer le composant** dans `apps/artboard/src/templates/acadenice/index.tsx` :
    ```tsx
-   import { SpiderMan } from "./acadenice/spiderman";
+   import * from "./spiderman";
    ```
-3. **Ajouter un case dans le switch** :
+3. **Importer le composant** dans `apps/artboard/src/templates/index.tsx` :
+   ```tsx
+   import { /* Liste des templates importées*/ , SpiderMan } from "./acadenice";
+   ```
+4. **Ajouter un case dans le switch** :
    ```tsx
    case "Spider Man": {
      return SpiderMan;
@@ -87,12 +96,12 @@ const contactPhoneInternational = "international";
 
 Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV et pour l’accessibilité (ATS, export PDF).
 
-> 💡 **Astuce** :  
+> [!TIP]
 > Tu peux aussi personnaliser le style du bloc contact en modifiant le composant `ContactDiv` dans ce même fichier.
 
 ---
 
-> [!TIP]
+> [!NOTE]
 > Utilise les commandes suivantes avec `pnpm run <commande>` pour automatiser le build et la gestion des traductions :
 >
 > - **Redémarrer Docker** :
@@ -147,18 +156,11 @@ Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV 
 
 ---
 
-## ℹ️ Nota Bene
-
-Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/acadenice/_example.tsx), [_example2.tsx_](apps/artboard/src/templates/acadenice/_example2.tsx)).  
-Ils servent de base pour créer facilement de nouveaux templates.
-
----
-
 ## ❓ FAQ
 
 ### Comment ajouter un nouveau template de CV ?
 
-Voir la section [Ajouter un nouveau template](#ajouter-un-nouveau-template).
+Voir la section [Ajouter un nouveau template](#-ajouter-un-nouveau-template).
 
 ### Pourquoi mon template n’apparaît pas dans l’application ?
 

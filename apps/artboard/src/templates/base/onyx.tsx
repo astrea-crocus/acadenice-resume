@@ -11,36 +11,38 @@ import type {
   Reference,
   SectionKey,
   SectionWithItem,
-  Social,
   SoftSkill,
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { cn, isEmptyString, isUrl, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
-import { BrandIcon } from "../components/brand-icon";
-import { Picture } from "../components/picture";
-import { calculateAge } from "../libs/date";
-import { useArtboardStore } from "../store/artboard";
-import type { TemplateProps } from "../types/template";
+import { BrandIcon, Picture } from "@/artboard/components";
+import { calculateAge } from "@/artboard/libs/date";
+import { useArtboardStore } from "@/artboard/store/artboard";
+import type { TemplateProps } from "@/artboard/types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
   const age = calculateAge(basics.birthday);
 
+  const profiles = useArtboardStore((state) => state.resume.sections.socials);
+
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center justify-between space-x-4 border-b border-primary pb-5">
       <Picture />
 
-      <div className="space-y-0.5">
-        <div className="text-2xl font-bold">{basics.name}</div>
-        <div className="text-base">{basics.headline}</div>
+      <div className="flex-1 space-y-2">
+        <div>
+          <div className="text-2xl font-bold">{basics.name}</div>
+          <div className="text-base">{basics.headline}</div>
+        </div>
 
         <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
           {basics.location && (
-            <div className="flex items-center gap-x-1.5 border-r pr-2 last:border-r-0 last:pr-0">
+            <div className="flex items-center gap-x-1.5">
               <i className="ph ph-bold ph-map-pin text-primary" />
               <div>{basics.location}</div>
             </div>
@@ -52,7 +54,7 @@ const Header = () => {
             </div>
           )}
           {basics.phone && (
-            <div className="flex items-center gap-x-1.5 border-r pr-2 last:border-r-0 last:pr-0">
+            <div className="flex items-center gap-x-1.5">
               <i className="ph ph-bold ph-phone text-primary" />
               <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                 {basics.phone}
@@ -60,7 +62,7 @@ const Header = () => {
             </div>
           )}
           {basics.email && (
-            <div className="flex items-center gap-x-1.5 border-r pr-2 last:border-r-0 last:pr-0">
+            <div className="flex items-center gap-x-1.5">
               <i className="ph ph-bold ph-at text-primary" />
               <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                 {basics.email}
@@ -69,10 +71,7 @@ const Header = () => {
           )}
           <Link url={basics.portfolio} />
           {basics.customFields.map((item) => (
-            <div
-              key={item.id}
-              className="flex items-center gap-x-1.5 border-r pr-2 last:border-r-0 last:pr-0"
-            >
+            <div key={item.id} className="flex items-center gap-x-1.5">
               <i className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
               {isUrl(item.value) ? (
                 <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
@@ -85,6 +84,26 @@ const Header = () => {
           ))}
         </div>
       </div>
+
+      {profiles.visible && profiles.items.length > 0 && (
+        <div
+          className="grid gap-x-4 gap-y-1 text-right"
+          style={{ gridTemplateColumns: `repeat(${profiles.columns}, auto)` }}
+        >
+          {profiles.items
+            .filter((item) => item.visible)
+            .map((item) => (
+              <div key={item.id} className="flex items-center gap-x-2">
+                <Link
+                  url={item.url}
+                  label={item.username}
+                  className="text-sm"
+                  icon={<BrandIcon slug={item.icon} />}
+                />
+              </div>
+            ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -96,7 +115,7 @@ const Summary = () => {
 
   return (
     <section id={section.id}>
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
+      <h4 className="font-bold text-primary">{section.name}</h4>
 
       <div
         dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
@@ -114,7 +133,7 @@ const Rating = ({ level }: RatingProps) => (
     {Array.from({ length: 5 }).map((_, index) => (
       <div
         key={index}
-        className={cn("size-2 rounded-full border border-primary", level > index && "bg-primary")}
+        className={cn("size-3 rounded border-2 border-primary", level > index && "bg-primary")}
       />
     ))}
   </div>
@@ -132,7 +151,7 @@ const Link = ({ url, icon, iconOnRight, label, className }: LinkProps) => {
   if (!isUrl(url.href)) return null;
 
   return (
-    <div className="flex items-center gap-x-1.5 border-r pr-2 last:border-r-0 last:pr-0">
+    <div className="flex items-center gap-x-1.5">
       {!iconOnRight && (icon ?? <i className="ph ph-bold ph-link text-primary" />)}
       <a
         href={url.href}
@@ -191,7 +210,7 @@ const Section = <T,>({
 
   return (
     <section id={section.id} className="grid">
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
+      <h4 className="font-bold text-primary">{section.name}</h4>
 
       <div
         className="grid gap-x-6 gap-y-3"
@@ -229,25 +248,6 @@ const Section = <T,>({
           })}
       </div>
     </section>
-  );
-};
-
-const Socials = () => {
-  const section = useArtboardStore((state) => state.resume.sections.socials);
-
-  return (
-    <Section<Social> section={section}>
-      {(item) => (
-        <div>
-          {isUrl(item.url.href) ? (
-            <Link url={item.url} label={item.username} icon={<BrandIcon slug={item.icon} />} />
-          ) : (
-            <p>{item.username}</p>
-          )}
-          {!item.icon && <p className="text-sm">{item.network}</p>}
-        </div>
-      )}
-    </Section>
   );
 };
 
@@ -539,9 +539,6 @@ const Custom = ({ id }: { id: string }) => {
 
 const mapSectionToComponent = (section: SectionKey) => {
   switch (section) {
-    case "socials": {
-      return <Socials />;
-    }
     case "summary": {
       return <Summary />;
     }
@@ -589,7 +586,7 @@ const mapSectionToComponent = (section: SectionKey) => {
   }
 };
 
-export const Rhyhorn = ({ columns, isFirstPage = false }: TemplateProps) => {
+export const Onyx = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;
 
   return (

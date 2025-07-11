@@ -1,23 +1,21 @@
 import type { Template } from "@reactive-resume/utils";
 import { normalizeTemplateName } from "@reactive-resume/utils";
 
-import { AntMan } from "./acadenice/antman";
-import { CaptainAmerica } from "./acadenice/captainamerica";
-import { Hulk } from "./acadenice/hulk";
-import { IronMan } from "./acadenice/ironman";
-import { Thor } from "./acadenice/thor";
-import { Azurill } from "./azurill";
-import { Bronzor } from "./bronzor";
-import { Chikorita } from "./chikorita";
-import { Ditto } from "./ditto";
-import { Gengar } from "./gengar";
-import { Glalie } from "./glalie";
-import { Kakuna } from "./kakuna";
-import { Leafish } from "./leafish";
-import { Nosepass } from "./nosepass";
-import { Onyx } from "./onyx";
-import { Pikachu } from "./pikachu";
-import { Rhyhorn } from "./rhyhorn";
+import { AntMan, CaptainAmerica, Hulk, IronMan, Thor } from "./acadenice";
+import {
+  Azurill,
+  Bronzor,
+  Chikorita,
+  Ditto,
+  Gengar,
+  Glalie,
+  Kakuna,
+  Leafish,
+  Nosepass,
+  Onyx,
+  Pikachu,
+  Rhyhorn,
+} from "./base";
 
 export const getTemplate = (template: Template) => {
   const normalizedTemplate = normalizeTemplateName(template);
