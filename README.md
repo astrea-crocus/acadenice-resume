@@ -18,13 +18,13 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 ## 🚀 Sommaire
 
-- [⚙️ Installation rapide](#️-installation-rapide)
+- [⚙️ Installation rapide](#-installation-rapide)
   - [Prérequis](#prérequis)
   - [Cloner le projet et installer les dépendances](#cloner-le-projet-et-installer-les-dépendances)
   - [Lancer l’application](#lancer-lapplication)
 - [🎨 Gérer les templates](#-gérer-les-templates)
   - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
-  - [🗑️ Supprimer un template](#️-supprimer-un-template)
+  - [🗑️ Supprimer un template](#-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
   - [🔍 `example.tsx` & `example2.tsx`](#-exampletsx--example2tsx)
 - [🤝 Contribuer](#-contribuer)
@@ -65,8 +65,30 @@ En production, on utilise Docker Compose pour tout déployer facilement. Voir le
 
 ---
 
-
 ## 🎨 Gérer les templates
+
+### Structure
+
+``` bash
+reactive-resume/
+└── apps/
+    ├── artboard/
+    │   └── src/templates/
+    │       ├── acadenice/
+    │       │   ├── new-template.tsx   # Nouveau composant React du template
+    │       │   └── index.tsx          # Fichier où tu ajoutes l'import et l'export des templates de l'AcadéNice
+    │       └── index.tsx              # Fichier où tu ajoutes l'import et l'export de tous les templates
+    ├── client/
+    │   └── public/templates/
+    │       ├── jpg/
+    │       │   └── newtemplate.jpg    # Preview du template
+    │       ├── json/
+    │       │   └── newtemplate.json   # JSON de configuration du template
+    │       └── pdf/
+    │           └── newtemplate.pdf    # Exemple PDF du rendu
+    └── server/
+
+```
 
 ### ➕ Ajouter un nouveau template
 
@@ -89,7 +111,7 @@ En production, on utilise Docker Compose pour tout déployer facilement. Voir le
    ```tsx
    import { /* Liste des templates importées*/ , SpiderMan } from "./acadenice";
    ```
-4. **Ajouter un case dans le switch** :
+4. **Ajouter un case dans le switch** de `apps/artboard/src/templates/index.tsx` :
    ```tsx
    case "Spider Man": {
      return SpiderMan;
