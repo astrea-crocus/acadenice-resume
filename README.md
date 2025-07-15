@@ -9,12 +9,20 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 ## 🚀 Sommaire
 
+- [⚙️ Installation rapide](#️-installation-rapide)
+  - [Prérequis](#prérequis)
+  - [Cloner le projet et installer les dépendances](#cloner-le-projet-et-installer-les-dépendances)
+  - [Lancer l’application](#lancer-lapplication)
 - [🎨 Gérer les templates](#-gérer-les-templates)
   - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
-  - [🗑️ Supprimer un template](#-supprimer-un-template)
+  - [🗑️ Supprimer un template](#️-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
   - [🔍 `example.tsx` & `example2.tsx`](#-exampletsx--example2tsx)
-  - [✏️ Modifier le contact AcadéNice affiché sur le CV](#-modifier-le-contact-acadénice-affiché-sur-le-cv)
+- [🤝 Contribuer](#-contribuer)
+  - [🚀 Créer ta branche](#-créer-ta-branche)
+  - [🛠 Développer et tester localement](#-développer-et-tester-localement)
+  - [✅ Vérifier le code et le style](#-vérifier-le-code-et-le-style)
+  - [📦 Commit et push](#-commit-et-push)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
 - [❓ FAQ](#-faq)
 
@@ -141,10 +149,10 @@ Ils servent de base pour créer facilement de nouveaux templates : il suffit d
 
 #### 📦 **En résumé :**
 
-|                                                     | `example.tsx`           | `example2.tsx`         |
-| --------------------------------------------------- | ----------------------- | ---------------------- |
-| 🧩 **Richesse des types / données**                 | ✅ plus complet         | moins                  |
-| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche          |
+|                                                    | `example.tsx`           | `example2.tsx`         |
+| -------------------------------------------------- | ----------------------- | ---------------------- |
+| 🧩 **Richesse des types / données**                 | ✅ plus complet          | moins                  |
+| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche           |
 | 🏗️ **Approche**                                     | base technique flexible | base design structurée |
 
 ---
