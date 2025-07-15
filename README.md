@@ -2,9 +2,10 @@
 
 # 📝 Reactive Resume AcadéNice
 
-[![Static Badge](https://img.shields.io/badge/Reactive%20Resume-black?style=for-the-badge&label=Based%20on)](https://rxresu.me/)
-[![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234cccb8?style=for-the-badge&label=Edited%20by)](https://acadenice.fr/)
+![Static Badge](https://img.shields.io/badge/Reactive%20Resume-%2309090b?style=for-the-badge&label=Based%20on&labelColor=%233f3f46&link=https%3A%2F%2Frxresu.me%2F)
+![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234CCCB8?style=for-the-badge&label=Edited%20by&link=https%3A%2F%2Facadenice.fr%2F)
 ![Static Badge](https://img.shields.io/badge/You%20!-%23fda100?style=for-the-badge&label=For)
+
 
 </div>
 
