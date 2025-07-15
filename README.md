@@ -1,6 +1,15 @@
+<div align="center">
+
 # 📝 Reactive Resume AcadéNice
 
-Bienvenue sur la version _AcadéNice_ de [**Reactive Resume**](https://rxresu.me/) !  
+[![Static Badge](https://img.shields.io/badge/Reactive%20Resume-black?style=for-the-badge&label=Based%20on)](https://rxresu.me/)
+[![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234cccb8?style=for-the-badge&label=Edited%20by)](https://acadenice.fr/)
+![Static Badge](https://img.shields.io/badge/You%20!-%23fda100?style=for-the-badge&label=For)
+
+</div>
+
+Bienvenue sur la version _AcadéNice_ de [**Reactive Resume**](https://rxresu.me/) !
+
 Elle propose des templates de CV **ATS-friendly** pensés pour les étudiants et étudiantes d’**AcadéNice** (Web / Marketing), avec des couleurs harmonisées et un cachet contenant les informations d’un référent de formation.
 
 Ce guide t’explique comment gérer les templates de CV, personnaliser l’application et contribuer facilement.
@@ -32,7 +41,7 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 ### Prérequis
 
-- [Node.js](https://nodejs.org/) (version ≥ 18)
+- [Node.js](https://nodejs.org/) (version ≥ 20)
 - [pnpm](https://pnpm.io/) (ex. : `npm install -g pnpm`)
 - [Docker](https://www.docker.com/)
 
@@ -52,8 +61,10 @@ pnpm run docker:restart
 
 Ensuite, tu peux accéder à l’application sur http://localhost:3000
 et commencer à créer ou modifier des templates.
+En production, on utilise Docker Compose pour tout déployer facilement. Voir le fichier `compose.yml`.
 
 ---
+
 
 ## 🎨 Gérer les templates
 
@@ -185,6 +196,8 @@ git checkout -b feat/nom-de-mon-template
   > - arrête les conteneurs
   > - reconstruit les images
   > - relance tout en arrière-plan.
+
+  On a ajouté cette commande pour simplifier la relance des conteneurs sans avoir à se souvenir des commandes Docker manuelles. Elle est utile dès qu’on ajoute/modifie un template. 
 - Accède ensuite à l’application (en général sur http://localhost:3000) pour vérifier que :
   - Le template apparaît et s’affiche correctement.
   - L’export PDF fonctionne.
@@ -193,7 +206,7 @@ git checkout -b feat/nom-de-mon-template
 ### ✅ Vérifier le code et le style
 
 - Nom du composant commençant par une majuscule.
-- Nom du template normalisé avec `normalizeTemplateName`.
+- Nom du template normalisé avec `normalizeTemplateName` (voir `libs/utils/src/normalized.ts`) .
 - Fichiers de prévisualisation (jpg, pdf, json) en minuscules, sans espaces ni accents.
 - Exporte bien ton composant et ajoute-le dans le `switch` du routeur des templates.
 
@@ -284,6 +297,8 @@ Elles sont normalement déjà dans `package.json`, donc si ça ne marche pas, re
 ---
 
 ## 📁 Explications de certains fichiers
+
+Ce projet est organisé sous forme de monorepo avec plusieurs applications et librairies partagées. Les templates se trouvent principalement dans `apps/artboard`, tandis que l’interface utilisateur est dans `apps/client` et le backend dans `apps/server`.
 
 ### `apps/client/`
 
