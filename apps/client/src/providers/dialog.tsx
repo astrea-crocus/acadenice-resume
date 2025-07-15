@@ -6,10 +6,10 @@ import { ExperienceDialog } from "../pages/builder/sidebars/left/dialogs/experie
 import { HardSkillsDialog } from "../pages/builder/sidebars/left/dialogs/hard-skills";
 import { InterestsDialog } from "../pages/builder/sidebars/left/dialogs/interests";
 import { LanguagesDialog } from "../pages/builder/sidebars/left/dialogs/languages";
-import { SocialsDialog } from "../pages/builder/sidebars/left/dialogs/socials";
 import { ProjectsDialog } from "../pages/builder/sidebars/left/dialogs/projects";
 import { PublicationsDialog } from "../pages/builder/sidebars/left/dialogs/publications";
 import { ReferencesDialog } from "../pages/builder/sidebars/left/dialogs/references";
+import { SocialsDialog } from "../pages/builder/sidebars/left/dialogs/socials";
 // import { SkillsDialog } from "../pages/builder/sidebars/left/dialogs/skills";
 import { SoftSkillsDialog } from "../pages/builder/sidebars/left/dialogs/soft-skills";
 import { VolunteerDialog } from "../pages/builder/sidebars/left/dialogs/volunteer";
