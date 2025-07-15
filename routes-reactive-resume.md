@@ -34,25 +34,26 @@ Ce document récapitule les routes/pages définies dans `apps/client/src/router/
 
 ## Tableau récapitulatif
 
-| Route                            | Composant/Page              | Loader         | Protection      |
-|----------------------------------|-----------------------------|----------------|------------------|
-| `/`                              | `HomePage`                  | –              | Public           |
-| `/auth/login`                    | `LoginPage`                 | –              | Guest only       |
-| `/auth/register`                 | `RegisterPage`              | –              | Guest only       |
-| `/auth/forgot-password`          | `ForgotPasswordPage`        | –              | Guest only       |
-| `/auth/reset-password`           | `ResetPasswordPage`         | –              | Guest only       |
-| `/auth/verify-otp`               | `VerifyOtpPage`             | –              | Guest only       |
-| `/auth/backup-otp`               | `BackupOtpPage`             | –              | Guest only       |
-| `/auth/verify-email`             | `VerifyEmailPage`           | –              | Auth only        |
-| `/auth/callback`                 | `<div />`                   | `authLoader`   | Public           |
-| `/dashboard/resumes`             | `ResumesPage`               | –              | Auth only        |
-| `/dashboard/settings`            | `SettingsPage`              | –              | Auth only        |
-| `/builder/:id`                   | `BuilderPage`               | `builderLoader`| Auth only        |
-| `/:username/:slug`               | `PublicResumePage`          | `publicLoader` | Public           |
+| Route                   | Composant/Page       | Loader          | Protection |
+| ----------------------- | -------------------- | --------------- | ---------- |
+| `/`                     | `HomePage`           | –               | Public     |
+| `/auth/login`           | `LoginPage`          | –               | Guest only |
+| `/auth/register`        | `RegisterPage`       | –               | Guest only |
+| `/auth/forgot-password` | `ForgotPasswordPage` | –               | Guest only |
+| `/auth/reset-password`  | `ResetPasswordPage`  | –               | Guest only |
+| `/auth/verify-otp`      | `VerifyOtpPage`      | –               | Guest only |
+| `/auth/backup-otp`      | `BackupOtpPage`      | –               | Guest only |
+| `/auth/verify-email`    | `VerifyEmailPage`    | –               | Auth only  |
+| `/auth/callback`        | `<div />`            | `authLoader`    | Public     |
+| `/dashboard/resumes`    | `ResumesPage`        | –               | Auth only  |
+| `/dashboard/settings`   | `SettingsPage`       | –               | Auth only  |
+| `/builder/:id`          | `BuilderPage`        | `builderLoader` | Auth only  |
+| `/:username/:slug`      | `PublicResumePage`   | `publicLoader`  | Public     |
 
 ---
 
 **Remarques** :
+
 - Les routes protégées par `AuthGuard` nécessitent une session active.
 - Les routes sous `GuestGuard` ne sont accessibles que pour les utilisateurs non connectés.
 - `ErrorPage` est utilisé pour afficher les erreurs globales de chargement.

@@ -82,6 +82,7 @@
 - Léger ajustement du header pour que le logo ne soit plus au dessus de textes lorsque l'utilisateur scroll sur son pc
 
 ## 26 Juin 2025
+
 - Ajustement de certains textes
 - Modifications blocs de la sidebar de droite
   - Retrait du bloc "Statistique"
@@ -92,17 +93,20 @@
   - Ajout du logo et d'informations de contact pour la référante d'entreprise
 
 ## 27 Juin 2025
+
 - Fin personnalisation du premier template
 - Ajout de 4 autres templates
 
 ## 30 Juin 2025
+
 - Ajustement du template IronMan
 - Ajustement de la couleur du texte du bloc de remarque sur OpenAI
-- Amélioration de l'accéssibilité du site 
+- Amélioration de l'accéssibilité du site
 
 ~~non je ne ma suis pas gourré de date avant~~
 
 ## 01 Juillet 2025
+
 - Continuation de l'amélioration de l'accéssibilité du site
 - Traduction des noms de sections des CVs
 - Renommage des templates
@@ -111,6 +115,7 @@
   - CaptainAmerica En Cours
 
 ## 02 Juillet 2025
+
 - Revision de la logique des cachets
   - Un cachet est visible pour les humains uniquement, l'autre pour les robots et filtres
 - Continuation du réajustement des logos
@@ -122,5 +127,6 @@
 - Revision des noms des templates
 
 ## 03 Juillet 2025
+
 - Changement du screenshot du build affiché sur l'acceuil
 - Ajout de commentaires dans les fichiers modifier pour de futurs modifications

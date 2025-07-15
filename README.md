@@ -6,7 +6,6 @@
 ![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234CCCB8?style=for-the-badge&label=Edited%20by&link=https%3A%2F%2Facadenice.fr%2F)
 ![Static Badge](https://img.shields.io/badge/You%20!-%23fda100?style=for-the-badge&label=For)
 
-
 </div>
 
 Bienvenue sur la version _AcadéNice_ de [**Reactive Resume**](https://rxresu.me/) !
@@ -70,7 +69,7 @@ En production, on utilise Docker Compose pour tout déployer facilement. Voir le
 
 ### Structure
 
-``` bash
+```bash
 reactive-resume/
 └── apps/
     ├── artboard/
@@ -183,10 +182,10 @@ Ils servent de base pour créer facilement de nouveaux templates : il suffit d
 
 #### 📦 **En résumé :**
 
-|                                                    | `example.tsx`           | `example2.tsx`         |
-| -------------------------------------------------- | ----------------------- | ---------------------- |
-| 🧩 **Richesse des types / données**                 | ✅ plus complet          | moins                  |
-| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche           |
+|                                                     | `example.tsx`           | `example2.tsx`         |
+| --------------------------------------------------- | ----------------------- | ---------------------- |
+| 🧩 **Richesse des types / données**                 | ✅ plus complet         | moins                  |
+| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche          |
 | 🏗️ **Approche**                                     | base technique flexible | base design structurée |
 
 ---
@@ -211,9 +210,11 @@ git checkout -b feat/nom-de-mon-template
 - Ajoute ou modifie ton template comme expliqué plus haut.
 - Assure-toi que Docker Desktop est ouvert et lancé.
 - Redémarre proprement l’environnement avec :
+
   ```bash
   pnpm run docker:restart
   ```
+
   > Cette commande :
   >
   > - arrête les conteneurs
@@ -221,6 +222,7 @@ git checkout -b feat/nom-de-mon-template
   > - relance tout en arrière-plan.
 
   On a ajouté cette commande pour simplifier la relance des conteneurs sans avoir à se souvenir des commandes Docker manuelles. Elle est utile dès qu’on ajoute/modifie un template. 
+
 - Accède ensuite à l’application (en général sur http://localhost:3000) pour vérifier que :
   - Le template apparaît et s’affiche correctement.
   - L’export PDF fonctionne.
