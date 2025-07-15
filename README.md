@@ -1,6 +1,8 @@
 # 📝 Reactive Resume AcadéNice
 
-Bienvenue dans le projet **Reactive Resume AcadéNice** !  
+Bienvenue sur la version _AcadéNice_ de [**Reactive Resume**](https://rxresu.me/) !  
+Elle propose des templates de CV **ATS-friendly** pensés pour les étudiants et étudiantes d’**AcadéNice** (Web / Marketing), avec des couleurs harmonisées et un cachet contenant les informations d’un référent de formation.
+
 Ce guide t’explique comment gérer les templates de CV, personnaliser l’application et contribuer facilement.
 
 ---
@@ -15,6 +17,33 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
   - [✏️ Modifier le contact AcadéNice affiché sur le CV](#-modifier-le-contact-acadénice-affiché-sur-le-cv)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
 - [❓ FAQ](#-faq)
+
+---
+
+## ⚙️ Installation rapide
+
+### Prérequis
+
+- [Node.js](https://nodejs.org/) (version ≥ 18)
+- [pnpm](https://pnpm.io/) (ex. : `npm install -g pnpm`)
+- [Docker](https://www.docker.com/)
+
+### Cloner le projet et installer les dépendances
+
+```bash
+git clone https://github.com/ton-org/reactive-resume-acadenice.git
+cd reactive-resume-acadenice
+pnpm install
+```
+
+### Lancer l’application
+
+```bash
+pnpm run docker:restart
+```
+
+Ensuite, tu peux accéder à l’application sur http://localhost:3000
+et commencer à créer ou modifier des templates.
 
 ---
 
@@ -110,7 +139,7 @@ Ils servent de base pour créer facilement de nouveaux templates : il suffit d
 
 ---
 
-#### 📦 **En résumé**
+#### 📦 **En résumé :**
 
 |                                                     | `example.tsx`           | `example2.tsx`         |
 | --------------------------------------------------- | ----------------------- | ---------------------- |
@@ -121,6 +150,64 @@ Ils servent de base pour créer facilement de nouveaux templates : il suffit d
 ---
 
 > ✏️ Pour créer ton propre template, copie l’un des deux fichiers, renomme-le et adapte-le selon tes besoins (design, sections, données, etc.).
+
+---
+
+## 🤝 Contribuer
+
+Tu veux ajouter un nouveau template, améliorer un existant ou corriger un bug ? Super !
+Voici le petit workflow recommandé pour contribuer sans rien casser :
+
+### 🚀 Créer ta branche
+
+```bash
+git checkout -b feat/nom-de-mon-template
+```
+
+### 🛠 Développer et tester localement
+
+- Ajoute ou modifie ton template comme expliqué plus haut.
+- Assure-toi que Docker Desktop est ouvert et lancé.
+- Redémarre proprement l’environnement avec :
+  ```bash
+  pnpm run docker:restart
+  ```
+  > Cette commande :
+  >
+  > - arrête les conteneurs
+  > - reconstruit les images
+  > - relance tout en arrière-plan.
+- Accède ensuite à l’application (en général sur http://localhost:3000) pour vérifier que :
+  - Le template apparaît et s’affiche correctement.
+  - L’export PDF fonctionne.
+  - Aucun message d’erreur ne s’affiche dans les logs ou la console du navigateur.
+
+### ✅ Vérifier le code et le style
+
+- Nom du composant commençant par une majuscule.
+- Nom du template normalisé avec `normalizeTemplateName`.
+- Fichiers de prévisualisation (jpg, pdf, json) en minuscules, sans espaces ni accents.
+- Exporte bien ton composant et ajoute-le dans le `switch` du routeur des templates.
+
+### 📦 Commit et push
+
+```bash
+git add .
+git commit -m "feat: ajouter le template SpiderMan pour AcadéNice"
+git push origin feat/nom-de-mon-template
+```
+
+### 🔄 Ouvrir une pull request
+
+- Explique ce que tu as fait.
+- Ajoute une capture d’écran ou un PDF du rendu.
+- Précise s’il s’agit d’un nouveau template, d’une amélioration ou d’un correctif.
+
+> 🧠 Astuce bonus : si tu modifies du texte ou ajoutes de nouvelles chaînes, pense à mettre à jour les traductions :
+>
+> ```bash
+> pnpm run lingui:update
+> ```
 
 ---
 
@@ -260,7 +347,7 @@ pnpm run lingui:update
 
 ### Où trouver des exemples de templates ?
 
-Dans `apps/artboard/src/templates/acadenice/_example.tsx` et `_example2.tsx`.
+Dans `apps/artboard/src/templates/acadenice/example.tsx` et `example2.tsx`.
 
 ### À quoi servent les fonctions de normalisation ?
 
