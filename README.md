@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📝 Reactive Resume AcadéNice <!-- omit from toc --> 
+# 📝 Reactive Resume AcadéNice <!-- omit from toc -->
 
 [![Static Badge](https://img.shields.io/badge/Reactive%20Resume-%2309090b?style=for-the-badge&label=Based%20on&labelColor=%233f3f46&link=https%3A%2F%2Frxresu.me%2F)](https://github.com/AmruthPillai/Reactive-Resume)
 [![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234CCCB8?style=for-the-badge&label=Edited%20by&link=https%3A%2F%2Facadenice.fr%2F)](https://acadenice.fr/)
@@ -16,7 +16,7 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 ---
 
-## 🚀 Sommaire <!-- omit from toc --> 
+## 🚀 Sommaire <!-- omit from toc -->
 
 - [⚙️ Installation rapide](#️-installation-rapide)
   - [Prérequis](#prérequis)
@@ -205,7 +205,7 @@ git push origin feat/nom-de-mon-template
 - Ajoute une capture d’écran ou un PDF du rendu.
 - Précise s’il s’agit d’un nouveau template, d’une amélioration ou d’un correctif.
 
-> 🧠 **Astuce bonus**   
+> 🧠 **Astuce bonus**  
 > Si tu modifies du texte ou ajoutes de nouvelles chaînes, pense à mettre à jour les traductions :
 >
 > ```bash
@@ -232,8 +232,9 @@ Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV 
 
 **📦 Comment fonctionne `toInternationalFormat` ?**
 
-La fonction `toInternationalFormat` permet de convertir automatiquement un numéro de téléphone écrit au format national (ex. « 06 05 04 03 02 ») en un format international normalisé (ex. `+33605040302`).   
+La fonction `toInternationalFormat` permet de convertir automatiquement un numéro de téléphone écrit au format national (ex. « 06 05 04 03 02 ») en un format international normalisé (ex. `+33605040302`).  
 Elle prend deux arguments :
+
 - `phone` : le numéro au format national
 - `country` : le code pays ISO 3166-1 alpha-2 (par ex. `"FR"` pour la France)
 
@@ -307,6 +308,7 @@ Ce projet est organisé sous forme de monorepo avec plusieurs applications et li
 ## ❓ FAQ
 
 **1. Pourquoi mon template n’apparaît pas dans l’application ?**
+
 - Vérifie l’import et le case dans `index.tsx`.
 - Assure-toi que le nom est bien normalisé.
 - Redémarre l’environnement Docker ou le serveur local.
