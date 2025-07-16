@@ -205,7 +205,8 @@ git push origin feat/nom-de-mon-template
 - Ajoute une capture d’écran ou un PDF du rendu.
 - Précise s’il s’agit d’un nouveau template, d’une amélioration ou d’un correctif.
 
-> 🧠 Astuce bonus : si tu modifies du texte ou ajoutes de nouvelles chaînes, pense à mettre à jour les traductions :
+> 🧠 **Astuce bonus**   
+> Si tu modifies du texte ou ajoutes de nouvelles chaînes, pense à mettre à jour les traductions :
 >
 > ```bash
 > pnpm run lingui:update
