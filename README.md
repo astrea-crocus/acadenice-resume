@@ -1,9 +1,9 @@
 <div align="center">
 
-# 📝 Reactive Resume AcadéNice
+# 📝 Reactive Resume AcadéNice <!-- omit from toc --> 
 
-![Static Badge](https://img.shields.io/badge/Reactive%20Resume-%2309090b?style=for-the-badge&label=Based%20on&labelColor=%233f3f46&link=https%3A%2F%2Frxresu.me%2F)
-![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234CCCB8?style=for-the-badge&label=Edited%20by&link=https%3A%2F%2Facadenice.fr%2F)
+[![Static Badge](https://img.shields.io/badge/Reactive%20Resume-%2309090b?style=for-the-badge&label=Based%20on&labelColor=%233f3f46&link=https%3A%2F%2Frxresu.me%2F)](https://github.com/AmruthPillai/Reactive-Resume)
+[![Static Badge](https://img.shields.io/badge/Acad%C3%A9Nice-%234CCCB8?style=for-the-badge&label=Edited%20by&link=https%3A%2F%2Facadenice.fr%2F)](https://acadenice.fr/)
 ![Static Badge](https://img.shields.io/badge/You%20!-%23fda100?style=for-the-badge&label=For)
 
 </div>
@@ -16,22 +16,25 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 
 ---
 
-## 🚀 Sommaire
+## 🚀 Sommaire <!-- omit from toc --> 
 
-- [⚙️ Installation rapide](#-installation-rapide)
+- [⚙️ Installation rapide](#️-installation-rapide)
   - [Prérequis](#prérequis)
   - [Cloner le projet et installer les dépendances](#cloner-le-projet-et-installer-les-dépendances)
   - [Lancer l’application](#lancer-lapplication)
 - [🎨 Gérer les templates](#-gérer-les-templates)
+  - [Structure](#structure)
   - [➕ Ajouter un nouveau template](#-ajouter-un-nouveau-template)
-  - [🗑️ Supprimer un template](#-supprimer-un-template)
+  - [🗑️ Supprimer un template](#️-supprimer-un-template)
   - [⭐ Changer le template par défaut](#-changer-le-template-par-défaut)
-  - [🔍 `example.tsx` & `example2.tsx`](#-exampletsx--example2tsx)
 - [🤝 Contribuer](#-contribuer)
   - [🚀 Créer ta branche](#-créer-ta-branche)
   - [🛠 Développer et tester localement](#-développer-et-tester-localement)
   - [✅ Vérifier le code et le style](#-vérifier-le-code-et-le-style)
   - [📦 Commit et push](#-commit-et-push)
+  - [🔄 Ouvrir une pull request](#-ouvrir-une-pull-request)
+  - [✏️ Modifier le contact AcadéNice affiché sur le CV](#️-modifier-le-contact-acadénice-affiché-sur-le-cv)
+  - [Automatisation du build et gestion des traductions](#automatisation-du-build-et-gestion-des-traductions)
 - [📁 Explications de certains fichiers](#-explications-de-certains-fichiers)
 - [❓ FAQ](#-faq)
 
@@ -50,7 +53,8 @@ Ce guide t’explique comment gérer les templates de CV, personnaliser l’appl
 ```bash
 git clone https://github.com/ton-org/reactive-resume-acadenice.git
 cd reactive-resume-acadenice
-pnpm install
+npm install -g pnpm     # Installe pnpm
+pnpm install            # Installe tous les modules Nodes de package.json
 ```
 
 ### Lancer l’application
@@ -146,54 +150,6 @@ default: {
 }
 ```
 
-### 🔍 `example.tsx` & `example2.tsx`
-
-Deux templates d’exemple sont disponibles ([_example.tsx_](apps/artboard/src/templates/example.tsx), [_example2.tsx_](apps/artboard/src/templates/example2.tsx)).  
-Ils servent de base pour créer facilement de nouveaux templates : il suffit de les copier et d’adapter leur contenu selon tes besoins.
-
-#### 📝 Comparaison détaillée
-
-|                                                              | `example.tsx`                                                                                                                                                                                                              | `example2.tsx`                                                                                                                                 |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nom du composant exporté**                                 | `Example`                                                                                                                                                                                                                  | `ExampleA`                                                                                                                                     |
-| **Texte affiché dans le JSX (placeholder)**                  | `example`                                                                                                                                                                                                                  | `example 2`                                                                                                                                    |
-| **Types importés depuis `@reactive-resume/schema`**          | Plus nombreux : `Award`, `Certification`, `CustomSection`, `CustomSectionGroup`, `HardSkill`, `Interest`, `Language`, `Project`, `Publication`, `Reference`, `SectionKey`, `SectionWithItem`, `Social`, `SoftSkill`, `URL` | Moins nombreux : mêmes types, mais **sans** `CustomSectionGroup`, `SectionWithItem`, `URL`                                                     |
-| **Composants React importés depuis `@/artboard/components`** | 5 composants seulement : `BrandIcon`, `ContactATS`, `Group`, `Picture`, `SealWhite`                                                                                                                                        | Beaucoup plus : ces 5 + `CustomFieldItem`, `Headline`, `InfoItem`, `Link`, `LinkedEntity`, `Name`, `Section`, `SectionContent`, `SectionTitle` |
-| **Utilitaires importés**                                     | `cn`, `isEmptyString`, `isUrl`, `sanitize`, `get` (lodash), `calculateAge`                                                                                                                                                 | idem                                                                                                                                           |
-| **Store**                                                    | utilise `useArtboardStore`                                                                                                                                                                                                 | idem                                                                                                                                           |
-
----
-
-#### 🧠 **Ce que ça implique pour créer un template de CV**
-
-✅ **`example.tsx`**
-
-- Plus complet et flexible côté **types de données**.
-- Adapté si tu veux gérer beaucoup de types et sections personnalisées.
-- Moins d’aide côté structure visuelle (peu de composants importés).
-
-✅ **`example2.tsx`**
-
-- Plus minimal côté types.
-- Plus riche côté structure et design grâce à de nombreux composants déjà prêts.
-- Idéal pour partir vite d’une base visuelle solide.
-
----
-
-#### 📦 **En résumé :**
-
-|                                                     | `example.tsx`           | `example2.tsx`         |
-| --------------------------------------------------- | ----------------------- | ---------------------- |
-| 🧩 **Richesse des types / données**                 | ✅ plus complet         | moins                  |
-| 🖼️ **Richesse visuelle / composants réutilisables** | moins                   | ✅ plus riche          |
-| 🏗️ **Approche**                                     | base technique flexible | base design structurée |
-
----
-
-> ✏️ Pour créer ton propre template, copie l’un des deux fichiers, renomme-le et adapte-le selon tes besoins (design, sections, données, etc.).
-
----
-
 ## 🤝 Contribuer
 
 Tu veux ajouter un nouveau template, améliorer un existant ou corriger un bug ? Super !
@@ -273,12 +229,10 @@ const contactPhoneInternational = toInternationalFormat(contactPhone, "FR");
 
 Ces informations sont utilisées à la fois pour l’affichage visuel sur le CV et pour l’accessibilité (ATS, export PDF).
 
-#### 📦 Comment fonctionne `toInternationalFormat`
+**📦 Comment fonctionne `toInternationalFormat` ?**
 
-La fonction `toInternationalFormat` permet de convertir automatiquement un numéro de téléphone écrit au format national (ex. « 06 05 04 03 02 ») en un format international normalisé (ex. `+33605040302`).
-
+La fonction `toInternationalFormat` permet de convertir automatiquement un numéro de téléphone écrit au format national (ex. « 06 05 04 03 02 ») en un format international normalisé (ex. `+33605040302`).   
 Elle prend deux arguments :
-
 - `phone` : le numéro au format national
 - `country` : le code pays ISO 3166-1 alpha-2 (par ex. `"FR"` pour la France)
 
@@ -325,82 +279,65 @@ Elles sont normalement déjà dans `package.json`, donc si ça ne marche pas, re
 
 Ce projet est organisé sous forme de monorepo avec plusieurs applications et librairies partagées. Les templates se trouvent principalement dans `apps/artboard`, tandis que l’interface utilisateur est dans `apps/client` et le backend dans `apps/server`.
 
-### `apps/client/`
+**1. `apps/client/`**
 
 - **`public/templates`** : Fichiers jpg, json et pdf des prévisualisations.
-
   > ⚠️ Noms en minuscules, sans espaces, accents ou caractères spéciaux.
-
 - **`src/constants/colors.ts`** : Palette de couleurs utilisée dans le builder.
 
-### `apps/artboard/`
+**2. `apps/artboard/`**
 
 - **`src/templates/index.tsx`** : Routeur des templates de CV.  
   Appelle `getTemplate` avec le nom du template, normalise le nom, compare à la liste et retourne le composant React.
-
 - **`src/libs/date.ts`** :  
   Fonction `calculateAge` pour calculer l’âge à partir d’une date de naissance.
 
-### `libs/utils/src/`
+**3. `libs/utils/src/`**
 
 - **`normalized.ts`** :  
   Fonctions utilitaires pour nettoyer les noms (`normalizeToFileName`, `normalizeTemplateName`).
-
 - **`namespaces/template.ts`** :
   - `templatesList` : Liste fixe de noms de templates.
   - `Template` : Type TypeScript autorisant uniquement ces noms.
-
-> [!TIP]
-> Les templates de **super-héros** (_Iron Man_, _Thor_) ont été adaptés pour l'**AcadéNice**.  
-> Les templates de **Pokémon** (_pikachu_, _ditto_) sont ceux de base de **Reactive Resume**.
+    > [!TIP]
+    > Les templates de **super-héros** (_Iron Man_, _Thor_) ont été adaptés pour l'**AcadéNice**.  
+    > Les templates de **Pokémon** (_pikachu_, _ditto_) sont ceux de base de **Reactive Resume**.
 
 ## ❓ FAQ
 
-### Comment ajouter un nouveau template de CV ?
-
-Voir la section [Ajouter un nouveau template](#-ajouter-un-nouveau-template).
-
-### Pourquoi mon template n’apparaît pas dans l’application ?
-
-- Vérifie l’import et le `case` dans `index.tsx`.
+**1. Pourquoi mon template n’apparaît pas dans l’application ?**
+- Vérifie l’import et le case dans `index.tsx`.
 - Assure-toi que le nom est bien normalisé.
 - Redémarre l’environnement Docker ou le serveur local.
 
-### Comment changer le template par défaut ?
+**2. Comment changer le template par défaut ?**  
+Modifie le bloc default dans le switch du fichier `index.tsx`.
 
-Modifie le bloc `default` dans le switch du fichier `index.tsx`.
+**3. Où placer les fichiers de prévisualisation (jpg, pdf, json) ?**  
+Dans apps/client/public/templates.
 
-### Où placer les fichiers de prévisualisation (jpg, pdf, json) ?
+> <ins>Respecte la règle de nommage :</ins> tout en minuscules, sans espaces, accents ou caractères spéciaux.
 
-Dans `apps/client/public/templates`.  
-Respecte la règle de nommage : tout en minuscules, sans espaces, accents ou caractères spéciaux.
+**4. Comment ajouter une nouvelle couleur à la palette ?**  
+Ajoute la couleur dans apps/client/src/constants/colors.ts.
 
-### Comment ajouter une nouvelle couleur à la palette ?
-
-Ajoute la couleur dans `apps/client/src/constants/colors.ts`.
-
-### Que faire si une commande Docker ou pnpm ne fonctionne pas ?
+**5. Que faire si une commande Docker ou pnpm ne fonctionne pas ?**
 
 - Vérifie que Docker et pnpm sont bien installés.
 - Consulte les logs pour plus d’informations.
-- Redémarre l’environnement avec `pnpm run docker:restart`.
+- Redémarre l’environnement avec pnpm run docker:restart.
 
-### Comment mettre à jour les traductions ?
-
-Utilise la commande :
+**6. Comment mettre à jour les traductions ?**
 
 ```bash
 pnpm run lingui:update
 ```
 
-### Où trouver des exemples de templates ?
+**7. Où trouver des exemples de templates ?**  
+Dans `apps/artboard/src/templates/`.
 
-Dans `apps/artboard/src/templates/acadenice/example.tsx` et `example2.tsx`.
-
-### À quoi servent les fonctions de normalisation ?
-
+**8. À quoi servent les fonctions de normalisation ?**  
 Elles uniformisent les noms de fichiers et de templates pour éviter les erreurs de correspondance.
 
-### Puis-je utiliser des noms personnalisés pour mes templates ?
-
-Oui, mais respecte la normalisation et ajoute le nom dans la liste des templates autorisés si nécessaire.
+**9. Puis-je utiliser des noms personnalisés pour mes templates ?**  
+Oui, mais il faut respecter la normalisation et ajouter le nom dans la liste des templates autorisés si nécessaire.
