@@ -16,11 +16,11 @@ import {
   DropdownMenuTrigger,
 } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
-import { normalizeToFileName } from "@reactive-resume/utils";
 import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router";
 
+import { ResumePreview } from "@/client/pages/dashboard/_components/resume-preview";
 import { useDialog } from "@/client/stores/dialog";
 
 import { BaseCard } from "./base-card";
@@ -34,9 +34,6 @@ export const ResumeCard = ({ resume }: Props) => {
   const { open } = useDialog<ResumeDto>("resume");
   const { open: lockOpen } = useDialog<ResumeDto>("lock");
 
-  //template
-  const template = resume.data.metadata.template;
-  const normalized = normalizeToFileName(template);
   const lastUpdated = dayjs().to(resume.updatedAt);
 
   const onOpen = () => {
@@ -82,11 +79,13 @@ export const ResumeCard = ({ resume }: Props) => {
               "bg-gradient-to-t from-background/80 to-transparent",
             )}
           >
-            <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
-            <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
+            <span className="-m-4 border-t bg-secondary/25 p-4 backdrop-blur-sm">
+              <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
+              <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
+            </span>
           </div>
 
-          <img src={`/templates/jpg/${normalized}.jpg`} alt="" className="rounded-sm opacity-80" />
+          <ResumePreview resumeData={resume.data} resumeId={resume.id} />
         </BaseCard>
       </DropdownMenuTrigger>
 
