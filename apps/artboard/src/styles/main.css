@@ -10,6 +10,8 @@
 
 body {
   overflow: hidden;
+  background-image: url("/artboard/background.svg");
+  background-repeat: repeat;
 }
 
 #root {

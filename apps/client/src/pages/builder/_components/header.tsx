@@ -73,7 +73,7 @@ export const BuilderHeader = () => {
             /
           </span>
 
-          <h1 className="max-w-[200px] truncate text-base font-medium" title={title}>
+          <h1 className="max-w-[300px] truncate text-base font-medium" title={title}>
             {title}
           </h1>
 
@@ -84,17 +84,7 @@ export const BuilderHeader = () => {
           )}
         </div>
 
-        <Button
-          size="icon"
-          variant="ghost"
-          className="flex lg:hidden"
-          aria-label={t`Toggle right panel`}
-          onClick={() => {
-            onToggle("right");
-          }}
-        >
-          <SidebarSimple className="-scale-x-100" aria-hidden="true" />
-        </Button>
+        <div />
       </div>
     </header>
   );

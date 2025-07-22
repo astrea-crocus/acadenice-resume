@@ -17,8 +17,7 @@ import { useBuilderStore } from "@/client/stores/builder";
 
 import { BuilderHeader } from "./_components/header";
 import { BuilderToolbar } from "./_components/toolbar";
-import { LeftSidebar } from "./sidebars/left";
-import { RightSidebar } from "./sidebars/right";
+import { Sidebar } from "./sidebar";
 
 const onOpenAutoFocus = (event: Event) => {
   event.preventDefault();
@@ -28,11 +27,10 @@ const OutletSlot = () => (
   <>
     <BuilderHeader />
 
-    <div className="absolute inset-0">
+    <div className="size-full bg-background">
       <Outlet />
+      <BuilderToolbar />
     </div>
-
-    <BuilderToolbar />
   </>
 );
 
@@ -42,10 +40,7 @@ export const BuilderLayout = () => {
   const sheet = useBuilderStore((state) => state.sheet);
 
   const leftSetSize = useBuilderStore((state) => state.panel.left.setSize);
-  const rightSetSize = useBuilderStore((state) => state.panel.right.setSize);
-
   const leftHandle = useBuilderStore((state) => state.panel.left.handle);
-  const rightHandle = useBuilderStore((state) => state.panel.right.handle);
 
   if (isDesktop) {
     return (
@@ -54,31 +49,19 @@ export const BuilderLayout = () => {
           <Panel
             minSize={25}
             maxSize={45}
-            defaultSize={30}
+            defaultSize={40}
             className={cn("z-10 bg-background", !leftHandle.isDragging && "transition-[flex]")}
             onResize={leftSetSize}
           >
-            <LeftSidebar />
+            <Sidebar />
           </Panel>
           <PanelResizeHandle
             isDragging={leftHandle.isDragging}
             onDragging={leftHandle.setDragging}
           />
+
           <Panel>
             <OutletSlot />
-          </Panel>
-          <PanelResizeHandle
-            isDragging={rightHandle.isDragging}
-            onDragging={rightHandle.setDragging}
-          />
-          <Panel
-            minSize={25}
-            maxSize={45}
-            defaultSize={30}
-            className={cn("z-10 bg-background", !rightHandle.isDragging && "transition-[flex]")}
-            onResize={rightSetSize}
-          >
-            <RightSidebar />
           </Panel>
         </PanelGroup>
       </div>
@@ -101,29 +84,13 @@ export const BuilderLayout = () => {
           className="top-16 p-0 sm:max-w-xl"
           onOpenAutoFocus={onOpenAutoFocus}
         >
-          <LeftSidebar />
+          <Sidebar />
         </SheetContent>
       </Sheet>
 
       <OutletSlot />
 
-      <Sheet open={sheet.right.open} onOpenChange={sheet.right.setOpen}>
-        <SheetContent
-          side="right"
-          showClose={false}
-          className="top-16 p-0 sm:max-w-xl"
-          onOpenAutoFocus={onOpenAutoFocus}
-        >
-          <VisuallyHidden>
-            <SheetHeader>
-              <SheetTitle />
-              <SheetDescription />
-            </SheetHeader>
-          </VisuallyHidden>
-
-          <RightSidebar />
-        </SheetContent>
-      </Sheet>
+      <div />
     </div>
   );
 };

@@ -70,12 +70,12 @@ export const BuilderToolbar = () => {
 
   return (
     <motion.div
-      className="fixed inset-x-0 bottom-0 mx-auto hidden py-6 text-center md:block"
+      className="fixed right-0 top-1/4 my-auto hidden px-6 text-center md:block"
       role="toolbar"
       aria-label={t`Resume builder toolbar`}
     >
-      <div className="inline-flex items-center justify-center rounded-full bg-background px-4 shadow-xl">
-        <Tooltip content={t`Undo`}>
+      <div className="inline-flex flex-col items-center justify-center rounded-full bg-primary-accent/30 py-4 shadow-xl">
+        <Tooltip side="right" content={t`Undo`}>
           <Button
             size="icon"
             variant="ghost"
@@ -89,7 +89,7 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Tooltip content={t`Redo`}>
+        <Tooltip side="right" content={t`Redo`}>
           <Button
             size="icon"
             variant="ghost"
@@ -103,9 +103,9 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
+        <Separator orientation="horizontal" className="w-9" aria-hidden="true" />
 
-        <Tooltip content={panMode ? t`Scroll to Pan` : t`Scroll to Zoom`}>
+        <Tooltip side="right" content={panMode ? t`Scroll to Pan` : t`Scroll to Zoom`}>
           <Toggle
             className="rounded-none"
             pressed={panMode}
@@ -120,9 +120,9 @@ export const BuilderToolbar = () => {
           </Toggle>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
+        <Separator orientation="horizontal" className="w-9" aria-hidden="true" />
 
-        <Tooltip content={t`Zoom In`}>
+        <Tooltip side="right" content={t`Zoom In`}>
           <Button
             size="icon"
             variant="ghost"
@@ -134,7 +134,7 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Tooltip content={t`Zoom Out`}>
+        <Tooltip side="right" content={t`Zoom Out`}>
           <Button
             size="icon"
             variant="ghost"
@@ -146,7 +146,7 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Tooltip content={t`Reset Zoom`}>
+        <Tooltip side="right" content={t`Reset Zoom`}>
           <Button
             size="icon"
             variant="ghost"
@@ -158,7 +158,7 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Tooltip content={t`Center Artboard`}>
+        <Tooltip side="right" content={t`Center Artboard`}>
           <Button
             size="icon"
             variant="ghost"
@@ -170,9 +170,9 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
+        <Separator orientation="horizontal" className="w-9" aria-hidden="true" />
 
-        <Tooltip content={t`Toggle Page Break Line`}>
+        <Tooltip side="right" content={t`Toggle Page Break Line`}>
           <Toggle
             className="rounded-none"
             pressed={pageOptions.breakLine}
@@ -185,7 +185,7 @@ export const BuilderToolbar = () => {
           </Toggle>
         </Tooltip>
 
-        <Tooltip content={t`Toggle Page Numbers`}>
+        <Tooltip side="right" content={t`Toggle Page Numbers`}>
           <Toggle
             className="rounded-none"
             pressed={pageOptions.pageNumbers}
@@ -198,9 +198,9 @@ export const BuilderToolbar = () => {
           </Toggle>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" aria-hidden="true" />
+        <Separator orientation="horizontal" className="w-9" aria-hidden="true" />
 
-        <Tooltip content={t`Copy Link to Resume`}>
+        <Tooltip side="right" content={t`Copy Link to Resume`}>
           <Button
             size="icon"
             variant="ghost"
@@ -213,7 +213,7 @@ export const BuilderToolbar = () => {
           </Button>
         </Tooltip>
 
-        <Tooltip content={t`Download PDF`}>
+        <Tooltip side="right" content={t`Download PDF`}>
           <Button
             size="icon"
             variant="ghost"
