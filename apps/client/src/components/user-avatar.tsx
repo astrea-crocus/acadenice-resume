@@ -5,9 +5,10 @@ import { useUser } from "../services/user";
 type Props = {
   size?: number;
   className?: string;
+  style?: React.CSSProperties;
 };
 
-export const UserAvatar = ({ size = 36, className }: Props) => {
+export const UserAvatar = ({ size = 36, className, style }: Props) => {
   const { user } = useUser();
 
   if (!user) return null;
@@ -29,12 +30,18 @@ export const UserAvatar = ({ size = 36, className }: Props) => {
     picture = (
       <div
         style={{ width: size, height: size }}
-        className="flex items-center justify-center rounded-full bg-foreground text-center text-[10px] font-semibold text-background"
+        className="flex items-center justify-center rounded-full bg-primary"
       >
-        {initials}
+        <p className="size-fit text-center text-[10px] font-semibold leading-[unset] text-white">
+          {initials}
+        </p>
       </div>
     );
   }
 
-  return <div className={className}>{picture}</div>;
+  return (
+    <div className={className} style={style}>
+      {picture}
+    </div>
+  );
 };

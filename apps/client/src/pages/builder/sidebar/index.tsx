@@ -20,7 +20,7 @@ export const Sidebar = () => {
 
   return (
     <div className="flex bg-secondary-accent/30">
-      <div className="basis-16 flex-col items-center justify-between border-e bg-secondary/60 py-8 sm:flex">
+      <div className="basis-16 flex-col items-center justify-between border-e bg-primary/50 py-8 sm:flex">
         <Button
           asChild
           size="icon"
@@ -39,10 +39,10 @@ export const Sidebar = () => {
           <Button
             size="icon"
             variant="ghost"
-            className="rounded-full"
+            className="size-fit rounded-full p-2"
             aria-label={t`Options utilisateur`}
           >
-            <UserAvatar size={size} />
+            <UserAvatar size={size} style={{ zoom: 2 }} />
           </Button>
         </UserOptions>
       </div>
