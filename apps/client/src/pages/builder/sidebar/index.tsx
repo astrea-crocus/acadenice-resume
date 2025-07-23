@@ -19,8 +19,8 @@ export const Sidebar = () => {
   const size = 32; //px
 
   return (
-    <div className="flex bg-secondary-accent/30">
-      <div className="basis-16 flex-col items-center justify-between border-e bg-primary/50 py-8 sm:flex">
+    <div className="flex bg-secondary-accent/50">
+      <div className="max-w-[90px] flex-col items-center justify-between border-e bg-primary/20 py-8 sm:flex">
         <Button
           asChild
           size="icon"

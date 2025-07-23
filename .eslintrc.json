@@ -5,8 +5,8 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "extends": ["plugin:prettier/recommended"],
-      "plugins": ["simple-import-sort", "unused-imports"],
+      "extends": ["plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
+      "plugins": ["simple-import-sort", "unused-imports", "tailwindcss"],
       "rules": {
         // eslint
         "no-console": "error",
@@ -99,5 +99,10 @@
         "no-unused-vars": "off"
       }
     }
-  ]
+  ],
+  "settings": {
+    "tailwindcss": {
+      "config": "./tailwind.config.js"
+    }
+  }
 }

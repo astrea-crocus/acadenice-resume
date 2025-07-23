@@ -34,14 +34,6 @@ export const Appearence = () => {
             }}
           />
           <SectionIcon
-            id="css"
-            name={t`CSS Personnalisé`}
-            size={size}
-            onClick={() => {
-              scrollIntoView("#css");
-            }}
-          />
-          <SectionIcon
             id="typography"
             name={t`Typographie`}
             size={size}
@@ -65,6 +57,14 @@ export const Appearence = () => {
               scrollIntoView("#page");
             }}
           />
+          <SectionIcon
+            id="css"
+            name={t`CSS Personnalisé`}
+            size={size}
+            onClick={() => {
+              scrollIntoView("#css");
+            }}
+          />
         </div>
 
         <div />
@@ -74,13 +74,13 @@ export const Appearence = () => {
         <div ref={containterRef} className="grid gap-y-6 @container/right">
           <LayoutSection />
           <Separator />
-          <CssSection />
-          <Separator />
           <TypographySection />
           <Separator />
           <ThemeSection />
           <Separator />
           <PageSection />
+          <Separator />
+          <CssSection />
         </div>
       </ScrollArea>
     </div>

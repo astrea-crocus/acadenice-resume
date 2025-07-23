@@ -119,7 +119,7 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
         {section.items.length === 0 && (
           <Button
             variant="outline"
-            className="gap-x-2 border-dashed py-6 leading-relaxed hover:bg-secondary-accent"
+            className="gap-x-2 border-dashed bg-background py-6 leading-relaxed text-foreground hover:bg-primary hover:text-white"
             aria-label={addNewItemLabel}
             onClick={onCreate}
           >
@@ -173,7 +173,7 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
         <footer className="flex items-center justify-end">
           <Button
             variant="outline"
-            className="ml-auto gap-x-2 text-xs lg:text-sm"
+            className="ml-auto gap-x-2 bg-background text-xs text-foreground hover:bg-primary hover:text-white lg:text-sm"
             aria-label={addNewItemLabel}
             onClick={onCreate}
           >

@@ -118,7 +118,7 @@ export const SocialsDialog = () => {
                   href="https://simpleicons.org/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="font-bold text-acadeorange-600"
+                  className="font-bold text-acade-secondary-600"
                 >
                   Simple Icons
                 </a>

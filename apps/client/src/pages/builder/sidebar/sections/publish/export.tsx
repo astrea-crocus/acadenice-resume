@@ -33,15 +33,15 @@ export const ExportSection = () => {
   };
 
   return (
-    <section id="export" className="grid gap-y-6">
-      <header className="flex items-center justify-between">
+    <section id="export" className="flex min-h-[350px] flex-col">
+      <header className="flex h-fit items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="export" size={18} name={t`Export`} />
           <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Export`}</h2>
         </div>
       </header>
 
-      <main className="grid gap-y-4">
+      <main className="grid h-full gap-y-4">
         <Card
           className={cn(
             buttonVariants({ variant: "ghost" }),

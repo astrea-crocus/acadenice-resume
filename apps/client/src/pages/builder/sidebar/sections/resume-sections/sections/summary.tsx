@@ -56,8 +56,8 @@ export const SummarySection = () => {
           claire de votre projet ou de votre motivation.
         </p>
 
-        <div className="my-2 rounded-md bg-gray-50 p-3 text-sm text-gray-500 dark:bg-zinc-800/50 dark:text-gray-400">
-          <span className="mb-1 block font-medium text-gray-600 dark:text-gray-300">Exemple :</span>
+        <div className="my-2 rounded-md bg-acade-secondary-50 p-3 text-sm text-acade-secondary-500">
+          <span className="mb-1 block font-bold text-acade-secondary-600">Exemple :</span>
           <span className="pointer-events-none select-none italic">
             Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en
             entreprise, 1 jour en cours) dès septembre.
@@ -65,6 +65,7 @@ export const SummarySection = () => {
         </div>
 
         <RichInput
+          className="bg-white text-black"
           content={section.content}
           aria-label={t`Éditeur de texte pour la phrase d'accroche`}
           footer={(editor) => (

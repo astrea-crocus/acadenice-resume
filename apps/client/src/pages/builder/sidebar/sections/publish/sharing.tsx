@@ -32,7 +32,7 @@ export const SharingSection = () => {
   };
 
   return (
-    <section id="sharing" className="grid gap-y-6">
+    <section id="sharing" className="flex min-h-[350px] flex-col gap-y-6">
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="sharing" size={18} name={t`Sharing`} />
@@ -40,7 +40,7 @@ export const SharingSection = () => {
         </div>
       </header>
 
-      <main className="grid gap-y-4">
+      <main className="grid h-full gap-y-4">
         <div className="space-y-1.5">
           <div className="flex items-center gap-x-4">
             <Switch

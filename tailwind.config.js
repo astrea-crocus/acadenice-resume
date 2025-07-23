@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        ...require('./tailwind.preset').theme.extend.colors,
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         border: "hsl(var(--border))",

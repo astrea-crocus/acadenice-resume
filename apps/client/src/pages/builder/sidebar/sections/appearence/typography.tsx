@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable lingui/no-unlocalized-strings */
 
 import { t } from "@lingui/macro";
@@ -78,7 +79,7 @@ export const TypographySection = () => {
         </div>
       </header>
 
-      <main className="grid gap-y-6">
+      <main className="grid gap-y-6 p-1">
         <div className="grid grid-cols-2 gap-4">
           {fontSuggestions
             .sort((a, b) => a.localeCompare(b))
@@ -89,7 +90,7 @@ export const TypographySection = () => {
                 style={{ fontFamily: font }}
                 disabled={typography.font.family === font}
                 className={cn(
-                  "flex h-12 items-center justify-center overflow-hidden rounded border text-center text-xs ring-primary transition-colors hover:bg-secondary-accent focus:outline-none focus:ring-1 disabled:opacity-100 lg:text-sm",
+                  "ring-acade-secondary-500 hover:bg-acade-secondary-500 border-acade-secondary-200 disabled:bg-acade-secondary-100/50 flex h-12 items-center justify-center overflow-hidden rounded border bg-background text-center text-xs text-foreground transition-colors focus:outline-none focus:ring-1 disabled:opacity-100 lg:text-sm",
                   typography.font.family === font && "ring-1",
                 )}
                 onClick={() => {

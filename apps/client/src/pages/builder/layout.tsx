@@ -49,7 +49,7 @@ export const BuilderLayout = () => {
           <Panel
             minSize={25}
             maxSize={45}
-            defaultSize={40}
+            defaultSize={35}
             className={cn("z-10 bg-background", !leftHandle.isDragging && "transition-[flex]")}
             onResize={leftSetSize}
           >

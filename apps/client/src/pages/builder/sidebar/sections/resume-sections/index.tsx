@@ -276,6 +276,7 @@ export const ResumeSections = () => {
             <Button
               size="lg"
               variant="outline"
+              className="bg-background text-foreground hover:bg-primary hover:text-white"
               aria-label={t`Ajouter une nouvelle section`}
               onClick={addSection}
             >

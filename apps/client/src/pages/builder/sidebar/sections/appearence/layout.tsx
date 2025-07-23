@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import type { DragEndEvent, DragOverEvent, DragStartEvent } from "@dnd-kit/core";
 import {
   closestCenter,
@@ -41,7 +42,7 @@ const Column = ({ id, name, items }: ColumnProps) => {
   return (
     <SortableContext id={id} items={items} strategy={verticalListSortingStrategy}>
       <div className="relative">
-        <div className="absolute inset-0 w-3/4 rounded bg-secondary/50" />
+        <div className="bg-acade-secondary-100/50 absolute inset-0 w-3/4 rounded" />
 
         <div className="relative z-10 p-3 pb-8">
           <p className="mb-3 text-xs font-bold">{name}</p>
@@ -90,7 +91,7 @@ const Section = ({ id, isDragging = false }: SectionProps) => {
   return (
     <div
       className={cn(
-        "cursor-grab rounded bg-primary p-2 text-primary-foreground transition-colors hover:bg-primary-accent",
+        "bg-acade-secondary-500 hover:bg-acade-secondary-200 cursor-grab rounded p-2 text-black transition-colors",
         isDragging && "cursor-grabbing",
       )}
     >
@@ -223,7 +224,10 @@ export const LayoutSection = () => {
             const pageNumber = pageIndex + 1;
 
             return (
-              <div key={pageIndex} className="rounded border p-3 pb-4">
+              <div
+                key={pageIndex}
+                className="rounded border bg-background p-3 pb-4 text-foreground"
+              >
                 <div className="flex items-center justify-between">
                   <p className="mb-3 text-xs font-bold">{t`Page ${pageNumber}`}</p>
 
