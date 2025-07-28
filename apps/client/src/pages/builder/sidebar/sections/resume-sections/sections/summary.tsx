@@ -65,7 +65,7 @@ export const SummarySection = () => {
         </div>
 
         <RichInput
-          className="bg-background bg-gradient-to-t from-acade-secondary-500/25 to-acade-secondary-500/25"
+          className="bg-background"
           content={section.content}
           aria-label={t`Éditeur de texte pour la phrase d'accroche`}
           footer={(editor) => (

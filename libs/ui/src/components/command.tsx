@@ -9,7 +9,10 @@ export const Command = forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive
     ref={ref}
-    className={cn("flex size-full flex-col overflow-hidden rounded border", className)}
+    className={cn(
+      "flex size-full flex-col overflow-hidden rounded border border-acade-secondary-500/50",
+      className,
+    )}
     {...props}
   />
 ));
@@ -79,7 +82,7 @@ export const CommandSeparator = forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.Separator
     ref={ref}
-    className={cn("-mx-1 h-px bg-border", className)}
+    className={cn("-mx-1 h-px bg-acade-secondary-500/50", className)}
     {...props}
   />
 ));
@@ -93,7 +96,7 @@ export const CommandItem = forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex cursor-default select-none items-center rounded px-2 py-1.5 text-sm outline-none aria-selected:bg-secondary/40 aria-selected:text-secondary-foreground data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50",
+      "relative flex cursor-default select-none items-center rounded px-2 py-1.5 text-sm outline-none aria-selected:bg-acade-secondary-200/40 aria-selected:text-foreground data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 dark:aria-selected:bg-acade-secondary-800/40",
       className,
     )}
     {...props}

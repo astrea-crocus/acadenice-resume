@@ -9,6 +9,7 @@ import {
   Slider,
   Switch,
 } from "@reactive-resume/ui";
+import { cn } from "@reactive-resume/utils";
 
 import { useResumeStore } from "@/client/stores/resume";
 
@@ -36,12 +37,30 @@ export const PageSection = () => {
               setValue("metadata.page.format", value);
             }}
           >
-            <SelectTrigger>
+            <SelectTrigger
+              className={cn(
+                "bg-background text-foreground",
+                "border-acade-secondary-200 dark:border-acade-secondary-800",
+                "focus:ring-acade-secondary-500",
+              )}
+            >
               <SelectValue placeholder={t`Format`} />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="a4">{t`A4`}</SelectItem>
-              <SelectItem value="letter">{t`Letter`}</SelectItem>
+            <SelectContent className="border-acade-secondary-200 dark:border-l-acade-secondary-800">
+              <SelectItem
+                className={cn(
+                  "focus:bg-acade-secondary-100 focus:text-foreground dark:bg-acade-secondary-900",
+                  "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+                )}
+                value="a4"
+              >{t`A4`}</SelectItem>
+              <SelectItem
+                className={cn(
+                  "focus:bg-acade-secondary-100 focus:text-foreground dark:bg-acade-secondary-900",
+                  "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+                )}
+                value="letter"
+              >{t`Letter`}</SelectItem>
             </SelectContent>
           </Select>
         </div>

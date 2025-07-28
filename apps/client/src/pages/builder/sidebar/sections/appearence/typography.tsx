@@ -90,8 +90,10 @@ export const TypographySection = () => {
                 style={{ fontFamily: font }}
                 disabled={typography.font.family === font}
                 className={cn(
-                  "flex h-12 items-center justify-center overflow-hidden rounded border border-acade-secondary-200 bg-background text-center text-xs text-foreground ring-acade-secondary-500 transition-colors hover:bg-acade-secondary-500 focus:outline-none focus:ring-1 disabled:bg-acade-secondary-100/50 disabled:opacity-100 dark:border-acade-secondary-800 lg:text-sm",
+                  "flex h-12 items-center justify-center overflow-hidden rounded border bg-background text-center text-xs text-foreground transition-colors focus:outline-none focus:ring-1 disabled:opacity-100 lg:text-sm",
                   typography.font.family === font && "ring-1",
+                  "border-acade-secondary-200 ring-acade-secondary-500 hover:bg-acade-secondary-100 dark:border-acade-secondary-900",
+                  "disabled:bg-acade-secondary-100/50 dark:disabled:bg-acade-secondary-900/50",
                 )}
                 onClick={() => {
                   setValue("metadata.typography.font.family", font);

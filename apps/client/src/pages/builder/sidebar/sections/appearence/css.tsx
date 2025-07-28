@@ -41,7 +41,7 @@ export const CssSection = () => {
           <Label htmlFor="metadata.css.visible">{t`Appliquer une feuille de style CSS personnalisée`}</Label>
         </div>
 
-        <div className="rounded border p-4">
+        <div className="rounded border border-acade-secondary-200 bg-background bg-gradient-to-t from-acade-primary-500/[0.025] to-acade-secondary-500/[0.025] p-4">
           <CodeEditor
             tabSize={4}
             value={css.value}

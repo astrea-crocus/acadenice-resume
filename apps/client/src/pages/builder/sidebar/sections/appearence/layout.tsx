@@ -42,7 +42,12 @@ const Column = ({ id, name, items }: ColumnProps) => {
   return (
     <SortableContext id={id} items={items} strategy={verticalListSortingStrategy}>
       <div className="relative">
-        <div className="absolute inset-0 w-3/4 rounded bg-acade-secondary-100/50" />
+        <div
+          className={cn(
+            "absolute inset-0 w-3/4 rounded",
+            "bg-acade-secondary-100/50 dark:bg-acade-secondary-900/50",
+          )}
+        />
 
         <div className="relative z-10 p-3 pb-8">
           <p className="mb-3 text-xs font-bold">{name}</p>
@@ -91,8 +96,10 @@ const Section = ({ id, isDragging = false }: SectionProps) => {
   return (
     <div
       className={cn(
-        "cursor-grab rounded bg-acade-secondary-500 p-2 text-black transition-colors hover:bg-acade-secondary-200",
+        "cursor-grab rounded p-2 transition-colors",
         isDragging && "cursor-grabbing",
+        "bg-acade-secondary-500 text-foreground hover:bg-acade-secondary-200",
+        "dark:hover:bg-acade-secondary-800",
       )}
     >
       <div className="flex items-center gap-x-2">

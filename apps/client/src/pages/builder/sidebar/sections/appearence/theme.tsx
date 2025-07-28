@@ -34,7 +34,10 @@ export const ThemeSection = () => {
                 setValue("metadata.theme.primary", color);
               }}
             >
-              <div className="size-5 rounded-full" style={{ backgroundColor: color }} />
+              <div
+                className="size-5 rounded-full border border-black/25"
+                style={{ backgroundColor: color }}
+              />
             </div>
           ))}
         </div>
@@ -45,7 +48,7 @@ export const ThemeSection = () => {
             <Popover>
               <PopoverTrigger asChild>
                 <div
-                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
+                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full border border-black/25 ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
                   style={{ backgroundColor: theme.primary }}
                 />
               </PopoverTrigger>
@@ -61,7 +64,15 @@ export const ThemeSection = () => {
             <Input
               id="theme.primary"
               value={theme.primary}
-              className="pl-10"
+              className={cn(
+                "bg-background pl-10",
+                "border-acade-secondary-200 dark:border-acade-secondary-800",
+                "focus:border-acade-secondary-500 focus:bg-background",
+                "focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10",
+                "dark:focus:from-acade-secondary-800/10 dark:focus:to-acade-secondary-800/10",
+                "hover:bg-background hover:bg-gradient-to-b hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
+                "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
+              )}
               onChange={(event) => {
                 setValue("metadata.theme.primary", event.target.value);
               }}
@@ -75,7 +86,7 @@ export const ThemeSection = () => {
             <Popover>
               <PopoverTrigger asChild>
                 <div
-                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
+                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full border border-black/25 ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
                   style={{ backgroundColor: theme.background }}
                 />
               </PopoverTrigger>
@@ -91,7 +102,15 @@ export const ThemeSection = () => {
             <Input
               id="theme.background"
               value={theme.background}
-              className="pl-10"
+              className={cn(
+                "bg-background pl-10",
+                "border-acade-secondary-200 dark:border-acade-secondary-800",
+                "focus:border-acade-secondary-500 focus:bg-background",
+                "focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10",
+                "dark:focus:from-acade-secondary-800/10 dark:focus:to-acade-secondary-800/10",
+                "hover:bg-background hover:bg-gradient-to-b hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
+                "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
+              )}
               onChange={(event) => {
                 setValue("metadata.theme.background", event.target.value);
               }}
@@ -105,7 +124,7 @@ export const ThemeSection = () => {
             <Popover>
               <PopoverTrigger asChild>
                 <div
-                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
+                  className="absolute inset-y-0 left-3 my-2.5 size-4 cursor-pointer rounded-full border border-black/25 ring-primary ring-offset-2 ring-offset-background transition-shadow hover:ring-1"
                   style={{ backgroundColor: theme.text }}
                 />
               </PopoverTrigger>
@@ -121,7 +140,15 @@ export const ThemeSection = () => {
             <Input
               id="theme.text"
               value={theme.text}
-              className="pl-10"
+              className={cn(
+                "bg-background pl-10",
+                "border-acade-secondary-200 dark:border-acade-secondary-800",
+                "focus:border-acade-secondary-500 focus:bg-background",
+                "focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10",
+                "dark:focus:from-acade-secondary-800/10 dark:focus:to-acade-secondary-800/10",
+                "hover:bg-background hover:bg-gradient-to-b hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
+                "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
+              )}
               onChange={(event) => {
                 setValue("metadata.theme.text", event.target.value);
               }}

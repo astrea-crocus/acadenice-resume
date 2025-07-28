@@ -144,7 +144,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
   }, [editor]);
 
   return (
-    <div className="flex flex-wrap gap-0.5 border border-acade-secondary-200/50 bg-background p-1 dark:border-acade-secondary-800/50">
+    <div className="flex flex-wrap gap-0.5 border border-acade-secondary-200/50 bg-acade-secondary-200/25 p-1 dark:border-acade-secondary-800/50 dark:bg-acade-secondary-800/25">
       <Tooltip content="Bold">
         <Toggle
           variant="rich"

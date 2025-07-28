@@ -36,7 +36,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-4 sm:col-span-2">
-          <Label htmlFor="basics.name">{t`Nom complet`}</Label>
+          <Label className="font-bold" htmlFor="basics.name">{t`Nom complet`}</Label>
           <Input
             className="hover:bg-secondary/20"
             id="basics.name"
@@ -56,7 +56,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5 sm:col-span-2">
-          <Label htmlFor="basics.headline">{t`Titre professionnel`}</Label>
+          <Label className="font-bold" htmlFor="basics.headline">{t`Titre professionnel`}</Label>
           <Input
             id="basics.headline"
             placeholder="Ex. : Développeur Web Créatif et Innovant"
@@ -69,7 +69,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.email">{t`Email`}</Label>
+          <Label className="font-bold" htmlFor="basics.email">{t`Email`}</Label>
           <Input
             id="basics.email"
             placeholder="jean.dupont@example.com"
@@ -88,7 +88,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.portfolio">{t`Portfolio`}</Label>
+          <Label className="font-bold" htmlFor="basics.portfolio">{t`Portfolio`}</Label>
           <URLInput
             id="basics.portfolio"
             value={basics.portfolio}
@@ -101,7 +101,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.phone">{t`Téléphone`}</Label>
+          <Label className="font-bold" htmlFor="basics.phone">{t`Téléphone`}</Label>
           <Input
             id="basics.phone"
             placeholder="06 05 04 03 02"
@@ -114,7 +114,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.location">{t`Ville`}</Label>
+          <Label className="font-bold" htmlFor="basics.location">{t`Ville`}</Label>
           <Input
             id="basics.location"
             placeholder="Nice, 06000"
@@ -127,7 +127,7 @@ export const Basics = () => {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="basics.birthday">{t`Date de naissance`}</Label>
+          <Label className="font-bold" htmlFor="basics.birthday">{t`Date de naissance`}</Label>
           <Input
             id="basics.birthday"
             type="date"
