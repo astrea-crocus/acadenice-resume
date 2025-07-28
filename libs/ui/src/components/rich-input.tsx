@@ -144,9 +144,10 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
   }, [editor]);
 
   return (
-    <div className="flex flex-wrap gap-0.5 border p-1">
+    <div className="flex flex-wrap gap-0.5 border border-acade-secondary-200/50 bg-background p-1 dark:border-acade-secondary-800/50">
       <Tooltip content="Bold">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("bold")}
@@ -159,6 +160,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Italic">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("italic")}
@@ -171,6 +173,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Strikethrough">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("strike")}
@@ -183,6 +186,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Underline">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("underline")}
@@ -195,6 +199,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Highlight">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("highlight")}
@@ -206,13 +211,14 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
       </Tooltip>
 
       <Tooltip content="Hyperlink">
-        <Button type="button" size="sm" variant="ghost" className="px-2" onClick={setLink}>
+        <Button type="button" size="sm" variant="rich" className="px-2" onClick={setLink}>
           <LinkSimple />
         </Button>
       </Tooltip>
 
       <Tooltip content="Inline Code">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("code")}
@@ -225,6 +231,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Code Block">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("codeBlock")}
@@ -237,6 +244,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Heading 1">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("heading", { level: 1 })}
@@ -249,6 +257,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Heading 2">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("heading", { level: 2 })}
@@ -261,6 +270,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Heading 3">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("heading", { level: 3 })}
@@ -273,6 +283,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Paragraph">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("paragraph")}
@@ -284,6 +295,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Align Left">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive({ textAlign: "left" })}
@@ -296,6 +308,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Align Center">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive({ textAlign: "center" })}
@@ -308,6 +321,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Align Right">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive({ textAlign: "right" })}
@@ -320,6 +334,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Align Justify">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive({ textAlign: "justify" })}
@@ -332,6 +347,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Bullet List">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("bulletList")}
@@ -344,6 +360,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
 
       <Tooltip content="Numbered List">
         <Toggle
+          variant="rich"
           size="sm"
           type="button"
           pressed={editor.isActive("orderedList")}
@@ -358,7 +375,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().chain().focus().liftListItem("listItem").run()}
           onClick={() => editor.chain().focus().liftListItem("listItem").run()}
@@ -371,7 +388,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().chain().focus().sinkListItem("listItem").run()}
           onClick={() => editor.chain().focus().sinkListItem("listItem").run()}
@@ -383,7 +400,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
       <Popover>
         <Tooltip content="Insert Image">
           <PopoverTrigger asChild>
-            <Button type="button" size="sm" variant="ghost" className="px-2">
+            <Button type="button" size="sm" variant="rich" className="px-2">
               <ImageIcon />
             </Button>
           </PopoverTrigger>
@@ -397,7 +414,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().chain().focus().setHardBreak().run()}
           onClick={() => editor.chain().focus().setHardBreak().run()}
@@ -410,7 +427,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().chain().focus().setHorizontalRule().run()}
           onClick={() => editor.chain().focus().setHorizontalRule().run()}
@@ -423,7 +440,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().undo()}
           onClick={() => editor.chain().focus().undo().run()}
@@ -436,7 +453,7 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
         <Button
           size="sm"
           type="button"
-          variant="ghost"
+          variant="rich"
           className="px-2"
           disabled={!editor.can().redo()}
           onClick={() => editor.chain().focus().redo().run()}
@@ -494,13 +511,13 @@ export const RichInput = forwardRef<Editor, RichInputProps>(
     }
 
     return (
-      <div>
+      <div className="bg-background text-foreground">
         {!hideToolbar && <Toolbar editor={editor} />}
 
         <EditorContent
           editor={editor}
           className={cn(
-            "grid min-h-[160px] w-full rounded-sm border bg-transparent px-3 py-2 text-sm placeholder:opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50",
+            "grid min-h-[160px] w-full rounded-sm border border-acade-secondary-200/50 bg-transparent px-3 py-2 text-sm placeholder:opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 dark:border-acade-secondary-800/50",
             hideToolbar && "pt-2",
             className,
           )}

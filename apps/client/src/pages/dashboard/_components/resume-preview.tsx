@@ -49,7 +49,7 @@ export const ResumePreview = ({ resumeData, resumeId }: CVPreviewProps) => {
   }, [sendResumeToIframe]);
 
   return (
-    <div ref={containerRef} className="relative size-full overflow-hidden">
+    <div ref={containerRef} className="relative size-full select-none overflow-hidden">
       <div
         style={{
           transform: `scale(${scale})`,
@@ -62,8 +62,8 @@ export const ResumePreview = ({ resumeData, resumeId }: CVPreviewProps) => {
         <iframe
           ref={iframeRef}
           title={`preview-${resumeId}`}
-          src="/artboard/preview"
-          className="pointer-events-auto size-full rounded-sm border-none opacity-80"
+          src="/artboard/resume-preview"
+          className="pointer-events-auto size-full select-none rounded-sm border-none opacity-80"
           sandbox="allow-scripts allow-same-origin"
         />
       </div>

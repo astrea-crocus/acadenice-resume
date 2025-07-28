@@ -26,13 +26,17 @@ export const UserAvatar = ({ size = 36, className, style }: Props) => {
     );
   } else {
     const initials = getInitials(user.name);
+    const third = size / 3;
 
     picture = (
       <div
         style={{ width: size, height: size }}
-        className="flex items-center justify-center rounded-full bg-primary"
+        className="grid grid-cols-1 content-center rounded-full bg-primary"
       >
-        <p className="size-fit text-center text-[10px] font-semibold leading-[unset] text-white">
+        <p
+          style={{ fontSize: `${third}px` }}
+          className="size-fit w-full text-center font-semibold leading-none text-white"
+        >
           {initials}
         </p>
       </div>

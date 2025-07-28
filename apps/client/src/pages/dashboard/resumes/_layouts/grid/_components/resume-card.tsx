@@ -9,11 +9,9 @@ import {
 } from "@phosphor-icons/react";
 import type { ResumeDto } from "@reactive-resume/dto";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
+  DropdownMenuContextTrigger,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
 } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
 import dayjs from "dayjs";
@@ -30,11 +28,55 @@ type Props = {
 };
 
 export const ResumeCard = ({ resume }: Props) => {
+  return (
+    <DropdownMenuContextTrigger className="text-left" trigger={<TriggerContent resume={resume} />}>
+      <DropdownMenuList resume={resume} />
+    </DropdownMenuContextTrigger>
+  );
+};
+
+const TriggerContent = ({ resume }: Props) => {
+  const lastUpdated = dayjs().to(resume.updatedAt);
+
+  return (
+    <BaseCard className="space-y-0">
+      <AnimatePresence>
+        {resume.locked && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 flex items-center justify-center bg-background/75 backdrop-blur-sm"
+          >
+            <Lock size={42} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div
+        className={cn(
+          "absolute inset-0 z-10 flex flex-col justify-end space-y-0.5",
+          // "bg-red-500/50",
+          // "bg-gradient-to-t from-background/80 to-transparent",
+        )}
+      >
+        <div className="mt-auto bg-gradient-to-t from-background/80 to-transparent p-4 pt-12">
+          <div className="-m-4 mt-auto border-t bg-secondary/25 p-4 backdrop-blur-sm">
+            <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
+            <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
+          </div>
+        </div>
+      </div>
+
+      <ResumePreview resumeData={resume.data} resumeId={resume.id} />
+    </BaseCard>
+  );
+};
+
+const DropdownMenuList = ({ resume }: Props) => {
   const navigate = useNavigate();
   const { open } = useDialog<ResumeDto>("resume");
   const { open: lockOpen } = useDialog<ResumeDto>("lock");
-
-  const lastUpdated = dayjs().to(resume.updatedAt);
 
   const onOpen = () => {
     void navigate(`/builder/${resume.id}`);
@@ -57,68 +99,35 @@ export const ResumeCard = ({ resume }: Props) => {
   };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className="text-left">
-        <BaseCard className="cursor-context-menu space-y-0">
-          <AnimatePresence>
-            {resume.locked && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="absolute inset-0 flex items-center justify-center bg-background/75 backdrop-blur-sm"
-              >
-                <Lock size={42} />
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <div
-            className={cn(
-              "absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-12",
-              "bg-gradient-to-t from-background/80 to-transparent",
-            )}
-          >
-            <span className="-m-4 border-t bg-secondary/25 p-4 backdrop-blur-sm">
-              <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
-              <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
-            </span>
-          </div>
-
-          <ResumePreview resumeData={resume.data} resumeId={resume.id} />
-        </BaseCard>
-      </DropdownMenuTrigger>
-
-      <DropdownMenuContent>
-        <DropdownMenuItem onClick={onOpen}>
-          <FolderOpen size={14} className="mr-2" />
-          {t`Open`}
+    <>
+      <DropdownMenuItem onClick={onOpen}>
+        <FolderOpen size={14} className="mr-2" />
+        {t`Open`}
+      </DropdownMenuItem>
+      <DropdownMenuItem onClick={onUpdate}>
+        <PencilSimple size={14} className="mr-2" />
+        {t`Rename`}
+      </DropdownMenuItem>
+      <DropdownMenuItem onClick={onDuplicate}>
+        <CopySimple size={14} className="mr-2" />
+        {t`Duplicate`}
+      </DropdownMenuItem>
+      {resume.locked ? (
+        <DropdownMenuItem onClick={onLockChange}>
+          <LockOpen size={14} className="mr-2" />
+          {t`Unlock`}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={onUpdate}>
-          <PencilSimple size={14} className="mr-2" />
-          {t`Rename`}
+      ) : (
+        <DropdownMenuItem onClick={onLockChange}>
+          <Lock size={14} className="mr-2" />
+          {t`Lock`}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={onDuplicate}>
-          <CopySimple size={14} className="mr-2" />
-          {t`Duplicate`}
-        </DropdownMenuItem>
-        {resume.locked ? (
-          <DropdownMenuItem onClick={onLockChange}>
-            <LockOpen size={14} className="mr-2" />
-            {t`Unlock`}
-          </DropdownMenuItem>
-        ) : (
-          <DropdownMenuItem onClick={onLockChange}>
-            <Lock size={14} className="mr-2" />
-            {t`Lock`}
-          </DropdownMenuItem>
-        )}
-        <DropdownMenuSeparator />
-        <DropdownMenuItem className="text-error" onClick={onDelete}>
-          <TrashSimple size={14} className="mr-2" />
-          {t`Delete`}
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+      )}
+      <DropdownMenuSeparator />
+      <DropdownMenuItem className="text-error" onClick={onDelete}>
+        <TrashSimple size={14} className="mr-2" />
+        {t`Delete`}
+      </DropdownMenuItem>
+    </>
   );
 };

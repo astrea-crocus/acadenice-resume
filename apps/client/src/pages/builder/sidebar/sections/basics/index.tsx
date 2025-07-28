@@ -38,6 +38,7 @@ export const Basics = () => {
         <div className="space-y-4 sm:col-span-2">
           <Label htmlFor="basics.name">{t`Nom complet`}</Label>
           <Input
+            className="hover:bg-secondary/20"
             id="basics.name"
             placeholder="Jean Dupont"
             value={basics.name}

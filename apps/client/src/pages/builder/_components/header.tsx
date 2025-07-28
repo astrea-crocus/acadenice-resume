@@ -5,6 +5,7 @@ import { cn } from "@reactive-resume/utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
+import { ThemeSwitch } from "@/client/components/theme-switch";
 import { useBuilderStore } from "@/client/stores/builder";
 import { useResumeStore } from "@/client/stores/resume";
 
@@ -84,7 +85,7 @@ export const BuilderHeader = () => {
           )}
         </div>
 
-        <div />
+        <ThemeSwitch />
       </div>
     </header>
   );

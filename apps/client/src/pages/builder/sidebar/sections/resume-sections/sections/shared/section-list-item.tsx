@@ -71,7 +71,7 @@ export const SectionListItem = ({
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, x: -50 }}
-      className="border-x border-t bg-background first-of-type:rounded-t last-of-type:rounded-b last-of-type:border-b"
+      className="border-x border-t border-acade-secondary-200 bg-background first-of-type:rounded-t last-of-type:rounded-b last-of-type:border-b dark:border-acade-secondary-800"
     >
       <div style={style} className="flex transition-opacity">
         {/* Drag Handle */}
@@ -80,7 +80,7 @@ export const SectionListItem = ({
           {...attributes}
           className={cn(
             "flex w-5 cursor-move items-center justify-center",
-            !isDragging && "hover:bg-secondary",
+            !isDragging && "hover:bg-acade-secondary-200/50",
           )}
           aria-label={t`Déplacer la section`}
           role="button"
@@ -94,7 +94,7 @@ export const SectionListItem = ({
           <DropdownMenuTrigger asChild aria-label={getMenuAriaLabel(title)}>
             <div
               className={cn(
-                "flex-1 cursor-context-menu p-4 hover:bg-secondary-accent",
+                "flex-1 cursor-context-menu p-4 hover:bg-acade-secondary-200/25",
                 !visible && "opacity-50",
               )}
               role="button"

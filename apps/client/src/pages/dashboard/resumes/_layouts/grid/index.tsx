@@ -1,5 +1,6 @@
 import { sortByDate } from "@reactive-resume/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { NavLink } from "react-router";
 
 import { useResumes } from "@/client/services/resume";
 
@@ -7,6 +8,7 @@ import { BaseCard } from "./_components/base-card";
 import { CreateResumeCard } from "./_components/create-card";
 import { ImportResumeCard } from "./_components/import-card";
 import { ResumeCard } from "./_components/resume-card";
+// import { ResumeCard } from "./_components/resume-card";
 
 export const GridView = () => {
   const { resumes, loading } = useResumes();
@@ -47,7 +49,9 @@ export const GridView = () => {
                 animate={{ opacity: 1, x: 0, transition: { delay: (index + 2) * 0.1 } }}
                 exit={{ opacity: 0, filter: "blur(8px)", transition: { duration: 0.5 } }}
               >
-                <ResumeCard resume={resume} />
+                <NavLink to={`/builder/${resume.id}`}>
+                  <ResumeCard resume={resume} />
+                </NavLink>
               </motion.div>
             ))}
         </AnimatePresence>

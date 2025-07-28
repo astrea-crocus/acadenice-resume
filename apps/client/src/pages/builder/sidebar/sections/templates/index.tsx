@@ -33,7 +33,7 @@ export const Templates = () => {
                 animate={{ opacity: 1, transition: { delay: index * 0.1 } }}
                 whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
                 className={cn(
-                  "relative cursor-pointer rounded-sm ring-primary transition-all hover:ring-2",
+                  "relative cursor-pointer rounded-sm ring-acade-secondary-500 transition-all hover:ring-2",
                   currentTemplate === template && "ring-2",
                 )}
                 onClick={() => {
@@ -43,7 +43,7 @@ export const Templates = () => {
                 <img src={`/templates/jpg/${normalized}.jpg`} alt="" className="rounded-sm" />
 
                 <div className="absolute inset-x-0 bottom-0 h-32 w-full bg-gradient-to-b from-transparent to-background/80">
-                  <p className="absolute inset-x-0 bottom-2 text-center font-bold capitalize text-primary">
+                  <p className="absolute inset-x-0 bottom-2 text-center font-bold capitalize text-foreground">
                     {template}
                   </p>
                 </div>

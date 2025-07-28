@@ -7,6 +7,7 @@ export const toggleVariants = cva(
       variant: {
         default: "bg-transparent",
         outline: "border bg-transparent hover:bg-secondary/60 hover:text-secondary-foreground",
+        rich: "hover:bg-acade-secondary-500/60 hover:text-foreground",
       },
       size: {
         sm: "size-8",

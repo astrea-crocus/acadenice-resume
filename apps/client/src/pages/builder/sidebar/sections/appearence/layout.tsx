@@ -42,7 +42,7 @@ const Column = ({ id, name, items }: ColumnProps) => {
   return (
     <SortableContext id={id} items={items} strategy={verticalListSortingStrategy}>
       <div className="relative">
-        <div className="bg-acade-secondary-100/50 absolute inset-0 w-3/4 rounded" />
+        <div className="absolute inset-0 w-3/4 rounded bg-acade-secondary-100/50" />
 
         <div className="relative z-10 p-3 pb-8">
           <p className="mb-3 text-xs font-bold">{name}</p>
@@ -91,7 +91,7 @@ const Section = ({ id, isDragging = false }: SectionProps) => {
   return (
     <div
       className={cn(
-        "bg-acade-secondary-500 hover:bg-acade-secondary-200 cursor-grab rounded p-2 text-black transition-colors",
+        "cursor-grab rounded bg-acade-secondary-500 p-2 text-black transition-colors hover:bg-acade-secondary-200",
         isDragging && "cursor-grabbing",
       )}
     >
@@ -260,7 +260,11 @@ export const LayoutSection = () => {
           </Portal>
         </DndContext>
 
-        <Button variant="outline" className="ml-auto" onClick={onAddPage}>
+        <Button
+          variant="outline"
+          className="ml-auto bg-background text-foreground hover:bg-primary hover:text-white"
+          onClick={onAddPage}
+        >
           <Plus />
           <span className="ml-2 text-xs lg:text-sm">{t`Ajouter une nouvelle page`}</span>
         </Button>

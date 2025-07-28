@@ -2,6 +2,7 @@ import { CaretRight, Check, DotOutline } from "@phosphor-icons/react";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { cn } from "@reactive-resume/utils";
 import { forwardRef } from "react";
+import { useState } from "react";
 
 export const DropdownMenu = DropdownMenuPrimitive.Root;
 
@@ -170,3 +171,44 @@ export const DropdownMenuSeparator = forwardRef<
 ));
 
 DropdownMenuSeparator.displayName = DropdownMenuPrimitive.Separator.displayName;
+
+export const DropdownMenuContextTrigger = ({
+  trigger,
+  children,
+  className,
+}: {
+  trigger: React.ReactNode;
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  const [open, setOpen] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleContextMenu = (event: React.MouseEvent) => {
+    event.preventDefault();
+    setPosition({ x: event.clientX, y: event.clientY });
+    setOpen(true);
+  };
+
+  return (
+    <DropdownMenuPrimitive.Root open={open} onOpenChange={setOpen}>
+      <div className={cn("inline-block", className)} onContextMenu={handleContextMenu}>
+        {trigger}
+      </div>
+
+      <DropdownMenuPrimitive.Portal>
+        <DropdownMenuPrimitive.Content
+          sideOffset={0}
+          align="start"
+          style={{ position: "fixed", top: position.y, left: position.x }}
+          className={cn(
+            "z-50 min-w-32 overflow-hidden rounded-md border bg-background p-1 text-foreground shadow-sm",
+            "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+          )}
+        >
+          {children}
+        </DropdownMenuPrimitive.Content>
+      </DropdownMenuPrimitive.Portal>
+    </DropdownMenuPrimitive.Root>
+  );
+};
