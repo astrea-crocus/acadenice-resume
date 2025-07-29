@@ -70,7 +70,7 @@ msgstr "Ένα βιογραφικό σημείωμα με αυτό το slug υ�
 msgid "A user with this email address and/or username already exists."
 msgstr "Ένας χρήστης με αυτή τη διεύθυνση ηλεκτρονικού ταχυδρομείου ή/και όνομα χρήστη υπάρχει ήδη."
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "Α4"
@@ -105,7 +105,7 @@ msgstr "Δέχεται μόνο αρχεία {accept}"
 msgid "Account"
 msgstr "Λογαριασμός χρήστη"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:73
 msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr ""
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Activer ou désactiver l'effet niveaux de gris"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:194
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:201
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:194
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:194
 msgid "Add a custom field"
@@ -174,7 +174,7 @@ msgstr ""
 msgid "AI"
 msgstr "ΤΝ"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:190
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:197
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:190
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:190
 msgid "Ajouter un champ personnalisé"
@@ -186,13 +186,13 @@ msgstr ""
 msgid "Ajouter un nouvel élément"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:261
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:276
 msgid "Ajouter une nouvelle page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:165
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:279
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:283
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:280
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:284
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:191
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:316
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:320
@@ -330,6 +330,10 @@ msgstr "Οποιοσδήποτε διαθέτει τον σύνδεσμο μπο
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr "Οποιοσδήποτε με αυτόν τον σύνδεσμο μπορεί να δει και να κατεβάσει το βιογραφικό σημείωμα. Μοιραστείτε το στο προφίλ σας ή με τους υπεύθυνους προσλήψεων."
 
+#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
+msgid "Apparence"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:41
 msgid "Appliquer une feuille de style CSS personnalisée"
 msgstr ""
@@ -386,7 +390,7 @@ msgstr "Διαθέσιμο σε {languagesCount} γλώσσες"
 msgid "Back"
 msgstr "Πίσω"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
 msgid "Background Color"
 msgstr "Χρώμα φόντου"
@@ -511,19 +515,19 @@ msgstr ""
 msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:117
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:111
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:101
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:107
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:101
 msgid "Champ de saisie pour le nom du champ personnalisé: {fieldName}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:80
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:74
 msgid "Champ de saisie pour modifier l'icône"
@@ -536,13 +540,13 @@ msgid "Champ de saisie pour renommer la section"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:31
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:31
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:33
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:31
 msgid "Champ pour saisir l'URL"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:35
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:35
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:37
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:35
 msgid "Champ pour saisir le libellé associé à l'URL"
 msgstr ""
@@ -754,7 +758,7 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:27
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
 msgid "CSS Personnalisé"
 msgstr ""
 
@@ -869,7 +873,7 @@ msgid "Décerné par"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:163
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:119
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:129
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -886,7 +890,7 @@ msgstr "Διαγραφή Λογαριασμού"
 msgid "Déplacer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:49
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:52
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:49
 msgid "Déplacer le champ personnalisé"
@@ -1051,7 +1055,7 @@ msgid "Downloads"
 msgstr "Λήψεις"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:251
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:103
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -1079,7 +1083,7 @@ msgstr ""
 msgid "Edit"
 msgstr "Τροποποίηση"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:69
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:70
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:69
 msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr ""
@@ -1225,22 +1229,22 @@ msgstr "Ορθογραφία & γραμματική"
 msgid "Foire aux questions"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
 msgstr "Οικογένεια γραμματοσειράς"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:148
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:151
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:148
 msgid "Font Size"
 msgstr "Μέγεθος γραμματοσειράς"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:122
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:125
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:122
 msgid "Font Subset"
 msgstr "Υποσύνολο γραμματοσειρών"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:134
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:137
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:134
 msgid "Font Variants"
 msgstr "Παραλλαγές γραμματοσειράς"
@@ -1261,8 +1265,8 @@ msgstr "Ξεχάσατε τον κωδικό πρόσβασης;"
 msgid "Forgot your password?"
 msgstr "Ξεχάσατε τον κωδικό πρόσβασής σας;"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:32
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:40
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:33
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:47
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:32
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:40
 msgid "Format"
@@ -1308,7 +1312,7 @@ msgstr "GitHub Stars"
 msgid "Give your old resume a new name."
 msgstr "Δώστε στο παλιό σας βιογραφικό ένα νέο όνομα."
 
-#: apps/client/src/pages/builder/_components/header.tsx:67
+#: apps/client/src/pages/builder/_components/header.tsx:68
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -1360,7 +1364,7 @@ msgstr "Hidden"
 msgid "Hide"
 msgstr "Απόκρυψη"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:192
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:195
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:192
 msgid "Hide Icons"
 msgstr "Απόκρυψη Εικονιδίων"
@@ -1391,7 +1395,7 @@ msgstr ""
 msgid "Icon"
 msgstr "Εικονίδιο"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:61
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:58
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:58
 msgid "Icône"
@@ -1554,8 +1558,8 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:70
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:56
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:70
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:58
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:70
 msgid "Label"
@@ -1582,7 +1586,7 @@ msgstr ""
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:84
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:66
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "Τελευταία ενημέρωση {lastUpdated}"
@@ -1607,7 +1611,7 @@ msgstr ""
 msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:44
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "Γράμμα"
@@ -1661,7 +1665,7 @@ msgstr "Φωτεινό"
 msgid "Light or dark theme"
 msgstr "Ανοιχτό ή σκοτεινό θέμα"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:165
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:168
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:165
 msgid "Line Height"
 msgstr "Ύψος Γραμμής"
@@ -1675,7 +1679,7 @@ msgstr "LinkedIn, JSON Βιογραφικό, κλπ."
 msgid "List"
 msgstr "Λίστα"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:174
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:180
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:174
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:174
 msgid "Liste des champs personnalisés"
@@ -1696,7 +1700,7 @@ msgid "Location"
 msgstr "Τοποθεσία"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:123
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1742,7 +1746,7 @@ msgstr "Μάρτιος 2023"
 msgid "March 2023 - Present"
 msgstr "Μάρτιος 2023 - Παρόν"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:50
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:69
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:50
 msgid "Margin"
 msgstr "Περιθώρια"
@@ -1784,13 +1788,12 @@ msgstr ""
 msgid "mis à votre disposition par nous."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:197
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:198
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:205
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:206
 msgid "Mise en page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:30
-#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
 msgid "Mise en Page"
 msgstr ""
 
@@ -1812,7 +1815,7 @@ msgstr ""
 msgid "Modèles"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:64
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:70
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:64
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:64
 msgid "Modifier l'icône du champ personnalisé"
@@ -1909,7 +1912,7 @@ msgid "No user tracking or advertising"
 msgstr "Καμία παρακολούθηση χρήστη ή διαφήμιση"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:99
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:105
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:28
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:99
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:28
@@ -2049,7 +2052,7 @@ msgstr "Κωδικός πρόσβασης μίας χρήσης"
 msgid "Oops, the server returned an error."
 msgstr "Ουπς, ο διακομιστής επέστρεψε σφάλμα."
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:95
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -2077,8 +2080,8 @@ msgstr "Κλειδί API OpenAI/Ollama"
 msgid "OpenAI/Ollama Integration"
 msgstr "Ενσωμάτωση OpenAI/Ollama"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:67
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:182
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:86
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:185
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:67
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:182
 msgid "Options"
@@ -2089,7 +2092,7 @@ msgstr "Ρυθμίσεις"
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/index.tsx:47
+#: apps/client/src/pages/builder/sidebar/index.tsx:44
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:207
 msgid "Options utilisateur"
 msgstr ""
@@ -2127,7 +2130,7 @@ msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais pa
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:61
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:61
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:63
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
 msgid "Ouvrir le champ pour modifier le libellé de l'URL"
 msgstr ""
@@ -2167,9 +2170,9 @@ msgstr ""
 msgid "Ouvrir les options de la section Profil"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:25
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
 #: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:26
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:27
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
@@ -2178,12 +2181,12 @@ msgstr ""
 msgid "Page"
 msgstr "Σελίδα"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:228
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:239
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
 msgstr "Σελίδα {pageNumber}"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:248
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:259
 msgid "Paneau Latéral"
 msgstr ""
 
@@ -2290,12 +2293,12 @@ msgstr ""
 msgid "Powered by"
 msgstr "Υποστηρίζεται από"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:46
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
 msgstr "Βασικό χρώμα"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:247
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:258
 msgid "Principal"
 msgstr ""
 
@@ -2399,7 +2402,7 @@ msgstr "Επανάληψη"
 msgid "Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:201
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:209
 msgid "Réinitialiser la Mise en Page"
 msgstr ""
 
@@ -2437,7 +2440,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebar/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:121
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:99
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:109
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
@@ -2580,7 +2583,7 @@ msgstr ""
 msgid "S'inscrire"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:79
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:73
 msgid "Saisir le nom d'icône Phosphor"
@@ -2649,17 +2652,17 @@ msgstr ""
 msgid "Se déconnecter"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
 msgstr "Αναζήτηση οικογένειας γραμματοσειρών"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:126
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:129
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:126
 msgid "Search for a font subset"
 msgstr "Αναζήτηση οικογένειας γραμματοσειρών"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:139
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:142
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:139
 msgid "Search for a font variant"
 msgstr "Αναζήτηση οικογένειας γραμματοσειρών"
@@ -2754,12 +2757,12 @@ msgstr "Κοινοποίηση"
 msgid "Show"
 msgstr "Εμφάνιση"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:78
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:97
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:78
 msgid "Show Break Line"
 msgstr "Εμφάνιση γραμμής διακοπής"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "Εμφάνιση αριθμών σελίδων"
@@ -2933,7 +2936,7 @@ msgstr "Υποστηρίζει μορφές σελίδων A4/Letter"
 msgid "Supprimer"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:231
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:242
 msgid "Supprimer la page"
 msgstr ""
 
@@ -2943,7 +2946,7 @@ msgstr ""
 msgid "Supprimer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:121
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:127
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:121
 msgid "Supprimer le champ personnalisé nommé {fieldName}"
@@ -2997,7 +3000,7 @@ msgstr "Πρότυπο"
 msgid "Templates"
 msgstr "Πρότυπα"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:103
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:106
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
 msgstr "Χρώματα κειμένου"
@@ -3023,7 +3026,7 @@ msgstr "Το βιογραφικό σημείωμα που θέλετε να εν
 msgid "Theme"
 msgstr "Θέμα"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
 msgid "Thème"
 msgstr ""
 
@@ -3044,7 +3047,7 @@ msgstr "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου συνδέεται με έναν λογαριασμό OAuth. Παρακαλούμε συνδεθείτε με τον πάροχο OAuth."
 
-#: apps/client/src/pages/builder/_components/header.tsx:81
+#: apps/client/src/pages/builder/_components/header.tsx:82
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "Αυτό το βιογραφικό σημείωμα είναι κλειδωμένο, παρακαλούμε ξεκλειδώστε το για να κάνετε περαιτέρω αλλαγές."
 
@@ -3080,7 +3083,7 @@ msgstr ""
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:57
+#: apps/client/src/pages/builder/_components/header.tsx:58
 msgid "Toggle left panel"
 msgstr ""
 
@@ -3134,21 +3137,21 @@ msgstr ""
 msgid "Type of Study"
 msgstr "Τύπος μελέτης"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:95
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
 msgid "Typographie"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:76
 #: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:78
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:77
 msgid "Typography"
 msgstr "Τυπογραφία"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:203
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:206
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "Υπογράμμιση συνδέσμων"
@@ -3163,7 +3166,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:108
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:118
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -3225,7 +3228,7 @@ msgid "URL du site web du projet"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:82
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:82
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:85
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:82
 msgid "URL must start with https://"
 msgstr "Η διεύθυνση URL πρέπει να αρχίζει με https://"
@@ -3251,7 +3254,7 @@ msgid "Users Signed Up"
 msgstr "Χρήστες που έχουν εγγραφεί"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:29
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:109
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:115
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:29
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:109
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:29
@@ -3299,7 +3302,7 @@ msgstr ""
 msgid "Visible"
 msgstr "Ορατό"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:81
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:87
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:81
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:81
 msgid "Visitez <0>Phosphor Icons</0> pour voir la liste des icônes disponibles"

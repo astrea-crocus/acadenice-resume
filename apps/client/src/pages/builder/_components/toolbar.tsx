@@ -74,7 +74,7 @@ export const BuilderToolbar = () => {
       role="toolbar"
       aria-label={t`Resume builder toolbar`}
     >
-      <div className="inline-flex flex-col items-center justify-center rounded-full bg-primary-accent/30 py-4 shadow-xl">
+      <div className="inline-flex flex-col items-center justify-center rounded-full bg-background bg-gradient-to-t from-primary-accent/30 to-primary-accent/30 py-4 shadow-xl">
         <Tooltip side="right" content={t`Undo`}>
           <Button
             size="icon"

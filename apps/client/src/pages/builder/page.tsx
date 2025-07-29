@@ -65,7 +65,7 @@ export const BuilderPage = () => {
         ref={setFrameRef}
         title={resume.id}
         src="/artboard/builder"
-        className="mt-16 w-full"
+        className="mt-16 w-full bg-background"
         style={{ height: `calc(100vh - 64px)` }}
       />
     </>

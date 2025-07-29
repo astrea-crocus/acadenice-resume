@@ -14,9 +14,9 @@ type SectionsProps = {
 const sectionsMap: Record<MetadataKey, React.ReactNode> = {
   templates: <Templates />,
   basics: <Basics />,
+  "resume-sections": <ResumeSections />,
   appearence: <Appearence />,
   publish: <Publish />,
-  "resume-sections": <ResumeSections />,
 };
 
 export const Sections = ({ currentSection }: SectionsProps) => {

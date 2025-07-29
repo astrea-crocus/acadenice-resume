@@ -19,7 +19,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         "hover:bg-gradient-to-b hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
         "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
 
-        "focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10 focus-visible:outline-none focus-visible:ring-0",
+        "focus:border-acade-secondary-500 focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10 focus-visible:outline-none focus-visible:ring-0",
         "dark:focus:from-acade-secondary-800/10 dark:focus:to-acade-secondary-800/10",
 
         "file:border-0 file:pt-1 file:text-sm file:font-medium",

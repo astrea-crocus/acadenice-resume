@@ -57,4 +57,4 @@ apps/client/src/locales/*/messages.*js
 # Compose
 docker-compose.yml
 compose.yml
-!compose.example.yml
+compose.dev.yml

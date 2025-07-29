@@ -7,16 +7,16 @@ export const Publish = () => {
   return (
     <div className="flex">
       <div className="h-screen flex-1 pb-16 lg:px-4 lg:py-2">
-        <div className="grid h-full gap-y-6 @container/right">
-          <div />
+        <div className="flex h-full flex-col @container/right">
+          <div className="h-1/3 bg-red-500/50" />
 
-          <div className="grid gap-y-6 p-6">
+          <div className="flex flex-col bg-blue-500/50 p-6">
             <ExportSection />
             <Separator />
             <SharingSection />
           </div>
 
-          <div />
+          <div className="h-1/3 bg-red-500/50" />
         </div>
       </div>
     </div>

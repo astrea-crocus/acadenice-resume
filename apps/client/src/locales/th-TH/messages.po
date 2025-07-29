@@ -8,7 +8,7 @@ msgstr ""
 "Language: th\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-03 09:13\n"
+"PO-Revision-Date: 2025-05-21 00:11\n"
 "Last-Translator: \n"
 "Language-Team: Thai\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:171
 msgid "You have enabled two-factor authentication successfully."
-msgstr "เปิดใช้งานการยืนยันตัวตนแบบสองปัจจัย (2FA) สำเร็จ"
+msgstr "เปิดใช้งานการยืนยันตัวตนแบบสองปัจจัยสำเร็จ"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:57
 msgid "{templatesCount} resume templates to choose from"
@@ -70,7 +70,7 @@ msgstr "มีเรซูเม่ชื่อนี้อยู่แล้ว
 msgid "A user with this email address and/or username already exists."
 msgstr "มีผู้ใช้ที่มีอีเมลและ/หรือชื่อผู้ใช้นี้อยู่แล้ว"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "A4"
@@ -105,7 +105,7 @@ msgstr "ยอมรับเฉพาะไฟล์ {accept}"
 msgid "Account"
 msgstr "บัญชี"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:73
 msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr ""
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Activer ou désactiver l'effet niveaux de gris"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:194
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:201
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:194
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:194
 msgid "Add a custom field"
@@ -174,7 +174,7 @@ msgstr ""
 msgid "AI"
 msgstr "AI"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:190
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:197
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:190
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:190
 msgid "Ajouter un champ personnalisé"
@@ -186,13 +186,13 @@ msgstr ""
 msgid "Ajouter un nouvel élément"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:261
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:276
 msgid "Ajouter une nouvelle page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:165
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:279
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:283
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:280
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:284
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:191
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:316
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:320
@@ -297,11 +297,11 @@ msgstr "เกิดข้อผิดพลาดขณะตรวจสอบ
 
 #: apps/client/src/pages/public/error.tsx:23
 msgid "An internal server error occurred."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์"
 
 #: apps/client/src/pages/public/error.tsx:32
 msgid "An unexpected error occurred."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิด"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:134
 msgid "and many more..."
@@ -330,13 +330,17 @@ msgstr "ทุกคนที่มีลิงก์สามารถดูแ
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr "ทุกคนที่มีลิงค์นี้สามารถดูและดาวน์โหลดเรซูเม่ได้ แชร์ไปยังโปรไฟล์ของคุณหรือฝ่ายสรรหาบุคลากรได้"
 
+#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
+msgid "Apparence"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:41
 msgid "Appliquer une feuille de style CSS personnalisée"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:41
 msgid "Apply Custom CSS"
-msgstr ""
+msgstr "ใช้งาน CSS ที่กำหนดเอง"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:154
 msgid "Are you sure you want to delete your resume?"
@@ -386,7 +390,7 @@ msgstr "มีให้บริการใน {languagesCount} ภาษา"
 msgid "Back"
 msgstr "กลับ"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
 msgid "Background Color"
 msgstr "สีพื้นหลัง"
@@ -511,19 +515,19 @@ msgstr ""
 msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:117
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:111
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:101
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:107
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:101
 msgid "Champ de saisie pour le nom du champ personnalisé: {fieldName}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:80
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:74
 msgid "Champ de saisie pour modifier l'icône"
@@ -536,13 +540,13 @@ msgid "Champ de saisie pour renommer la section"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:31
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:31
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:33
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:31
 msgid "Champ pour saisir l'URL"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:35
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:35
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:37
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:35
 msgid "Champ pour saisir le libellé associé à l'URL"
 msgstr ""
@@ -754,19 +758,19 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:27
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
 msgid "CSS Personnalisé"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
 msgid "Current Password"
-msgstr ""
+msgstr "รหัสผ่านเดิม"
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:93
 #: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:27
 #: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:28
 msgid "Custom CSS"
-msgstr ""
+msgstr "CSS ที่กำหนดเอง"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:62
 msgid "Custom resume sections"
@@ -869,7 +873,7 @@ msgid "Décerné par"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:163
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:119
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:129
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -886,7 +890,7 @@ msgstr "ลบบัญชี"
 msgid "Déplacer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:49
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:52
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:49
 msgid "Déplacer le champ personnalisé"
@@ -1051,7 +1055,7 @@ msgid "Downloads"
 msgstr "ยอดดาวน์โหลด"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:251
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:103
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -1079,7 +1083,7 @@ msgstr ""
 msgid "Edit"
 msgstr "แก้ไข"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:69
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:70
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:69
 msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr ""
@@ -1160,7 +1164,7 @@ msgstr ""
 
 #: apps/client/src/pages/public/error.tsx:46
 msgid "Error {statusCode}"
-msgstr ""
+msgstr "Error {statusCode}"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:289
 msgid "Errors"
@@ -1225,22 +1229,22 @@ msgstr "แก้ไขการสะกดและไวยากรณ์"
 msgid "Foire aux questions"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
 msgstr "ตระกูลฟอนต์"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:148
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:151
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:148
 msgid "Font Size"
 msgstr "ขนาดฟอนต์"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:122
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:125
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:122
 msgid "Font Subset"
 msgstr "ฟอนต์ย่อย"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:134
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:137
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:134
 msgid "Font Variants"
 msgstr "รูปแบบฟอนต์"
@@ -1261,8 +1265,8 @@ msgstr "ลืมรหัสผ่านเหรอ?"
 msgid "Forgot your password?"
 msgstr "ลืมรหัสผ่านของคุณใช่หรือไม่?"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:32
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:40
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:33
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:47
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:32
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:40
 msgid "Format"
@@ -1308,7 +1312,7 @@ msgstr "ดาวบน GitHub"
 msgid "Give your old resume a new name."
 msgstr "ตั้งชื่อใหม่ให้เรซูเม่เก่าของคุณ"
 
-#: apps/client/src/pages/builder/_components/header.tsx:67
+#: apps/client/src/pages/builder/_components/header.tsx:68
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -1318,7 +1322,7 @@ msgstr "ไปที่แดชบอร์ด"
 
 #: apps/client/src/pages/public/error.tsx:55
 msgid "Go to home"
-msgstr ""
+msgstr "กลับหน้าแรก"
 
 #: apps/client/src/pages/auth/_components/social-auth.tsx:31
 msgid "Google"
@@ -1360,7 +1364,7 @@ msgstr "ซ่อนไว้"
 msgid "Hide"
 msgstr "ซ่อน"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:192
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:195
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:192
 msgid "Hide Icons"
 msgstr "ซ่อนไอคอน"
@@ -1391,7 +1395,7 @@ msgstr ""
 msgid "Icon"
 msgstr "ไอคอน"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:61
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:58
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:58
 msgid "Icône"
@@ -1554,8 +1558,8 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:70
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:56
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:70
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:58
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:70
 msgid "Label"
@@ -1582,7 +1586,7 @@ msgstr ""
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:84
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:66
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "อัปเดตล่าสุด {lastUpdated}"
@@ -1607,7 +1611,7 @@ msgstr ""
 msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:44
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "จดหมาย"
@@ -1661,7 +1665,7 @@ msgstr "สว่าง"
 msgid "Light or dark theme"
 msgstr "ธีมสว่างหรือมืด"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:165
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:168
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:165
 msgid "Line Height"
 msgstr "ความสูงของเส้น"
@@ -1675,7 +1679,7 @@ msgstr "LinkedIn, เรซูเม่ JSON ฯลฯ"
 msgid "List"
 msgstr "รายการ"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:174
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:180
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:174
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:174
 msgid "Liste des champs personnalisés"
@@ -1696,7 +1700,7 @@ msgid "Location"
 msgstr "สถานที่"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:123
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1742,7 +1746,7 @@ msgstr "มีนาคม 2566"
 msgid "March 2023 - Present"
 msgstr "มีนาคม 2566 - ปัจจุบัน"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:50
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:69
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:50
 msgid "Margin"
 msgstr "ระยะขอบ"
@@ -1784,13 +1788,12 @@ msgstr ""
 msgid "mis à votre disposition par nous."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:197
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:198
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:205
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:206
 msgid "Mise en page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:30
-#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
 msgid "Mise en Page"
 msgstr ""
 
@@ -1812,7 +1815,7 @@ msgstr ""
 msgid "Modèles"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:64
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:70
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:64
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:64
 msgid "Modifier l'icône du champ personnalisé"
@@ -1909,7 +1912,7 @@ msgid "No user tracking or advertising"
 msgstr "ไม่มีการติดตามผู้ใช้หรือโฆษณา"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:99
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:105
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:28
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:99
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:28
@@ -2049,7 +2052,7 @@ msgstr "รหัสผ่านครั้งเดียว"
 msgid "Oops, the server returned an error."
 msgstr "อุ๊ปส์ เซิร์ฟเวอร์ส่งข้อผิดพลาดมา"
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:95
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -2071,14 +2074,14 @@ msgstr "การใช้ระบบ OpenAI"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:113
 msgid "OpenAI/Ollama API Key"
-msgstr ""
+msgstr "API คีย์ของ OpenAI/Ollama"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:70
 msgid "OpenAI/Ollama Integration"
-msgstr ""
+msgstr "การเชื่อมต่อ OpenAI/Ollama"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:67
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:182
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:86
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:185
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:67
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:182
 msgid "Options"
@@ -2089,7 +2092,7 @@ msgstr "การตั้งค่า"
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/index.tsx:47
+#: apps/client/src/pages/builder/sidebar/index.tsx:44
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:207
 msgid "Options utilisateur"
 msgstr ""
@@ -2127,7 +2130,7 @@ msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais pa
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:61
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:61
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:63
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
 msgid "Ouvrir le champ pour modifier le libellé de l'URL"
 msgstr ""
@@ -2167,9 +2170,9 @@ msgstr ""
 msgid "Ouvrir les options de la section Profil"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:25
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
 #: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:26
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:27
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
@@ -2178,12 +2181,12 @@ msgstr ""
 msgid "Page"
 msgstr "หน้า"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:228
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:239
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
-msgstr ""
+msgstr "หน้า {pageNumber}"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:248
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:259
 msgid "Paneau Latéral"
 msgstr ""
 
@@ -2290,12 +2293,12 @@ msgstr ""
 msgid "Powered by"
 msgstr "ขับเคลื่อนโดย"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:46
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
 msgstr "สีหลัก"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:247
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:258
 msgid "Principal"
 msgstr ""
 
@@ -2399,7 +2402,7 @@ msgstr "ทำใหม่"
 msgid "Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:201
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:209
 msgid "Réinitialiser la Mise en Page"
 msgstr ""
 
@@ -2437,7 +2440,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebar/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:121
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:99
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:109
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
@@ -2580,7 +2583,7 @@ msgstr ""
 msgid "S'inscrire"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:79
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:73
 msgid "Saisir le nom d'icône Phosphor"
@@ -2635,11 +2638,11 @@ msgstr "เกรด"
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:108
 msgid "Scroll to Pan"
-msgstr ""
+msgstr "เลื่อนเพื่อขยับ"
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:108
 msgid "Scroll to Zoom"
-msgstr ""
+msgstr "เลื่อนเพื่อซูม"
 
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:30
 msgid "Se connecter"
@@ -2649,17 +2652,17 @@ msgstr ""
 msgid "Se déconnecter"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
 msgstr "ค้นหาฟอนต์"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:126
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:129
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:126
 msgid "Search for a font subset"
 msgstr "ค้นหาฟอนต์ย่อย"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:139
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:142
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:139
 msgid "Search for a font variant"
 msgstr "ค้นหารูปแบบฟอนต์"
@@ -2754,12 +2757,12 @@ msgstr "การแชร์"
 msgid "Show"
 msgstr "แสดง"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:78
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:97
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:78
 msgid "Show Break Line"
 msgstr "แสดงเส้นแบ่ง"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "แสดงเลขหน้า"
@@ -2933,7 +2936,7 @@ msgstr "รองรับหน้ากระดาษแบบ A4/จดห�
 msgid "Supprimer"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:231
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:242
 msgid "Supprimer la page"
 msgstr ""
 
@@ -2943,7 +2946,7 @@ msgstr ""
 msgid "Supprimer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:121
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:127
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:121
 msgid "Supprimer le champ personnalisé nommé {fieldName}"
@@ -2997,18 +3000,18 @@ msgstr "เทมเพลต"
 msgid "Templates"
 msgstr "เทมเพลต"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:103
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:106
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
 msgstr "สีตัวอักษร"
 
 #: apps/client/src/pages/public/error.tsx:17
 msgid "The page you're looking for doesn't exist."
-msgstr ""
+msgstr "ไม่มีหน้าที่คุณกำลังมองหาอยู่"
 
 #: apps/client/src/pages/public/error.tsx:29
 msgid "The request was invalid."
-msgstr ""
+msgstr "คำขอที่ส่งไปผิดพลาด"
 
 #: apps/client/src/services/errors/translate-error.ts:49
 msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
@@ -3023,7 +3026,7 @@ msgstr "เรซูเม่ที่คุณต้องการอัปเ
 msgid "Theme"
 msgstr "ธีม"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
 msgid "Thème"
 msgstr ""
 
@@ -3044,7 +3047,7 @@ msgstr "การทำเช่นนี้จะย้อนกลับไม
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "ที่อยู่อีเมลนี้เชื่อมโยงกับบัญชี OAuth โปรดลงชื่อเข้าใช้ด้วยผู้ให้บริการ OAuth ของคุณ"
 
-#: apps/client/src/pages/builder/_components/header.tsx:81
+#: apps/client/src/pages/builder/_components/header.tsx:82
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "เรซูเม่นี้ถูกล็อกไว้ โปรดปลดล็อกเพื่อทำการเปลี่ยนแปลงต่อไป"
 
@@ -3080,7 +3083,7 @@ msgstr ""
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:57
+#: apps/client/src/pages/builder/_components/header.tsx:58
 msgid "Toggle left panel"
 msgstr ""
 
@@ -3134,21 +3137,21 @@ msgstr ""
 msgid "Type of Study"
 msgstr "ระดับการศึกษา"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:95
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
 msgid "Typographie"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:76
 #: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:78
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:77
 msgid "Typography"
 msgstr "แบบอักษร"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:203
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:206
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "ขีดเส้นใต้ลิงก์"
@@ -3163,7 +3166,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:108
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:118
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -3225,7 +3228,7 @@ msgid "URL du site web du projet"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:82
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:82
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:85
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:82
 msgid "URL must start with https://"
 msgstr "URL ต้องขึ้นต้นด้วย https://"
@@ -3251,7 +3254,7 @@ msgid "Users Signed Up"
 msgstr "ผู้ใช้ที่ลงทะเบียน"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:29
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:109
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:115
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:29
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:109
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:29
@@ -3299,7 +3302,7 @@ msgstr ""
 msgid "Visible"
 msgstr "มองเห็นได้"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:81
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:87
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:81
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:81
 msgid "Visitez <0>Phosphor Icons</0> pour voir la liste des icônes disponibles"
@@ -3338,7 +3341,7 @@ msgstr "เว็บไซต์"
 
 #: apps/client/src/pages/public/error.tsx:26
 msgid "You are not authorized to access this page."
-msgstr ""
+msgstr "คุณไม่มีสิทธิเข้าถึงหน้านี้"
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/custom-section.tsx:191
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/hard-skills.tsx:127
@@ -3357,7 +3360,7 @@ msgstr "คุณสามารถป้อนชื่อผู้ใช้ข
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:94
 msgid "You can also integrate with Ollama simply by setting the API key to `sk-1234567890abcdef` and the Base URL to your Ollama URL, i.e. `http://localhost:11434/v1`. You can also pick and choose models and set the max tokens as per your preference."
-msgstr ""
+msgstr "คุณสามารถเชื่อมกับ Ollama โดยการตั้งค่า API คีย์ เป็น `sk-1234567890abcdef` และ URL ที่จะไปยัง Ollama URL ของคุณ เช่น `http://localhost:11434/v1` นอกจากนี้คุณยังสามารถเลือกโมเดลและตั้งค่าโทเค็นใช้งานสูงสุดที่คุณต้องการได้"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:72
 msgid "You can make use of the OpenAI API to help you generate content, or improve your writing while composing your resume."
@@ -3369,7 +3372,7 @@ msgstr "คุณสามารถติดตามยอดดูเรซู
 
 #: apps/client/src/pages/public/error.tsx:20
 msgid "You don't have permission to access this page."
-msgstr ""
+msgstr "คุณไม่ได้รับอนุญาตให้เข้าถึงหน้านี้"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:78
 msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."

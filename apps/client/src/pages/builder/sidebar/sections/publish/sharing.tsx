@@ -1,6 +1,7 @@
 import { t } from "@lingui/macro";
 import { CopySimple } from "@phosphor-icons/react";
 import { Button, Input, Label, Switch, Tooltip } from "@reactive-resume/ui";
+import { cn } from "@reactive-resume/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useToast } from "@/client/hooks/use-toast";
@@ -32,7 +33,7 @@ export const SharingSection = () => {
   };
 
   return (
-    <section id="sharing" className="flex min-h-[350px] flex-col gap-y-6">
+    <section id="sharing" className="flex h-fit flex-col gap-y-6">
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="sharing" size={18} name={t`Sharing`} />
@@ -40,7 +41,7 @@ export const SharingSection = () => {
         </div>
       </header>
 
-      <main className="grid h-full gap-y-4">
+      <main className="flex max-h-fit flex-col">
         <div className="space-y-1.5">
           <div className="flex items-center gap-x-4">
             <Switch
@@ -65,7 +66,7 @@ export const SharingSection = () => {
           {isPublic && (
             <motion.div
               layout
-              className="space-y-1.5"
+              className="max-h-fit space-y-1.5"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -76,7 +77,15 @@ export const SharingSection = () => {
                 <Input readOnly id="resume-url" value={url} className="flex-1" />
 
                 <Tooltip content={t`Copy to Clipboard`}>
-                  <Button size="icon" variant="ghost" onClick={onCopy}>
+                  <Button
+                    className={cn(
+                      "hover:bg-background hover:bg-gradient-to-t hover:from-acade-secondary-200/50 hover:to-acade-secondary-200/50 hover:text-acade-secondary-500",
+                      "dark:hover:from-acade-secondary-800/50 dark:hover:to-acade-secondary-800/50",
+                    )}
+                    size="icon"
+                    variant="ghost"
+                    onClick={onCopy}
+                  >
                     <CopySimple />
                   </Button>
                 </Tooltip>

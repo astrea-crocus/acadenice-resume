@@ -116,7 +116,7 @@ export const Buttons = ({ onSectionChange, iconSize }: ButtonsProps) => {
       />
       <SectionButton
         id="appearence"
-        name={t`Mise en Page`}
+        name={t`Apparence`}
         size={iconSize}
         onClick={() => {
           onSectionChange("appearence");

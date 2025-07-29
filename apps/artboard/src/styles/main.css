@@ -8,14 +8,12 @@
   @apply border-current;
 }
 
-body {
-  overflow: hidden;
-  background-image: url("/artboard/background.svg");
-  background-repeat: repeat;
-}
-
 #root {
   @apply antialiased;
+}
+
+body {
+  @apply bg-[url('/artboard/background.svg')] bg-repeat bg-transparent;
 }
 
 [data-page].hide-icons .ph {

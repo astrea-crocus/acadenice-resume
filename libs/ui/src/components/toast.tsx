@@ -31,7 +31,7 @@ export const Toast = forwardRef<
   return (
     <ToastPrimitives.Root
       ref={ref}
-      className={cn(toastVariants({ variant }), className)}
+      className={cn("bg-background", toastVariants({ variant }), className)}
       {...props}
     />
   );
@@ -46,7 +46,7 @@ export const ToastAction = forwardRef<
   <ToastPrimitives.Action
     ref={ref}
     className={cn(
-      "inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium transition-colors hover:bg-secondary focus:outline-none focus:ring-1 focus:ring-primary disabled:pointer-events-none disabled:opacity-50",
+      "inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-background px-3 text-sm font-medium transition-colors hover:bg-secondary focus:outline-none focus:ring-1 focus:ring-primary disabled:pointer-events-none disabled:opacity-50",
       "group/primary:border-border/40 group-hover/primary:border-primary/30 group-hover/primary:bg-primary group-hover/primary:text-primary-foreground group-focus/primary:ring-primary",
       "group/secondary:border-border/40 group-hover/secondary:border-secondary/30 group-hover/secondary:bg-secondary group-hover/secondary:text-secondary-foreground group-focus/secondary:ring-secondary",
       "group/error:border-border/40 group-hover/error:border-error/30 group-hover/error:bg-error group-hover/error:text-error-foreground group-focus/error:ring-error",

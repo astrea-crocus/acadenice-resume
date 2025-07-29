@@ -1,6 +1,6 @@
 import { t } from "@lingui/macro";
 import { CircleNotch, FileJs, FilePdf } from "@phosphor-icons/react";
-import { buttonVariants, Card, CardContent, CardDescription, CardTitle } from "@reactive-resume/ui";
+import { Card, CardContent, CardDescription, CardTitle } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
 import { saveAs } from "file-saver";
 
@@ -33,7 +33,7 @@ export const ExportSection = () => {
   };
 
   return (
-    <section id="export" className="flex min-h-[350px] flex-col">
+    <section id="export" className="flex h-fit flex-col">
       <header className="flex h-fit items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="export" size={18} name={t`Export`} />
@@ -44,8 +44,10 @@ export const ExportSection = () => {
       <main className="grid h-full gap-y-4">
         <Card
           className={cn(
-            buttonVariants({ variant: "ghost" }),
-            "h-auto cursor-pointer flex-row items-center gap-x-5 px-4 pb-3 pt-1",
+            "h-auto cursor-pointer flex-row items-center gap-x-5 bg-background px-4 pb-3 pt-1 text-foreground",
+            "hover:bg-gradient-to-t hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
+            "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
+            "border-acade-secondary-200/50 dark:border-acade-secondary-800/50",
           )}
           onClick={onJsonExport}
         >
@@ -60,8 +62,11 @@ export const ExportSection = () => {
 
         <Card
           className={cn(
-            buttonVariants({ variant: "ghost" }),
-            "h-auto cursor-pointer flex-row items-center gap-x-5 px-4 pb-3 pt-1",
+            "h-auto flex-row items-center gap-x-5 bg-background px-4 pb-3 pt-1 text-foreground",
+            "hover:bg-gradient-to-t hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
+            "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",
+            "border-acade-secondary-200/50 dark:border-acade-secondary-800/50",
+            !loading && "cursor-pointer",
             loading && "pointer-events-none cursor-progress opacity-75",
           )}
           onClick={onPdfExport}

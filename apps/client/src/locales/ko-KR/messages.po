@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-03 09:13\n"
+"PO-Revision-Date: 2025-03-07 00:10\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -70,7 +70,7 @@ msgstr "이미 중복된 이력서 주소가 존재합니다. 다른 주소를 �
 msgid "A user with this email address and/or username already exists."
 msgstr "해당 이메일 주소 또는 사용자 이름을 가진 사용자가 이미 존재합니다."
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "A4"
@@ -105,7 +105,7 @@ msgstr "{accept} 파일만 허용됩니다."
 msgid "Account"
 msgstr "계정"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:73
 msgid "Actions d'aide par intelligence artificielle pour la phrase d'accroche"
 msgstr ""
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Activer ou désactiver l'effet niveaux de gris"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:194
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:201
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:194
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:194
 msgid "Add a custom field"
@@ -174,7 +174,7 @@ msgstr ""
 msgid "AI"
 msgstr "AI"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:190
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:197
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:190
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:190
 msgid "Ajouter un champ personnalisé"
@@ -186,13 +186,13 @@ msgstr ""
 msgid "Ajouter un nouvel élément"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:261
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:276
 msgid "Ajouter une nouvelle page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:165
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:279
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:283
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:280
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:284
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:191
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:316
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:320
@@ -297,11 +297,11 @@ msgstr "파일의 유효성을 검사하는 동안 오류가 발생했습니다.
 
 #: apps/client/src/pages/public/error.tsx:23
 msgid "An internal server error occurred."
-msgstr ""
+msgstr "내부 서버 오류가 발생했습니다."
 
 #: apps/client/src/pages/public/error.tsx:32
 msgid "An unexpected error occurred."
-msgstr ""
+msgstr "예기치 않은 오류가 발생했습니다."
 
 #: apps/client/src/pages/home/sections/features/index.tsx:134
 msgid "and many more..."
@@ -329,6 +329,10 @@ msgstr "링크가 있는 사람은 누구나 이력서를 보고 다운로드할
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:30
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr "이 링크가 있는 사람은 누구나 이력서를 보고 다운로드할 수 있습니다. 프로필이나 채용 담당자에 공유해 보세요."
+
+#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
+msgid "Apparence"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:41
 msgid "Appliquer une feuille de style CSS personnalisée"
@@ -386,7 +390,7 @@ msgstr "{languagesCount} 언어 제공"
 msgid "Back"
 msgstr "이전"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
 msgid "Background Color"
 msgstr "배경 색상"
@@ -460,11 +464,11 @@ msgstr ""
 
 #: apps/client/src/pages/public/page.tsx:93
 msgid "Built with"
-msgstr "Built with"
+msgstr "사용한 소프트웨어"
 
 #: apps/client/src/pages/home/sections/contributors/index.tsx:20
 msgid "By the community, for the community."
-msgstr "By the community, for the community."
+msgstr "커뮤니티의, 커뮤니티를 위한, 커뮤니티에 의한."
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:49
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:161
@@ -511,19 +515,19 @@ msgstr ""
 msgid "Cette action peut être annulée en cliquant sur le bouton d'annulation dans la barre d'outils flottante."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:117
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:111
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:111
 msgid "Champ de saisie pour la valeur du champ personnalisé: {fieldValue}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:101
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:107
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:101
 msgid "Champ de saisie pour le nom du champ personnalisé: {fieldName}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:80
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:74
 msgid "Champ de saisie pour modifier l'icône"
@@ -536,13 +540,13 @@ msgid "Champ de saisie pour renommer la section"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:31
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:31
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:33
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:31
 msgid "Champ pour saisir l'URL"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:35
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:35
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:37
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:35
 msgid "Champ pour saisir le libellé associé à l'URL"
 msgstr ""
@@ -754,13 +758,13 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:27
 #: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
 msgid "CSS Personnalisé"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:85
 msgid "Current Password"
-msgstr ""
+msgstr "현재 비밀번호"
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:93
 #: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:27
@@ -790,7 +794,7 @@ msgstr "위험 구역"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:87
 msgid "Dark"
-msgstr "Dark"
+msgstr "다크"
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/awards.tsx:76
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/certifications.tsx:75
@@ -869,7 +873,7 @@ msgid "Décerné par"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:163
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:119
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:129
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -886,7 +890,7 @@ msgstr "계정 삭제"
 msgid "Déplacer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:49
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:52
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:49
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:49
 msgid "Déplacer le champ personnalisé"
@@ -1051,7 +1055,7 @@ msgid "Downloads"
 msgstr "다운로드"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:251
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:103
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -1079,7 +1083,7 @@ msgstr ""
 msgid "Edit"
 msgstr "수정"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:69
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/summary.tsx:70
 #: apps/client/src/pages/builder/sidebars/left/sections/summary.tsx:69
 msgid "Éditeur de texte pour la phrase d'accroche"
 msgstr ""
@@ -1160,7 +1164,7 @@ msgstr ""
 
 #: apps/client/src/pages/public/error.tsx:46
 msgid "Error {statusCode}"
-msgstr ""
+msgstr "오류 {statusCode}"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:289
 msgid "Errors"
@@ -1225,22 +1229,22 @@ msgstr "맞춤법 및 문법 수정"
 msgid "Foire aux questions"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
 msgstr "글꼴"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:148
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:151
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:148
 msgid "Font Size"
 msgstr "글자 크기"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:122
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:125
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:122
 msgid "Font Subset"
 msgstr "글꼴 하위 집합"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:134
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:137
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:134
 msgid "Font Variants"
 msgstr "글꼴 변형"
@@ -1261,8 +1265,8 @@ msgstr "비밀번호를 잊으셨나요?"
 msgid "Forgot your password?"
 msgstr "비밀번호를 잊으셨나요?"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:32
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:40
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:33
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:47
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:32
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:40
 msgid "Format"
@@ -1308,7 +1312,7 @@ msgstr "GitHub 스타"
 msgid "Give your old resume a new name."
 msgstr "기존 이력서에 새 이름을 부여하세요."
 
-#: apps/client/src/pages/builder/_components/header.tsx:67
+#: apps/client/src/pages/builder/_components/header.tsx:68
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -1318,7 +1322,7 @@ msgstr "대시보드로 이동"
 
 #: apps/client/src/pages/public/error.tsx:55
 msgid "Go to home"
-msgstr ""
+msgstr "홈으로 이동"
 
 #: apps/client/src/pages/auth/_components/social-auth.tsx:31
 msgid "Google"
@@ -1360,7 +1364,7 @@ msgstr "숨겨진"
 msgid "Hide"
 msgstr "숨기기"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:192
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:195
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:192
 msgid "Hide Icons"
 msgstr "아이콘 숨기기"
@@ -1391,7 +1395,7 @@ msgstr ""
 msgid "Icon"
 msgstr "아이콘"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:61
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:58
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:58
 msgid "Icône"
@@ -1554,8 +1558,8 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:70
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:56
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:70
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:58
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:56
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:70
 msgid "Label"
@@ -1582,7 +1586,7 @@ msgstr ""
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:84
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:66
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr "마지막 업데이트 {lastUpdated}"
@@ -1607,7 +1611,7 @@ msgstr ""
 msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:44
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "편지"
@@ -1661,7 +1665,7 @@ msgstr "빛"
 msgid "Light or dark theme"
 msgstr "밝거나 어두운 테마"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:165
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:168
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:165
 msgid "Line Height"
 msgstr "선 높이"
@@ -1675,7 +1679,7 @@ msgstr "LinkedIn, JSON 이력서 등"
 msgid "List"
 msgstr "목록"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:174
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:180
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:174
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:174
 msgid "Liste des champs personnalisés"
@@ -1696,7 +1700,7 @@ msgid "Location"
 msgstr "위치"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:123
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1742,7 +1746,7 @@ msgstr "2023년 3월"
 msgid "March 2023 - Present"
 msgstr "2023년 3월 - 현재"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:50
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:69
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:50
 msgid "Margin"
 msgstr "마진"
@@ -1784,13 +1788,12 @@ msgstr ""
 msgid "mis à votre disposition par nous."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:197
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:198
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:205
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:206
 msgid "Mise en page"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:30
-#: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
 msgid "Mise en Page"
 msgstr ""
 
@@ -1812,7 +1815,7 @@ msgstr ""
 msgid "Modèles"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:64
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:70
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:64
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:64
 msgid "Modifier l'icône du champ personnalisé"
@@ -1909,7 +1912,7 @@ msgid "No user tracking or advertising"
 msgstr "사용자 추적 또는 광고 없음"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:99
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:105
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:28
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:99
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:28
@@ -2049,7 +2052,7 @@ msgstr "일회용 비밀번호"
 msgid "Oops, the server returned an error."
 msgstr "서버에서 오류를 반환했습니다."
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:95
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -2077,8 +2080,8 @@ msgstr "OpenAI/올라마 API 키"
 msgid "OpenAI/Ollama Integration"
 msgstr "OpenAI/올라마 통합"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:67
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:182
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:86
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:185
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:67
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:182
 msgid "Options"
@@ -2089,7 +2092,7 @@ msgstr "옵션"
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/index.tsx:47
+#: apps/client/src/pages/builder/sidebar/index.tsx:44
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:207
 msgid "Options utilisateur"
 msgstr ""
@@ -2127,7 +2130,7 @@ msgid "Oui. Vos données sont stockées en toute sécurité et ne sont jamais pa
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:61
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:61
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:63
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
 msgid "Ouvrir le champ pour modifier le libellé de l'URL"
 msgstr ""
@@ -2167,9 +2170,9 @@ msgstr ""
 msgid "Ouvrir les options de la section Profil"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:25
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
 #: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:26
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:27
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
@@ -2178,12 +2181,12 @@ msgstr ""
 msgid "Page"
 msgstr "페이지"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:228
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:239
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
 msgstr "페이지 {pageNumber}"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:248
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:259
 msgid "Paneau Latéral"
 msgstr ""
 
@@ -2290,12 +2293,12 @@ msgstr ""
 msgid "Powered by"
 msgstr "제공"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:43
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:46
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
 msgstr "기본 색상"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:247
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:258
 msgid "Principal"
 msgstr ""
 
@@ -2399,7 +2402,7 @@ msgstr "다시 실행"
 msgid "Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:201
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:209
 msgid "Réinitialiser la Mise en Page"
 msgstr ""
 
@@ -2437,7 +2440,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebar/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:121
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:99
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:109
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
@@ -2580,7 +2583,7 @@ msgstr ""
 msgid "S'inscrire"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:79
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:73
 msgid "Saisir le nom d'icône Phosphor"
@@ -2649,17 +2652,17 @@ msgstr ""
 msgid "Se déconnecter"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:111
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
 msgstr "글꼴 패밀리 검색"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:126
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:129
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:126
 msgid "Search for a font subset"
 msgstr "글꼴 하위 집합 검색"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:139
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:142
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:139
 msgid "Search for a font variant"
 msgstr "글꼴 변형 검색"
@@ -2754,12 +2757,12 @@ msgstr "공유"
 msgid "Show"
 msgstr "표시"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:78
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:97
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:78
 msgid "Show Break Line"
 msgstr "나누기 줄 표시"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "페이지 번호 표시"
@@ -2933,7 +2936,7 @@ msgstr "A4/레터 페이지 형식 지원"
 msgid "Supprimer"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:231
+#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:242
 msgid "Supprimer la page"
 msgstr ""
 
@@ -2943,7 +2946,7 @@ msgstr ""
 msgid "Supprimer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:121
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:127
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:121
 msgid "Supprimer le champ personnalisé nommé {fieldName}"
@@ -2997,18 +3000,18 @@ msgstr "템플릿"
 msgid "Templates"
 msgstr "템플릿"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:103
+#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:106
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
 msgstr "텍스트 색상"
 
 #: apps/client/src/pages/public/error.tsx:17
 msgid "The page you're looking for doesn't exist."
-msgstr ""
+msgstr "요청하신 페이지는 존재하지 않습니다."
 
 #: apps/client/src/pages/public/error.tsx:29
 msgid "The request was invalid."
-msgstr ""
+msgstr "요청이 유효하지 않습니다."
 
 #: apps/client/src/services/errors/translate-error.ts:49
 msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
@@ -3023,7 +3026,7 @@ msgstr "업데이트하려는 이력서가 잠겨 있으므로 변경하려면 �
 msgid "Theme"
 msgstr "테마"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
 msgid "Thème"
 msgstr ""
 
@@ -3044,7 +3047,7 @@ msgstr "이 작업은 취소할 수 없습니다. 이렇게 하면 이력서가 
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "이 이메일 주소는 OAuth 계정과 연결되어 있습니다. OAuth 공급업체를 사용하여 로그인하세요."
 
-#: apps/client/src/pages/builder/_components/header.tsx:81
+#: apps/client/src/pages/builder/_components/header.tsx:82
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "이 이력서는 잠겨 있으므로 추가 변경을 하려면 잠금을 해제하세요."
 
@@ -3080,7 +3083,7 @@ msgstr ""
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:57
+#: apps/client/src/pages/builder/_components/header.tsx:58
 msgid "Toggle left panel"
 msgstr ""
 
@@ -3134,21 +3137,21 @@ msgstr ""
 msgid "Type of Study"
 msgstr "학습 유형"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:95
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
 msgid "Typographie"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:76
 #: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:78
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:77
 msgid "Typography"
 msgstr "타이포그래피"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:203
+#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:206
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "밑줄 링크"
@@ -3163,7 +3166,7 @@ msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouv
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:108
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:118
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -3225,7 +3228,7 @@ msgid "URL du site web du projet"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:82
-#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:82
+#: apps/client/src/pages/builder/sidebar/shared/url-input.tsx:85
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:82
 msgid "URL must start with https://"
 msgstr "URL은 https:// 로 시작해야 합니다."
@@ -3251,7 +3254,7 @@ msgid "Users Signed Up"
 msgstr "가입한 사용자 수"
 
 #: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:29
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:109
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:115
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:29
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:109
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:29
@@ -3299,7 +3302,7 @@ msgstr ""
 msgid "Visible"
 msgstr "가시성"
 
-#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:81
+#: apps/client/src/pages/builder/sidebar/sections/custom/section.tsx:87
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/custom/section.tsx:81
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:81
 msgid "Visitez <0>Phosphor Icons</0> pour voir la liste des icônes disponibles"
@@ -3338,7 +3341,7 @@ msgstr "웹사이트"
 
 #: apps/client/src/pages/public/error.tsx:26
 msgid "You are not authorized to access this page."
-msgstr ""
+msgstr "이 페이지에 접근할 권한이 없습니다."
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/custom-section.tsx:191
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/hard-skills.tsx:127
@@ -3369,7 +3372,7 @@ msgstr "공개 공유를 활성화하여 이력서가 조회된 횟수 또는 �
 
 #: apps/client/src/pages/public/error.tsx:20
 msgid "You don't have permission to access this page."
-msgstr ""
+msgstr "이 페이지에 접근할 권한이 없습니다."
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:78
 msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."

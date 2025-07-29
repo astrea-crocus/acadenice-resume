@@ -14,7 +14,7 @@ import { Buttons } from "./shared";
 export const Sidebar = () => {
   const containterRef = useRef<HTMLDivElement | null>(null);
 
-  const startSection = "basics";
+  const startSection = "templates";
   const [activeSection, setActiveSection] = useState<MetadataKey>(startSection);
 
   const size = 32; //px
