@@ -55,5 +55,5 @@ apps/client/src/locales/*/messages.*js
 .github/instructions/nx.instructions.md
 
 # Compose
-compose.yml
 docker-compose.yml
+compose.yml
