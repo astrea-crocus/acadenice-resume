@@ -54,5 +54,6 @@ apps/client/src/locales/*/messages.*js
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
 
+# Compose
 compose.yml
 docker-compose.yml
