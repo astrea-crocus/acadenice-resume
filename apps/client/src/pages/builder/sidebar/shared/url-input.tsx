@@ -10,6 +10,7 @@ import {
   PopoverTrigger,
   Tooltip,
 } from "@reactive-resume/ui";
+import { cn } from "@reactive-resume/utils";
 import { forwardRef, useId, useMemo } from "react";
 
 type Props = {
@@ -17,10 +18,11 @@ type Props = {
   value: URL;
   placeholder?: string;
   onChange: (value: URL) => void;
+  className?: string;
 };
 
 export const URLInput = forwardRef<HTMLInputElement, Props>(
-  ({ id, value, placeholder, onChange }, ref) => {
+  ({ id, value, placeholder, onChange, className }, ref) => {
     // Générer un id unique pour le message d'erreur
     const errorId = useId();
 
@@ -42,7 +44,7 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
             ref={ref}
             id={id}
             value={value.href}
-            className="flex-1"
+            className={cn("flex-1", className)}
             hasError={hasError}
             placeholder={placeholder}
             aria-label={getUrlInputAriaLabel()}
@@ -66,6 +68,7 @@ export const URLInput = forwardRef<HTMLInputElement, Props>(
             </Tooltip>
             <PopoverContent className="p-1.5">
               <Input
+                className={className}
                 value={value.label}
                 placeholder={t`Label`}
                 aria-label={getLabelInputAriaLabel()}

@@ -68,7 +68,7 @@ export const ThemeSection = () => {
                 "bg-background pl-10",
                 "border-acade-secondary-200 dark:border-acade-secondary-800",
                 "focus:border-acade-secondary-500 focus:bg-background",
-                "focus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10",
+                "hover:bg-backgroundfocus:bg-gradient-to-b focus:from-acade-secondary-200/10 focus:to-acade-secondary-200/10",
                 "dark:focus:from-acade-secondary-800/10 dark:focus:to-acade-secondary-800/10",
                 "hover:bg-background hover:bg-gradient-to-b hover:from-acade-secondary-200/20 hover:to-acade-secondary-200/20",
                 "dark:hover:from-acade-secondary-800/20 dark:hover:to-acade-secondary-800/20",

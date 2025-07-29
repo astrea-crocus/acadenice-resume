@@ -45,7 +45,10 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
         <Button
           size="icon"
           variant="ghost"
-          className="shrink-0"
+          className={cn(
+            "shrink-0",
+            "hover:bg-background hover:bg-gradient-to-t hover:from-acade-secondary-500/20 hover:to-acade-secondary-500/20",
+          )}
           aria-label={t`Déplacer le champ personnalisé`}
           onPointerDown={(event) => {
             controls.start(event);
@@ -60,7 +63,10 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
               <Button
                 size="icon"
                 variant="ghost"
-                className="shrink-0"
+                className={cn(
+                  "shrink-0",
+                  "hover:bg-background hover:bg-gradient-to-t hover:from-acade-secondary-500/20 hover:to-acade-secondary-500/20",
+                )}
                 aria-label={t`Modifier l'icône du champ personnalisé`}
               >
                 {field.icon ? <i className={cn(`ph ph-${field.icon}`)} /> : <Envelope />}
@@ -95,7 +101,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
         </Popover>
 
         <Input
-          className="mx-2"
+          className={cn("mx-2")}
           placeholder={t`Nom`}
           value={field.name}
           aria-label={t`Champ de saisie pour le nom du champ personnalisé: ${fieldName}`}
@@ -105,7 +111,7 @@ export const CustomField = ({ field, onChange, onRemove }: CustomFieldProps) => 
         />
 
         <Input
-          className="mx-2"
+          className={cn("mx-2")}
           placeholder={t`Valeur`}
           value={field.value}
           aria-label={t`Champ de saisie pour la valeur du champ personnalisé: ${fieldValue}`}
@@ -187,6 +193,7 @@ export const CustomFieldsSection = ({ className }: Props) => {
 
       <Button
         variant="link"
+        className="text-acade-secondary-500"
         aria-label={t`Ajouter un champ personnalisé`}
         onClick={onAddCustomField}
       >
