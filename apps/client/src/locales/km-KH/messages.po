@@ -53,7 +53,7 @@ msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a
 msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:57
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:29
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:30
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
 msgid "A link has been copied to your clipboard."
 msgstr ""
@@ -319,13 +319,13 @@ msgstr ""
 msgid "Annuler la suppression"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:57
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:58
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:57
 msgid "Anyone with the link can view and download the resume."
 msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:58
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:30
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:31
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:30
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr ""
@@ -698,7 +698,7 @@ msgstr ""
 msgid "Copy public link to resume"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:78
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:78
 msgid "Copy to Clipboard"
 msgstr ""
@@ -976,6 +976,7 @@ msgstr ""
 msgid "Diffusion"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:13
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:127
 msgid "Diffusion du CV"
 msgstr ""
@@ -1032,12 +1033,12 @@ msgstr ""
 msgid "Donate to Reactive Resume"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:56
+#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:58
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
 msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:74
 msgid "Download a PDF of your resume. This file can be used to print your resume, send it to recruiters, or upload on job portals."
 msgstr ""
@@ -1470,6 +1471,7 @@ msgid "Informations"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:29
+#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:14
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:31
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:31
@@ -1530,7 +1532,7 @@ msgctxt "Localized version of a placeholder email. For example, max.mustermann@e
 msgid "john.doe@example.com"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:54
+#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:54
 msgid "JSON"
 msgstr ""
@@ -2206,7 +2208,7 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:72
+#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:77
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:72
 msgid "PDF"
 msgstr ""
@@ -2330,7 +2332,7 @@ msgstr ""
 msgid "Projets"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:55
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr ""
@@ -2688,6 +2690,10 @@ msgstr ""
 msgid "Section Informations de base"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:10
+msgid "Section Publication"
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:122
 msgid "Sections"
 msgstr ""
@@ -2743,8 +2749,8 @@ msgstr ""
 msgid "Setup two-factor authentication on your account"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:38
 #: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:39
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:40
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:107
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:38
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:39
@@ -3196,7 +3202,7 @@ msgstr ""
 msgid "Upload an image file"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:74
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
 msgstr ""

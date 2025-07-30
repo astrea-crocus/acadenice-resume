@@ -6,9 +6,12 @@ import {
   DownloadSimple,
   Info,
   Layout,
+  ListBullets,
   Note,
+  PaintBrush,
   Palette,
   ReadCvLogo,
+  Share,
   ShareFat,
   TextT,
   Translate,
@@ -30,7 +33,11 @@ type MetadataKey =
   | "export"
   | "notes"
   | "information"
-  | "resume-sections";
+  | "basics"
+  | "resume-sections"
+  | "appearence"
+  | "publish"
+  | "templates";
 
 const getSectionIcon = (id: MetadataKey, size: number, props: IconProps = {}) => {
   switch (id) {
@@ -70,10 +77,21 @@ const getSectionIcon = (id: MetadataKey, size: number, props: IconProps = {}) =>
     case "information": {
       return <Info size={size} {...props} />;
     }
-    case "resume-sections": {
-      return <ReadCvLogo size={size} {...props} />;
+    case "templates": {
+      return <Layout {...props} />;
     }
-
+    case "appearence": {
+      return <PaintBrush {...props} />;
+    }
+    case "basics": {
+      return <ListBullets {...props} />;
+    }
+    case "publish": {
+      return <Share {...props} />;
+    }
+    case "resume-sections": {
+      return <ReadCvLogo {...props} />;
+    }
     default: {
       return null;
     }
@@ -118,8 +136,20 @@ const getAriaLabel = (id: MetadataKey): string => {
     case "information": {
       return t`Informations`;
     }
+    case "templates": {
+      return t`Modèle de CV`;
+    }
+    case "appearence": {
+      return t`Disposition`;
+    }
+    case "basics": {
+      return t`Profil`;
+    }
+    case "publish": {
+      return t`Diffusion`;
+    }
     case "resume-sections": {
-      return t`Sections`;
+      return t`Contenu du CV`;
     }
     default: {
       return "";
@@ -129,7 +159,7 @@ const getAriaLabel = (id: MetadataKey): string => {
 
 type SectionIconProps = Omit<ButtonProps, "size"> & {
   id: MetadataKey;
-  name: string;
+  name?: string;
   size: number;
   icon?: React.ReactNode;
 };

@@ -56,7 +56,7 @@ const getAriaLabel = (id: MetadataKey): string => {
 
 type SectionButtonProps = Omit<ButtonProps, "size"> & {
   id: MetadataKey;
-  name: string;
+  name?: string;
   size?: number;
   icon?: React.ReactNode;
 };

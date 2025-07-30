@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply bg-[url('/artboard/background.svg')] bg-repeat bg-transparent;
+  @apply bg-transparent bg-[url('/artboard/background.svg')] bg-repeat;
 }
 
 [data-page].hide-icons .ph {
