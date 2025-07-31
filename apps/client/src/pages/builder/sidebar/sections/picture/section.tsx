@@ -10,7 +10,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@reactive-resume/ui";
-import { cn } from "@reactive-resume/utils";
+import { cn, fixImageOrientation } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
 import { useMemo, useRef } from "react";
 import { z } from "zod";
@@ -29,13 +29,47 @@ export const PictureSection = () => {
 
   const isValidUrl = useMemo(() => z.string().url().safeParse(picture.url).success, [picture.url]);
 
+  const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 Mo
+  const ALLOWED_TYPES = new Set(["image/png", "image/jpeg"]);
+
   const onSelectImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files && event.target.files.length > 0) {
-      const file = event.target.files[0];
-      const response = await uploadImage(file);
+    const file = event.target.files?.[0];
+    // eslint-disable-next-line no-console
+    console.log("Début de onSelectImage", file);
+
+    if (!file) return;
+
+    // Vérifie le type MIME
+    if (!ALLOWED_TYPES.has(file.type)) {
+      alert(t`Format d'image non supporté. Utilisez PNG, JPG ou JPEG.`);
+      return;
+    }
+
+    // Vérifie la taille du fichier
+    if (file.size > MAX_FILE_SIZE) {
+      alert(t`Image trop volumineuse. Taille maximale : 5 Mo.`);
+      return;
+    }
+
+    try {
+      // Corrige l’orientation (JPEG uniquement)
+      const correctedBlob = file.type === "image/jpeg" ? await fixImageOrientation(file) : file;
+
+      // Si le blob a été corrigé, on le retransforme en File
+      const correctedFile =
+        correctedBlob instanceof Blob && !(correctedBlob instanceof File)
+          ? new File([correctedBlob], file.name, {
+              type: file.type,
+              lastModified: file.lastModified,
+            })
+          : correctedBlob;
+
+      const response = await uploadImage(correctedFile);
       const url = response.data;
 
       setValue("basics.picture.url", url);
+    } catch {
+      alert(t`Une erreur est survenue lors de l'envoi de l'image.`);
     }
   };
 

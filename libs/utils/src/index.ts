@@ -15,3 +15,4 @@ export * from "./namespaces/template";
 export * from "./namespaces/types";
 export * from "./normalized";
 export * from "./phone";
+export * from "./pictures";

@@ -64,6 +64,8 @@ export const ResumePreview = ({ resumeData, resumeId }: CVPreviewProps) => {
           title={`preview-${resumeId}`}
           src="/artboard/resume-preview"
           className="pointer-events-auto size-full select-none rounded-sm border-none opacity-80"
+          // ⚠️ ATTENTION : allow-scripts + allow-same-origin = sandbox contournable
+          // Justifié ici car le contenu iframe est 100% interne et sécurisé
           sandbox="allow-scripts allow-same-origin"
         />
       </div>

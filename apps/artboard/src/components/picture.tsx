@@ -10,6 +10,9 @@ export const Picture = ({ className }: PictureProps) => {
   const picture = useArtboardStore((state) => state.resume.basics.picture);
   const fontSize = useArtboardStore((state) => state.resume.metadata.typography.font.size);
 
+  const MIN_SIZE = Number(import.meta.env.PICTURE_MIN_SIZE) || 150;
+  const MAX_SIZE = Number(import.meta.env.PICTURE_MAX_SIZE) || 200;
+
   if (!isUrl(picture.url) || picture.effects.hidden) return null;
 
   return (
@@ -23,7 +26,7 @@ export const Picture = ({ className }: PictureProps) => {
         className,
       )}
       style={{
-        maxWidth: `${picture.size}px`,
+        maxWidth: `${Math.min(Math.max(picture.size, MIN_SIZE), MAX_SIZE)}px`,
         aspectRatio: `${picture.aspectRatio}`,
         borderRadius: `${picture.borderRadius}px`,
         borderWidth: `${picture.effects.border ? fontSize / 3 : 0}px`,

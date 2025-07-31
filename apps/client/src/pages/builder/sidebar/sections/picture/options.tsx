@@ -1,6 +1,7 @@
 import { t } from "@lingui/macro";
 import type { AspectRatio } from "@reactive-resume/ui";
 import { Checkbox, Input, Label, ToggleGroup, ToggleGroupItem, Tooltip } from "@reactive-resume/ui";
+import { cn } from "@reactive-resume/utils";
 import { useMemo } from "react";
 
 import { useResumeStore } from "@/client/stores/resume";
@@ -39,6 +40,10 @@ export const PictureOptions = () => {
   const setValue = useResumeStore((state) => state.setValue);
   const picture = useResumeStore((state) => state.resume.data.basics.picture);
 
+  const MIN_SIZE = Number(import.meta.env.PICTURE_MIN_SIZE) || 150;
+  const MAX_SIZE = Number(import.meta.env.PICTURE_MAX_SIZE) || 200;
+  const isInvalidSize = picture.size < MIN_SIZE || picture.size > MAX_SIZE;
+
   const aspectRatio = useMemo(() => {
     const ratio = picture.aspectRatio.toString() as keyof typeof ratioToStringMap;
     return ratioToStringMap[ratio];
@@ -73,12 +78,19 @@ export const PictureOptions = () => {
           id="picture.size"
           placeholder="128"
           value={size}
-          className="col-span-2"
+          min={MIN_SIZE}
+          max={MAX_SIZE}
+          className={cn("col-span-2", isInvalidSize ? "border-warning" : "")}
           aria-label={t`Taille de l'image en pixels, valeur actuelle : ${size}`}
           onChange={(event) => {
             setValue("basics.picture.size", event.target.valueAsNumber);
           }}
         />
+        {isInvalidSize && (
+          <span className="rounded bg-warning px-2 py-1 text-xs text-warning-foreground">
+            {t`La taille doit être comprise entre ${MIN_SIZE}px et ${MAX_SIZE}px.`}
+          </span>
+        )}
       </div>
 
       <div className="grid grid-cols-3 items-center gap-x-6">

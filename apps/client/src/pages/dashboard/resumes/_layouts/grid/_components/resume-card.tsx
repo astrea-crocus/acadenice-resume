@@ -53,13 +53,7 @@ const TriggerContent = ({ resume }: Props) => {
         )}
       </AnimatePresence>
 
-      <div
-        className={cn(
-          "absolute inset-0 z-10 flex flex-col justify-end space-y-0.5",
-          // "bg-red-500/50",
-          // "bg-gradient-to-t from-background/80 to-transparent",
-        )}
-      >
+      <div className={cn("absolute inset-0 z-10 flex flex-col justify-end space-y-0.5")}>
         <div className="mt-auto bg-gradient-to-t from-background/80 to-transparent p-4 pt-12">
           <div className="-m-4 mt-auto border-t bg-secondary/25 p-4 backdrop-blur-sm">
             <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
