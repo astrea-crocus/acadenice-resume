@@ -25,7 +25,7 @@ export const basicsSchema = z.object({
   customFields: z.array(customFieldSchema),
   picture: z.object({
     url: z.string(),
-    size: z.number().default(64),
+    size: z.number().default(150),
     aspectRatio: z.number().default(1),
     borderRadius: z.number().default(0),
     effects: z.object({

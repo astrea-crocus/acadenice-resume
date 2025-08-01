@@ -32,9 +32,9 @@ export const SummarySection = () => {
             size={18}
             aria-label={t`Icône de la section "Phrase d'Accroche"`}
           />
-          <h2 id="summary-title" className="line-clamp-1 text-2xl font-bold lg:text-3xl">
+          <h3 id="summary-title" className="line-clamp-1 text-xl font-bold lg:text-xl">
             {section.name}
-          </h2>
+          </h3>
         </div>
 
         <div className="flex items-center gap-x-2">

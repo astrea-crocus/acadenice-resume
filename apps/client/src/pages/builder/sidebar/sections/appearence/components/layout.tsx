@@ -28,7 +28,7 @@ import { useState } from "react";
 
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 type ColumnProps = {
   id: string;
@@ -199,11 +199,11 @@ export const LayoutSection = () => {
   };
 
   return (
-    <section id="layout" className="grid gap-y-6 p-6">
+    <section id="layout" className="grid gap-y-6">
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="layout" size={18} name={t`Mise en page`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Mise en page`}</h2>
+          <h3 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`Mise en page`}</h3>
         </div>
 
         <Tooltip content={t`Réinitialiser la Mise en Page`}>

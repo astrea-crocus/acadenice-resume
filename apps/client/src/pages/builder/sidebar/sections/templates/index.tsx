@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro";
-import { AspectRatio } from "@reactive-resume/ui";
+import { AspectRatio, ScrollArea } from "@reactive-resume/ui";
 import { cn, templatesList } from "@reactive-resume/utils";
 import { normalizeToFileName } from "@reactive-resume/utils";
 import { motion } from "framer-motion";
@@ -13,45 +13,51 @@ export const Templates = () => {
   const currentTemplate = useResumeStore((state) => state.resume.data.metadata.template);
 
   return (
-    <section id="template" className="grid gap-y-6 p-6">
-      <header className="flex items-center justify-between">
-        <div className="flex items-center gap-x-4">
+    <section id="template" className="flex h-screen flex-col">
+      <header className="flex items-center justify-between py-2">
+        <div className="mx-auto flex items-center gap-x-4">
           <SectionIcon id="template" size={18} name={t`Template`} />
           <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Template`}</h2>
         </div>
       </header>
 
-      <main className="grid grid-cols-2 gap-8 @lg/right:grid-cols-3 @2xl/right:grid-cols-4">
-        {templatesList.map((template, index) => {
-          // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
-          const normalized = normalizeToFileName(template);
+      <ScrollArea className="h-full flex-1">
+        <div className="grid grid-cols-2 gap-8 px-6 py-2 @lg/right:grid-cols-3 @2xl/right:grid-cols-4">
+          {templatesList.map((template, index) => {
+            // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
+            const normalized = normalizeToFileName(template);
 
-          return (
-            <AspectRatio key={template} ratio={1 / 1.4142}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: index * 0.1 } }}
-                whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
-                className={cn(
-                  "relative cursor-pointer rounded-sm ring-acade-secondary-500 transition-all hover:ring-2",
-                  currentTemplate === template && "ring-2",
-                )}
-                onClick={() => {
-                  setValue("metadata.template", template);
-                }}
-              >
-                <img src={`/templates/jpg/${normalized}.jpg`} alt="" className="rounded-sm" />
+            return (
+              <AspectRatio key={template} ratio={1 / 1.4142}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: index * 0.1 } }}
+                  whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
+                  className={cn(
+                    "relative cursor-pointer rounded-sm ring-acade-secondary-500 transition-all hover:ring-2",
+                    currentTemplate === template && "ring-2",
+                  )}
+                  onClick={() => {
+                    setValue("metadata.template", template);
+                  }}
+                >
+                  <img
+                    src={`/templates/jpg/${normalized}.jpg`}
+                    alt={`Aperçu du modèle ${template}`}
+                    className="rounded-sm"
+                  />
 
-                <div className="absolute inset-x-0 bottom-0 h-32 w-full bg-gradient-to-b from-transparent to-background/80">
-                  <p className="absolute inset-x-0 bottom-2 text-center font-bold capitalize text-foreground">
-                    {template}
-                  </p>
-                </div>
-              </motion.div>
-            </AspectRatio>
-          );
-        })}
-      </main>
+                  <div className="absolute inset-x-0 bottom-0 h-32 w-full bg-gradient-to-b from-transparent to-background/80">
+                    <p className="absolute inset-x-0 bottom-2 text-center font-bold capitalize text-foreground">
+                      {template}
+                    </p>
+                  </div>
+                </motion.div>
+              </AspectRatio>
+            );
+          })}
+        </div>
+      </ScrollArea>
     </section>
   );
 };

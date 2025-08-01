@@ -7,7 +7,7 @@ import { saveAs } from "file-saver";
 import { usePrintResume } from "@/client/services/resume/print";
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 const onJsonExport = () => {
   const { resume } = useResumeStore.getState();
@@ -37,7 +37,7 @@ export const ExportSection = () => {
       <header className="flex h-fit items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="export" size={18} name={t`Export`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Export`}</h2>
+          <h2 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`Export`}</h2>
         </div>
       </header>
 

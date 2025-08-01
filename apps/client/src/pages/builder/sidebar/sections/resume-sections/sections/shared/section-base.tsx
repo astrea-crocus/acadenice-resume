@@ -102,12 +102,11 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="grid gap-y-6"
-      aria-label={t`Section ${sectionName}`}
     >
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id={id} size={18} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{sectionName}</h2>
+          <h3 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{sectionName}</h3>
         </div>
 
         <div className="flex items-center gap-x-2">

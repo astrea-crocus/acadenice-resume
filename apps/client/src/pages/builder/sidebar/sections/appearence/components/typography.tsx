@@ -10,7 +10,7 @@ import webfontloader from "webfontloader";
 
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 const localFonts = ["Josefin Sans", "Arial", "Cambria", "Garamond", "Times New Roman"];
 
@@ -75,7 +75,7 @@ export const TypographySection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="typography" size={18} name={t`Typography`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Typography`}</h2>
+          <h3 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`Typography`}</h3>
         </div>
       </header>
 

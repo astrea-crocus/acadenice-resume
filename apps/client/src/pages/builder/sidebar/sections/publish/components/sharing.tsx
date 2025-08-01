@@ -8,7 +8,7 @@ import { useToast } from "@/client/hooks/use-toast";
 import { useUser } from "@/client/services/user";
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 export const SharingSection = () => {
   const { user } = useUser();
@@ -37,7 +37,7 @@ export const SharingSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="sharing" size={18} name={t`Sharing`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Sharing`}</h2>
+          <h2 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`Sharing`}</h2>
         </div>
       </header>
 

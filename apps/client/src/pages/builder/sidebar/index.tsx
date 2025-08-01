@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro";
-import { Button, ScrollArea } from "@reactive-resume/ui";
+import { Button } from "@reactive-resume/ui";
 import { useRef, useState } from "react";
 import { Link } from "react-router";
 
@@ -21,7 +21,7 @@ export const Sidebar = () => {
 
   return (
     <div className="flex bg-secondary-accent/50">
-      <div className="max-w-[90px] flex-col items-center justify-between border-e bg-primary/20 py-8 sm:flex">
+      <div className="max-w-[90px] flex-col items-center justify-between bg-primary/20 py-4 sm:flex">
         <Button
           asChild
           size="icon"
@@ -48,11 +48,11 @@ export const Sidebar = () => {
         </UserOptions>
       </div>
 
-      <ScrollArea orientation="vertical" className="h-screen flex-1 pb-16 lg:pb-0">
+      <div className="h-screen flex-1 pb-16 lg:pb-0">
         <div ref={containterRef} className="grid gap-y-6 @container/right">
           <Sections currentSection={activeSection} />
         </div>
-      </ScrollArea>
+      </div>
     </div>
   );
 };

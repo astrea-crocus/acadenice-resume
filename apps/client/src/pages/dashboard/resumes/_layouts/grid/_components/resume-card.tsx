@@ -37,9 +37,17 @@ export const ResumeCard = ({ resume }: Props) => {
 
 const TriggerContent = ({ resume }: Props) => {
   const lastUpdated = dayjs().to(resume.updatedAt);
+  const navigate = useNavigate();
 
   return (
-    <BaseCard className="space-y-0">
+    <BaseCard
+      className="space-y-0"
+      onClick={() => {
+        if (!resume.locked) {
+          void navigate(`/builder/${resume.id}`);
+        }
+      }}
+    >
       <AnimatePresence>
         {resume.locked && (
           <motion.div

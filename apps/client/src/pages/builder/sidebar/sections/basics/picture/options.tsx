@@ -1,7 +1,8 @@
+/* eslint-disable lingui/no-unlocalized-strings */
 import { t } from "@lingui/macro";
 import type { AspectRatio } from "@reactive-resume/ui";
 import { Checkbox, Input, Label, ToggleGroup, ToggleGroupItem, Tooltip } from "@reactive-resume/ui";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 import { useResumeStore } from "@/client/stores/resume";
 
@@ -64,6 +65,11 @@ export const PictureOptions = () => {
   const ratioLabel = aspectRatio;
   const borderRadiusLabel = borderRadius;
 
+  const PICTURE_MIN_SIZE = Number(import.meta.env.PICTURE_MIN_SIZE) || 150;
+  const PICTURE_MAX_SIZE = Number(import.meta.env.PICTURE_MAX_SIZE) || 300;
+
+  const [error, setError] = useState("");
+
   return (
     <div className="flex flex-col gap-y-5">
       <div className="grid grid-cols-3 items-center gap-x-6">
@@ -71,14 +77,27 @@ export const PictureOptions = () => {
         <Input
           type="number"
           id="picture.size"
-          placeholder="128"
+          placeholder="150"
           value={size}
+          min={PICTURE_MIN_SIZE}
+          max={PICTURE_MAX_SIZE}
           className="col-span-2"
           aria-label={t`Taille de l'image en pixels, valeur actuelle : ${size}`}
           onChange={(event) => {
-            setValue("basics.picture.size", event.target.valueAsNumber);
+            const newSize = event.target.valueAsNumber;
+
+            if (newSize < PICTURE_MIN_SIZE || newSize > PICTURE_MAX_SIZE) {
+              setError(
+                `Taille invalide (doit être entre ${PICTURE_MIN_SIZE} et ${PICTURE_MAX_SIZE})`,
+              );
+            } else {
+              setError("");
+              setValue("basics.picture.size", newSize);
+            }
           }}
         />
+
+        {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
       </div>
 
       <div className="grid grid-cols-3 items-center gap-x-6">

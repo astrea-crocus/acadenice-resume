@@ -23,7 +23,7 @@ export const Sections = ({ currentSection }: SectionsProps) => {
   return (
     <div className="grid gap-y-6 @container/right">
       <AnimatePresence mode="wait">
-        <motion.section
+        <motion.article
           key={currentSection}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -31,7 +31,7 @@ export const Sections = ({ currentSection }: SectionsProps) => {
           transition={{ duration: 0.25 }}
         >
           {sectionsMap[currentSection]}
-        </motion.section>
+        </motion.article>
       </AnimatePresence>
     </div>
   );

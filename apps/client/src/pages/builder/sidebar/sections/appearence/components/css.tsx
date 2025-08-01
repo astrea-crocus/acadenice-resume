@@ -7,7 +7,7 @@ import CodeEditor from "react-simple-code-editor";
 
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 export const CssSection = () => {
   const { isDarkMode } = useTheme();
@@ -16,7 +16,7 @@ export const CssSection = () => {
   const css = useResumeStore((state) => state.resume.data.metadata.css);
 
   return (
-    <section id="css" className="grid gap-y-6 p-6">
+    <section id="css" className="grid gap-y-6">
       <Helmet>
         {isDarkMode && <link rel="stylesheet" href="/styles/prism-dark.css" />}
         {!isDarkMode && <link rel="stylesheet" href="/styles/prism-light.css" />}
@@ -25,7 +25,7 @@ export const CssSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="css" size={18} name={t`CSS Personnalisé`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`CSS Personnalisé`}</h2>
+          <h3 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`CSS Personnalisé`}</h3>
         </div>
       </header>
 

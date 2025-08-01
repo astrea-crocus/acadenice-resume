@@ -13,7 +13,7 @@ import { cn } from "@reactive-resume/utils";
 
 import { useResumeStore } from "@/client/stores/resume";
 
-import { SectionIcon } from "../../shared";
+import { SectionIcon } from "../../../shared";
 
 export const PageSection = () => {
   const setValue = useResumeStore((state) => state.setValue);
@@ -24,7 +24,7 @@ export const PageSection = () => {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           <SectionIcon id="page" size={18} name={t`Page`} />
-          <h2 className="line-clamp-1 text-2xl font-bold lg:text-3xl/loose">{t`Page`}</h2>
+          <h3 className="line-clamp-1 text-xl font-bold lg:text-xl/loose">{t`Page`}</h3>
         </div>
       </header>
 

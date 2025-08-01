@@ -45,12 +45,13 @@ export const BuilderHeader = () => {
         right: isMobile ? "0" : `${rightPanelSize}%`,
       }}
       className={cn(
-        "fixed inset-x-0 top-0 z-[60] h-16 bg-background backdrop-blur-lg lg:z-20",
+        "absolute inset-x-0 top-0 z-[60] mx-auto mt-1 h-16 max-w-[675px] rounded-full lg:z-20",
         !isDragging && "transition-[left,right]",
+        "border border-primary/50 bg-secondary-accent/50 backdrop-blur",
       )}
       role="banner"
     >
-      <div className="flex h-full items-center justify-between bg-secondary-accent/50 px-4">
+      <div className="flex h-full items-center justify-between px-4">
         <Button
           size="icon"
           variant="ghost"

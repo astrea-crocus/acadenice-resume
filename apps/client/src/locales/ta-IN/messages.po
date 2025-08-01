@@ -121,21 +121,21 @@ msgid "Activer la séparation des liens"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:198
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:198
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:210
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:198
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:198
 msgid "Activer ou désactiver l'effet bordure"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:186
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:186
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:198
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:186
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:186
 msgid "Activer ou désactiver l'effet caché"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:210
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:210
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:222
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:210
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:210
 msgid "Activer ou désactiver l'effet niveaux de gris"
@@ -190,41 +190,41 @@ msgstr ""
 msgid "Ajouter une nouvelle page"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:165
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:280
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:284
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:164
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:278
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:282
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:191
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:316
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:320
 msgid "Ajouter une nouvelle section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:167
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:166
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:193
 msgid "Ajouter une nouvelle section personnalisée"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:148
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:147
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:174
 msgid "Aller à la section Bénévolat"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:124
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:123
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:150
 msgid "Aller à la section Centres d'intérêt"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:116
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:115
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:142
 msgid "Aller à la section Certifications"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:68
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:67
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:94
 msgid "Aller à la section Expériences"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:76
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:75
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:102
 msgid "Aller à la section Formations"
 msgstr ""
@@ -233,47 +233,47 @@ msgstr ""
 msgid "Aller à la section Informations de base"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:100
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:99
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:126
 msgid "Aller à la section Langues"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:132
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:131
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:158
 msgid "Aller à la section Projets"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:140
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:139
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:166
 msgid "Aller à la section Publications"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:108
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:134
 msgid "Aller à la section Récompenses"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:156
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:155
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:182
 msgid "Aller à la section Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:60
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:59
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:86
 msgid "Aller à la section Réseaux Sociaux"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:52
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:51
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:78
 msgid "Aller à la section Résumé"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:92
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:91
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:118
 msgid "Aller à la section Savoirs-Être"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:84
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:83
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:110
 msgid "Aller à la section Savoirs-Faire"
 msgstr ""
@@ -372,7 +372,7 @@ msgid "Area of Study"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:85
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:85
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:97
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:85
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:85
 msgid "Aspect Ratio"
@@ -405,7 +405,7 @@ msgstr "காப்பு குறியீடு"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "காப்புப் பிரதிக் குறியீடுகளில் சிறிய எழுத்துக்கள் அல்லது எண்கள் மட்டுமே இருக்கலாம், மேலும் அவை சரியாக 10 எழுத்துகளாக இருக்க வேண்டும்."
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:41
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:40
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:48
 msgid "Barre latérale de l'éditeur de CV"
 msgstr ""
@@ -420,7 +420,7 @@ msgstr ""
 msgid "Base URL"
 msgstr "அடிப்படை URL "
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:147
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:146
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:113
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:113
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:173
@@ -433,14 +433,14 @@ msgid "Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et 
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:203
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:203
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:215
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:203
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:203
 msgid "Border"
 msgstr "எல்லை "
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:132
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:132
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:144
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:132
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
 msgid "Border Radius"
@@ -495,7 +495,7 @@ msgstr ""
 msgid "Center Artboard"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:123
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:122
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:107
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:149
@@ -503,7 +503,7 @@ msgstr ""
 msgid "Centres d'intérêt"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:115
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:114
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:104
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:141
@@ -576,21 +576,21 @@ msgid "Check your email for the confirmation link to update your email address."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:148
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:148
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:160
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:148
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:148
 msgid "Choisir bord arrondi"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:142
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:142
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:154
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:142
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:142
 msgid "Choisir bord carré"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:154
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:154
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:166
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:154
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:154
 msgid "Choisir bord en cercle"
@@ -603,21 +603,21 @@ msgid "Choisir le nombre de colonnes"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:95
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:95
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:107
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:95
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:95
 msgid "Choisir le ratio carré"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:101
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:101
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:113
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:101
 msgid "Choisir le ratio horizontal"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:107
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:119
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:107
 msgid "Choisir le ratio portrait"
@@ -628,7 +628,7 @@ msgid "Choisissez un nom d'utilisateur unique."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:153
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:153
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:165
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:153
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:153
 msgid "Circle"
@@ -673,6 +673,7 @@ msgid "Confirmer la suppression"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:49
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:152
 msgid "Contenu du CV"
 msgstr ""
 
@@ -753,7 +754,7 @@ msgstr ""
 msgid "Créez un CV qui passe les filtres et attire les recruteurs !"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:101
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:119
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:98
 msgid "CSS personnalisé"
 msgstr ""
@@ -817,8 +818,8 @@ msgstr ""
 msgid "Date d'obtention de la certification"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:129
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:136
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:133
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:140
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:131
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:138
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:131
@@ -875,7 +876,7 @@ msgid "Décerné par"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:163
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:129
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:131
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
 msgid "Delete"
@@ -975,10 +976,11 @@ msgid "Dialogue de mise à jour d'un élément existant"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:46
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:149
 msgid "Diffusion"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:13
+#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:14
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:127
 msgid "Diffusion du CV"
 msgstr ""
@@ -999,7 +1001,8 @@ msgid "Discard"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:40
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:92
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:110
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:143
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:89
 msgid "Disposition"
 msgstr ""
@@ -1058,7 +1061,7 @@ msgid "Downloads"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:251
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:113
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
 msgid "Duplicate"
@@ -1097,7 +1100,7 @@ msgid "Éditeur ou organisme"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:179
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:179
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:191
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:179
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:179
 msgid "Effects"
@@ -1106,7 +1109,7 @@ msgstr ""
 #: apps/client/src/pages/auth/forgot-password/page.tsx:82
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:143
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:71
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:75
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:73
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:73
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
@@ -1152,14 +1155,14 @@ msgid "Enter your email address and we will send you a link to reset your passwo
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:121
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:121
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:133
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:121
 msgid "Entrer manuellement le ratio d'aspect"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:168
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:168
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:180
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:168
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:168
 msgid "Entrer manuellement le rayon des bords"
@@ -1193,7 +1196,7 @@ msgstr ""
 msgid "Expérience professionnelle"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:67
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:66
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:93
 msgid "Expériences"
 msgstr ""
@@ -1206,7 +1209,7 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:116
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:134
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:113
 msgid "Exporter le CV"
 msgstr ""
@@ -1275,13 +1278,17 @@ msgstr ""
 msgid "Format"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:44
+msgid "Format d'image non supporté. Utilisez PNG, JPG ou JPEG."
+msgstr ""
+
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:101
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-icon.tsx:101
 msgid "Formation"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:75
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:74
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:101
 msgid "Formations"
 msgstr ""
@@ -1332,7 +1339,7 @@ msgid "Google"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:215
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:215
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:227
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:215
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:215
 msgid "Grayscale"
@@ -1351,7 +1358,7 @@ msgid "Here, you can update your profile to customize and personalize your exper
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:191
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:191
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:203
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/hard-skills.tsx:101
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/languages.tsx:92
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:191
@@ -1379,7 +1386,7 @@ msgid "Hold <0>Ctrl</0> to display your password temporarily."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:100
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:100
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:112
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:100
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:100
 msgid "Horizontal"
@@ -1409,10 +1416,18 @@ msgstr ""
 msgid "Icône de la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:27
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:31
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:29
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:29
 msgid "Icône de la section Informations de base"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:13
+msgid "Icône de la section Publication"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:19
+msgid "Icône de la section Sections du CV"
 msgstr ""
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:47
@@ -1433,6 +1448,10 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:69
 msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:50
+msgid "Image trop volumineuse. Taille maximale : 5 Mo."
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:315
@@ -1467,13 +1486,12 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:119
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:137
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:116
 msgid "Informations"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:29
-#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:14
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:33
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:31
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:31
@@ -1550,7 +1568,7 @@ msgstr ""
 msgid "Keywords"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:84
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:88
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:86
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:86
 msgid "L'adresse email est invalide."
@@ -1558,6 +1576,10 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:87
 msgid "La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:91
+msgid "La taille doit être comprise entre {MIN_SIZE}px et {MAX_SIZE}px."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:56
@@ -1573,12 +1595,12 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:107
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:125
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:104
 msgid "Langue"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:99
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:98
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:110
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:110
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:125
@@ -1590,7 +1612,7 @@ msgstr ""
 msgid "Langues actuellement disponibles :"
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:66
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:68
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
 msgid "Last updated {lastUpdated}"
 msgstr ""
@@ -1601,7 +1623,7 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:52
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:56
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:54
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
 msgid "Le nom complet est invalide."
@@ -1704,7 +1726,7 @@ msgid "Location"
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:123
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:125
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
 msgid "Lock"
@@ -1810,7 +1832,8 @@ msgid "Model"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:37
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:89
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:107
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:140
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:86
 msgid "Modèle de CV"
 msgstr ""
@@ -1883,7 +1906,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:47
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:46
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:65
 msgid "Navigation des sections"
 msgstr ""
@@ -1930,7 +1953,7 @@ msgctxt "Nom de la certification"
 msgid "Nom"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:39
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:43
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:41
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:41
 msgid "Nom complet"
@@ -2031,7 +2054,7 @@ msgstr ""
 msgid "Note: This will make your account less secure."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:86
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:128
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:16
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:17
@@ -2039,7 +2062,7 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:108
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:112
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:110
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:110
 msgid "Numéro de téléphone"
@@ -2056,7 +2079,7 @@ msgstr ""
 msgid "Oops, the server returned an error."
 msgstr ""
 
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:107
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
 msgid "Open"
@@ -2177,7 +2200,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
 #: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:26
 #: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:27
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:104
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:122
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
@@ -2198,7 +2221,7 @@ msgstr ""
 msgid "Panneau de contrôle"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:110
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:128
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:107
 msgid "Partage"
 msgstr ""
@@ -2232,7 +2255,7 @@ msgid "Pick any font from Google Fonts"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/section.tsx:69
-#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:69
+#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:103
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/section.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:119
@@ -2251,14 +2274,14 @@ msgstr ""
 msgid "Please store your backup codes in a secure location. You can use one of these one-time use codes to login in case you lose access to your authenticator app."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:90
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:94
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:92
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:92
 msgid "Portfolio"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:106
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:106
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:118
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:106
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:106
 msgid "Portrait"
@@ -2313,6 +2336,7 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:43
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:103
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:146
 msgid "Profil"
 msgstr ""
 
@@ -2326,7 +2350,7 @@ msgstr ""
 msgid "Profils"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:131
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:130
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:116
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:116
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:157
@@ -2339,7 +2363,7 @@ msgstr ""
 msgid "Public"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:139
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:138
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:119
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:119
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:165
@@ -2388,7 +2412,7 @@ msgstr ""
 msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:106
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:133
 msgid "Récompenses"
 msgstr ""
@@ -2398,7 +2422,7 @@ msgstr ""
 msgid "Redo"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:155
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:154
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:128
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:128
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:181
@@ -2444,7 +2468,7 @@ msgstr ""
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebar/shared/section-options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:121
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:109
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:111
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
 msgid "Rename"
@@ -2456,7 +2480,7 @@ msgstr ""
 msgid "Renommer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:59
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:58
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:85
 msgid "Réseaux Sociaux"
 msgstr ""
@@ -2490,7 +2514,7 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/awards.tsx:116
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/certifications.tsx:116
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:51
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:50
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:89
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:89
 #: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:116
@@ -2573,7 +2597,7 @@ msgid "Rich in features, not in pricing."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:147
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:147
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:159
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:147
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:147
 msgid "Rounded"
@@ -2619,12 +2643,12 @@ msgstr ""
 msgid "Savoir-Faires"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:90
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:117
 msgid "Savoirs-Être"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:83
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:82
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:109
 msgid "Savoirs-Faire"
 msgstr ""
@@ -2686,7 +2710,7 @@ msgstr ""
 msgid "Section {sectionName}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:21
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:24
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:23
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:23
 msgid "Section Informations de base"
@@ -2696,8 +2720,12 @@ msgstr ""
 msgid "Section Publication"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:122
-msgid "Sections"
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:12
+msgid "Section Sections du CV"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:21
+msgid "Sections du CV"
 msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:56
@@ -2709,14 +2737,14 @@ msgid "Security"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:91
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:103
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:91
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:91
 msgid "Sélectionnez le ratio d'aspect de l'image, valeur actuelle : {ratioLabel}"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:138
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:138
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:150
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:138
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:138
 msgid "Sélectionnez le rayon des bords de l'image"
@@ -2845,7 +2873,7 @@ msgid "Site web associé au bénévolat"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:70
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:70
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:75
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:70
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:70
 msgid "Size (in px)"
@@ -2873,8 +2901,8 @@ msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:94
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:141
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:94
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:141
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:106
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:153
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:94
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:141
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:94
@@ -2900,7 +2928,7 @@ msgstr ""
 msgid "Statistics are available only for public resumes."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:113
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:131
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:110
 msgid "Statistiques"
 msgstr ""
@@ -2980,13 +3008,13 @@ msgid "System"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:77
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:84
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:77
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:77
 msgid "Taille de l'image en pixels, valeur actuelle : {size}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:103
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:107
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:105
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:105
 msgid "Téléphone"
@@ -3038,7 +3066,7 @@ msgstr ""
 msgid "Thème"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:98
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:116
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:95
 msgid "Thème de couleurs"
 msgstr ""
@@ -3082,8 +3110,8 @@ msgstr ""
 msgid "Titre de la récompense"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:58
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:63
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:62
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:67
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:60
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:65
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:60
@@ -3146,7 +3174,7 @@ msgid "Type of Study"
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
-#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:95
+#: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:113
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
 msgid "Typographie"
 msgstr ""
@@ -3169,12 +3197,16 @@ msgstr ""
 msgid "Undo"
 msgstr ""
 
+#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:72
+msgid "Une erreur est survenue lors de l'envoi de l'image."
+msgstr ""
+
 #: apps/client/src/pages/home/sections/faq/index.tsx:15
 msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouveau CV\" depuis votre tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles, expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout moment."
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
-#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:118
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:120
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
 msgid "Unlock"
@@ -3209,7 +3241,7 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:95
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:99
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:97
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:97
 msgid "URL du portfolio"
@@ -3295,8 +3327,8 @@ msgstr ""
 msgid "Views"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:116
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:121
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:120
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:125
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:118
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:123
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:118
