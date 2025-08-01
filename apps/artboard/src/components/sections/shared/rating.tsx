@@ -1,17 +1,5 @@
 import { cn } from "@reactive-resume/utils";
 
-/**
- * Rating
- *
- * Composant utilitaire pour afficher un niveau sous forme de points (ex : compétences, langues).
- * - Affiche 5 points alignés horizontalement.
- * - Les points remplis (colorés) correspondent au niveau passé en prop (level).
- * - Personnalise le style via Tailwind et la classe group-[.sidebar] pour l'affichage en sidebar.
- *
- * Props :
- * - level : Nombre de points à remplir (de 0 à 5).
- */
-
 type RatingProps = { level: number };
 
 export const Rating = ({ level }: RatingProps) => (

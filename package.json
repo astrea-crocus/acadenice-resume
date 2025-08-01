@@ -30,7 +30,6 @@
     "prisma:migrate:dev": "pnpm exec prisma migrate dev",
     "messages:extract": "pnpm exec lingui extract --clean --overwrite",
     "docker:restart": "docker compose down && docker compose build && docker compose up -d",
-    "docker:restart:sudo": "sudo docker compose down && sudo docker compose build && sudo docker compose up -d",
     "lingui:update": "lingui extract --clean && lingui compile"
   },
   "devDependencies": {

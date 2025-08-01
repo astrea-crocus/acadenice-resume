@@ -1,4 +1,5 @@
 export * from "./acadenice";
 export * from "./brand-icon";
 export * from "./page";
-export * from "./picture";
+export * from "./sections";
+export * from "./sections-map";
