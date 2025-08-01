@@ -53,7 +53,7 @@ msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a
 msgstr "<0>Kaksivaiheinen todennus on käytössä.</0> Sinua pyydetään syöttämään koodi joka kerta, kun kirjaudut sisään."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:57
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:30
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:30
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
 msgid "A link has been copied to your clipboard."
 msgstr "Linkki on kopioitu leikepöydällesi."
@@ -70,7 +70,7 @@ msgstr "Ansioluettelo tällä tunnuksella on jo olemassa, valitse uniikki tunnis
 msgid "A user with this email address and/or username already exists."
 msgstr "Käyttäjä tällä sähköpostiosoitteella ja/tai käyttäjänimellä on jo olemassa."
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:56
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
 msgid "A4"
 msgstr "A4"
@@ -120,22 +120,19 @@ msgstr ""
 msgid "Activer la séparation des liens"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:198
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:210
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:217
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:198
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:198
 msgid "Activer ou désactiver l'effet bordure"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:186
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:198
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:205
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:186
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:186
 msgid "Activer ou désactiver l'effet caché"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:210
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:222
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:229
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:210
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:210
 msgid "Activer ou désactiver l'effet niveaux de gris"
@@ -186,45 +183,45 @@ msgstr ""
 msgid "Ajouter un nouvel élément"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:276
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:276
 msgid "Ajouter une nouvelle page"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:164
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:278
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:282
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:165
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:280
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:284
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:191
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:316
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:320
 msgid "Ajouter une nouvelle section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:166
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:167
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:193
 msgid "Ajouter une nouvelle section personnalisée"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:147
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:148
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:174
 msgid "Aller à la section Bénévolat"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:123
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:124
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:150
 msgid "Aller à la section Centres d'intérêt"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:115
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:116
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:142
 msgid "Aller à la section Certifications"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:67
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:68
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:94
 msgid "Aller à la section Expériences"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:75
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:76
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:102
 msgid "Aller à la section Formations"
 msgstr ""
@@ -233,47 +230,47 @@ msgstr ""
 msgid "Aller à la section Informations de base"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:99
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:126
 msgid "Aller à la section Langues"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:131
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:132
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:158
 msgid "Aller à la section Projets"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:139
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:140
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:166
 msgid "Aller à la section Publications"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:108
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:134
 msgid "Aller à la section Récompenses"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:155
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:156
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:182
 msgid "Aller à la section Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:59
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:60
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:86
 msgid "Aller à la section Réseaux Sociaux"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:51
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:52
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:78
 msgid "Aller à la section Résumé"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:91
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:92
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:118
 msgid "Aller à la section Savoirs-Être"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:83
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:84
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:110
 msgid "Aller à la section Savoirs-Faire"
 msgstr ""
@@ -319,22 +316,23 @@ msgstr ""
 msgid "Annuler la suppression"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:58
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:57
 msgid "Anyone with the link can view and download the resume."
 msgstr "Kuka tahansa linkin avulla voi tarkastella ja ladata ansioluettelon."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:58
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:31
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:31
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:30
 msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
 msgstr "Kuka tahansa tämän linkin avulla voi tarkastella ja ladata ansioluettelon. Jaa se profiilissasi tai rekrytoijien kanssa."
 
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:29
 #: apps/client/src/pages/builder/sidebar/shared/buttons.tsx:119
 msgid "Apparence"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:41
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/css.tsx:41
 msgid "Appliquer une feuille de style CSS personnalisée"
 msgstr ""
 
@@ -369,8 +367,7 @@ msgstr "Oletko varma?"
 msgid "Area of Study"
 msgstr "Opintoala"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:85
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:97
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:104
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:85
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:85
 msgid "Aspect Ratio"
@@ -390,7 +387,7 @@ msgstr "Saatavilla {languagesCount} kielillä"
 msgid "Back"
 msgstr "Takaisin"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:76
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
 msgid "Background Color"
 msgstr "Taustaväri"
@@ -403,12 +400,11 @@ msgstr "Varmuuskoodi"
 msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
 msgstr "Varmuuskoodit voivat sisältää vain pieniä kirjaimia tai numeroita, ja niiden on oltava tarkalleen 10 merkkiä."
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:40
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:48
 msgid "Barre latérale de l'éditeur de CV"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:142
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:141
 #: apps/client/src/pages/builder/sidebar/shared/section-base.tsx:142
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:142
 msgid "Basculer la visibilité de l'élément : {itemTitle}"
@@ -418,7 +414,7 @@ msgstr ""
 msgid "Base URL"
 msgstr "Perus URL-osoite"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:146
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:147
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:113
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:113
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:173
@@ -430,15 +426,13 @@ msgstr ""
 msgid "Besoin d’un coup de pouce ? Ces modèles sont là pour t’inspirer et te guider."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:203
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:215
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:222
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:203
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:203
 msgid "Border"
 msgstr "Reunus"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:132
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:144
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:151
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:132
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
 msgid "Border Radius"
@@ -493,7 +487,7 @@ msgstr ""
 msgid "Center Artboard"
 msgstr "Keskitä taidetaulu"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:122
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:123
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:107
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:149
@@ -501,7 +495,7 @@ msgstr "Keskitä taidetaulu"
 msgid "Centres d'intérêt"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:114
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:115
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:104
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:104
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:141
@@ -573,22 +567,19 @@ msgstr ""
 msgid "Check your email for the confirmation link to update your email address."
 msgstr "Tarkista sähköpostisi vahvistuslinkkiä varten päivittääksesi sähköpostiosoitteesi."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:148
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:160
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:167
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:148
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:148
 msgid "Choisir bord arrondi"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:142
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:154
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:161
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:142
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:142
 msgid "Choisir bord carré"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:154
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:166
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:173
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:154
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:154
 msgid "Choisir bord en cercle"
@@ -600,22 +591,19 @@ msgstr ""
 msgid "Choisir le nombre de colonnes"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:95
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:107
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:114
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:95
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:95
 msgid "Choisir le ratio carré"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:101
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:113
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:120
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:101
 msgid "Choisir le ratio horizontal"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:107
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:119
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:126
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:107
 msgid "Choisir le ratio portrait"
@@ -625,8 +613,7 @@ msgstr ""
 msgid "Choisissez un nom d'utilisateur unique."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:153
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:165
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:172
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:153
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:153
 msgid "Circle"
@@ -699,7 +686,7 @@ msgstr "Kopioi linkki ansioluetteloon"
 msgid "Copy public link to resume"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:79
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:78
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
@@ -757,9 +744,9 @@ msgstr ""
 msgid "CSS personnalisé"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:27
-#: apps/client/src/pages/builder/sidebar/sections/appearence/css.tsx:28
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:62
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/css.tsx:27
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/css.tsx:28
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:73
 msgid "CSS Personnalisé"
 msgstr ""
 
@@ -816,10 +803,8 @@ msgstr ""
 msgid "Date d'obtention de la certification"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:133
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:140
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:131
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:138
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:138
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:145
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:131
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:138
 msgid "Date de naissance"
@@ -1036,12 +1021,12 @@ msgstr "Et näe omaa kieltäsi? <0>Auta kääntämään sovellusta.</0>"
 msgid "Donate to Reactive Resume"
 msgstr " Lahjoita reaktiiviselle CV:lle"
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:58
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
 msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
 msgstr "Lataa JSON-tiedosto ansioluettelostasi. Tätä tiedostoa voidaan käyttää ansioluettelon tuomiseen tulevaisuudessa tai se voidaan jopa jakaa muiden kanssa yhteistyöhön."
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:79
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:74
 msgid "Download a PDF of your resume. This file can be used to print your resume, send it to recruiters, or upload on job portals."
 msgstr "Lataa PDF-ansioluettelosi. Tätä tiedostoa voidaan käyttää ansioluettelon tulostamiseen, lähettämiseen rekrytoijille tai lataamiseen työportaaleihin."
@@ -1097,8 +1082,7 @@ msgstr ""
 msgid "Éditeur ou organisme"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:179
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:191
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:198
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:179
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:179
 msgid "Effects"
@@ -1107,8 +1091,7 @@ msgstr "Efektit"
 #: apps/client/src/pages/auth/forgot-password/page.tsx:82
 #: apps/client/src/pages/auth/login/page.tsx:90
 #: apps/client/src/pages/auth/register/page.tsx:143
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:75
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:73
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:77
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:73
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:209
 msgid "Email"
@@ -1152,15 +1135,13 @@ msgstr "Syötä kertakäyttöinen salasana, jonka todentaja-sovelluksesi tarjoaa
 msgid "Enter your email address and we will send you a link to reset your password if the account exists."
 msgstr "Syötä sähköpostiosoitteesi, niin lähetämme sinulle linkin salasanan nollaamiseksi, jos tili on olemassa."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:121
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:133
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:140
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:121
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:121
 msgid "Entrer manuellement le ratio d'aspect"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:168
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:180
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:187
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:168
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:168
 msgid "Entrer manuellement le rayon des bords"
@@ -1194,13 +1175,13 @@ msgstr "Vaikka et pystyisikään antamaan taloudellista panostusta, voit silti t
 msgid "Expérience professionnelle"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:66
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:67
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:93
 msgid "Expériences"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:39
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:40
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:39
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:40
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:121
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:39
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
@@ -1233,22 +1214,22 @@ msgstr "Korjaa oikeinkirjoitus ja kielioppi"
 msgid "Foire aux questions"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:110
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
 msgid "Font Family"
 msgstr "Fontin perhe"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:151
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:151
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:148
 msgid "Font Size"
 msgstr "Fontin koko"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:125
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:125
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:122
 msgid "Font Subset"
 msgstr "Fontin alajoukko"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:137
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:137
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:134
 msgid "Font Variants"
 msgstr "Fonttivariantit"
@@ -1269,16 +1250,12 @@ msgstr "Unohtuiko salasana?"
 msgid "Forgot your password?"
 msgstr "Unohditko salasanasi?"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:33
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:47
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:33
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:47
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:32
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:40
 msgid "Format"
 msgstr "Muoto"
-
-#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:44
-msgid "Format d'image non supporté. Utilisez PNG, JPG ou JPEG."
-msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:101
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:101
@@ -1286,7 +1263,7 @@ msgstr ""
 msgid "Formation"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:75
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:101
 msgid "Formations"
 msgstr ""
@@ -1320,7 +1297,7 @@ msgstr "GitHub-tähdet"
 msgid "Give your old resume a new name."
 msgstr "Anna vanhalle ansioluettelollesi uusi nimi."
 
-#: apps/client/src/pages/builder/_components/header.tsx:68
+#: apps/client/src/pages/builder/_components/header.tsx:69
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -1336,8 +1313,7 @@ msgstr ""
 msgid "Google"
 msgstr "Google"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:215
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:227
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:234
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:215
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:215
 msgid "Grayscale"
@@ -1355,8 +1331,7 @@ msgstr "Täällä voit päivittää tilisi tietoja, kuten profiilikuvasi, nimesi
 msgid "Here, you can update your profile to customize and personalize your experience."
 msgstr "Täällä voit päivittää profiilisi mukauttaaksesi ja personoidaksesi kokemustasi."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:191
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:203
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:210
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/hard-skills.tsx:101
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/languages.tsx:92
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:191
@@ -1372,7 +1347,7 @@ msgstr "Piilotettu"
 msgid "Hide"
 msgstr "Piilota"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:195
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:195
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:192
 msgid "Hide Icons"
 msgstr "Piilota kuvakkeet"
@@ -1383,8 +1358,7 @@ msgstr "Piilota kuvakkeet"
 msgid "Hold <0>Ctrl</0> to display your password temporarily."
 msgstr "Paina <0>Ctrl</0> näyttääksesi tilapäisesti salasanasi."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:100
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:112
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:119
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:100
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:100
 msgid "Horizontal"
@@ -1414,8 +1388,11 @@ msgstr ""
 msgid "Icône de la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:31
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:29
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:28
+msgid "Icône de la section Apparence"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:27
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:29
 msgid "Icône de la section Informations de base"
 msgstr ""
@@ -1424,7 +1401,7 @@ msgstr ""
 msgid "Icône de la section Publication"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:19
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:14
 msgid "Icône de la section Sections du CV"
 msgstr ""
 
@@ -1446,10 +1423,6 @@ msgstr ""
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:69
 msgid "Ils étaient étudiants à AcadéNice, ils ont testé l’outil CV, et voici ce qu’ils en pensent."
-msgstr ""
-
-#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:50
-msgid "Image trop volumineuse. Taille maximale : 5 Mo."
 msgstr ""
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:315
@@ -1489,8 +1462,7 @@ msgstr "Tiedot"
 msgid "Informations"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:33
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:31
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:29
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:31
 msgid "Informations de base"
@@ -1550,7 +1522,7 @@ msgctxt "Localized version of a placeholder email. For example, max.mustermann@e
 msgid "john.doe@example.com"
 msgstr "matti.meikäläinen@example.com"
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:56
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:54
 msgid "JSON"
 msgstr "JSON"
@@ -1566,18 +1538,13 @@ msgstr "JSON"
 msgid "Keywords"
 msgstr "Avainsanat"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:88
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:86
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:90
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:86
 msgid "L'adresse email est invalide."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:87
 msgid "La communauté a passé beaucoup de temps à écrire la documentation de Reactive Resume, mais attention ! La documentation est en anglais. Munissez-vous d'un traducteur anglais-français, ou un d'un ami anglophone assez gentil pour vous aidez"
-msgstr ""
-
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:91
-msgid "La taille doit être comprise entre {MIN_SIZE}px et {MAX_SIZE}px."
 msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/url-input.tsx:56
@@ -1598,7 +1565,7 @@ msgstr "Kieli"
 msgid "Langue"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:98
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:99
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:110
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:110
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:125
@@ -1621,8 +1588,7 @@ msgstr "Päivitetty viimeksi {lastUpdated}"
 msgid "Layout"
 msgstr "Asettelu"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:56
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:54
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:55
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
 msgid "Le nom complet est invalide."
 msgstr ""
@@ -1635,7 +1601,7 @@ msgstr ""
 msgid "Les modifications sont visibles en temps réel grâce à l’aperçu interactif du CV."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:63
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
 msgstr "Kirje"
@@ -1689,7 +1655,7 @@ msgstr "Vaalea"
 msgid "Light or dark theme"
 msgstr "Vaalea tai tumma teema"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:168
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:168
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:165
 msgid "Line Height"
 msgstr "Riviväli"
@@ -1770,7 +1736,7 @@ msgstr "Maaliskuu 2023"
 msgid "March 2023 - Present"
 msgstr "Maaliskuu 2023 - Tähän asti"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:69
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:69
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:50
 msgid "Margin"
 msgstr "Marginaali"
@@ -1812,12 +1778,12 @@ msgstr ""
 msgid "mis à votre disposition par nous."
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:205
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:206
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:205
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:206
 msgid "Mise en page"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:30
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:41
 msgid "Mise en Page"
 msgstr ""
 
@@ -1904,7 +1870,7 @@ msgstr ""
 msgid "Name"
 msgstr "Nimi"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:47
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:65
 msgid "Navigation des sections"
 msgstr ""
@@ -1951,8 +1917,7 @@ msgctxt "Nom de la certification"
 msgid "Nom"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:43
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:41
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:42
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:41
 msgid "Nom complet"
 msgstr ""
@@ -2060,8 +2025,7 @@ msgstr "Huom: Tämä tekee tilisi vähemmän turvalliseksi."
 msgid "Notes"
 msgstr "Muistiinpanot"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:112
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:110
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:114
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:110
 msgid "Numéro de téléphone"
 msgstr ""
@@ -2105,8 +2069,8 @@ msgstr "OpenAI/Ollama API-avain"
 msgid "OpenAI/Ollama Integration"
 msgstr "OpenAI/Ollama-integraatio"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:86
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:185
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:86
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:185
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:67
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:182
 msgid "Options"
@@ -2195,9 +2159,9 @@ msgstr ""
 msgid "Ouvrir les options de la section Profil"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:54
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:26
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:27
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:26
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:27
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:65
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:122
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:100
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
@@ -2206,12 +2170,12 @@ msgstr ""
 msgid "Page"
 msgstr "Sivu"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:239
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:239
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
 msgid "Page {pageNumber}"
 msgstr "Sivu {pageNumber}"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:259
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:259
 msgid "Paneau Latéral"
 msgstr ""
 
@@ -2231,7 +2195,7 @@ msgstr ""
 msgid "Password"
 msgstr "Salasana"
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/export.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/export.tsx:77
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:72
 msgid "PDF"
 msgstr "PDF"
@@ -2253,7 +2217,6 @@ msgid "Pick any font from Google Fonts"
 msgstr "Valitse mikä tahansa fontti Google Fontsista"
 
 #: apps/client/src/pages/builder/sidebar/sections/basics/picture/section.tsx:69
-#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:103
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/section.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:119
@@ -2272,14 +2235,12 @@ msgstr "Valitse tiedostotyyppi"
 msgid "Please store your backup codes in a secure location. You can use one of these one-time use codes to login in case you lose access to your authenticator app."
 msgstr "Säilytä varmuuskopiosi turvallisessa paikassa. Voit käyttää näitä kertakäyttöisiä koodeja kirjautuaksesi sisään, jos menetät pääsyn todennussovellukseesi."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:94
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:92
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:96
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:92
 msgid "Portfolio"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:106
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:118
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:125
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:106
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:106
 msgid "Portrait"
@@ -2318,12 +2279,12 @@ msgstr ""
 msgid "Powered by"
 msgstr "Voimanlähteenä"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:46
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
 msgid "Primary Color"
 msgstr "Primary Color"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:258
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:258
 msgid "Principal"
 msgstr ""
 
@@ -2348,7 +2309,7 @@ msgstr "Profiili"
 msgid "Profils"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:130
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:131
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:116
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:116
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:157
@@ -2356,12 +2317,12 @@ msgstr ""
 msgid "Projets"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:56
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
 msgid "Public"
 msgstr "Julkinen"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:138
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:139
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:119
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:119
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:165
@@ -2410,7 +2371,7 @@ msgstr "Reaktiivinen ansioluettelo on yli 3 vuoden kova työprojekti, ja sen my�
 msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
 msgstr "Reaktiivinen ansioluettelo kukoistaa sen elinvoimaisen yhteisön ansiosta. Tämä projekti on edistynyt useiden yksilöiden ansiosta, jotka ovat omistautuneet aikaa ja taitojaan. Alla juhlimme koodeja, jotka ovat parantaneet sen ominaisuuksia GitHubissa, ja kääntäjiä, joiden käännökset Crowdinin kautta ovat tehneet siitä laajemman yleisön saataville."
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:106
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:107
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:133
 msgid "Récompenses"
 msgstr ""
@@ -2420,7 +2381,7 @@ msgstr ""
 msgid "Redo"
 msgstr "Tee uudelleen"
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:154
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:155
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:128
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:128
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:181
@@ -2428,7 +2389,7 @@ msgstr "Tee uudelleen"
 msgid "Références"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:209
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:209
 msgid "Réinitialiser la Mise en Page"
 msgstr ""
 
@@ -2478,7 +2439,7 @@ msgstr "Nimeä uudelleen"
 msgid "Renommer la section"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:58
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:59
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:85
 msgid "Réseaux Sociaux"
 msgstr ""
@@ -2512,7 +2473,7 @@ msgstr "Nollaa zoomaus"
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/awards.tsx:116
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/dialogs/certifications.tsx:116
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:50
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:51
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-icon.tsx:89
 #: apps/client/src/pages/builder/sidebar/shared/resume-icons.tsx:89
 #: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:116
@@ -2594,8 +2555,7 @@ msgstr ""
 msgid "Rich in features, not in pricing."
 msgstr "Monipuolinen ominaisuuksiltaan, ei hinnoiltaan."
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:147
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:159
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:166
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:147
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:147
 msgid "Rounded"
@@ -2641,12 +2601,12 @@ msgstr ""
 msgid "Savoir-Faires"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:90
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:91
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:117
 msgid "Savoirs-Être"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:82
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/index.tsx:83
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:109
 msgid "Savoirs-Faire"
 msgstr ""
@@ -2678,17 +2638,17 @@ msgstr ""
 msgid "Se déconnecter"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:114
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:114
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
 msgid "Search for a font family"
 msgstr "Etsi fonttiperhettä"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:129
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:129
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:126
 msgid "Search for a font subset"
 msgstr "Etsi fonttialueetta"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:142
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:142
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:139
 msgid "Search for a font variant"
 msgstr "Etsi fonttivarianttia"
@@ -2702,27 +2662,16 @@ msgstr "Etsi kieltä"
 msgid "Section \"Phrase d'Accroche\" du CV"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:105
 #: apps/client/src/pages/builder/sidebar/shared/section-base.tsx:105
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:105
 msgid "Section {sectionName}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:24
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:23
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:23
 msgid "Section Informations de base"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/index.tsx:10
-msgid "Section Publication"
-msgstr ""
-
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:12
-msgid "Section Sections du CV"
-msgstr ""
-
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:21
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/index.tsx:16
 msgid "Sections du CV"
 msgstr ""
 
@@ -2734,15 +2683,13 @@ msgstr "Turvaa kaksivaiheisella todennuksella"
 msgid "Security"
 msgstr "Turvallisuus"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:91
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:103
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:110
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:91
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:91
 msgid "Sélectionnez le ratio d'aspect de l'image, valeur actuelle : {ratioLabel}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:138
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:150
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:157
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:138
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:138
 msgid "Sélectionnez le rayon des bords de l'image"
@@ -2777,8 +2724,8 @@ msgstr "Asetukset"
 msgid "Setup two-factor authentication on your account"
 msgstr "Aseta kaksivaiheinen todennus tilillesi"
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:39
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:40
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:39
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:40
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:107
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:38
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:39
@@ -2791,12 +2738,12 @@ msgstr "Jakaminen"
 msgid "Show"
 msgstr "Näytä"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:97
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:97
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:78
 msgid "Show Break Line"
 msgstr "Näytä rivinvaihto"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/page.tsx:110
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/page.tsx:110
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
 msgid "Show Page Numbers"
 msgstr "Näytä Sivunumerot"
@@ -2870,8 +2817,7 @@ msgstr ""
 msgid "Site web associé au bénévolat"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:70
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:75
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:76
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:70
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:70
 msgid "Size (in px)"
@@ -2897,10 +2843,8 @@ msgstr "Jotain meni pieleen käsiteltäessä pyyntöäsi. Yritä myöhemmin uude
 msgid "Sous licence"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:94
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:141
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:106
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:153
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:113
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:160
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:94
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:141
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:94
@@ -2970,7 +2914,7 @@ msgstr "Tukee A4/Kirje-sivuformaatteja"
 msgid "Supprimer"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/layout.tsx:242
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/layout.tsx:242
 msgid "Supprimer la page"
 msgstr ""
 
@@ -3005,15 +2949,13 @@ msgstr ""
 msgid "System"
 msgstr "Järjestelmä"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:77
-#: apps/client/src/pages/builder/sidebar/sections/picture/options.tsx:84
+#: apps/client/src/pages/builder/sidebar/sections/basics/picture/options.tsx:85
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/picture/options.tsx:77
 #: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:77
 msgid "Taille de l'image en pixels, valeur actuelle : {size}"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:107
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:105
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:109
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:105
 msgid "Téléphone"
 msgstr ""
@@ -3034,7 +2976,7 @@ msgstr "Pohja"
 msgid "Templates"
 msgstr "Mallipohjat"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:106
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:106
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
 msgstr "Tekstin väri"
@@ -3051,8 +2993,8 @@ msgstr ""
 msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
 msgstr "Ansioluetteloa, jonka haluat päivittää, on lukittu. Ole hyvä ja avaa se, jos haluat tehdä siihen muutoksia."
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:19
-#: apps/client/src/pages/builder/sidebar/sections/appearence/theme.tsx:20
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:19
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:20
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:86
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:19
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:20
@@ -3060,7 +3002,7 @@ msgstr "Ansioluetteloa, jonka haluat päivittää, on lukittu. Ole hyvä ja avaa
 msgid "Theme"
 msgstr "Teema"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:46
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:57
 msgid "Thème"
 msgstr ""
 
@@ -3081,7 +3023,7 @@ msgstr "Tätä toimenpidettä ei voi perua. Tämä poistaa pysyvästi ansioluett
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "Tämä sähköpostiosoite on liitetty OAuth-tiliin. Kirjaudu sisään OAuth-palveluntarjoajallasi."
 
-#: apps/client/src/pages/builder/_components/header.tsx:82
+#: apps/client/src/pages/builder/_components/header.tsx:83
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "Tämä ansioluettelo on lukittu, ole hyvä ja avaa lukitus tehdäksesi lisämuutoksia."
 
@@ -3108,16 +3050,14 @@ msgstr ""
 msgid "Titre de la récompense"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:62
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:67
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:60
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:65
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:64
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:69
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:60
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:65
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:58
+#: apps/client/src/pages/builder/_components/header.tsx:59
 msgid "Toggle left panel"
 msgstr ""
 
@@ -3171,21 +3111,21 @@ msgstr ""
 msgid "Type of Study"
 msgstr "Opiskelumuoto"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:38
+#: apps/client/src/pages/builder/sidebar/sections/appearence/index.tsx:49
 #: apps/client/src/pages/builder/sidebar/shared/section-icon.tsx:113
 #: apps/client/src/pages/builder/sidebars/right/shared/section-icon.tsx:92
 msgid "Typographie"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:77
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:78
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:77
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:78
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:79
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:77
 msgid "Typography"
 msgstr "Typografia"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/typography.tsx:206
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/typography.tsx:206
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
 msgid "Underline Links"
 msgstr "Alleviivaa Linkit"
@@ -3194,10 +3134,6 @@ msgstr "Alleviivaa Linkit"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:83
 msgid "Undo"
 msgstr "Kumoa"
-
-#: apps/client/src/pages/builder/sidebar/sections/picture/section.tsx:72
-msgid "Une erreur est survenue lors de l'envoi de l'image."
-msgstr ""
 
 #: apps/client/src/pages/home/sections/faq/index.tsx:15
 msgid "Une fois connecté(e), vous pouvez cliquer sur le bouton \"Créer un nouveau CV\" depuis votre tableau de bord. Vous choisirez un modèle, ajouterez vos informations personnelles, expériences, formations, compétences, etc. Toutes les sections sont modifiables à tout moment."
@@ -3234,13 +3170,12 @@ msgstr ""
 msgid "Upload an image file"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/publish/sharing.tsx:74
+#: apps/client/src/pages/builder/sidebar/sections/publish/components/sharing.tsx:74
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
 msgstr "URL"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:99
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:97
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:101
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:97
 msgid "URL du portfolio"
 msgstr ""
@@ -3325,10 +3260,8 @@ msgstr "Varmista sähköpostiosoitteesi"
 msgid "Views"
 msgstr "Näkymät"
 
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:120
-#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:125
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:118
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/basics.tsx:123
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:122
+#: apps/client/src/pages/builder/sidebar/sections/basics/index.tsx:127
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:118
 #: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:123
 msgid "Ville"
