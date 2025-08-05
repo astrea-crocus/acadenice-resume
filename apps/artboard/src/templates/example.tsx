@@ -1,8 +1,8 @@
 import { cn } from "@reactive-resume/utils";
 import { Fragment } from "react/jsx-runtime";
 
-import { ContactATS, Group, Header, mapSectionToComponent, SealWhite } from "../components";
-import type { TemplateProps } from "../types/template";
+import { ContactATS, Group, Header, mapSectionToComponent, SealWhite } from "@/artboard/components";
+import type { TemplateProps } from "@/artboard/types/template";
 
 export const Example = ({ columns, isFirstPage = false }: TemplateProps) => {
   const [main, sidebar] = columns;

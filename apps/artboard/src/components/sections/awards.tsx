@@ -3,7 +3,7 @@ import type { Award } from "@reactive-resume/schema";
 import { useArtboardStore } from "@/artboard/store/artboard";
 
 import { Section } from "./components";
-import { LinkedEntity } from "./shared";
+import { LinkedEntity } from "./components/shared";
 
 export const Awards = () => {
   const section = useArtboardStore((state) => state.resume.sections.awards);

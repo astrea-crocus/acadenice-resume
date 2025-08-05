@@ -5,7 +5,7 @@ import { BrandIcon } from "@/artboard/components";
 import { useArtboardStore } from "@/artboard/store/artboard";
 
 import { Section } from "./components";
-import { Link } from "./shared";
+import { Link } from "./components/shared";
 
 export const Socials = () => {
   const section = useArtboardStore((state) => state.resume.sections.socials);

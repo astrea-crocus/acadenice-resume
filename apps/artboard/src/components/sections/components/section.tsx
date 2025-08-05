@@ -2,7 +2,7 @@ import type { CustomSectionGroup, SectionWithItem, URL } from "@reactive-resume/
 import { cn, isEmptyString, sanitize } from "@reactive-resume/utils";
 import get from "lodash.get";
 
-import { Link, Rating } from "../shared";
+import { Link, Rating } from "./shared";
 
 type SectionProps<T> = {
   section: SectionWithItem<T> | CustomSectionGroup;

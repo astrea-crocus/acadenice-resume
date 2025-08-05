@@ -1,6 +1,6 @@
 import { cn, isUrl } from "@reactive-resume/utils";
 
-import { useArtboardStore } from "../../../store/artboard";
+import { useArtboardStore } from "@/artboard/store/artboard";
 
 type PictureProps = {
   className?: string;

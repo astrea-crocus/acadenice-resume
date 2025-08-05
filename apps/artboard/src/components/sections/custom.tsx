@@ -3,7 +3,7 @@ import type { CustomSection } from "@reactive-resume/schema";
 import { useArtboardStore } from "@/artboard/store/artboard";
 
 import { Section } from "./components";
-import { LinkedEntity } from "./shared";
+import { LinkedEntity } from "./components/shared";
 
 export const Custom = ({ id }: { id: string }) => {
   const section = useArtboardStore((state) => state.resume.sections.custom[id]);

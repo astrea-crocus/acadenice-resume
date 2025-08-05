@@ -4,7 +4,7 @@ import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 
 import { Picture } from "./components";
-import { Link } from "./shared";
+import { Link } from "./components/shared";
 
 export const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
