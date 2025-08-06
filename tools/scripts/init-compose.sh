@@ -6,27 +6,27 @@ EXAMPLE_PATH="tools/compose/simple.example.yml"
 TARGET_PATH="tools/compose/simple.yml"
 LINK_PATH="compose.yml"
 
-# Vérifie que l'exemple existe
+# Check that the example file exists
 if [ ! -f "$EXAMPLE_PATH" ]; then
-  echo "❌ Fichier exemple introuvable : $EXAMPLE_PATH"
+  echo "❌ Example file not found: $EXAMPLE_PATH"
   exit 1
 fi
 
-# Vérifie que les fichiers cibles n'existent pas déjà
+# Check that target files do not already exist
 if [ -e "$TARGET_PATH" ]; then
-  echo "❌ Le fichier $TARGET_PATH existe déjà. Suppression manuelle requise."
+  echo "❌ The file $TARGET_PATH already exists. Please delete it manually."
   exit 1
 fi
 
 if [ -e "$LINK_PATH" ]; then
-  echo "❌ Le lien ou fichier $LINK_PATH existe déjà. Suppression manuelle requise."
+  echo "❌ The link or file $LINK_PATH already exists. Please delete it manually."
   exit 1
 fi
 
-# Copie le fichier exemple
+# Copy the example file
 cp "$EXAMPLE_PATH" "$TARGET_PATH"
-echo "✅ Copié : $EXAMPLE_PATH → $TARGET_PATH"
+echo "✅ Copied: $EXAMPLE_PATH → $TARGET_PATH"
 
-# Crée le lien symbolique
+# Create the symbolic link
 ln -s "$TARGET_PATH" "$LINK_PATH"
-echo "✅ Lien symbolique créé : $LINK_PATH → $TARGET_PATH"
+echo "✅ Symbolic link created: $LINK_PATH → $TARGET_PATH"
