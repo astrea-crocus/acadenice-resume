@@ -14,7 +14,7 @@ export const sampleResume: ResumeData = {
     customFields: [],
     picture: {
       url: "https://i.imgur.com/IZm1zJx.jpeg",
-      size: 140,
+      size: 150,
       aspectRatio: 1,
       borderRadius: 4,
       effects: {
@@ -195,7 +195,7 @@ export const sampleResume: ResumeData = {
     },
     socials: {
       name: "Réseaux Sociaux",
-      columns: 1,
+      columns: 3,
       separateLinks: true,
       visible: true,
       id: "socials",
@@ -277,7 +277,7 @@ export const sampleResume: ResumeData = {
     },
     hardSkills: {
       name: "Savoirs-Faire",
-      columns: 1,
+      columns: 2,
       separateLinks: true,
       visible: true,
       id: "hardSkills",
@@ -310,7 +310,7 @@ export const sampleResume: ResumeData = {
     },
     softSkills: {
       name: "Savoirs-Êtres",
-      columns: 1,
+      columns: 3,
       separateLinks: true,
       visible: true,
       id: "softSkills",

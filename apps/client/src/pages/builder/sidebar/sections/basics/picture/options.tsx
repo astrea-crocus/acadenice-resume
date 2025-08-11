@@ -65,8 +65,8 @@ export const PictureOptions = () => {
   const ratioLabel = aspectRatio;
   const borderRadiusLabel = borderRadius;
 
-  const PICTURE_MIN_SIZE = Number(import.meta.env.PICTURE_MIN_SIZE) || 150;
-  const PICTURE_MAX_SIZE = Number(import.meta.env.PICTURE_MAX_SIZE) || 300;
+  const VITE_PICTURE_MIN_SIZE = Number(import.meta.env.VITE_PICTURE_MIN_SIZE) || 150;
+  const VITE_PICTURE_MAX_SIZE = Number(import.meta.env.VITE_PICTURE_MAX_SIZE) || 200;
 
   const [error, setError] = useState("");
 
@@ -79,16 +79,16 @@ export const PictureOptions = () => {
           id="picture.size"
           placeholder="150"
           value={size}
-          min={PICTURE_MIN_SIZE}
-          max={PICTURE_MAX_SIZE}
+          min={VITE_PICTURE_MIN_SIZE}
+          max={VITE_PICTURE_MAX_SIZE}
           className="col-span-2"
           aria-label={t`Taille de l'image en pixels, valeur actuelle : ${size}`}
           onChange={(event) => {
             const newSize = event.target.valueAsNumber;
 
-            if (newSize < PICTURE_MIN_SIZE || newSize > PICTURE_MAX_SIZE) {
+            if (newSize < VITE_PICTURE_MIN_SIZE || newSize > VITE_PICTURE_MAX_SIZE) {
               setError(
-                `Taille invalide (doit être entre ${PICTURE_MIN_SIZE} et ${PICTURE_MAX_SIZE})`,
+                `Taille invalide (doit être entre ${VITE_PICTURE_MIN_SIZE} et ${VITE_PICTURE_MAX_SIZE})`,
               );
             } else {
               setError("");
