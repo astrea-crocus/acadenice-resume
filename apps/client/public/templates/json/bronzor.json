@@ -264,8 +264,8 @@
       ]
     },
     "hardSkills": {
-      "name": "Skills",
-      "columns": 3,
+      "name": "Hard Skills",
+      "columns": 1,
       "visible": true,
       "id": "hardSkills",
       "items": [
@@ -292,6 +292,40 @@
           "description": "Intermediate",
           "level": 0,
           "keywords": ["Webpack", "Git", "Jenkins", "Docker", "JIRA"]
+        }
+      ]
+    },
+    "softSkills": {
+      "name": "Soft Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "softSkills",
+      "items": [
+        {
+          "id": "x1n8vj5pmcz4u1a0g2h3ykbd",
+          "visible": true,
+          "name": "Teamwork"
+        },
+        {
+          "id": "w7k9ph0uz5s2f3dq8n6jrb1v",
+          "visible": true,
+          "name": "Autonomy"
+        },
+        {
+          "id": "q4h2l8nx0f7m9e5r1v6tbzdu",
+          "visible": true,
+          "name": "Adaptability"
+        },
+        {
+          "id": "p9c3t1fs8m2v6y7hj4l0xqnb",
+          "visible": true,
+          "name": "Problem Solving"
+        },
+        {
+          "id": "r5z7y2kd0v1h8pl3c9n6bxmw",
+          "visible": true,
+          "name": "Creativity"
         }
       ]
     },
