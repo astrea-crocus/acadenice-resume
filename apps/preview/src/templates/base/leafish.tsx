@@ -11,6 +11,7 @@ import type {
   Reference,
   SectionKey,
   SectionWithItem,
+  SoftSkill,
   URL,
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
