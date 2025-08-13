@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-variant-ligatures: none;
+
+  @apply border-current;
+}
+
+body {
+  overflow: hidden;
+}
+
+#root {
+  @apply antialiased;
+}
+
+[data-page].hide-icons .ph {
+  @apply hidden;
+}
+
+[data-page].underline-links a {
+  @apply underline underline-offset-2;
+}
+
+.wysiwyg {
+  @apply prose-foreground prose max-w-none;
+  @apply prose-headings:m-0;
+  @apply prose-p:m-0 prose-p:leading-snug;
+  @apply prose-a:break-all;
+  @apply prose-ol:m-0;
+  @apply prose-ul:m-0;
+  @apply prose-li:m-0 prose-li:p-0 prose-li:leading-snug;
+  @apply prose-img:m-0;
+  @apply prose-hr:m-0;
+}

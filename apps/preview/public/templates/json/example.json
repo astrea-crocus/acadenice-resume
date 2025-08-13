@@ -1,0 +1,408 @@
+{
+  "basics": {
+    "name": "Jean Dupont",
+    "email": "jean.dupont@gmail.com",
+    "phone": "06 00 00 00 00",
+    "picture": {
+      "url": "https://i.imgur.com/IZm1zJx.jpeg",
+      "size": 150,
+      "effects": {
+        "border": false,
+        "hidden": false,
+        "grayscale": false
+      },
+      "aspectRatio": 1,
+      "borderRadius": 4
+    },
+    "birthday": "01-01-2000",
+    "headline": "Développeur Web Créatif et Innovant",
+    "location": "Nice, 06000",
+    "portfolio": {
+      "href": "https://mon-site-perso.fr/",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "metadata": {
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "format": "a4",
+      "margin": 14,
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "notes": "",
+    "theme": {
+      "text": "#000000",
+      "primary": "#4cccb8",
+      "secondary": "#fda100",
+      "background": "#ffffff"
+    },
+    "layout": [
+      [
+        [
+          "summary",
+          "socials",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "certifications"
+        ],
+        [
+          "hardSkills",
+          "softSkills",
+          "interests",
+          "awards",
+          "publications",
+          "languages",
+          "references"
+        ]
+      ]
+    ],
+    "template": "Ant Man",
+    "typography": {
+      "font": {
+        "size": 13,
+        "family": "Josefin Sans",
+        "subset": "latin",
+        "variants": ["regular"]
+      },
+      "hideIcons": false,
+      "lineHeight": 1.75,
+      "underlineLinks": true
+    }
+  },
+  "sections": {
+    "awards": {
+      "id": "awards",
+      "name": "Récompenses",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "custom": {},
+    "socials": {
+      "id": "socials",
+      "name": "Réseaux Sociaux",
+      "items": [
+        {
+          "id": "cnbk5f0aeqvhx69ebk7hktwd",
+          "url": {
+            "href": "https://linkedin.com/in/jeandupont",
+            "label": ""
+          },
+          "icon": "linkedin",
+          "network": "LinkedIn",
+          "visible": true,
+          "username": "jeandupont"
+        },
+        {
+          "id": "ukl0uecvzkgm27mlye0wazlb",
+          "url": {
+            "href": "https://github.com/jeandupont",
+            "label": ""
+          },
+          "icon": "github",
+          "network": "GitHub",
+          "visible": true,
+          "username": "jeandupont"
+        },
+        {
+          "id": "wpehgmtoeoman22muft3o49j",
+          "visible": true,
+          "network": "Instagram",
+          "username": "john.doe",
+          "icon": "instagram",
+          "url": {
+            "label": "",
+            "href": "https://www.instagram.com/john.doe/"
+          }
+        }
+      ],
+      "columns": 3,
+      "visible": true,
+      "separateLinks": true
+    },
+    "summary": {
+      "id": "summary",
+      "name": "Phrase d'Accroche",
+      "columns": 1,
+      "content": "<p>Étudiant en développement web à la recherche d'une alternance de 12 mois (4 jours en entreprise, 1 jour en cours) dès septembre.</p>",
+      "visible": true,
+      "separateLinks": true
+    },
+    "projects": {
+      "id": "projects",
+      "name": "Projets",
+      "items": [
+        {
+          "id": "ncxgdjjky54gh59iz2t1xi1v",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "date": "Janvier 2024 à Mars 2024",
+          "name": "Projet Étudiant - AcadéNice",
+          "summary": "<p>Conception et développement d’une application de gestion de tâches en React.js et Tailwind CSS. Collaboration avec une équipe de 4 étudiants et mise en place d’une API REST pour la gestion des données.</p>",
+          "visible": true,
+          "keywords": [],
+          "description": "Développeur Front-End"
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "education": {
+      "id": "education",
+      "name": "Formations",
+      "items": [
+        {
+          "id": "yo3p200zo45c6cdqc6a2vtt3",
+          "url": {
+            "href": "https://acadenice.fr/parcours-de-formation/developpement-web-et-web-mobile/",
+            "label": "acadenice.fr"
+          },
+          "area": "Nice, France",
+          "date": "Septembre 2023 à Juin 2024",
+          "score": "",
+          "summary": "<p>Apprentissage intensif des technologies front-end et back-end modernes, réalisation de projets concrets en équipe et préparation au monde professionnel.</p>",
+          "visible": true,
+          "studyType": "Parcours Développement Web & Web Mobile",
+          "institution": "AcadéNice"
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "interests": {
+      "id": "interests",
+      "name": "Centres d’intérêt",
+      "items": [
+        {
+          "id": "g4m1n9c0d3r1nt3r3st1",
+          "name": "Jeux vidéo",
+          "visible": true,
+          "keywords": ["Esport", "Stratégie", "RPG", "Indie Games"]
+        },
+        {
+          "id": "w3bcr34t0r1nt3r3st2",
+          "name": "Création de sites web",
+          "visible": true,
+          "keywords": ["Design", "WordPress", "No-code", "SEO"]
+        },
+        {
+          "id": "c0d1ngch4ll3ng31nt3r3st3",
+          "name": "Coding Challenges",
+          "visible": true,
+          "keywords": ["LeetCode", "Codewars", "Hackathons"]
+        },
+        {
+          "id": "t3chw4tch1nt3r3st4",
+          "name": "Veille technologique",
+          "visible": true,
+          "keywords": ["Nouvelles technologies", "Startups", "IA", "Web3"]
+        },
+        {
+          "id": "str34m1ng1nt3r3st5",
+          "name": "Streaming & Création de contenu",
+          "visible": true,
+          "keywords": ["Twitch", "YouTube", "Montage vidéo"]
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "languages": {
+      "id": "languages",
+      "name": "Langues",
+      "items": [
+        {
+          "id": "a2y1rmwqhqe1kwoxkzh2wo61",
+          "visible": true,
+          "name": "Anglais",
+          "description": "Avancé",
+          "level": 0
+        },
+        {
+          "id": "yvbjv6lj94kq8jhptk2521cv",
+          "visible": true,
+          "name": "Italien",
+          "description": "Débutant",
+          "level": 0
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "volunteer": {
+      "id": "volunteer",
+      "name": "Bénévolat",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "experience": {
+      "id": "experience",
+      "name": "Expériences Professionelles",
+      "items": [
+        {
+          "id": "lhw25d7gf32wgdfpsktf6e0x",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "date": "Avril 2024 à Juin 2024",
+          "company": "Start-up locale (Freelance / Stage)",
+          "summary": "<ul><li>Participation à la création d’un site vitrine responsive sous React.js pour un commerce local.</li><li>Intégration d’un back-office avec Node.js et MongoDB.</li><li>Travail en équipe agile et utilisation de Git pour la gestion de version.</li></ul>",
+          "visible": true,
+          "location": "Nice, France",
+          "position": "Développeur Web Junior"
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "hardSkills": {
+      "id": "hardSkills",
+      "name": "Savoirs-Faire",
+      "items": [
+        {
+          "id": "hn0keriukh6c0ojktl9gsgjm",
+          "name": "Technologies Web",
+          "level": 0,
+          "visible": true,
+          "keywords": ["HTML5", "JavaScript", "PHP", "Python"],
+          "description": "Avancé"
+        },
+        {
+          "id": "r8c3y47vykausqrgmzwg5pur",
+          "name": "Frameworks Web",
+          "level": 0,
+          "visible": true,
+          "keywords": ["React.js", "Angular", "Vue.js", "Laravel", "Django"],
+          "description": "Intermédiaire"
+        },
+        {
+          "id": "b5l75aseexqv17quvqgh73fe",
+          "name": "Outils",
+          "level": 0,
+          "visible": true,
+          "keywords": ["Webpack", "Git", "Jenkins", "Docker", "JIRA"],
+          "description": "Intermédiaire"
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "references": {
+      "id": "references",
+      "name": "Références",
+      "items": [
+        {
+          "id": "f2sv5z0cce6ztjl87yuk8fak",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "name": "Disponible sur demande",
+          "summary": "",
+          "visible": true,
+          "description": ""
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "softSkills": {
+      "id": "softSkills",
+      "name": "Savoirs-Êtres",
+      "items": [
+        {
+          "id": "x1n8vj5pmcz4u1a0g2h3ykbd",
+          "name": "Travail en équipe",
+          "visible": true
+        },
+        {
+          "id": "w7k9ph0uz5s2f3dq8n6jrb1v",
+          "name": "Autonomie",
+          "visible": true
+        },
+        {
+          "id": "q4h2l8nx0f7m9e5r1v6tbzdu",
+          "name": "Adaptabilité",
+          "visible": true
+        },
+
+        {
+          "id": "r5z7y2kd0v1h8pl3c9n6bxmw",
+          "name": "Créativité",
+          "visible": true
+        },
+        {
+          "id": "p9c3t1fs8m2v6y7hj4l0xqnb",
+          "name": "Sens de l’analyse",
+          "visible": true
+        }
+      ],
+      "columns": 2,
+      "visible": true,
+      "separateLinks": true
+    },
+    "publications": {
+      "id": "publications",
+      "name": "Publications",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "certifications": {
+      "id": "certifications",
+      "name": "Certifications",
+      "items": [
+        {
+          "id": "spdhh9rrqi1gvj0yqnbqunlo",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "date": "2020",
+          "name": "Développement Web Full-Stack",
+          "issuer": "CodeAcademy",
+          "summary": "",
+          "visible": true
+        },
+        {
+          "id": "n838rddyqv47zexn6cxauwqp",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "date": "2019",
+          "name": "Développeur Certifié AWS",
+          "issuer": "Amazon Web Services",
+          "summary": "",
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    }
+  }
+}

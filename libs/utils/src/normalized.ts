@@ -14,6 +14,23 @@ export const normalizeToFileName = (name: string) => {
 };
 
 /**
+ * Normalise une chaîne pour en faire un segment d'URL « propre ».
+ * Transforme en minuscules, enlève les accents et remplace les espaces par un tiret.
+ *
+ * @param str Chaîne d'entrée à normaliser (ex. "Mon Exemple Démo")
+ * @returns Chaîne normalisée pour URL (ex. "mon-exemple-demo")
+ */
+export const normalizeToUrlPath = (str: string) => {
+  return str
+    .toLowerCase()
+    .normalize("NFD") // sépare lettres et accents
+    .replace(/[\u0300-\u036F]/g, "") // supprime les accents
+    .replace(/\s+/g, "-") // remplace les espaces par des tirets
+    .replace(/-+/g, "-") // évite les tirets multiples
+    .replace(/^-|-$/g, ""); // supprime tirets en début/fin
+};
+
+/**
  * Normalise une chaîne pour supprimer uniquement les accents,
  * tout en gardant la casse, les espaces et autres caractères spéciaux.
  *

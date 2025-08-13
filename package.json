@@ -24,7 +24,7 @@
     "lint:fix": "nx run-many -t lint --fix",
     "format": "pnpm exec prettier -c --log-level error .",
     "format:fix": "pnpm exec prettier -w --log-level error .",
-    "fix:code": "pnpm format:fix && pnpm lint:fix",
+    "fix:code": "pnpm lint:fix && pnpm format:fix",
     "prisma:generate": "pnpm exec prisma generate",
     "prisma:migrate": "pnpm exec prisma migrate deploy",
     "prisma:migrate:dev": "pnpm exec prisma migrate dev",
@@ -34,7 +34,10 @@
     "compose:init": "bash ./tools/scripts/init-compose.sh",
     "env:init": "bash ./tools/scripts/init-env.sh",
     "init:project": "pnpm compose:init && pnpm env:init",
-    "crowdin:sync": "crowdin push && crowdin pull"
+    "crowdin:sync": "crowdin push && crowdin pull",
+    "preview:dev": "nx serve preview",
+    "preview:build": "nx build preview",
+    "preview:lint": "nx lint preview"
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
@@ -270,10 +273,5 @@
   "prisma": {
     "schema": "tools/prisma/schema.prisma"
   },
-  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad",
-  "pnpm": {
-    "overrides": {
-      "stylus": "0.0.1-security"
-    }
-  }
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }
