@@ -43,6 +43,11 @@ export const ArtboardPage = () => {
 
     document.documentElement.style.setProperty("--color-foreground", metadata.theme.text);
     document.documentElement.style.setProperty("--color-primary", metadata.theme.primary);
+    if (metadata.theme.secondary) {
+      document.documentElement.style.setProperty("--color-secondary", metadata.theme.secondary);
+    } else {
+      document.documentElement.style.setProperty("--color-secondary", metadata.theme.primary);
+    }
     document.documentElement.style.setProperty("--color-background", metadata.theme.background);
   }, [metadata]);
 

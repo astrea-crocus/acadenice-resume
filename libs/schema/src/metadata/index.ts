@@ -3,8 +3,8 @@ import { z } from "zod";
 export const defaultLayout = [
   [
     [
-      "socials",
       "summary",
+      "socials",
       "experience",
       "hardSkills",
       "education",
@@ -25,7 +25,7 @@ export const metadataSchema = z.object({
     visible: z.boolean().default(false),
   }),
   page: z.object({
-    margin: z.number().default(18),
+    margin: z.number().default(14),
     format: z.enum(["a4", "letter"]).default("a4"),
     options: z.object({
       breakLine: z.boolean().default(true),
@@ -35,7 +35,8 @@ export const metadataSchema = z.object({
   theme: z.object({
     background: z.string().default("#ffffff"),
     text: z.string().default("#000000"),
-    primary: z.string().default("#dc2626"),
+    primary: z.string().default("#4cccb8"),
+    secondary: z.string().optional(),
   }),
   typography: z.object({
     font: z.object({
@@ -74,6 +75,7 @@ export const defaultMetadata: Metadata = {
     background: "#ffffff",
     text: "#000000",
     primary: "#4cccb8",
+    secondary: "#fda100",
   },
   typography: {
     font: {
