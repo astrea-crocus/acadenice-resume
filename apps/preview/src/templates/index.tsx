@@ -1,4 +1,4 @@
-import type { Template } from "@reactive-resume/utils";
+import type { Preview } from "@reactive-resume/utils";
 import { normalizeTemplateName } from "@reactive-resume/utils";
 
 import { AntMan, CaptainAmerica, Hulk, IronMan, Thor } from "./acadenice";
@@ -18,7 +18,7 @@ import {
 } from "./base";
 import { Example } from "./example";
 
-export const getTemplate = (template: Template) => {
+export const getTemplate = (template: Preview) => {
   const normalizedTemplate = normalizeTemplateName(template);
 
   switch (normalizedTemplate) {

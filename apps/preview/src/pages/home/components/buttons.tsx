@@ -1,5 +1,10 @@
 import { HouseLine } from "@phosphor-icons/react/dist/ssr";
-import { cn, normalizeToFileName, normalizeToUrlPath, templatesList } from "@reactive-resume/utils";
+import {
+  cn,
+  normalizeToFileName,
+  normalizeToUrlPath,
+  previewTemplatesList,
+} from "@reactive-resume/utils";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -44,7 +49,7 @@ export const NavButton = () => {
 
   return (
     <>
-      {templatesList.map((tpl) => (
+      {previewTemplatesList.map((tpl) => (
         <button
           key={tpl}
           className={cn(

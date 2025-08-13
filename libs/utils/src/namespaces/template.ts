@@ -19,3 +19,7 @@ export const templatesList = [
 ] as const;
 
 export type Template = (typeof templatesList)[number];
+
+export const previewTemplatesList = ["Example", ...templatesList] as const;
+
+export type Preview = (typeof previewTemplatesList)[number];
