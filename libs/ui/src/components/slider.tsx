@@ -6,7 +6,7 @@ type SliderProps = React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> &
   list?: string;
 };
 
-export const Slider = forwardRef<React.ElementRef<typeof SliderPrimitive.Root>, SliderProps >(
+export const Slider = forwardRef<React.ElementRef<typeof SliderPrimitive.Root>, SliderProps>(
   ({ className, ...props }, ref) => (
     <SliderPrimitive.Root
       ref={ref}
