@@ -5,7 +5,7 @@ import { Contact } from "./contact"; // Composant affichant les infos de contact
 // Props optionnelles pour le conteneur du seal (logo + contact)
 // Permet de définir la hauteur maximale du logo en rem
 type SealProps = {
-  maxHeight?: number; // Hauteur max du logo en rem
+  maxheight?: number; // Hauteur max du logo en rem
 };
 
 // Composant styled pour organiser le logo et le contact dans une grille
@@ -20,7 +20,7 @@ const SealContainer = styled.div<SealProps>`
   align-items: center;
 
   img {
-    max-height: ${({ maxHeight }) => (maxHeight ? `${maxHeight}rem` : "7rem")};
+    max-height: ${({ maxheight }) => (maxheight ? `${maxheight}rem` : "7rem")};
     height: auto;
     user-select: none;
     pointer-events: none;
@@ -41,8 +41,8 @@ type SealBaseProps = {
 
 // Composant de base : affiche le logo et le contact dans le conteneur stylé
 // Personnalise le logo via src et la couleur via colorClass
-const Seal = ({ src, colorClass, maxHeight, id }: SealBaseProps) => (
-  <SealContainer id={id} maxHeight={maxHeight} className={colorClass}>
+const Seal = ({ src, colorClass, maxheight, id }: SealBaseProps) => (
+  <SealContainer id={id} maxheight={maxheight} className={colorClass}>
     <img src={src} alt="" aria-hidden="true" role="presentation" />
     <Contact />
   </SealContainer>
@@ -52,11 +52,11 @@ const Seal = ({ src, colorClass, maxHeight, id }: SealBaseProps) => (
 // - SealWhite : logo blanc, texte blanc
 // - SealTeal : logo teal, texte couleur primaire
 export const SealWhite = (props: SealProps & { id?: string }) => (
-  <Seal src="logo/light.png" colorClass="text-white" {...props} />
+  <Seal src={`/logo/light.png`} colorClass="text-white" {...props} />
 );
 
 export const SealTeal = (props: SealProps & { id?: string }) => (
-  <Seal src="logo/teal.png" colorClass="text-primary" {...props} />
+  <Seal src={`/logo/teal.png`} colorClass="text-primary" {...props} />
 );
 
 // Réexport du composant ContactATS pour utilisation externe

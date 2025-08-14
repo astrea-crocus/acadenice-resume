@@ -10,9 +10,9 @@ export const HardSkills = () => {
   return (
     <Section<HardSkill> section={section} levelKey="level" keywordsKey="keywords">
       {(item) => (
-        <div>
-          <div className="font-bold">{item.name}</div>
-          <div>{item.description}</div>
+        <div className="flex">
+          <h5 className="mr-auto font-bold">{item.name}</h5>
+          <p>{item.description}</p>
         </div>
       )}
     </Section>

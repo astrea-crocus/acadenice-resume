@@ -6,14 +6,7 @@ type BrandIconProps = {
 
 export const BrandIcon = forwardRef<HTMLImageElement, BrandIconProps>(({ slug }, ref) => {
   if (slug === "linkedin") {
-    return (
-      <img
-        ref={ref}
-        alt="LinkedIn"
-        className="size-4"
-        src={`${window.location.origin}/support-logos/linkedin.svg`}
-      />
-    );
+    return <img ref={ref} alt="LinkedIn" className="size-4" src={`/support-logos/linkedin.svg`} />;
   }
 
   return (

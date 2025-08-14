@@ -656,7 +656,7 @@ export const IronMan = ({ columns, isFirstPage = false }: TemplateProps) => {
         ))}
       </div>
       <div className="group col-span-3 space-y-4 bg-primary">
-        <SealWhite maxHeight={5} />
+        <SealWhite maxheight={5} />
       </div>
 
       <ContactATS />

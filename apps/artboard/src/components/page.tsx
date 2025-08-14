@@ -1,7 +1,7 @@
 import { useTheme } from "@reactive-resume/hooks";
 import { cn, pageSizeMap } from "@reactive-resume/utils";
 
-import { useArtboardStore } from "../store/artboard";
+import { useArtboardStore } from "@/artboard/store/artboard";
 
 type Props = {
   mode?: "preview" | "builder";

@@ -1,5 +1,6 @@
 import { t } from "@lingui/macro";
 import { Button } from "@reactive-resume/ui";
+import { cn } from "@reactive-resume/utils";
 import { useRef, useState } from "react";
 import { Link } from "react-router";
 
@@ -11,7 +12,12 @@ import { Sections } from "./sections";
 import type { MetadataKey } from "./shared";
 import { Buttons } from "./shared";
 
-export const Sidebar = () => {
+type Props = {
+  className?: string;
+  style?: React.CSSProperties;
+};
+
+export const Sidebar = ({ className, style }: Props) => {
   const containterRef = useRef<HTMLDivElement | null>(null);
 
   const startSection = "templates";
@@ -20,7 +26,7 @@ export const Sidebar = () => {
   const size = 32; //px
 
   return (
-    <div className="flex bg-secondary-accent/50">
+    <div className={cn(`flex bg-secondary-accent/50`, className)} style={style}>
       <div className="max-w-[90px] flex-col items-center justify-between bg-primary/20 py-4 sm:flex">
         <Button
           asChild

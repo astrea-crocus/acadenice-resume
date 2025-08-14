@@ -9,12 +9,10 @@ export const Summary = () => {
 
   return (
     <section id={section.id}>
-      <h4 className="mb-2 border-b pb-0.5 text-sm font-bold">{section.name}</h4>
-
       <div
         dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
         style={{ columns: section.columns }}
-        className="wysiwyg"
+        className="wysiwyg px-1.5 py-2"
       />
     </section>
   );

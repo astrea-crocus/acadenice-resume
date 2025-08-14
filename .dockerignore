@@ -63,3 +63,8 @@ apps/client/src/locales/*/messages.mjs
 
 # Preview
 apps/preview
+
+# compose.yml example
+compose.example.yml
+tools/compose/simple.example.yml
+*.example.yml

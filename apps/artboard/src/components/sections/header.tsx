@@ -4,14 +4,13 @@ import { calculateAge } from "@/artboard/libs/date";
 import { useArtboardStore } from "@/artboard/store/artboard";
 
 import { Picture } from "./components";
-import { Link } from "./components/shared";
 
 export const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
   const age = calculateAge(basics.birthday);
 
   return (
-    <div className="flex items-center space-x-4">
+    <section className="flex items-center space-x-4">
       <Picture />
 
       <div className="space-y-2">
@@ -23,36 +22,47 @@ export const Header = () => {
         <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
           {basics.location && (
             <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-map-pin text-primary" />
+              <i aria-hidden className="ph ph-bold ph-map-pin text-secondary" />
               <div>{basics.location}</div>
             </div>
           )}
+
           {basics.birthday && (
             <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-cake text-primary" />
+              <i aria-hidden className="ph ph-bold ph-cake text-secondary" />
               <div>{age} ans</div>
             </div>
           )}
+
           {basics.phone && (
             <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-phone text-primary" />
+              <i aria-hidden className="ph ph-bold ph-phone text-secondary" />
               <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
                 {basics.phone}
               </a>
             </div>
           )}
+
           {basics.email && (
             <div className="flex items-center gap-x-1.5">
-              <i aria-hidden className="ph ph-bold ph-at text-primary" />
+              <i aria-hidden className="ph ph-bold ph-at text-secondary" />
               <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
                 {basics.email}
               </a>
             </div>
           )}
-          <Link url={basics.portfolio} />
+
+          <div className="flex items-center gap-x-1.5">
+            <i aria-hidden className="ph ph-bold ph-link text-secondary" />
+            <a href={basics.portfolio.href} target="_blank" rel="noreferrer">
+              {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */}
+              {basics.portfolio.label?.trim() ? basics.portfolio.label : basics.portfolio.href}
+            </a>
+          </div>
+
           {basics.customFields.map((item) => (
             <div key={item.id} className="flex items-center gap-x-1.5">
-              <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`, "text-primary")} />
+              <i aria-hidden className={cn(`ph ph-bold ph-${item.icon}`, "text-secondary")} />
               {isUrl(item.value) ? (
                 <a href={item.value} target="_blank" rel="noreferrer noopener nofollow">
                   {item.name || item.value}
@@ -64,6 +74,6 @@ export const Header = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -82,7 +82,8 @@ msgstr "A4"
 #: apps/client/src/pages/auth/reset-password/page.tsx:60
 #: apps/client/src/pages/auth/verify-email/page.tsx:43
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
-#: apps/client/src/pages/builder/page.tsx:60
+#: apps/client/src/pages/builder/page.tsx:64
+#: apps/client/src/pages/builder/page.tsx:91
 #: apps/client/src/pages/dashboard/resumes/page.tsx:20
 #: apps/client/src/pages/dashboard/settings/page.tsx:16
 #: apps/client/src/pages/home/components/footer.tsx:17
@@ -275,7 +276,7 @@ msgstr ""
 msgid "Aller à la section Savoirs-Faire"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/index.tsx:30
+#: apps/client/src/pages/builder/sidebar/index.tsx:36
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:56
 msgid "Aller au tableau de bord"
 msgstr ""
@@ -387,7 +388,7 @@ msgstr "Доступно на {languagesCount} языках"
 msgid "Back"
 msgstr "Назад"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:76
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:106
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
 msgid "Background Color"
 msgstr "Цвет фона"
@@ -404,7 +405,7 @@ msgstr "Резервные коды могут содержать только �
 msgid "Barre latérale de l'éditeur de CV"
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:141
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:166
 #: apps/client/src/pages/builder/sidebar/shared/section-base.tsx:142
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:142
 msgid "Basculer la visibilité de l'élément : {itemTitle}"
@@ -630,6 +631,10 @@ msgstr "Код"
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:52
 msgid "Code must be exactly 6 digits long."
 msgstr "Код должен состоять ровно из 6 цифр."
+
+#: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-base.tsx:119
+msgid "Colonnes"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebar/sections/resume-sections/sections/shared/section-options.tsx:148
 #: apps/client/src/pages/builder/sidebar/shared/section-options.tsx:148
@@ -1297,7 +1302,7 @@ msgstr "Звезды на GitHub"
 msgid "Give your old resume a new name."
 msgstr "Дайте своему старому резюме новое имя."
 
-#: apps/client/src/pages/builder/_components/header.tsx:69
+#: apps/client/src/pages/builder/_components/header.tsx:70
 msgid "Go back to dashboard"
 msgstr ""
 
@@ -2081,7 +2086,7 @@ msgstr "Настройки"
 msgid "Options pour la section \"Phrase d'Accroche\""
 msgstr ""
 
-#: apps/client/src/pages/builder/sidebar/index.tsx:44
+#: apps/client/src/pages/builder/sidebar/index.tsx:50
 #: apps/client/src/pages/builder/sidebars/left/index.tsx:207
 msgid "Options utilisateur"
 msgstr ""
@@ -2976,7 +2981,7 @@ msgstr "Шаблон"
 msgid "Templates"
 msgstr "Шаблоны"
 
-#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:106
+#: apps/client/src/pages/builder/sidebar/sections/appearence/components/theme.tsx:136
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
 msgid "Text Color"
 msgstr "Цвет текста"
@@ -3023,7 +3028,7 @@ msgstr "Это действие нельзя отменить. Это приве
 msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
 msgstr "Этот адрес эл. почты связан с аккаунтом OAuth. Пожалуйста, войдите с помощью вашего провайдера OAuth."
 
-#: apps/client/src/pages/builder/_components/header.tsx:83
+#: apps/client/src/pages/builder/_components/header.tsx:84
 msgid "This resume is locked, please unlock to make further changes."
 msgstr "Это резюме заблокировано, пожалуйста, разблокируйте его, чтобы внести дальнейшие изменения."
 
@@ -3057,7 +3062,7 @@ msgstr ""
 msgid "Titre professionnel"
 msgstr ""
 
-#: apps/client/src/pages/builder/_components/header.tsx:59
+#: apps/client/src/pages/builder/_components/header.tsx:60
 msgid "Toggle left panel"
 msgstr ""
 

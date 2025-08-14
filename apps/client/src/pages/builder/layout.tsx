@@ -27,7 +27,7 @@ const OutletSlot = () => (
   <>
     <BuilderHeader />
 
-    <div className="size-full bg-background">
+    <div className="size-full min-h-screen">
       <Outlet />
       <BuilderToolbar />
     </div>
@@ -44,7 +44,7 @@ export const BuilderLayout = () => {
 
   if (isDesktop) {
     return (
-      <div className="relative size-full overflow-hidden">
+      <div className="relative size-full max-h-screen overflow-hidden">
         <PanelGroup direction="horizontal">
           <Panel
             minSize={25}
@@ -55,12 +55,16 @@ export const BuilderLayout = () => {
           >
             <Sidebar />
           </Panel>
+
           <PanelResizeHandle
             isDragging={leftHandle.isDragging}
             onDragging={leftHandle.setDragging}
           />
 
-          <Panel>
+          <Panel
+            className="bg-background bg-repeat"
+            style={{ backgroundImage: `url('/backgrounds/background.svg')` }}
+          >
             <OutletSlot />
           </Panel>
         </PanelGroup>
@@ -69,7 +73,10 @@ export const BuilderLayout = () => {
   }
 
   return (
-    <div className="relative">
+    <div
+      className="max-h-screen bg-background bg-repeat"
+      style={{ backgroundImage: `url('/backgrounds/background.svg')` }}
+    >
       <Sheet open={sheet.left.open} onOpenChange={sheet.left.setOpen}>
         <VisuallyHidden>
           <SheetHeader>
@@ -81,7 +88,7 @@ export const BuilderLayout = () => {
         <SheetContent
           side="left"
           showClose={false}
-          className="top-16 p-0 sm:max-w-xl"
+          className="p-0 sm:max-w-xl"
           onOpenAutoFocus={onOpenAutoFocus}
         >
           <Sidebar />
@@ -89,8 +96,6 @@ export const BuilderLayout = () => {
       </Sheet>
 
       <OutletSlot />
-
-      <div />
     </div>
   );
 };

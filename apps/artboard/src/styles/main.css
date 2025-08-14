@@ -12,10 +12,6 @@
   @apply antialiased;
 }
 
-body {
-  @apply bg-transparent bg-[url('/artboard/background.svg')] bg-repeat;
-}
-
 [data-page].hide-icons .ph {
   @apply hidden;
 }
@@ -25,5 +21,13 @@ body {
 }
 
 .wysiwyg {
-  @apply prose-foreground prose max-w-none prose-headings:mb-2 prose-headings:mt-0 prose-p:mb-2 prose-p:mt-0 prose-p:leading-normal prose-a:break-all prose-ol:mb-2 prose-ol:mt-0 prose-ul:mb-2 prose-ul:mt-0 prose-li:mb-2 prose-li:mt-0 prose-li:leading-normal prose-img:mb-2 prose-img:mt-0 prose-hr:mb-2 prose-hr:mt-0;
+  @apply prose-foreground prose max-w-none;
+  @apply prose-headings:m-0;
+  @apply prose-p:m-0 prose-p:leading-snug;
+  @apply prose-a:break-all;
+  @apply prose-ol:m-0;
+  @apply prose-ul:m-0;
+  @apply prose-li:m-0 prose-li:p-0 prose-li:leading-snug;
+  @apply prose-img:m-0;
+  @apply prose-hr:m-0;
 }

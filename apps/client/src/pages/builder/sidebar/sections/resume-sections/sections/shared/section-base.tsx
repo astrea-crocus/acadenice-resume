@@ -115,6 +115,32 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
       </header>
 
       <main className={cn("grid transition-opacity", !section.visible && "opacity-50")}>
+        <div className="mb-8 grid grid-cols-3 items-center gap-x-2">
+          <p className="w-fit">{t`Colonnes`}</p>
+          <input
+            type="range"
+            className="accent-acade-secondary-500"
+            min={1}
+            max={5}
+            value={section.columns}
+            step={1}
+            list={`${section.id}-columns`}
+            onChange={(e) => {
+              const cols = Number.parseInt(e.target.value, 10);
+              setValue(`sections.${id}.columns`, cols);
+            }}
+          />
+          <p className="ml-auto w-fit">{section.columns}</p>
+
+          <datalist id={`${section.id}-columns`}>
+            <option value="1" label="1" />
+            <option value="2" label="2" />
+            <option value="3" label="3" />
+            <option value="4" label="4" />
+            <option value="5" label="5" />
+          </datalist>
+        </div>
+
         {section.items.length === 0 && (
           <Button
             variant="outline"

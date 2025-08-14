@@ -45,9 +45,10 @@ export const BuilderHeader = () => {
         right: isMobile ? "0" : `${rightPanelSize}%`,
       }}
       className={cn(
-        "absolute inset-x-0 top-0 z-[60] mx-auto mt-1 h-16 max-w-[675px] rounded-full lg:z-20",
+        "z-[60] mx-auto mt-1 h-16 border-b border-primary/50",
+        "lg:absolute lg:inset-x-0 lg:top-0 lg:z-20 lg:max-w-[675px] lg:rounded-full lg:border",
         !isDragging && "transition-[left,right]",
-        "border border-primary/50 bg-secondary-accent/50 backdrop-blur",
+        "bg-secondary-accent/50 backdrop-blur",
       )}
       role="banner"
     >

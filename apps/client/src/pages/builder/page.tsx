@@ -1,5 +1,6 @@
 import { t } from "@lingui/macro";
 import type { ResumeDto } from "@reactive-resume/dto";
+import { useBreakpoint } from "@reactive-resume/hooks";
 import { useCallback, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import type { LoaderFunction } from "react-router";
@@ -53,6 +54,36 @@ export const BuilderPage = () => {
   // Send resume data to iframe on change of resume data
   useEffect(syncResumeToArtboard, [resume.data]);
 
+  const { isDesktop } = useBreakpoint();
+
+  if (isDesktop) {
+    return (
+      <>
+        <Helmet>
+          <title>
+            {title} - {t`AcadéNice`}
+          </title>
+        </Helmet>
+
+        <iframe
+          ref={setFrameRef}
+          title={resume.id}
+          src="/artboard/builder"
+          className="mt-16 w-full"
+          style={{
+            height: `calc(100vh - 4rem)`,
+            WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 0.25%, rgba(0,0,0,1) 2.5%)",
+            WebkitMaskRepeat: "no-repeat",
+            WebkitMaskSize: "100% 100%",
+            maskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 0.25%, rgba(0,0,0,1) 2.5%)",
+            maskRepeat: "no-repeat",
+            maskSize: "100% 100%",
+          }}
+        />
+      </>
+    );
+  }
+
   return (
     <>
       <Helmet>
@@ -65,8 +96,7 @@ export const BuilderPage = () => {
         ref={setFrameRef}
         title={resume.id}
         src="/artboard/builder"
-        className="size-full bg-background"
-        // style={{ height: `calc(100vh - 64px)` }}
+        className="size-full min-h-screen"
       />
     </>
   );

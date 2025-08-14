@@ -9,13 +9,13 @@ export const SoftSkills = () => {
   const section = useArtboardStore((state) => state.resume.sections.softSkills);
 
   const classNames: SectionClassNames = {
-    items: `gap-x-1 gap-y-1`,
-    item: `rounded-lg border tracking-[-0.075rem] py-1 px-0.5 last:px-4`,
+    items: `gap-x-3 gap-y-1`,
+    item: `tracking-[-0.05rem]`,
   };
 
   return (
     <Section<SoftSkill> section={section} classNames={classNames}>
-      {(item) => <div className="text-center">{item.name}</div>}
+      {(item) => <p className="text-center">{item.name}</p>}
     </Section>
   );
 };

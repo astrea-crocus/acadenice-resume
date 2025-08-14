@@ -10,9 +10,9 @@ export const Languages = () => {
   return (
     <Section<Language> section={section} levelKey="level">
       {(item) => (
-        <div className="space-y-0.5">
-          <div className="font-bold">{item.name}</div>
-          <div>{item.description}</div>
+        <div className="flex">
+          <h5 className="mr-auto font-bold">{item.name}</h5>
+          <p>{item.description}</p>
         </div>
       )}
     </Section>
